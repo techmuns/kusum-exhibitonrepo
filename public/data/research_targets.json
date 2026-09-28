@@ -75,7 +75,18 @@
    "product_evidence": "Automobile Seats Aircraft seats",
    "verify_source_url": "https://www.toyota-boshoku.com/global/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Tom Kempf",
+   "person_title": "Vice President R&D",
+   "person_linkedin": "https://www.linkedin.com/in/tom-kempf-328b284",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "ts-tech",
@@ -588,7 +599,18 @@
    "product_evidence": "Tool Bags, Tool Backpacks and Tool Storage That Works",
    "verify_source_url": "https://vetopropac.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Lee Griswold",
+   "person_title": "Product Research & Innovation Manager / VP Product Development",
+   "person_linkedin": "https://www.linkedin.com/in/leegriswold",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "customerservice@vetopropac.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "clc-work-gear",
@@ -840,7 +862,8 @@
    "product_evidence": "Protective Covers",
    "verify_source_url": "https://treasuregarden.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "garden-leisure",
@@ -1317,7 +1340,18 @@
    "product_evidence": "we have applied the same innovative solutions to develop a pool safety cover that exceeds ASTM standards... our brand new 60,000 sq.ft., energy-efficient facility capable of handling large commercial pool covers",
    "verify_source_url": "https://taramfg.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Katie Venckus",
+   "person_title": "Director Of Marketing & Product Development",
+   "person_linkedin": "https://www.linkedin.com/in/katie-venckus",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "hpi-pool-products",
@@ -1571,7 +1605,18 @@
    "product_evidence": "We're a national supplier actively supporting aerospace, trucking, aircraft, watercraft, heavy duty equipment, industrial machinery and construction coverings.",
    "verify_source_url": "https://www.tarpsnow.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "JP Murray",
+   "person_title": "General Manager │ Operations Excellence",
+   "person_linkedin": "https://za.linkedin.com/in/jp-murray",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "sales@tarpsnow.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "a1-tarps",
@@ -1997,7 +2042,18 @@
    "product_evidence": "Taylor Made boat covers are available in semi-custom and aftermarket options, ensuring a perfect fit and superior protection",
    "verify_source_url": "https://www.taylormadeproducts.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Cameron Oathout",
+   "person_title": "New Product Development Manager",
+   "person_linkedin": "https://www.linkedin.com/in/cameron-oathout-204795152",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "commercial-sewing",
@@ -2316,7 +2372,18 @@
    "product_evidence": "Tumacs Covers has been making custom made boat covers for the marine industry for over 50 years.",
    "verify_source_url": "https://tumacscovers.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Katie Pickard",
+   "person_title": "Operations Manager",
+   "person_linkedin": "https://www.linkedin.com/in/katie-pickard-2bb65392",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "o-sea-marine",
@@ -2624,7 +2691,18 @@
    "product_evidence": "Tracker Covers",
    "verify_source_url": "https://trackermarineparts.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Chris Wachowski",
+   "person_title": "Product Development & Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/chris-wachowski-ba2841a",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "crestliner-accessories",
@@ -2976,7 +3054,18 @@
    "product_evidence": "The Wiha Tool Backpack. Product details",
    "verify_source_url": "https://wiha.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Wade Krinke",
+   "person_title": "VP of Marketing & Product Development, North, Central & South America",
+   "person_linkedin": "https://www.linkedin.com/in/wadekrinke",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "gedore",
@@ -3156,7 +3245,18 @@
    "product_evidence": "Tool Rolls and Bags",
    "verify_source_url": "https://www.tekton.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Charles Kornoelje",
+   "person_title": "Head of Technology",
+   "person_linkedin": "https://www.linkedin.com/in/charles-kornoelje",
+   "person_role_tier": "A",
+   "person_match_reason": "Technology",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "gearwrench",
@@ -3237,7 +3337,18 @@
    "product_evidence": "Contractor Bags & Totes",
    "verify_source_url": "https://toughbuilt.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Mark Kaniuk",
+   "person_title": "Vice President of Product Development - Gear",
+   "person_linkedin": "https://www.linkedin.com/in/mark-kaniuk-5194767",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "user@domain.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "bucket-boss",
@@ -3792,7 +3903,8 @@
    "product_evidence": "Advanced Life Support Packs Basic Life Support Packs Support Pouches / Inserts Support Pouches Heating, Cooling, Temperature Control Products Cases Accessories Heating Pack Custom Bags Hard Cases Narcotics Storage Transportation & Immobilization Bariatric Transfer Flat Thomas Handles Mass Casualty & Fire Rehab Thomas Triage Pack IFAK KIT – Active Shooter Pack AlbacMat Rescue Mat Fully Loaded Pre-F",
    "verify_source_url": "https://thomasems.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "north-american-rescue",
@@ -4261,7 +4373,18 @@
    "product_evidence": "Medical & Emergency - AEDs, Automated CPR, Monitors/defibrillators, Ventilators, Emergency care, Critical care, EMS and fire solutions",
    "verify_source_url": "https://www.zoll.com/en-us",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Jon Jaeb",
+   "person_title": "Vice President of Research and Development",
+   "person_linkedin": "https://www.linkedin.com/in/jon-jaeb-772b149",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "stryker-ems",
@@ -4469,7 +4592,17 @@
    "verify_source_url": "https://www.boscarol.it/ita/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Simone Brazzo",
+   "person_title": "Cabs & Hulls Design Manager",
+   "person_linkedin": "https://it.linkedin.com/in/simone-brazzo-ab46bb59",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "info@boscarol.it",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "junkin-safety",
@@ -4749,7 +4882,8 @@
    "product_evidence": "offers poly tarps, canvas tarps, mesh tarps, vinyl tarps, and industrial covers",
    "verify_source_url": "https://www.tarpsplus.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "mytee-products",
@@ -4794,7 +4928,8 @@
    "product_evidence": "We are a leading manufacturer of industrial textile products.",
    "verify_source_url": "https://www.westerntarp.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "cunningham-covers",
@@ -4894,7 +5029,17 @@
    "verify_source_url": "https://www.alcocovers.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Kendall Bush",
+   "person_title": "Director of Product Development & Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/kendallbush",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "national-covers",
@@ -5148,7 +5293,18 @@
    "product_evidence": "WeatherMAX outdoor performance fabrics are built for demanding environments, markets and specifications",
    "verify_source_url": "https://weathermax.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Matt Fitzgerald",
+   "person_title": "Technical Director",
+   "person_linkedin": "https://au.linkedin.com/in/matthewtfitzgerald",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": "Aroberts@safetycomponents.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "rhino-covers",
@@ -5283,7 +5439,8 @@
    "product_evidence": "We Offer Heavy-Duty Products, Made in the USA... high-quality tarps and covers for all purposes... protective boat, truck, and trailer covering... Our quality, heavy-duty tarps and coverings are made in the USA",
    "verify_source_url": "https://tarpamerica.net/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "industrial-shadeports",
@@ -5566,7 +5723,17 @@
    "verify_source_url": "https://shadesystemsinc.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Steve Boone",
+   "person_title": "Technical Manager / R&D",
+   "person_linkedin": "https://www.linkedin.com/in/steve-boone-54206112",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "info@shadesystemsinc.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "teijin",
@@ -5584,7 +5751,18 @@
    "product_evidence": "Carbon Fibers Composites",
    "verify_source_url": "https://www.teijin.com/",
    "verified_at": "2026-09-22",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Marc-Philippe Toitgans",
+   "person_title": "Senior Technical Expert",
+   "person_linkedin": "https://fr.linkedin.com/in/marc-philippe-toitgans-627862b",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "hexcel",
@@ -5703,7 +5881,18 @@
    "product_evidence": "carbon fiber, quietly driving the sport",
    "verify_source_url": "https://www.toray.com/",
    "verified_at": "2026-09-22",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Yanting Wang",
+   "person_title": "Technical Director",
+   "person_linkedin": "https://tw.linkedin.com/in/yanting-wang-9966622b3",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "carbon-conversions",
@@ -5749,7 +5938,17 @@
    "verify_source_url": "https://www.sigmatex.com/",
    "verified_at": "2026-09-22",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Suzanne Hunt",
+   "person_title": "R&D Admin at Sigmatex",
+   "person_linkedin": "https://uk.linkedin.com/in/suzanne-hunt-6774961a0",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "chomarat",
@@ -5960,7 +6159,17 @@
    "verify_source_url": "https://www.fibreglast.com/collections/composite-products-for-aerospace-and-aviation",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Josecruz Banuelos",
+   "person_title": "Director of Research and Development Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/josecruz-banuelos-069598114",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "customerservice@fibreglast.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "aerospace-composites-solutions",
@@ -6007,7 +6216,8 @@
    "product_evidence": "The custom carbon fiber car parts are manufactured with 3D drawings in autoclave or mold compression process. It's of ultra light weight and very high strength.",
    "verify_source_url": "https://www.tiptopcomposites.com/product/custom-carbon-fiber-car-parts/",
    "verified_at": "2026-09-27",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "shasha-carbon",
@@ -6141,7 +6351,8 @@
    "product_evidence": "Vizon Fiber is a high-tech company with 20 years of experience in the carbon fiber industry... Carbon fiber composites have become the preferred spar cap material for blades longer than 60 meters... carbon fiber is increasingly incorporated into blade shell panels and shear web structures",
    "verify_source_url": "https://www.vizonfiber.com/carbon-fiber-composites-in-wind-turbine-blade-manufacturing-for-onshore-and-offshore-wind-energy/",
    "verified_at": "2026-09-27",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "marex-composites-inc",
@@ -6265,7 +6476,18 @@
    "product_evidence": "We are a leading wind-blade manufacturer and the only independent wind blade manufacturer with a global footprint. TPI has manufactured over 100,000 wind blades since 2001",
    "verify_source_url": "https://tpicomposites.com/",
    "verified_at": "2026-09-27",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Nicholas Warchol",
+   "person_title": "Global head of technology and engineering",
+   "person_linkedin": "https://dk.linkedin.com/in/nicholas-warchol-437269a",
+   "person_role_tier": "A",
+   "person_match_reason": "Technology",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "noah-composites",
@@ -6332,7 +6554,17 @@
    "verify_source_url": "https://www.jloncomposite.com/top-10-carbon-fiber-suppliers-in-the-usa.html",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Richard Plaskow",
+   "person_title": "Operations Director",
+   "person_linkedin": "https://uk.linkedin.com/in/richard-plaskow-b5105b16",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "info@jloncomposite.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "current-composites",
@@ -6379,7 +6611,18 @@
    "product_evidence": "TORAYCA® sports carbon fiber and composite materials are proven solutions for the demanding and competitive nature of sports and recreational applications. Typical products include: Golf club shafts, Commercial and game fishing rods, Windsurfing equipment, Bicycle components, Skiing equipment, Tennis racquets",
    "verify_source_url": "https://www.toraycma.com/markets/sports/",
    "verified_at": "2026-09-27",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Pritam Das",
+   "person_title": "Director of Technical Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/daspritam",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "steelhead-composites",
@@ -6484,7 +6727,18 @@
    "product_evidence": "Our carbon fibers are used for manufacturing high-pressure tanks manufacturing for the storage of: Compressed natural gas (CNG); Compressed hydrogen gas (CH2G); Gases used in industrial processes; Compressed air for breathing apparatus.",
    "verify_source_url": "https://toray-cfe.com/en/solutions/pressure-vessels/",
    "verified_at": "2026-09-27",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Geli Maurice",
+   "person_title": "Director Research and development",
+   "person_linkedin": "https://www.linkedin.com/in/geli-maurice-a4266183",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "derflex",
@@ -6503,7 +6757,17 @@
    "verify_source_url": "https://www.derflex.com/tpu-inflatable-fabric.html",
    "verified_at": "2026-09-27",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Jade Chen",
+   "person_title": "Marketing Product Development",
+   "person_linkedin": "https://cn.linkedin.com/in/jadechan2023",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "wuxi-xianglong-polymer-fabric-co-ltd",
@@ -6521,7 +6785,18 @@
    "product_evidence": "Premium TPU Coated Fabrics for Outdoor and Industrial Applications... widely used in inflatable structures... Leveraging our superior airtight technology to provide zero-leakage performance for professional inflatable boats",
    "verify_source_url": "https://tpufabrics.com/",
    "verified_at": "2026-09-27",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Lassie Feng",
+   "person_title": "Health-Care Product Development Specialist",
+   "person_linkedin": "https://cn.linkedin.com/in/yexin-feng",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "xl-sima@polymer-tex.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "tvf",
@@ -6605,7 +6880,18 @@
    "product_evidence": "Nylon 400D with Durable and Waterproof TPU Coating Fabric for Inflatable Equipment... Our Nylon TPU coating fabric is suitable for a wide range of inflatable equipment applications, including medical air mattresses, recovery air compression, and outdoor equipment.",
    "verify_source_url": "https://www.u-long.com/en/product/HA4100-TPU-Coating.html",
    "verified_at": "2026-09-27",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-09-28",
+   "person_name": "JEMY CHIU",
+   "person_title": "R&D DIRECTOR",
+   "person_linkedin": "https://tw.linkedin.com/in/jemy-chiu-563313113",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "service@u-long.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   }
  ]
 }
