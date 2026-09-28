@@ -42,8 +42,8 @@
 //
 // Keys: HUNTER_API_KEY, PROSPEO_API_KEY, PDL_API_KEY, REOON_API_KEY, TOMBA_API_KEY + TOMBA_SECRET.
 // Test hooks: KGR_OUTREACH_PATH / KGR_LEADS_PATH / KGR_RESEARCH_PATH, and KGR_FAKE_SEARCH /
-// KGR_FAKE_PICK / KGR_FAKE_EMAIL / KGR_FAKE_TOMBA_FIND / KGR_FAKE_WEBSITE / KGR_FAKE_VERIFY for
-// offline logic tests (see scripts/… tests).
+// KGR_FAKE_PICK / KGR_FAKE_EMAIL / KGR_FAKE_TOMBA_FIND / KGR_FAKE_WEBSITE / KGR_FAKE_VERIFY /
+// KGR_FAKE_PROSPEO for offline logic tests (see scripts/… tests).
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -108,8 +108,23 @@ function htmlToText(html) {
 const asUrl = (v) => { const s = String(v || '').trim(); if (!s) return ''; return s.startsWith('http') ? s : 'https://' + s; };
 // Circuit breakers — the paid boosters run out of credits (402); once dead, stop hammering them.
 let fcDead = false, pdlDead = false, fcScrapeDead = false, serperDead = false;
-// Email step: Tomba finder/verifier + Reoon breakers, per-run counters. Disabled on 401/402/429.
+// Email step: Tomba finder/verifier + Reoon + Hunter + Prospeo breakers, per-run counters. Disabled on 401/402/403/429.
 let tombaFindCalls = 0, tombaFindDead = false, tombaVerifyDead = false, reoonDead = false, verifyCalls = 0;
+let hunterDead = false, prospeoDead = false;
+const finderTrip = (s) => s === 429 || s === 401 || s === 402 || s === 403; // spent/blocked free tier → disable for the run
+// One fetch with a 429 backoff: honor Retry-After (capped), retry a couple of times, then return the 429 so
+// the caller can trip its breaker. Stops us bursting free-tier rate limits into a wall of 429s.
+const RETRY_CAP_MS = 8000;
+async function backoffFetch(url, opts, label, tries = 2) {
+  for (let i = 0; ; i++) {
+    const res = await fetch(url, { signal: AbortSignal.timeout(30_000), ...opts });
+    if (res.status !== 429 || i >= tries) return res;
+    const ra = parseInt(res.headers.get('retry-after') || '', 10);
+    const waitMs = Math.min(Number.isFinite(ra) ? ra * 1000 : 1000 * (i + 1), RETRY_CAP_MS);
+    console.error(`[find-contacts] ${label} 429 — backing off ${waitMs}ms (retry ${i + 1}/${tries})`);
+    await sleep(waitMs);
+  }
+}
 
 /* ---------------- Role tiers (the heart of this brick) ---------------- */
 // Ordered keyword → human label. First match wins within a tier.
@@ -325,18 +340,20 @@ async function findPerson(company, website, debug) {
 // Hunter EMAIL FINDER — a precise personal email for a KNOWN person (name + domain). Tried before the
 // broader domain-search so we prefer the individual's address over any generic inbox. Returns an "@" or null.
 async function hunterFindEmail(name, domain) {
+  if (!HUNTER || hunterDead) return null;
   const n = splitName(name); if (!n || !domain) return null;
   try {
-    const res = await fetch(`https://api.hunter.io/v2/email-finder?domain=${encodeURIComponent(domain)}&first_name=${encodeURIComponent(n.first)}&last_name=${encodeURIComponent(n.last)}&api_key=${encodeURIComponent(HUNTER)}`, { signal: AbortSignal.timeout(30_000) });
-    if (!res.ok) { console.error(`[find-contacts] Hunter finder ${res.status}`); return null; }
+    const res = await backoffFetch(`https://api.hunter.io/v2/email-finder?domain=${encodeURIComponent(domain)}&first_name=${encodeURIComponent(n.first)}&last_name=${encodeURIComponent(n.last)}&api_key=${encodeURIComponent(HUNTER)}`, {}, 'Hunter finder');
+    if (!res.ok) { if (finderTrip(res.status)) hunterDead = true; console.error(`[find-contacts] Hunter finder ${res.status}`); return null; }
     const data = await res.json();
     return realEmail(data && data.data && data.data.email);
   } catch (e) { console.error(`[find-contacts] Hunter finder failed (ok): ${e.message}`); return null; }
 }
 async function hunterEmail(role, domain) {
+  if (!HUNTER || hunterDead) return null;
   try {
-    const res = await fetch(`https://api.hunter.io/v2/domain-search?domain=${encodeURIComponent(domain)}&api_key=${encodeURIComponent(HUNTER)}`, { signal: AbortSignal.timeout(30_000) });
-    if (!res.ok) { console.error(`[find-contacts] Hunter ${res.status}`); return null; }
+    const res = await backoffFetch(`https://api.hunter.io/v2/domain-search?domain=${encodeURIComponent(domain)}&api_key=${encodeURIComponent(HUNTER)}`, {}, 'Hunter');
+    if (!res.ok) { if (finderTrip(res.status)) hunterDead = true; console.error(`[find-contacts] Hunter ${res.status}`); return null; }
     const data = await res.json();
     const emails = (data && data.data && data.data.emails) || [];
     if (!emails.length) return null;
@@ -347,20 +364,32 @@ async function hunterEmail(role, domain) {
   } catch (e) { console.error(`[find-contacts] Hunter failed (ok): ${e.message}`); return null; }
 }
 let prospeoCalls = 0; const PROSPEO_CAP = 45;
-async function prospeo(path, body) {
-  if (!PROSPEO || prospeoCalls >= PROSPEO_CAP) return null;
-  prospeoCalls++; await sleep(1100);
+// Prospeo enrich-person is the CURRENT endpoint. The old social-url-enrichment + email-finder were
+// deprecated and REMOVED (~Mar 2026) — calling them 400s. enrich-person takes a `data` object with any
+// of { first_name, last_name, company_name, company_website, linkedin_url } and returns a verified email
+// at person.email.email. X-KEY auth, PROSPEO_CAP budget, breaker on a spent/blocked free tier.
+async function prospeoPost(path, body) {
+  if (!PROSPEO || prospeoDead || prospeoCalls >= PROSPEO_CAP) return null;
+  if (process.env.KGR_FAKE_PROSPEO) { prospeoCalls++; try { const m = JSON.parse(process.env.KGR_FAKE_PROSPEO); const k = (body && body.data && (body.data.linkedin_url || body.data.company_website)) || '*'; return m[k] || m['*'] || null; } catch { return null; } }
+  prospeoCalls++; await sleep(900);                                             // gentle spacing between calls
   try {
-    const res = await fetch(`https://api.prospeo.io/${path}`, { method: 'POST', headers: { 'content-type': 'application/json', 'X-KEY': PROSPEO }, body: JSON.stringify(body), signal: AbortSignal.timeout(30_000) });
-    if (!res.ok) { console.error(`[find-contacts] Prospeo ${path} ${res.status}`); return null; }
+    const res = await backoffFetch(`https://api.prospeo.io/${path}`, { method: 'POST', headers: { 'content-type': 'application/json', 'X-KEY': PROSPEO }, body: JSON.stringify(body) }, `Prospeo ${path}`);
+    if (!res.ok) { if (finderTrip(res.status)) prospeoDead = true; console.error(`[find-contacts] Prospeo ${path} ${res.status}`); return null; }
     const data = await res.json();
-    if (data && data.error) return null;
-    const r = (data && data.response) || data || {};
-    return realEmail(r.email);
+    return (data && data.error) ? null : data;
   } catch (e) { console.error(`[find-contacts] Prospeo ${path} failed (ok): ${e.message}`); return null; }
 }
-const prospeoFromLinkedin = (url) => (url ? prospeo('social-url-enrichment', { url }) : Promise.resolve(null));
-async function prospeoFromName(name, domain) { const n = splitName(name); return (n && domain) ? prospeo('email-finder', { first_name: n.first, last_name: n.last, company: domain }) : null; }
+// enrich-person → person.email.email. Keep ONLY a REVEALED, real, NON-MASKED "@": the free tier can return a
+// masked address like "a*****@x.com" — that is not a usable email and must NEVER be stored (would be fabrication).
+async function prospeoEnrich(data) {
+  const d = await prospeoPost('enrich-person', { data });
+  const e = d && d.person && d.person.email;
+  if (!e || e.revealed === false) return null;
+  const email = realEmail(e.email);
+  return (email && !email.includes('*')) ? email : null;
+}
+const prospeoFromLinkedin = (url, domain) => (url ? prospeoEnrich({ linkedin_url: url, ...(domain ? { company_website: domain } : {}) }) : Promise.resolve(null));
+async function prospeoFromName(name, domain) { const n = splitName(name); return (n && domain) ? prospeoEnrich({ first_name: n.first, last_name: n.last, company_website: domain }) : null; }
 
 /* ---- Tomba (free finder + verifier) — auth via X-Tomba-Key + X-Tomba-Secret headers ---- */
 const tombaHeaders = () => ({ 'X-Tomba-Key': TOMBA_KEY, 'X-Tomba-Secret': TOMBA_SECRET, accept: 'application/json' });
@@ -374,7 +403,7 @@ const tombaVerifyUrls = (email) => [`https://api.tomba.io/v1/email-verifier?emai
 // Try the cached form first, then the other on a 404. Returns { res, form } for the first non-404, or null (both 404).
 async function tombaFetch(urls, startForm) {
   for (const f of (startForm === 1 ? [1, 0] : [0, 1])) {
-    const res = await fetch(urls[f], { headers: tombaHeaders(), signal: AbortSignal.timeout(30_000) });
+    const res = await backoffFetch(urls[f], { headers: tombaHeaders() }, 'Tomba');
     if (res.status !== 404) return { res, form: f };
   }
   return null;
@@ -505,7 +534,7 @@ async function findEmail(person, domain, debug) {
   // 1b) Hunter domain-search (verified) — pick the best-ranked person/inbox on the domain.
   if (HUNTER) { const h = await hunterEmail(person.title, domain); const he = realEmail(h && h.email); if (he) return finderHit(he, 'hunter'); }
   // 2) Prospeo (verified) — LinkedIn URL, else name + domain
-  if (PROSPEO) { const pp = (await prospeoFromLinkedin(person.linkedin_url)) || (person.name ? await prospeoFromName(person.name, domain) : null); if (pp) return finderHit(pp, 'prospeo'); }
+  if (PROSPEO) { const pp = (await prospeoFromLinkedin(person.linkedin_url, domain)) || (person.name ? await prospeoFromName(person.name, domain) : null); if (pp) return finderHit(pp, 'prospeo'); }
   // 2b) Tomba EMAIL FINDER (free) — a precise personal email; before PDL/website/guess (free-first).
   if (haveTomba() && person.name) { const tf = await tombaFind(person.name, domain); if (tf) return finderHit(tf, 'tomba'); }
   // 3) PDL work email (only a real "@")
