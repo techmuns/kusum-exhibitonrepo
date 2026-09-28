@@ -38,7 +38,7 @@
 // person selection — without both it writes nothing and exits 0. Never throws.
 //
 // Test hooks: KGR_OUTREACH_PATH / KGR_LEADS_PATH / KGR_RESEARCH_PATH, and KGR_FAKE_SEARCH /
-// KGR_FAKE_PICK for offline logic tests (see scripts/… tests).
+// KGR_FAKE_PICK / KGR_FAKE_EMAIL for offline logic tests (see scripts/… tests).
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -52,6 +52,9 @@ const OUTREACH_PATH = p('KGR_OUTREACH_PATH', '../public/data/outreach.json');
 const RESEARCH_PATH = p('KGR_RESEARCH_PATH', '../public/data/research_targets.json');
 
 const MAX = Math.max(1, parseInt(process.env.MAX || '30', 10) || 30);
+// Budget for the email-upgrade pass (rows that already have a person but no personal email yet).
+// Keeps us inside the free monthly finder credits (Hunter 50 + Prospeo 75); the rest roll to next run.
+const EMAIL_MAX = Math.max(0, parseInt(process.env.EMAIL_MAX || '40', 10) || 40);
 const PRIORITY_ONLY = /^(1|true|yes)$/i.test(process.env.PRIORITY_ONLY || '');
 const HUNTER = process.env.HUNTER_API_KEY || '';
 const PDL = process.env.PDL_API_KEY || '';
@@ -302,6 +305,17 @@ async function findPerson(company, website, debug) {
 }
 
 /* ---------------- Email finders (real, verified where possible) ---------------- */
+// Hunter EMAIL FINDER — a precise personal email for a KNOWN person (name + domain). Tried before the
+// broader domain-search so we prefer the individual's address over any generic inbox. Returns an "@" or null.
+async function hunterFindEmail(name, domain) {
+  const n = splitName(name); if (!n || !domain) return null;
+  try {
+    const res = await fetch(`https://api.hunter.io/v2/email-finder?domain=${encodeURIComponent(domain)}&first_name=${encodeURIComponent(n.first)}&last_name=${encodeURIComponent(n.last)}&api_key=${encodeURIComponent(HUNTER)}`, { signal: AbortSignal.timeout(30_000) });
+    if (!res.ok) { console.error(`[find-contacts] Hunter finder ${res.status}`); return null; }
+    const data = await res.json();
+    return realEmail(data && data.data && data.data.email);
+  } catch (e) { console.error(`[find-contacts] Hunter finder failed (ok): ${e.message}`); return null; }
+}
 async function hunterEmail(role, domain) {
   try {
     const res = await fetch(`https://api.hunter.io/v2/domain-search?domain=${encodeURIComponent(domain)}&api_key=${encodeURIComponent(HUNTER)}`, { signal: AbortSignal.timeout(30_000) });
@@ -366,10 +380,25 @@ async function websiteEmail(website, debug) {
   return null;
 }
 
+// Offline test hook (mirrors KGR_FAKE_SEARCH/PICK): KGR_FAKE_EMAIL = JSON map keyed by domain or
+// person name (or '*') → { email, email_status?, via? }. Returns undefined when unset (real path runs).
+function fakeEmail(person, domain) {
+  if (!process.env.KGR_FAKE_EMAIL) return undefined;
+  try {
+    const m = JSON.parse(process.env.KGR_FAKE_EMAIL);
+    const hit = m[domain] || m[(person && person.name) || ''] || m['*'];
+    if (!hit || !hit.email) return { email: null, email_status: 'none', via: 'fake' };
+    return { email: hit.email, email_status: hit.email_status || (isCompanyInbox(hit.email) ? 'published' : 'verified'), via: hit.via || 'fake' };
+  } catch { return undefined; }
+}
+
 // Find the best real email for a chosen person. Returns { email, email_status, via } — status ∈ verified|published|none.
 async function findEmail(person, domain, debug) {
+  const fk = fakeEmail(person, domain); if (fk !== undefined) return fk;
   if (!domain) return { email: null, email_status: 'none', via: '' };
-  // 1) Hunter (verified)
+  // 1a) Hunter EMAIL FINDER (precise personal email for the known person) — try first when we have a name.
+  if (HUNTER && person.name) { const hf = await hunterFindEmail(person.name, domain); if (hf) return { email: hf, email_status: isCompanyInbox(hf) ? 'published' : 'verified', via: 'hunter-finder' }; }
+  // 1b) Hunter domain-search (verified) — pick the best-ranked person/inbox on the domain.
   if (HUNTER) { const h = await hunterEmail(person.title, domain); const he = realEmail(h && h.email); if (he) return { email: he, email_status: isCompanyInbox(he) ? 'published' : 'verified', via: 'hunter' }; }
   // 2) Prospeo (verified) — LinkedIn URL, else name + domain
   if (PROSPEO) { const pp = (await prospeoFromLinkedin(person.linkedin_url)) || (person.name ? await prospeoFromName(person.name, domain) : null); if (pp) return { email: pp, email_status: isCompanyInbox(pp) ? 'published' : 'verified', via: 'prospeo' }; }
@@ -384,10 +413,10 @@ async function findEmail(person, domain, debug) {
 
 /* ---------------- Main ---------------- */
 async function main() {
-  if (!haveBedrock() && !PDL) {
-    console.log('[find-contacts] needs BEDROCK_API_KEY or PDL_API_KEY to select the right person — writing nothing. Exiting 0.');
-    return;
-  }
+  // Person discovery needs a selector (Bedrock/PDL). The email-upgrade pass does NOT — it only needs
+  // email providers — so we no longer exit early; we skip the primary pass and still run the upgrade.
+  const canFindPeople = haveBedrock() || !!PDL;
+  if (!canFindPeople) console.log('[find-contacts] no BEDROCK_API_KEY/PDL_API_KEY — skipping person discovery; email-upgrade pass only.');
   console.log(`[find-contacts] search: serper=${haveSerper() ? 'yes' : 'no'} (primary) ddg=free firecrawl=${firecrawlKey() ? 'yes' : 'no'} | readers: free=yes scrapedo=${haveScrapedo() ? 'yes' : 'no'} | person: bedrock=${haveBedrock() ? 'yes' : 'no'} pdl=${PDL ? 'yes' : 'no'} | email: hunter=${HUNTER ? 'yes' : 'no'} prospeo=${PROSPEO ? 'yes' : 'no'} reoon=${REOON ? 'yes' : 'no'}`);
 
   const leads = await loadLeads();
@@ -414,14 +443,16 @@ async function main() {
     .sort((a, b) => lRank(a) - lRank(b) || String(a.company).localeCompare(String(b.company)))
     .map((l) => ({ kind: 'lead', id: l.id, company: l.company, website: l.website || '', target: null }));
 
-  const queue = targetQueue.concat(leadQueue).slice(0, MAX);
-  console.log(`[find-contacts] processing ${queue.length} (targets=${Math.min(targetQueue.length, MAX)} of ${targetQueue.length}, then leads)`);
+  const queue = canFindPeople ? targetQueue.concat(leadQueue).slice(0, MAX) : [];
+  if (canFindPeople) console.log(`[find-contacts] processing ${queue.length} (targets=${Math.min(targetQueue.length, MAX)} of ${targetQueue.length}, then leads)`);
 
   const debug = [];
   const tally = { people: 0, A: 0, B: 0, C: 0, none: 0, emails: 0 };
+  const processedIds = new Set();     // ids the primary pass already handled this run (excluded from the upgrade pass)
   let changedOutreach = false, changedResearch = false;
   try {
     for (const item of queue) {
+      processedIds.add(item.id);
       const domain = domainOf(item);
       const person = await findPerson(item.company, item.website, debug);
       const nowISO = new Date().toISOString().slice(0, 10);
@@ -463,6 +494,59 @@ async function main() {
       console.log(`[find-contacts] ${item.company}: ${person.name} · ${person.title || '?'} · tier ${person.tier || '-'} · email ${em.email_status}${em.email ? ' (' + em.via + ')' : ''}`);
     }
   } catch (e) { console.error(`[find-contacts] pipeline error (continuing): ${e.message}`); }
+
+  // ---------------- EMAIL-UPGRADE PASS ----------------
+  // Go BACK over rows that ALREADY have a person but no PERSONAL email (missing, or a company inbox)
+  // and try ONLY the email finders — NO person discovery. Write only on a strict improvement
+  // (personal > company > none); never overwrite a personal email, never downgrade, never invent
+  // (guesses stay Reoon-gated). Budget: at most EMAIL_MAX rows per run; the rest roll to next week.
+  const isPersonal = (e) => !!realEmail(e) && !isCompanyInbox(e);
+  const emRank = (e) => (isPersonal(e) ? 2 : realEmail(e) ? 1 : 0);
+  const targetsById = new Map(targets.map((t) => [t.id, t]));
+  const candIds = new Set();
+  for (const id of Object.keys(outreach)) {
+    const c = outreach[id] && outreach[id].contact;
+    if (c && c.name && !processedIds.has(id) && !isPersonal(c.email)) candIds.add(id);
+  }
+  for (const t of targets) {
+    if (t && t.person_name && t.id && !processedIds.has(t.id) && !isPersonal(t.person_email)) candIds.add(t.id);
+  }
+  const upRows = [];
+  for (const id of candIds) {
+    const c = (outreach[id] && outreach[id].contact) || null;
+    const t = targetsById.get(id) || null;
+    const name = (c && c.name) || (t && t.person_name) || '';
+    if (!name) continue;
+    const domain = domainOf({ website: (leadById.get(id) || {}).website || (t && t.website) || '' });
+    if (!domain) continue;                                          // no domain → can't find an email
+    const person = { name, title: (c && c.title) || (t && t.person_title) || '', linkedin_url: (c && c.linkedin_url) || (t && t.person_linkedin) || null };
+    const tier = (c && c.role_tier) || (t && t.person_role_tier) || null;
+    const priority = (leadById.get(id) || {}).priority || '';
+    upRows.push({ id, person, domain, tier, priority, t, c });
+  }
+  const tierScore = (x) => (x.tier === 'A' ? 3 : x.tier === 'B' ? 2 : x.tier === 'C' ? 1 : 0);
+  upRows.sort((a, b) => tierScore(b) - tierScore(a) || ((b.priority === 'High') - (a.priority === 'High')) || String(a.person.name).localeCompare(String(b.person.name)));
+  const upQueue = upRows.slice(0, EMAIL_MAX);
+  console.log(`[find-contacts] email-upgrade: ${upRows.length} row(s) have a person but no personal email; processing ${upQueue.length} (EMAIL_MAX=${EMAIL_MAX}) — person-search SKIPPED for these.`);
+  const up = { upgraded: 0, verified: 0, published: 0 };
+  try {
+    for (const row of upQueue) {
+      const curEmail = (row.c && row.c.email) || (row.t && row.t.person_email) || null;
+      const curRank = emRank(curEmail);
+      const em = await findEmail(row.person, row.domain, debug);    // EMAIL ONLY — no person discovery
+      if (!em.email || emRank(em.email) <= curRank) continue;       // strict improvement only (never downgrade/overwrite personal)
+      const base = (row.c && typeof row.c === 'object') ? row.c
+        : { name: row.person.name, title: row.person.title, linkedin_url: row.person.linkedin_url, role_tier: row.tier, confidence: row.tier ? 'medium' : 'low', match_reason: (row.t && row.t.person_match_reason) || '' };
+      const personSrc = String((base.source || (row.t && row.t.person_source) || 'web')).split('+')[0] || 'web';
+      const contact = { ...base, name: base.name || row.person.name, email: em.email, email_status: em.email_status, source: [personSrc, em.via].filter(Boolean).join('+') };
+      outreach[row.id] = { ...(outreach[row.id] || {}), contact };  // → dashboard + Gmail draft recipient
+      changedOutreach = true;
+      if (row.t) { row.t.person_email = em.email; row.t.person_email_status = em.email_status; row.t.person_source = contact.source; changedResearch = true; } // → research_targets.json
+      up.upgraded++; if (em.email_status === 'verified') up.verified++; else if (em.email_status === 'published') up.published++;
+      console.log(`[find-contacts] upgrade ${row.person.name} @ ${row.domain}: ${curEmail || 'none'} → ${em.email} (${em.email_status} via ${em.via})`);
+    }
+  } catch (e) { console.error(`[find-contacts] email-upgrade error (continuing): ${e.message}`); }
+  console.log(`[find-contacts] email-upgrade done: upgraded=${up.upgraded} (verified=${up.verified}, published=${up.published}).`);
 
   console.log(`[find-contacts] found people=${tally.people} (A=${tally.A} B=${tally.B} C=${tally.C}) · verified/real emails=${tally.emails} · no-person=${tally.none}`);
   if (changedOutreach) { await writeFile(OUTREACH_PATH, JSON.stringify(outreach, null, 2) + '\n'); console.log('[find-contacts] wrote outreach.json'); }

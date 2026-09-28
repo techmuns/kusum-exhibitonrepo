@@ -1957,6 +1957,24 @@ function emailClassBadge(c, big = false) {
   return `<span class="inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold" style="background:${color}1f;color:${darken(color, 0.3)}">✉ ${label}</span>`;
 }
 
+/* ---- "🔍 Find email" (manual ContactOut/Apollo-style backup) ----
+ * Shown only when we have a person but NO personal email yet (classifyEmail → company inbox / none).
+ * Deep-links the person's LinkedIn (where a ContactOut/Apollo extension reveals the email) or, lacking
+ * a URL, a prefilled Google search. It never fetches or embeds an extension — just opens the tab. */
+const needsEmailFind = (c) => !!(c && (c.name || c.linkedin_url)) && ['company', 'none'].includes(classifyEmail(c));
+function findEmailUrl(c, company) {
+  if (c && c.linkedin_url) return c.linkedin_url;
+  const q = [c && c.name ? `"${c.name}"` : '', company ? `"${company}"` : '', 'email'].filter(Boolean).join(' ');
+  return 'https://www.google.com/search?q=' + encodeURIComponent(q);
+}
+function findEmailBtn(c, company) {
+  if (!needsEmailFind(c)) return '';
+  const tip = (c && c.linkedin_url)
+    ? 'Opens LinkedIn — your ContactOut/Apollo extension shows the email; paste it into the contact.'
+    : 'Opens a Google search for this person’s email — paste it into the contact.';
+  return `<a href="${escapeHtml(findEmailUrl(c, company))}" target="_blank" rel="noopener" title="${escapeHtml(tip)}" class="inline-flex items-center gap-1 rounded-lg bg-white px-2 py-1 text-[11px] font-semibold text-indigo-600 ring-1 ring-indigo-200 hover:bg-indigo-50">🔍 Find email</a>`;
+}
+
 /* ---- Right-person role tier (technical/R&D decision-maker, not purchasing) ----
  * A = technical / R&D decision-maker (best), B = operations, C = purchasing-only (weak),
  * none = still searching / not identified yet. */
@@ -2575,7 +2593,7 @@ function composePanelHtml(id) {
       <label for="composeTo" class="mt-3 block text-[11px] font-semibold uppercase tracking-wide text-slate-400">To</label>
       <div class="mt-1 flex flex-wrap items-center gap-2">
         <input id="composeTo" type="email" value="${escapeHtml(to)}" placeholder="paste the buyer's email…" class="min-w-0 flex-1 rounded-lg border-0 bg-white px-3 py-2 text-sm text-slate-800 ring-1 ring-slate-200 focus:ring-2 focus:ring-indigo-400 focus:outline-none" />
-        ${emailClassBadge(c, true)}
+        ${emailClassBadge(c, true)}${findEmailBtn(c, l.company)}
       </div>
       ${to ? '' : '<div class="mt-1 text-[11px] text-slate-400">No email found yet — find the buyer on LinkedIn, then paste their address above.</div>'}
     </div>
@@ -2695,7 +2713,7 @@ function trackerTableHtml() {
       <td class="whitespace-nowrap px-3 py-2.5">${stageClosed(pl.stage) ? '<span class="text-[12px] text-slate-300">—</span>' : `<input type="date" data-pl-followup="${escapeHtml(l.id)}" value="${escapeHtml(pl.next || '')}" class="rounded-lg border-0 bg-white px-2 py-1 text-[12px] font-semibold ring-1 ring-slate-200 focus:outline-none" style="color:${pl.next ? dueColor(pl.next) : '#94a3b8'}" />`}</td>
       <td class="whitespace-nowrap px-3 py-2.5">${sel(l.id, 'deal', DEAL_TYPES, pl.dealType || 'current', false)}</td>
       <td class="whitespace-nowrap px-3 py-2.5">${sel(l.id, 'mfg', MFG_TYPES, pl.mfg || 'own', false)}</td>
-      <td class="whitespace-nowrap px-3 py-2.5 text-sm text-slate-600">${contact}${replyBadge}</td>
+      <td class="whitespace-nowrap px-3 py-2.5 text-sm text-slate-600"><span class="inline-flex flex-wrap items-center gap-1.5">${contact}${replyBadge}${findEmailBtn(c, l.company)}</span></td>
       <td class="whitespace-nowrap px-3 py-2.5 text-center text-sm">${hasDraft}</td>
       <td class="whitespace-nowrap px-3 py-2.5"><button type="button" data-action="draft-email" data-lead-id="${escapeHtml(l.id)}" class="rounded-lg bg-slate-100 px-2 py-1 text-[12px] font-semibold text-slate-600 hover:bg-slate-200">✉️ Email</button></td>
     </tr>`;
