@@ -365,7 +365,21 @@ async function prospeoFromName(name, domain) { const n = splitName(name); return
 /* ---- Tomba (free finder + verifier) — auth via X-Tomba-Key + X-Tomba-Secret headers ---- */
 const tombaHeaders = () => ({ 'X-Tomba-Key': TOMBA_KEY, 'X-Tomba-Secret': TOMBA_SECRET, accept: 'application/json' });
 const tombaTrip = (status) => status === 401 || status === 402 || status === 429; // auth / out-of-credit / rate-limited
-// Tomba EMAIL FINDER — a precise personal email for a KNOWN person. GET /v1/email-finder/{domain}?first_name&last_name.
+// Tomba's docs use query-param endpoints (?domain= / ?email=); its SDKs use a /{path} segment. The two differ
+// and a wrong shape returns 404, so we try the documented query form first, fall back to the path form on a
+// 404, and cache whichever the API accepts for the rest of the run.
+let tombaFindForm = 0, tombaVerifyForm = 0;
+const tombaFindUrls = (domain, n) => { const qs = `first_name=${encodeURIComponent(n.first)}&last_name=${encodeURIComponent(n.last)}`; return [`https://api.tomba.io/v1/email-finder?domain=${encodeURIComponent(domain)}&${qs}`, `https://api.tomba.io/v1/email-finder/${encodeURIComponent(domain)}?${qs}`]; };
+const tombaVerifyUrls = (email) => [`https://api.tomba.io/v1/email-verifier?email=${encodeURIComponent(email)}`, `https://api.tomba.io/v1/email-verifier/${encodeURIComponent(email)}`];
+// Try the cached form first, then the other on a 404. Returns { res, form } for the first non-404, or null (both 404).
+async function tombaFetch(urls, startForm) {
+  for (const f of (startForm === 1 ? [1, 0] : [0, 1])) {
+    const res = await fetch(urls[f], { headers: tombaHeaders(), signal: AbortSignal.timeout(30_000) });
+    if (res.status !== 404) return { res, form: f };
+  }
+  return null;
+}
+// Tomba EMAIL FINDER — a precise personal email for a KNOWN person.
 // Returns a real "@" (only a non-disposable, non-"invalid" hit) or null. Graceful; capped; trips the breaker on 401/402/429.
 async function tombaFind(name, domain) {
   if (!haveTomba() || tombaFindDead || tombaFindCalls >= TOMBA_CAP) return null;
@@ -373,8 +387,9 @@ async function tombaFind(name, domain) {
   if (process.env.KGR_FAKE_TOMBA_FIND) { tombaFindCalls++; try { const m = JSON.parse(process.env.KGR_FAKE_TOMBA_FIND); return realEmail(m[domain] || m[name] || m['*']); } catch { return null; } }
   tombaFindCalls++;
   try {
-    const url = `https://api.tomba.io/v1/email-finder/${encodeURIComponent(domain)}?first_name=${encodeURIComponent(n.first)}&last_name=${encodeURIComponent(n.last)}`;
-    const res = await fetch(url, { headers: tombaHeaders(), signal: AbortSignal.timeout(30_000) });
+    const hit = await tombaFetch(tombaFindUrls(domain, n), tombaFindForm);
+    if (!hit) { console.error('[find-contacts] Tomba finder 404 (both URL forms) — disabling'); tombaFindDead = true; return null; }
+    tombaFindForm = hit.form; const res = hit.res;
     if (!res.ok) { if (tombaTrip(res.status)) tombaFindDead = true; console.error(`[find-contacts] Tomba finder ${res.status}`); return null; }
     const d = ((await res.json()) || {}).data || {};
     const email = realEmail(d.email); if (!email) return null;
@@ -383,12 +398,14 @@ async function tombaFind(name, domain) {
     return email;
   } catch (e) { console.error(`[find-contacts] Tomba finder failed (ok): ${e.message}`); return null; }
 }
-// Tomba EMAIL VERIFIER — deliverability of ANY address. GET /v1/email-verifier/{email}.
+// Tomba EMAIL VERIFIER — deliverability of ANY address.
 // 'good' (deliverable) | 'bad' (undeliverable) | null (inconclusive / couldn't check).
 async function tombaVerify(email) {
   if (!haveTomba() || tombaVerifyDead || !realEmail(email)) return null;
   try {
-    const res = await fetch(`https://api.tomba.io/v1/email-verifier/${encodeURIComponent(email)}`, { headers: tombaHeaders(), signal: AbortSignal.timeout(30_000) });
+    const hit = await tombaFetch(tombaVerifyUrls(email), tombaVerifyForm);
+    if (!hit) { tombaVerifyDead = true; return null; }
+    tombaVerifyForm = hit.form; const res = hit.res;
     if (!res.ok) { if (tombaTrip(res.status)) tombaVerifyDead = true; return null; }
     const e = (((await res.json()) || {}).data || {}).email || {};
     const result = String(e.result || '').toLowerCase(); const status = String(e.status || '').toLowerCase();
