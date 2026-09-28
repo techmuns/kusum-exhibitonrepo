@@ -28,9 +28,9 @@
    "person_linkedin": "https://www.linkedin.com/in/scott-scheytt-65734bb",
    "person_role_tier": "A",
    "person_match_reason": "Engineering",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "andreas.nimsch@adient.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "lear-corporation",
@@ -55,9 +55,9 @@
    "person_linkedin": "https://www.linkedin.com/in/phil-beauchamp-4a61747",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "pbeauchamp@lear.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "toyota-boshoku",
@@ -136,9 +136,9 @@
    "person_linkedin": "https://www.linkedin.com/in/craig-prasatek-b6858016",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "craig.prasatek@magna.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "grammer-ag",
@@ -163,9 +163,9 @@
    "person_linkedin": "https://in.linkedin.com/in/rahul-bendale-b518a1239",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": "info@grammer.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "rahul.bendale@grammer.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "freedman-seating",
@@ -658,9 +658,9 @@
    "person_linkedin": "https://www.linkedin.com/in/laura-honeysett-2201204",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "laurah@classicaccessories.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "duck-covers",
@@ -712,9 +712,9 @@
    "person_linkedin": "https://www.linkedin.com/in/lauren-foster-lf12",
    "person_role_tier": "A",
    "person_match_reason": "Technical",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "customerservice@empirecovers.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "loop-loc",
@@ -739,9 +739,9 @@
    "person_linkedin": "https://www.linkedin.com/in/mike-sofia-9b7a3520",
    "person_role_tier": "B",
    "person_match_reason": "Manufacturing",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "mike@looploc.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "merlin-industries",
@@ -1063,9 +1063,9 @@
    "person_linkedin": "https://www.linkedin.com/in/cory-bradley-0b406358",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "nathan.kokus@glipoolproducts.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "anchor-industries",
@@ -1137,7 +1137,16 @@
    "product_evidence": "Safety Covers GLI HPI Yard Guard Coverlon Rayner Freetime Fun Safety Covers",
    "verify_source_url": "https://www.poolstore.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Aiden Rayner",
+   "person_title": "Operations Manager",
+   "person_linkedin": "https://au.linkedin.com/in/ajrayner",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "info@poolstore.com",
+   "person_email_status": "published",
+   "person_source": "serper+hunter"
   },
   {
    "id": "cover-pools",
@@ -1162,9 +1171,9 @@
    "person_linkedin": "https://www.linkedin.com/in/nathan-dewyea-a6827b30",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "nathan@coverpools.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "aquamatic-cover-systems",
@@ -1189,9 +1198,9 @@
    "person_linkedin": "https://www.linkedin.com/in/daniel-hardin-b86b1914b",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": "info@aquamatic.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "jeff@aquamatic.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "coverstar",
@@ -1216,9 +1225,9 @@
    "person_linkedin": "https://ch.linkedin.com/in/ptmoser",
    "person_role_tier": "A",
    "person_match_reason": "CTO",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "hr@coverstar.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "automatic-pool-covers",
@@ -1270,9 +1279,9 @@
    "person_linkedin": "https://www.linkedin.com/in/karen-lemontagne-b7608a31",
    "person_role_tier": "B",
    "person_match_reason": "Operations",
-   "person_email": "info@coversafe.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "karen@coversafe.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "pooltux",
@@ -1417,7 +1426,15 @@
    "verify_source_url": "https://covercare.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Anthony Wright Sr.",
+   "person_title": "Regional Operations Manager",
+   "person_linkedin": "https://www.linkedin.com/in/anthony-wright-sr-2872a281",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "asr@covercare.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "big-duck-canvas",
@@ -1498,7 +1515,16 @@
    "product_evidence": "Boat Cover Vents & Accessories",
    "verify_source_url": "https://rochfordsupply.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "David Crandall",
+   "person_title": "Director of Commercial Operations",
+   "person_linkedin": "https://www.linkedin.com/in/david-crandall-95916943",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "david@rochfordsupply.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "sailrite",
@@ -1553,7 +1579,7 @@
    "verify_source_url": "https://a1tarps.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "chicago-canvas",
@@ -1599,7 +1625,7 @@
    "verify_source_url": "https://www.canvasetc.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "ohio-awning",
@@ -1642,9 +1668,9 @@
    "person_linkedin": "https://www.linkedin.com/in/daniel-b-simon",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "jking@budgeindustries.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "eevelle",
@@ -1759,9 +1785,9 @@
    "person_linkedin": "https://in.linkedin.com/in/viral-zaveri-cov",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "viral@coversandall.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "national-patio-covers",
@@ -1780,7 +1806,7 @@
    "verify_source_url": "https://www.nationalpatiocovers.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "outdoor-cover-warehouse",
@@ -1922,9 +1948,9 @@
    "person_linkedin": "https://www.linkedin.com/in/gary-lewelling-705166128",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "smcelhaney@greatlakesboattop.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "ameritex-fabric-systems",
@@ -1985,9 +2011,9 @@
    "person_linkedin": "https://www.linkedin.com/in/david-kronengold",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "sales@CommercialSewing.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "kronengoldd@commercialsewing.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "lippert-marine",
@@ -2042,7 +2068,15 @@
    "verify_source_url": "https://oceansouth.com/en-au",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Visvarajah Somasundaram",
+   "person_title": "Design & Drafting Manager",
+   "person_linkedin": "https://au.linkedin.com/in/visvarajahsomasundaram",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "visvarajah@oceansouth.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "rnr-marine",
@@ -2060,7 +2094,8 @@
    "product_evidence": "Factory Original-Equipment (OEM) and after-market boat Tops, Canvas, Curtains, Frames, Covers & Carpet",
    "verify_source_url": "https://rnr-marine.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "boat-covers-direct",
@@ -2123,7 +2158,8 @@
    "product_evidence": "Our custom boat covers are made from Aqualon® Edge marine-grade fabric, offering superior durability, waterproof protection, and UV resistance. Each boat cover is precision-cut and hand-sewn by our skilled team at our headquarters near the Lake of the Ozarks",
    "verify_source_url": "https://www.worldsbestboatcover.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "atlantic-marine-canvas",
@@ -2142,7 +2178,7 @@
    "verify_source_url": "https://atlanticmarinecanvas.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "canvas-designers",
@@ -2167,9 +2203,9 @@
    "person_linkedin": "https://www.linkedin.com/in/tim-meehan-82688017b",
    "person_role_tier": "B",
    "person_match_reason": "Operations",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "andy@canvasdesigners.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "marine-tops-unlimited",
@@ -2377,7 +2413,7 @@
    "verify_source_url": "https://www.imarsales.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "sea-ray-accessories",
@@ -2611,7 +2647,16 @@
    "product_evidence": "Top and covers installation",
    "verify_source_url": "https://www.princecraft.com/us/en/index.aspx?erreur=true",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Selin Kar",
+   "person_title": "Program Director | New Product Development",
+   "person_linkedin": "https://www.linkedin.com/in/selin-kar",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "princecraft@princecraft.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "sunbrella-marine-fabricators",
@@ -3140,9 +3185,9 @@
    "person_linkedin": "https://www.linkedin.com/in/taylor-pask",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "service@occidentalleather.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "taylor@occidentalleather.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "toughbuilt",
@@ -3206,7 +3251,15 @@
    "verify_source_url": "https://goclc.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Dorian Love",
+   "person_title": "VP, Product Development & Design",
+   "person_linkedin": "https://www.linkedin.com/in/dorian-love-9b2963116",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "csanchez@goclc.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "pelican-products",
@@ -3368,7 +3421,16 @@
    "product_evidence": "Soft Bags",
    "verify_source_url": "https://www.raaco.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Tore Hermansen",
+   "person_title": "Head of R&D",
+   "person_linkedin": "https://dk.linkedin.com/in/tore-hermansen-94289b10a",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "ht@raaco.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "montezuma",
@@ -3690,9 +3752,9 @@
    "person_linkedin": "https://www.linkedin.com/in/christopher-radnovich-069ba34a",
    "person_role_tier": "A",
    "person_match_reason": "Engineering",
-   "person_email": "info@NARescue.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "cradnovich@narescue.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "conterra",
@@ -3789,9 +3851,9 @@
    "person_linkedin": "https://www.linkedin.com/in/katherine-pesik",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "pesik-katherine@galls.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "iron-duck",
@@ -3810,7 +3872,15 @@
    "verify_source_url": "https://ironduck.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Ken Cudworth",
+   "person_title": "Operations Manager",
+   "person_linkedin": "https://www.linkedin.com/in/ken-cudworth-a6391b399",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "ken@ironduck.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "prestige-medical",
@@ -3828,7 +3898,16 @@
    "product_evidence": "Prestige Medical continually innovates stethoscopes, aneroid sphygmomanometers, and medical accessories for today's healthcare professionals. EMS Products",
    "verify_source_url": "https://www.prestigemedical.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Sohan Hess",
+   "person_title": "Field Service Engineer",
+   "person_linkedin": "https://www.linkedin.com/in/sohan-hess-249558171",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "cs@prestigemedical.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "emi-international",
@@ -3882,7 +3961,16 @@
    "product_evidence": "Emergency medical supplies trusted by first responders, military, and professionals. Shop trauma kits, IFAKs, bleeding control kits, tourniquets & other life-saving gear.",
    "verify_source_url": "https://rescue-essentials.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Mike Willison",
+   "person_title": "VP of Operations",
+   "person_linkedin": null,
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "mwillison@rescue-essentials.com",
+   "person_email_status": "verified",
+   "person_source": "website+hunter-finder"
   },
   {
    "id": "allied-medical",
@@ -3919,7 +4007,7 @@
    "verify_source_url": "https://www.hartwellmedical.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "chinook-medical",
@@ -4045,7 +4133,8 @@
    "product_evidence": "We provide life safety products, training, and safety solutions to individuals, health care providers, and organizations of all sizes, and are one of the Mid-Atlantic's largest life safety training organizations and independent distributors of Automated External Defibrillators (AEDs) and supplies.",
    "verify_source_url": "https://rescue-one.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "zoll",
@@ -4223,9 +4312,9 @@
    "person_linkedin": "https://uk.linkedin.com/in/shahid-saleem-40017449",
    "person_role_tier": "A",
    "person_match_reason": "Engineering",
-   "person_email": "info@ferno.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "s.saleem@ferno.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "me-ber",
@@ -4250,9 +4339,9 @@
    "person_linkedin": "https://fr.linkedin.com/in/rania-abou-samra-phd-msc-1b93833",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": "contact@meber.it",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "rania.msc@meber.it",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "oscar-boscarol",
@@ -4271,7 +4360,7 @@
    "verify_source_url": "https://www.boscarol.it/ita/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "junkin-safety",
@@ -4290,7 +4379,15 @@
    "verify_source_url": "https://www.junkinsafety.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Benjamin Mercke",
+   "person_title": "Business Operations",
+   "person_linkedin": "https://www.linkedin.com/in/benjaminmercke",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "sales@junkinsafety.com",
+   "person_email_status": "published",
+   "person_source": "serper+hunter"
   },
   {
    "id": "life-assist",
@@ -4378,9 +4475,9 @@
    "person_linkedin": "https://in.linkedin.com/in/manoj-gaba",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "support@bluejayehb.com",
+   "person_email_status": "published",
+   "person_source": "serper+hunter"
   },
   {
    "id": "reliance-medical",
@@ -4398,7 +4495,16 @@
    "product_evidence": "World leading manufacturer and trade distributor of the highest quality surgical dressings, healthcare products, PPE, medical equipment and first aid supplies",
    "verify_source_url": "https://reliancemedical.co.uk/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Paul Knox",
+   "person_title": "Chief Technical Officer",
+   "person_linkedin": "https://uk.linkedin.com/in/paul-knox-564aa825",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": "paul.knox@reliancemedical.co.uk",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "timesco",
@@ -4477,9 +4583,9 @@
    "person_linkedin": "https://www.linkedin.com/in/evan-sweere-a65910132",
    "person_role_tier": "B",
    "person_match_reason": "Operations",
-   "person_email": "Sales@elitefirstaidinc.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "sweere@elitefirstaidinc.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "rescue-tech",
@@ -4497,7 +4603,8 @@
    "product_evidence": "Technical Rescue Equipment and Gear NFPA Technical Rescue and training Equipment and Gear for Fire, Industrial, Military, and Tactical Rescue Teams",
    "verify_source_url": "https://www.rescuetech1.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "dynamic-rescue-systems",
@@ -4603,9 +4710,9 @@
    "person_linkedin": "https://uk.linkedin.com/in/andrew-crooks-65a23a138",
    "person_role_tier": "B",
    "person_match_reason": "Manufacturing",
-   "person_email": "info@cunningham.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "david@cunningham.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "cover-tech",
@@ -4651,7 +4758,15 @@
    "verify_source_url": "https://www.coversunlimited.net/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Rob Cerato",
+   "person_title": "Chief Financial Officer & Operations Leader",
+   "person_linkedin": "https://www.linkedin.com/in/robcerato",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "cui@coversunlimited.net",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "machine-covers-usa",
@@ -4670,7 +4785,7 @@
    "verify_source_url": "https://www.alcocovers.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "national-covers",
@@ -4689,7 +4804,7 @@
    "verify_source_url": "https://www.nationalcovers.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "durabilt-covers",
@@ -4752,7 +4867,16 @@
    "product_evidence": "Powerblanket manufactures industrial heated blankets built for rugged conditions",
    "verify_source_url": "https://www.powerblanket.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Alex Pacanowsky",
+   "person_title": "VP of Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/alex-pacanowsky-43583914",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": "apacanowsky@powerblanket.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "shade-beyond",
@@ -4789,7 +4913,7 @@
    "verify_source_url": "https://fabricstructures-usa.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "herculite-fabricators",
@@ -4877,9 +5001,9 @@
    "person_linkedin": "https://www.linkedin.com/in/andrew-thoen-30161a1b",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "info@industrialnetting.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "dskogman@industrialnetting.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "national-tent-shade",
@@ -5012,9 +5136,9 @@
    "person_linkedin": "https://www.linkedin.com/in/rmefficiency",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "sales@heavydutytarps.com",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "scott@heavydutytarps.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "usa-canvas-shoppe",
@@ -5075,9 +5199,9 @@
    "person_linkedin": "https://www.linkedin.com/in/elliejs",
    "person_role_tier": "B",
    "person_match_reason": "Manufacturing",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "chip@shadeports.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "fabri-tech-components",
@@ -5102,9 +5226,9 @@
    "person_linkedin": "https://sg.linkedin.com/in/sonny-por-a3b8637",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": "sales@fabritech.net",
-   "person_email_status": "published",
-   "person_source": "serper+website"
+   "person_email": "terry.anest@fabritech.net",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter"
   },
   {
    "id": "custom-covers-central",
@@ -5285,7 +5409,7 @@
    "verify_source_url": "https://americantarping.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "dtr-fabricators",
@@ -5421,7 +5545,15 @@
    "verify_source_url": "https://www.aksa-carbon.com/",
    "verified_at": "2026-09-22",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-09-24"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Gürcan Koman",
+   "person_title": "Vice President of Akkök Chemicals and Advanced Materials (leading Aksa Carbon)",
+   "person_linkedin": null,
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "info@aksa-carbon.com",
+   "person_email_status": "published",
+   "person_source": "serper+hunter"
   },
   {
    "id": "toray-carbon",
@@ -5464,9 +5596,9 @@
    "person_linkedin": "https://www.linkedin.com/in/mark-janney-79a73611",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "mark@carbonconversions.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "sigmatex",
@@ -5509,9 +5641,9 @@
    "person_linkedin": "https://fr.linkedin.com/in/j%C3%A9r%C3%B4me-maupetit-1baa65aa",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "jerome.maupetit@chomarat.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "porcher-industries",
@@ -5536,9 +5668,9 @@
    "person_linkedin": "https://fr.linkedin.com/in/senecot-jean-marc",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_source": "serper"
+   "person_email": "senecot.phd@porcher-ind.com",
+   "person_email_status": "verified",
+   "person_source": "serper+hunter-finder"
   },
   {
    "id": "owens-corning-composites",
