@@ -47,6 +47,9 @@ jobs:
       SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
       PROSPEO_API_KEY: ${{ secrets.PROSPEO_API_KEY }}
       REOON_API_KEY: ${{ secrets.REOON_API_KEY }}
+      # Tomba (free tier): email finder + verifier. Both headers required; degrades gracefully if unset.
+      TOMBA_API_KEY: ${{ secrets.TOMBA_API_KEY }}
+      TOMBA_SECRET: ${{ secrets.TOMBA_SECRET }}
       MAX: ${{ github.event.inputs.max || '30' }}
       PRIORITY_ONLY: ${{ github.event.inputs.priority_only || 'false' }}
     steps:
