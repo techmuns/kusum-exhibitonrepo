@@ -1347,11 +1347,11 @@
    "person_linkedin": "https://www.linkedin.com/in/katie-venckus",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
+   "person_email": "admin@taramfg.com",
+   "person_email_status": "published",
    "person_email_verified": false,
    "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_source": "serper+website"
   },
   {
    "id": "hpi-pool-products",
@@ -1816,7 +1816,8 @@
    "product_evidence": "",
    "verify_source_url": "https://arlmontco.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "covers-all",
@@ -2116,7 +2117,8 @@
    "product_evidence": "",
    "verify_source_url": "https://websweeper.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "oceansouth",
@@ -2226,7 +2228,17 @@
    "verify_source_url": "https://www.worldsbestboatcover.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Jason Johnson",
+   "person_title": "General Manager",
+   "person_linkedin": null,
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "jjohnson@worldsbestboatcover.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "website+tomba"
   },
   {
    "id": "atlantic-marine-canvas",
@@ -2251,11 +2263,11 @@
    "person_linkedin": "https://ca.linkedin.com/in/jcstratton",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": "sales@atlanticmarinecanvas.com",
-   "person_email_status": "published",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper+website"
+   "person_email": "john.stratton@dal.ca",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "canvas-designers",
@@ -2619,7 +2631,18 @@
    "product_evidence": "",
    "verify_source_url": "https://benningtonmarine.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Ian Smith",
+   "person_title": "Vice President of Engineering",
+   "person_linkedin": "https://powerboat.world/news/274765/Bennington-appoints-new-VP-of-Engineering",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": "ismith@benningtonmarine.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "harris-pontoon-accessories",
@@ -2698,11 +2721,11 @@
    "person_linkedin": "https://www.linkedin.com/in/chris-wachowski-ba2841a",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_email": "chris.wachowski@scanstrut.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "crestliner-accessories",
@@ -3061,11 +3084,11 @@
    "person_linkedin": "https://www.linkedin.com/in/wadekrinke",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_email": "wade.krinke@wihatools.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "gedore",
@@ -3252,11 +3275,11 @@
    "person_linkedin": "https://www.linkedin.com/in/charles-kornoelje",
    "person_role_tier": "A",
    "person_match_reason": "Technology",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_email": "charlie.kornoelje@tekton.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "gearwrench",
@@ -3553,11 +3576,11 @@
    "person_linkedin": "https://de.linkedin.com/in/matthias-steber-8ba0a5189",
    "person_role_tier": "A",
    "person_match_reason": "CTO",
-   "person_email": "info@sortimo.de",
-   "person_email_status": "published",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper+website"
+   "person_email": "msteber@l-boxx.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "raaco",
@@ -4227,11 +4250,11 @@
    "person_linkedin": "https://www.linkedin.com/in/rick-mormino-03885a8",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "marketing@tacmedsolutions.com",
-   "person_email_status": "published",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper+website"
+   "person_email": "rmormino@tacmedsolutions.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "combat-medical",
@@ -4303,11 +4326,11 @@
    "person_linkedin": "https://www.linkedin.com/in/ryan-luby-b877bb69",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "sales@safeguardmedical.com",
-   "person_email_status": "published",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper+website"
+   "person_email": "ryanl@safeguardmedical.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "tacmed-solutions",
@@ -4332,11 +4355,11 @@
    "person_linkedin": "https://www.linkedin.com/in/rick-mormino-03885a8",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "info@tacmedaustralia.com.au",
-   "person_email_status": "published",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper+website"
+   "person_email": "rmormino@tacmedsolutions.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "rescue-one",
@@ -4380,11 +4403,11 @@
    "person_linkedin": "https://www.linkedin.com/in/jon-jaeb-772b149",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_email": "jjaeb@zoll.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "stryker-ems",
@@ -4717,9 +4740,11 @@
    "person_linkedin": "https://in.linkedin.com/in/manoj-gaba",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": "support@bluejayehb.com",
-   "person_email_status": "published",
-   "person_source": "serper+hunter"
+   "person_email": "manoj.gaba@draeger.com",
+   "person_email_status": "verified",
+   "person_source": "serper+prospeo",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28"
   },
   {
    "id": "reliance-medical",
@@ -4883,7 +4908,17 @@
    "verify_source_url": "https://www.tarpsplus.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Kirk Powell",
+   "person_title": "Purchasing and Supply Chain Manager",
+   "person_linkedin": "https://www.linkedin.com/in/kirk-powell",
+   "person_role_tier": "C",
+   "person_match_reason": "Purchasing",
+   "person_email": "customerservice@tarpsplus.com",
+   "person_email_status": "published",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+website+verified"
   },
   {
    "id": "mytee-products",
@@ -5167,7 +5202,17 @@
    "verify_source_url": "https://fabricstructures-usa.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Ken Stanley",
+   "person_title": "General Manager",
+   "person_linkedin": "https://rocketreach.co/ken-stanley-email_3921746",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "kstanley@fabricstructures-usa.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+tomba"
   },
   {
    "id": "herculite-fabricators",
@@ -5230,7 +5275,18 @@
    "product_evidence": "",
    "verify_source_url": "https://adfors.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Anton Cottrill",
+   "person_title": "Innovation and R&D Leader",
+   "person_linkedin": "https://www.linkedin.com/in/anton-cottrill-36633392",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "anton.cottrill@saint-gobain.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "industrial-netting",
@@ -5376,7 +5432,8 @@
    "product_evidence": "",
    "verify_source_url": "https://apexmills.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-09-28"
   },
   {
    "id": "heavy-duty-tarps",
@@ -5836,7 +5893,18 @@
    "product_evidence": "cost-efficient carbon fiber manufacturer",
    "verify_source_url": "https://zoltek.com/",
    "verified_at": "2026-09-22",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-09-28",
+   "person_name": "Geli Maurice",
+   "person_title": "Director Research and development",
+   "person_linkedin": "https://www.linkedin.com/in/geli-maurice-a4266183",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "maurice.geli@zoltek.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "aksa-carbon",
@@ -6140,7 +6208,17 @@
    "verify_source_url": "https://fiberfusiongroup.com/aerospace-carbon-fiber-components/",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-09-28"
+   "person_checked_at": "2026-09-28",
+   "person_name": "Nhu-Thuan Pham-Bui",
+   "person_title": "Product Development Engineer | R&D Connectivity",
+   "person_linkedin": "https://ca.linkedin.com/in/nhu-thuan-pham-bui",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "nhuthuan.phambui@belden.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "fibre-glast-composites",
@@ -6194,11 +6272,11 @@
    "person_linkedin": "https://www.linkedin.com/in/bill-smrtic-45033811",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_email": "bill.smrtic@composites.aero",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "tiptop-composites",
@@ -6329,11 +6407,11 @@
    "person_linkedin": "https://www.linkedin.com/in/bruce-landfield-51150777",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": "sales@andersoncomposites.com",
-   "person_email_status": "published",
-   "person_email_verified": false,
-   "person_email_checked_at": null,
-   "person_source": "serper+website"
+   "person_email": "bruce@andersoncomposites.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-09-28",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "vizon-high-performance-fiber",
@@ -6763,11 +6841,11 @@
    "person_linkedin": "https://cn.linkedin.com/in/jadechan2023",
    "person_role_tier": "A",
    "person_match_reason": "Product Development",
-   "person_email": null,
-   "person_email_status": "none",
+   "person_email": "info@derflex.com",
+   "person_email_status": "published",
    "person_email_verified": false,
    "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_source": "serper+website"
   },
   {
    "id": "wuxi-xianglong-polymer-fabric-co-ltd",
