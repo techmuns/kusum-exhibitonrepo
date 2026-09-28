@@ -1940,6 +1940,7 @@ function classifyEmail(c) {
   if (isCompanyInbox(email)) return 'company';                    // role inbox — never "verified"
   const st = c.email_status;
   if (st === 'verified' || st === 'verified (manual)') return 'verified';
+  if (c.email_verified === true) return 'verified';               // deliverability-confirmed by the engine's verify-before-trust pass
   if (looksPersonal(email, c.name)) return 'personal';
   return 'company';                                               // real, but neither verified nor clearly a person
 }
@@ -1950,11 +1951,13 @@ const EMAIL_CLASS = {
   none: ['#94a3b8', 'No email'],
 };
 // Colored email badge for a contact. In compact cells (big=false) a "No email" contact shows nothing.
+// A ✓ marks a deliverability-verified address; ✉ marks the rest (personal-looking, company inbox, none).
 function emailClassBadge(c, big = false) {
   const cls = classifyEmail(c);
   if (cls === 'none' && !big) return '';
   const [color, label] = EMAIL_CLASS[cls];
-  return `<span class="inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold" style="background:${color}1f;color:${darken(color, 0.3)}">✉ ${label}</span>`;
+  const icon = cls === 'verified' ? '✓' : '✉';
+  return `<span class="inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold" style="background:${color}1f;color:${darken(color, 0.3)}">${icon} ${label}</span>`;
 }
 
 /* ---- "🔍 Find email" (manual ContactOut/Apollo-style backup) ----
@@ -2040,6 +2043,7 @@ function resolvedContact(id) {
     linkedin_url: (a && a.linkedin_url) || m.linkedin_url || null,
     email: m.email || (a && a.email) || null,
     email_status: m.email_status || (a && a.email_status) || null,
+    email_verified: (m.email ? m.email_verified : (a && a.email_verified)) || false,
     source: m.source || (a && a.source) || '',
     confidence: (a && a.confidence) || 'manual',
     role_tier: (a && a.role_tier) || null,
@@ -2064,6 +2068,7 @@ function displayContact(id) {
     linkedin_url: c.linkedin_url || null,
     email: realEmail ? c.email : null,
     email_status: realEmail ? c.email_status : null,
+    email_verified: realEmail ? (c.email_verified || false) : false,
     source: c.source, confidence: c.confidence,
     role_tier: c.role_tier || null,
     match_reason: c.match_reason || '',

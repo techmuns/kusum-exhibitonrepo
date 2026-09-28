@@ -17,9 +17,12 @@
 //           Firecrawl search → askClaude picks the highest-tier person from the REAL result snippets
 //           (snippet text ONLY, never invented). PDL person search upgrades a weak/empty result.
 //   EMAIL (only a real "@", verified where possible; NEVER a boolean/placeholder/guess-unverified):
-//           Hunter (verified) → Prospeo finder (verified) → PDL work email IF a real "@" → published
-//           address on the company site → guess common patterns kept ONLY if Reoon marks it "safe".
-//           No real address → email_status "none". We do NOT fabricate emails.
+//           Hunter (verified) → Prospeo finder (verified) → Tomba finder (free, verified) → PDL work
+//           email IF a real "@" → published address on the company site → guess common patterns.
+//           VERIFY-BEFORE-TRUST: the finder hits are provider-checked, but the scraped website inbox
+//           and any pattern-guess are run through Reoon/Tomba deliverability first — kept only if
+//           deliverable, DROPPED on an undeliverable verdict, left unverified (rolls to next run) only
+//           when no checker could answer. No real address → email_status "none". We NEVER fabricate.
 //
 // HONEST LIMIT: finding the right PERSON + LinkedIn is free and reliable; a VERIFIED PERSONAL
 // EMAIL at scale needs a paid finder (Hunter/ContactOut). So expect most rows to get a person +
@@ -37,8 +40,10 @@
 // then broader leads. Capped by MAX (default 30). Graceful: needs BEDROCK_API_KEY or PDL_API_KEY for
 // person selection — without both it writes nothing and exits 0. Never throws.
 //
+// Keys: HUNTER_API_KEY, PROSPEO_API_KEY, PDL_API_KEY, REOON_API_KEY, TOMBA_API_KEY + TOMBA_SECRET.
 // Test hooks: KGR_OUTREACH_PATH / KGR_LEADS_PATH / KGR_RESEARCH_PATH, and KGR_FAKE_SEARCH /
-// KGR_FAKE_PICK / KGR_FAKE_EMAIL for offline logic tests (see scripts/… tests).
+// KGR_FAKE_PICK / KGR_FAKE_EMAIL / KGR_FAKE_TOMBA_FIND / KGR_FAKE_WEBSITE / KGR_FAKE_VERIFY for
+// offline logic tests (see scripts/… tests).
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -59,7 +64,17 @@ const PRIORITY_ONLY = /^(1|true|yes)$/i.test(process.env.PRIORITY_ONLY || '');
 const HUNTER = process.env.HUNTER_API_KEY || '';
 const PDL = process.env.PDL_API_KEY || '';
 const PROSPEO = process.env.PROSPEO_API_KEY || '';   // email finder (LinkedIn URL / name+domain → verified email)
-const REOON = process.env.REOON_API_KEY || '';       // email verifier (guessed addresses)
+const REOON = process.env.REOON_API_KEY || '';       // email verifier (funded — guesses + deliverability safety pass)
+const TOMBA_KEY = process.env.TOMBA_API_KEY || '';   // Tomba email finder + verifier (free tier)
+const TOMBA_SECRET = process.env.TOMBA_SECRET || ''; // paired secret — both headers required
+const haveTomba = () => !!(TOMBA_KEY && TOMBA_SECRET);
+// Non-negative int from env, honoring an explicit 0 (a plain `|| default` would swallow 0).
+const intEnv = (v, d) => { const n = parseInt(v, 10); return Number.isFinite(n) && n >= 0 ? n : d; };
+// Per-run caps to stay inside Tomba's free monthly credits (~25 finds + ~50 verifies).
+const TOMBA_CAP = intEnv(process.env.TOMBA_CAP, 20);
+// Deliverability safety-check budget/run (Reoon + Tomba verifier combined). Callers process tier-A rows
+// first, so the budget is spent on the best rows; the rest roll to next week's run.
+const VERIFY_MAX = intEnv(process.env.VERIFY_MAX, 40);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const domainOf = (l) => { try { return l && l.website ? new URL(String(l.website).startsWith('http') ? l.website : 'https://' + l.website).hostname.replace(/^www\./, '') : ''; } catch { return ''; } };
@@ -93,6 +108,8 @@ function htmlToText(html) {
 const asUrl = (v) => { const s = String(v || '').trim(); if (!s) return ''; return s.startsWith('http') ? s : 'https://' + s; };
 // Circuit breakers — the paid boosters run out of credits (402); once dead, stop hammering them.
 let fcDead = false, pdlDead = false, fcScrapeDead = false, serperDead = false;
+// Email step: Tomba finder/verifier + Reoon breakers, per-run counters. Disabled on 401/402/429.
+let tombaFindCalls = 0, tombaFindDead = false, tombaVerifyDead = false, reoonDead = false, verifyCalls = 0;
 
 /* ---------------- Role tiers (the heart of this brick) ---------------- */
 // Ordered keyword → human label. First match wins within a tier.
@@ -345,14 +362,94 @@ async function prospeo(path, body) {
 const prospeoFromLinkedin = (url) => (url ? prospeo('social-url-enrichment', { url }) : Promise.resolve(null));
 async function prospeoFromName(name, domain) { const n = splitName(name); return (n && domain) ? prospeo('email-finder', { first_name: n.first, last_name: n.last, company: domain }) : null; }
 
-async function reoonSafe(email) {
-  if (!REOON || !realEmail(email)) return false;
+/* ---- Tomba (free finder + verifier) — auth via X-Tomba-Key + X-Tomba-Secret headers ---- */
+const tombaHeaders = () => ({ 'X-Tomba-Key': TOMBA_KEY, 'X-Tomba-Secret': TOMBA_SECRET, accept: 'application/json' });
+const tombaTrip = (status) => status === 401 || status === 402 || status === 429; // auth / out-of-credit / rate-limited
+// Tomba's docs use query-param endpoints (?domain= / ?email=); its SDKs use a /{path} segment. The two differ
+// and a wrong shape returns 404, so we try the documented query form first, fall back to the path form on a
+// 404, and cache whichever the API accepts for the rest of the run.
+let tombaFindForm = 0, tombaVerifyForm = 0;
+const tombaFindUrls = (domain, n) => { const qs = `first_name=${encodeURIComponent(n.first)}&last_name=${encodeURIComponent(n.last)}`; return [`https://api.tomba.io/v1/email-finder?domain=${encodeURIComponent(domain)}&${qs}`, `https://api.tomba.io/v1/email-finder/${encodeURIComponent(domain)}?${qs}`]; };
+const tombaVerifyUrls = (email) => [`https://api.tomba.io/v1/email-verifier?email=${encodeURIComponent(email)}`, `https://api.tomba.io/v1/email-verifier/${encodeURIComponent(email)}`];
+// Try the cached form first, then the other on a 404. Returns { res, form } for the first non-404, or null (both 404).
+async function tombaFetch(urls, startForm) {
+  for (const f of (startForm === 1 ? [1, 0] : [0, 1])) {
+    const res = await fetch(urls[f], { headers: tombaHeaders(), signal: AbortSignal.timeout(30_000) });
+    if (res.status !== 404) return { res, form: f };
+  }
+  return null;
+}
+// Tomba EMAIL FINDER — a precise personal email for a KNOWN person.
+// Returns a real "@" (only a non-disposable, non-"invalid" hit) or null. Graceful; capped; trips the breaker on 401/402/429.
+async function tombaFind(name, domain) {
+  if (!haveTomba() || tombaFindDead || tombaFindCalls >= TOMBA_CAP) return null;
+  const n = splitName(name); if (!n || !domain) return null;
+  if (process.env.KGR_FAKE_TOMBA_FIND) { tombaFindCalls++; try { const m = JSON.parse(process.env.KGR_FAKE_TOMBA_FIND); return realEmail(m[domain] || m[name] || m['*']); } catch { return null; } }
+  tombaFindCalls++;
+  try {
+    const hit = await tombaFetch(tombaFindUrls(domain, n), tombaFindForm);
+    if (!hit) { console.error('[find-contacts] Tomba finder 404 (both URL forms) — disabling'); tombaFindDead = true; return null; }
+    tombaFindForm = hit.form; const res = hit.res;
+    if (!res.ok) { if (tombaTrip(res.status)) tombaFindDead = true; console.error(`[find-contacts] Tomba finder ${res.status}`); return null; }
+    const d = ((await res.json()) || {}).data || {};
+    const email = realEmail(d.email); if (!email) return null;
+    if (d.disposable === true) return null;                                        // never store a disposable address
+    if (String((d.verification && d.verification.status) || '').toLowerCase() === 'invalid') return null;
+    return email;
+  } catch (e) { console.error(`[find-contacts] Tomba finder failed (ok): ${e.message}`); return null; }
+}
+// Tomba EMAIL VERIFIER — deliverability of ANY address.
+// 'good' (deliverable) | 'bad' (undeliverable) | null (inconclusive / couldn't check).
+async function tombaVerify(email) {
+  if (!haveTomba() || tombaVerifyDead || !realEmail(email)) return null;
+  try {
+    const hit = await tombaFetch(tombaVerifyUrls(email), tombaVerifyForm);
+    if (!hit) { tombaVerifyDead = true; return null; }
+    tombaVerifyForm = hit.form; const res = hit.res;
+    if (!res.ok) { if (tombaTrip(res.status)) tombaVerifyDead = true; return null; }
+    const e = (((await res.json()) || {}).data || {}).email || {};
+    const result = String(e.result || '').toLowerCase(); const status = String(e.status || '').toLowerCase();
+    if (result === 'deliverable' || status === 'valid') return 'good';
+    if (result === 'undeliverable' || status === 'invalid' || e.disposable === true) return 'bad';
+    return null;                                                                   // risky / accept_all / webmail / unknown → inconclusive
+  } catch { return null; }
+}
+
+// Reoon verdict for an address: 'good' (safe) | 'bad' (definitely undeliverable) | null (inconclusive / couldn't check).
+async function reoonVerdict(email) {
+  if (!REOON || reoonDead || !realEmail(email)) return null;
   try {
     const res = await fetch(`https://emailverifier.reoon.com/api/v1/verify?email=${encodeURIComponent(email)}&key=${encodeURIComponent(REOON)}&mode=power`, { signal: AbortSignal.timeout(30_000) });
-    if (!res.ok) return false;
-    const data = await res.json();
-    return String((data && data.status) || '').toLowerCase() === 'safe';
-  } catch { return false; }
+    if (!res.ok) { if (res.status === 401 || res.status === 402 || res.status === 429) reoonDead = true; return null; }
+    const st = String((((await res.json()) || {}).status) || '').toLowerCase();
+    if (st === 'safe') return 'good';
+    if (st === 'invalid' || st === 'disposable' || st === 'spamtrap') return 'bad';
+    return null;                                          // catch_all / unknown / role_account → inconclusive (don't drop a real address on this)
+  } catch { return null; }
+}
+// Deliverability safety check for an address we did NOT get from a finder (a scraped website inbox, or a guess).
+// Reoon (funded) first, then the Tomba verifier. Budget-capped per run (VERIFY_MAX); the callers process
+// tier-A rows first, so the budget lands on the best rows. Returns:
+//   true  → confirmed deliverable (trust it)
+//   false → a checker says undeliverable (DROP it — never store a risky address)
+//   null  → couldn't check (no key / budget spent / all inconclusive) → keep as-is, roll to next run; NEVER drop on our own outage.
+async function verifyDeliverable(email) {
+  if (!realEmail(email)) return false;
+  if (process.env.KGR_FAKE_VERIFY) {
+    if (verifyCalls >= VERIFY_MAX) return null;
+    verifyCalls++;
+    try { const v = (JSON.parse(process.env.KGR_FAKE_VERIFY)[email]) ?? JSON.parse(process.env.KGR_FAKE_VERIFY)['*'];
+      if (v === 'good' || v === true) return true; if (v === 'bad' || v === false) return false; return null; } catch { return null; }
+  }
+  if (REOON && !reoonDead && verifyCalls < VERIFY_MAX) {
+    verifyCalls++;
+    const v = await reoonVerdict(email); if (v === 'good') return true; if (v === 'bad') return false;
+  }
+  if (haveTomba() && !tombaVerifyDead && verifyCalls < VERIFY_MAX) {
+    verifyCalls++;
+    const v = await tombaVerify(email); if (v === 'good') return true; if (v === 'bad') return false;
+  }
+  return null;
 }
 function emailPatterns(name, domain) {
   const n = splitName(name); if (!n || !domain) return [];
@@ -361,13 +458,15 @@ function emailPatterns(name, domain) {
   return [`${f}.${l}@${domain}`, `${f[0]}${l}@${domain}`, `${f}@${domain}`, `${f[0]}.${l}@${domain}`, `${f}${l}@${domain}`];
 }
 async function guessAndVerify(name, domain) {
-  if (!REOON) return null;
-  for (const e of emailPatterns(name, domain)) if (await reoonSafe(e)) return e;
+  // A SYNTHESIZED address — keep ONLY on a POSITIVE deliverability verdict (Reoon/Tomba), never on an
+  // inconclusive one. When no checker is available it yields nothing, so we never store an unverified guess.
+  for (const e of emailPatterns(name, domain)) if ((await verifyDeliverable(e)) === true) return e;
   return null;
 }
 // Published address on the company website — free fetch first, Scrape.do, then Firecrawl.
 async function websiteEmail(website, debug) {
   const base = String(website).replace(/\/$/, '');
+  if (process.env.KGR_FAKE_WEBSITE) { try { const d = new URL(base).hostname.replace(/^www\./, ''); return JSON.parse(process.env.KGR_FAKE_WEBSITE)[d] || null; } catch { return null; } }
   let text = '';
   for (const u of [`${base}/contact`, `${base}/about`, base]) {
     const html = await freeFetchText(u);
@@ -392,22 +491,36 @@ function fakeEmail(person, domain) {
   } catch { return undefined; }
 }
 
-// Find the best real email for a chosen person. Returns { email, email_status, via } — status ∈ verified|published|none.
+// Find the best real email for a chosen person. Returns { email, email_status, via, email_verified, email_checked_at }.
+//   email_status ∈ verified|published|none · email_verified=true means a finder/verifier vouched for it today.
+// Finder hits (Hunter/Prospeo/Tomba/PDL) are already deliverability-checked by the provider, so they are
+// trusted as-is; the scraped website address and any guess go through verifyDeliverable() before we keep them.
 async function findEmail(person, domain, debug) {
   const fk = fakeEmail(person, domain); if (fk !== undefined) return fk;
   if (!domain) return { email: null, email_status: 'none', via: '' };
+  const nowISO = new Date().toISOString().slice(0, 10);
+  const finderHit = (email, via) => ({ email, email_status: isCompanyInbox(email) ? 'published' : 'verified', via, email_verified: true, email_checked_at: nowISO });
   // 1a) Hunter EMAIL FINDER (precise personal email for the known person) — try first when we have a name.
-  if (HUNTER && person.name) { const hf = await hunterFindEmail(person.name, domain); if (hf) return { email: hf, email_status: isCompanyInbox(hf) ? 'published' : 'verified', via: 'hunter-finder' }; }
+  if (HUNTER && person.name) { const hf = await hunterFindEmail(person.name, domain); if (hf) return finderHit(hf, 'hunter-finder'); }
   // 1b) Hunter domain-search (verified) — pick the best-ranked person/inbox on the domain.
-  if (HUNTER) { const h = await hunterEmail(person.title, domain); const he = realEmail(h && h.email); if (he) return { email: he, email_status: isCompanyInbox(he) ? 'published' : 'verified', via: 'hunter' }; }
+  if (HUNTER) { const h = await hunterEmail(person.title, domain); const he = realEmail(h && h.email); if (he) return finderHit(he, 'hunter'); }
   // 2) Prospeo (verified) — LinkedIn URL, else name + domain
-  if (PROSPEO) { const pp = (await prospeoFromLinkedin(person.linkedin_url)) || (person.name ? await prospeoFromName(person.name, domain) : null); if (pp) return { email: pp, email_status: isCompanyInbox(pp) ? 'published' : 'verified', via: 'prospeo' }; }
+  if (PROSPEO) { const pp = (await prospeoFromLinkedin(person.linkedin_url)) || (person.name ? await prospeoFromName(person.name, domain) : null); if (pp) return finderHit(pp, 'prospeo'); }
+  // 2b) Tomba EMAIL FINDER (free) — a precise personal email; before PDL/website/guess (free-first).
+  if (haveTomba() && person.name) { const tf = await tombaFind(person.name, domain); if (tf) return finderHit(tf, 'tomba'); }
   // 3) PDL work email (only a real "@")
-  const pe = realEmail(person.pdlEmail); if (pe) return { email: pe, email_status: isCompanyInbox(pe) ? 'published' : 'verified', via: 'pdl' };
-  // 4) Published website address (may be a role inbox → "published"; UI shows the 📪 badge)
-  if ((firecrawlKey() || haveScrapedo() || true) && domain) { const pub = realEmail(await websiteEmail('https://' + domain, debug)); if (pub) return { email: pub, email_status: 'published', via: 'website' }; }
-  // 5) Guess a pattern, keep only if Reoon marks it "safe"
-  if (person.name) { const g = await guessAndVerify(person.name, domain); if (g) return { email: g, email_status: isCompanyInbox(g) ? 'published' : 'verified', via: 'guess' }; }
+  const pe = realEmail(person.pdlEmail); if (pe) return finderHit(pe, 'pdl');
+  // 4) Published website address — VERIFY deliverability before we trust it (never keep an inbox that may not exist).
+  if (domain) {
+    const pub = realEmail(await websiteEmail('https://' + domain, debug));
+    if (pub) {
+      const verdict = await verifyDeliverable(pub);                 // true | false | null
+      if (verdict === false) { console.error(`[find-contacts] dropped risky website email ${pub} @ ${domain} (verifier: undeliverable)`); }
+      else return { email: pub, email_status: 'published', via: verdict === true ? 'website+verified' : 'website', email_verified: verdict === true, email_checked_at: verdict === null ? null : nowISO };
+    }
+  }
+  // 5) Guess a pattern, keep ONLY on a positive deliverability verdict (never fabricate).
+  if (person.name) { const g = await guessAndVerify(person.name, domain); if (g) return { email: g, email_status: isCompanyInbox(g) ? 'published' : 'verified', via: 'guess', email_verified: true, email_checked_at: nowISO }; }
   return { email: null, email_status: 'none', via: '' };
 }
 
@@ -417,7 +530,7 @@ async function main() {
   // email providers — so we no longer exit early; we skip the primary pass and still run the upgrade.
   const canFindPeople = haveBedrock() || !!PDL;
   if (!canFindPeople) console.log('[find-contacts] no BEDROCK_API_KEY/PDL_API_KEY — skipping person discovery; email-upgrade pass only.');
-  console.log(`[find-contacts] search: serper=${haveSerper() ? 'yes' : 'no'} (primary) ddg=free firecrawl=${firecrawlKey() ? 'yes' : 'no'} | readers: free=yes scrapedo=${haveScrapedo() ? 'yes' : 'no'} | person: bedrock=${haveBedrock() ? 'yes' : 'no'} pdl=${PDL ? 'yes' : 'no'} | email: hunter=${HUNTER ? 'yes' : 'no'} prospeo=${PROSPEO ? 'yes' : 'no'} reoon=${REOON ? 'yes' : 'no'}`);
+  console.log(`[find-contacts] search: serper=${haveSerper() ? 'yes' : 'no'} (primary) ddg=free firecrawl=${firecrawlKey() ? 'yes' : 'no'} | readers: free=yes scrapedo=${haveScrapedo() ? 'yes' : 'no'} | person: bedrock=${haveBedrock() ? 'yes' : 'no'} pdl=${PDL ? 'yes' : 'no'} | email: hunter=${HUNTER ? 'yes' : 'no'} prospeo=${PROSPEO ? 'yes' : 'no'} tomba=${haveTomba() ? 'yes' : 'no'} reoon=${REOON ? 'yes' : 'no'} | verify-before-trust: budget=${VERIFY_MAX}/run (tomba-find cap=${TOMBA_CAP})`);
 
   const leads = await loadLeads();
   const outreach = await loadJson(OUTREACH_PATH, {});
@@ -472,6 +585,8 @@ async function main() {
         linkedin_url: person.linkedin_url || null,
         email: em.email,
         email_status: em.email_status,
+        email_verified: em.email_verified || false,
+        email_checked_at: em.email_checked_at || null,
         source: [person.source, em.via].filter(Boolean).join('+') || 'web',
         confidence: person.source === 'pdl' ? 'high' : (person.tier ? 'medium' : 'low'),
         role_tier: person.tier || null,
@@ -489,6 +604,8 @@ async function main() {
         t.person_match_reason = person.reason || '';
         t.person_email = em.email;
         t.person_email_status = em.email_status;
+        t.person_email_verified = em.email_verified || false;
+        t.person_email_checked_at = em.email_checked_at || null;
         t.person_source = contact.source;
       }
       console.log(`[find-contacts] ${item.company}: ${person.name} · ${person.title || '?'} · tier ${person.tier || '-'} · email ${em.email_status}${em.email ? ' (' + em.via + ')' : ''}`);
@@ -538,10 +655,10 @@ async function main() {
       const base = (row.c && typeof row.c === 'object') ? row.c
         : { name: row.person.name, title: row.person.title, linkedin_url: row.person.linkedin_url, role_tier: row.tier, confidence: row.tier ? 'medium' : 'low', match_reason: (row.t && row.t.person_match_reason) || '' };
       const personSrc = String((base.source || (row.t && row.t.person_source) || 'web')).split('+')[0] || 'web';
-      const contact = { ...base, name: base.name || row.person.name, email: em.email, email_status: em.email_status, source: [personSrc, em.via].filter(Boolean).join('+') };
+      const contact = { ...base, name: base.name || row.person.name, email: em.email, email_status: em.email_status, email_verified: em.email_verified || false, email_checked_at: em.email_checked_at || null, source: [personSrc, em.via].filter(Boolean).join('+') };
       outreach[row.id] = { ...(outreach[row.id] || {}), contact };  // → dashboard + Gmail draft recipient
       changedOutreach = true;
-      if (row.t) { row.t.person_email = em.email; row.t.person_email_status = em.email_status; row.t.person_source = contact.source; changedResearch = true; } // → research_targets.json
+      if (row.t) { row.t.person_email = em.email; row.t.person_email_status = em.email_status; row.t.person_email_verified = em.email_verified || false; row.t.person_email_checked_at = em.email_checked_at || null; row.t.person_source = contact.source; changedResearch = true; } // → research_targets.json
       up.upgraded++; if (em.email_status === 'verified') up.verified++; else if (em.email_status === 'published') up.published++;
       console.log(`[find-contacts] upgrade ${row.person.name} @ ${row.domain}: ${curEmail || 'none'} → ${em.email} (${em.email_status} via ${em.via})`);
     }
