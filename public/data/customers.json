@@ -1,0 +1,7 @@
+{
+ "generated_by": "client-sharepoint",
+ "updated_at": null,
+ "source_note": "Pending first SharePoint sync — add the SHAREPOINT_USER / SHAREPOINT_PASS / SHAREPOINT_FOLDER_URL secrets, then run the 'Product & customer sync (SharePoint)' workflow. It fills this file with the real existing-customer list and future opportunities.",
+ "customers": [],
+ "opportunities": []
+}

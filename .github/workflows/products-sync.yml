@@ -1,0 +1,94 @@
+name: Product & customer sync (SharePoint)
+
+# Auto-imports the client's product/customer sales tables from SharePoint and rebuilds
+# public/data/products.json + public/data/customers.json from the REAL files.
+# Isolated from the daily refresh: it needs a browser + xlsx parser (npm install), so it lives in its
+# own workflow. Runs weekly + on demand.
+#   • Expected block (no creds / a login-verification wall / no files): the importer exits 0, the data
+#     files are untouched, the job stays GREEN, and a screenshot of the login screen is uploaded.
+#   • Genuine failure (a file can't be read, or the parse yields no valid products): the importer exits
+#     nonzero and the job goes RED — it never silently commits a partial or blank master.
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly, Monday 02:37 UTC (~08:07 IST). Off the :00/:15/:30/:45 marks that GitHub delays.
+    - cron: "37 2 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: products-sync-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    # Backstop against a hang (login/download/parse are fast — no AI phase). Sits above the per-step timeouts.
+    timeout-minutes: 20
+    # NB: the SharePoint secrets are deliberately NOT set at job scope. They are attached ONLY to the
+    # importer step below, so the npm install (which could run third-party dependency lifecycle scripts)
+    # never sees the SharePoint credentials.
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # This importer (unlike the pure-Node ones) needs a browser + xlsx.
+      # --ignore-scripts: don't run any dependency lifecycle scripts during install (defence in depth;
+      #   the browser is fetched by the explicit "playwright install" step below, not a postinstall).
+      # xlsx is pinned to the last npm release with the stable read API.
+      - name: Install deps
+        run: npm install --no-save --ignore-scripts playwright "xlsx@0.18.5"
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      # No continue-on-error: a genuine failure (unreadable file / no valid parse) exits nonzero and turns
+      # the job red. An expected login/verification block exits 0, so the job stays green.
+      # Secrets are scoped to THIS step only (see note above). SHAREPOINT_TOTP is optional (the account has no MFA).
+      - name: Import product + customer master
+        env:
+          SHAREPOINT_USER: ${{ secrets.SHAREPOINT_USER }}
+          SHAREPOINT_PASS: ${{ secrets.SHAREPOINT_PASS }}
+          SHAREPOINT_FOLDER_URL: ${{ secrets.SHAREPOINT_FOLDER_URL }}
+          SHAREPOINT_TOTP: ${{ secrets.SHAREPOINT_TOTP }}
+        run: node scripts/sharepoint/fetch-products.mjs
+
+      # Upload the debug screenshot even if the previous step failed (shows any login/verification wall).
+      # continue-on-error: a transient artifact-upload failure must never block the commit step below.
+      - name: Upload debug screenshot
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: sharepoint-debug
+          path: sharepoint-debug.png
+          if-no-files-found: ignore
+          retention-days: 14
+
+      # Commit products.json + customers.json only if they actually changed, with the rebase-retry push loop.
+      - name: Commit & push if changed
+        run: |
+          if [ -z "$(git status --porcelain public/data/products.json public/data/customers.json)" ]; then
+            echo "No product/customer changes — nothing to commit."
+            exit 0
+          fi
+          git config user.name "kgr-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          node scripts/update-meta.mjs
+          git add public/data/products.json public/data/customers.json public/data/meta.json
+          git commit -m "chore(data): sync products + customers from SharePoint ($(date -u +%Y-%m-%d))"
+          branch="${GITHUB_REF_NAME}"
+          for i in 1 2 3 4; do
+            if git pull --rebase origin "$branch" && git push origin "HEAD:$branch"; then
+              echo "Pushed on attempt $i."
+              exit 0
+            fi
+            echo "Push attempt $i failed; retrying in $((2**i))s..."
+            sleep $((2**i))
+          done
+          echo "Failed to push after retries." >&2
+          exit 1
