@@ -124,6 +124,7 @@ const TABS = [
   { id: 'leads', label: 'Exhibitors', icon: '🏢', live: true },   // companies exhibiting at the shows
   { id: 'competitors', label: 'Competitors', icon: '🛡️', live: true },
   { id: 'outreach', label: 'Outreach', icon: '📮', live: true },
+  { id: 'customers', label: 'Customers', icon: '👥', live: true },   // existing customers + future opportunities (SharePoint sync)
   // Products live behind a header button (reference catalog), not a primary tab.
 ];
 
@@ -205,6 +206,9 @@ const state = {
   exhibitionsSub: 'shows',     // 'shows' | 'associations'  (Exhibitions tab sub-view)
   productsSub: 'catalog', // 'catalog' | 'coverage'
   productFilters: { search: '', industry: 'all', family: 'all' },
+  customers: [],               // existing customers (customers.json) — who buys what
+  opportunities: [],           // future opportunities (IT segment) from the SharePoint sync
+  customerFilters: { search: '', segment: 'all' },
   leadsSub: 'list',       // exhibitors are one comprehensive table now
   leadFilters: { search: '', segment: 'all', country: 'all', priority: 'all', emailClass: 'all', view: 'all', show: 'all' },
   leadSort: { key: 'company', dir: 'asc' },
@@ -1292,10 +1296,12 @@ function productRow(p) {
   const deniers = p.deniers && p.deniers !== '—' ? ` · ${escapeHtml(p.deniers)}` : '';
   const apps = (p.applications || []).join(', ');
   const srcBadge = p.source && p.source !== 'seed'
-    ? `<span class="ml-1 rounded bg-indigo-50 px-1.5 py-0.5 align-middle text-[10px] font-semibold text-indigo-500" title="Found on ${escapeHtml(p.source)}">↗</span>` : '';
+    ? `<span class="ml-1 rounded bg-indigo-50 px-1.5 py-0.5 align-middle text-[10px] font-semibold text-indigo-500" title="Source: ${escapeHtml(p.source)}">↗</span>` : '';
+  const custBadge = Number.isInteger(p.customer_count) && p.customer_count > 0
+    ? `<span class="ml-1.5 inline-flex items-center gap-0.5 rounded-full bg-emerald-50 px-1.5 py-0.5 align-middle text-[10px] font-semibold text-emerald-600" title="${p.customer_count} existing customer(s) buy this">👥 ${p.customer_count}</span>` : '';
   return `
     <tr class="border-t border-slate-100 align-top hover:bg-slate-50/60">
-      <td class="px-3 py-2.5"><div class="font-display text-sm font-bold leading-tight text-slate-800">${escapeHtml(p.name)}${srcBadge}</div></td>
+      <td class="px-3 py-2.5"><div class="font-display text-sm font-bold leading-tight text-slate-800">${escapeHtml(p.name)}${srcBadge}${custBadge}</div></td>
       <td class="whitespace-nowrap px-3 py-2.5 text-[13px] text-slate-500">${escapeHtml(p.base || '—')}${deniers}</td>
       <td class="px-3 py-2.5"><div class="flex flex-wrap gap-1">${coatings}</div></td>
       <td class="px-3 py-2.5"><div class="flex flex-wrap gap-1.5">${props}</div></td>
@@ -1333,9 +1339,76 @@ function refreshCatalog() {
   const c = $('#pCount'); if (c) c.textContent = filteredProducts().length;
 }
 
+/* ---- Customers view (existing customers + future opportunities, from the SharePoint sync) ---- */
+const customerSegments = () => [...new Set(state.customers.flatMap((c) => c.segments || []))].filter(Boolean).sort();
+const productNameById = (id) => { const p = state.products.find((x) => x.id === id); return p ? p.name : id; };
+function filteredCustomers() {
+  const f = state.customerFilters; const q = f.search.trim().toLowerCase();
+  return state.customers.filter((c) => {
+    if (f.segment !== 'all' && !(c.segments || []).includes(f.segment)) return false;
+    if (q) { const hay = `${c.name} ${(c.segments || []).join(' ')} ${(c.applications || []).join(' ')}`.toLowerCase(); if (!hay.includes(q)) return false; }
+    return true;
+  });
+}
+function customerCard(c) {
+  const segs = (c.segments || []).map((s) => coloredChip(s, anyColor(s))).join(' ') || '<span class="text-slate-300">—</span>';
+  const prods = (c.products || []).map((id) => `<span class="rounded-md bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600">${escapeHtml(productNameById(id))}</span>`).join(' ') || '<span class="text-slate-300">—</span>';
+  const apps = (c.applications || []).join(', ');
+  return `<div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-100">
+    <div class="font-display text-sm font-bold text-slate-800">${escapeHtml(c.name)}</div>
+    <div class="mt-1.5 flex flex-wrap gap-1.5">${segs}</div>
+    <div class="mt-2 text-[10px] font-semibold uppercase tracking-wide text-slate-400">Buys ${(c.products || []).length ? `(${(c.products || []).length})` : ''}</div>
+    <div class="mt-1 flex flex-wrap gap-1">${prods}</div>
+    ${apps ? `<div class="mt-2 text-[12px] text-slate-500"><span class="font-semibold text-slate-600">Uses:</span> ${escapeHtml(apps)}</div>` : ''}
+  </div>`;
+}
+function opportunityCard(o) {
+  const segs = (o.segments || []).map((s) => coloredChip(s, anyColor(s))).join(' ');
+  const apps = (o.applications || []).join(', ');
+  const mats = (o.materials || []).join(', ');
+  return `<div class="rounded-xl bg-white p-3 shadow-sm ring-1 ring-amber-100">
+    <div class="text-sm font-bold text-slate-800">${escapeHtml(o.name)}</div>
+    ${segs ? `<div class="mt-1 flex flex-wrap gap-1.5">${segs}</div>` : ''}
+    ${apps ? `<div class="mt-1 text-[12px] text-slate-500">${escapeHtml(apps)}</div>` : ''}
+    ${mats ? `<div class="mt-0.5 text-[11px] text-slate-400">${escapeHtml(mats)}</div>` : ''}
+  </div>`;
+}
+const custEmpty = () => `<div class="col-span-full rounded-2xl bg-white p-8 text-center text-sm text-slate-400 shadow-sm ring-1 ring-slate-100">No customers match these filters.</div>`;
+function refreshCustomers() { const g = $('#custGrid'); if (g) g.innerHTML = filteredCustomers().map(customerCard).join('') || custEmpty(); }
+function renderCustomers() {
+  if (!state.customers.length && !state.opportunities.length) {
+    return `<div class="fade-in rounded-2xl bg-white p-10 text-center shadow-sm ring-1 ring-slate-100">
+      <div class="text-3xl">👥</div>
+      <div class="mt-2 font-display text-lg font-bold text-slate-700">Existing-customer list syncs from SharePoint</div>
+      <div class="mx-auto mt-1 max-w-md text-sm text-slate-500">Add the <code class="rounded bg-slate-100 px-1 text-slate-600">SHAREPOINT_*</code> secrets and run the “Product &amp; customer sync” workflow. It fills this view with the real customers (who buys what) and the future-opportunity list, straight from the client's sales files.</div>
+    </div>`;
+  }
+  const f = state.customerFilters;
+  const opps = state.opportunities;
+  const stats = `<div class="mb-4 flex flex-wrap gap-2">
+    ${statChip('👥', state.customers.length, 'existing customers', '#4f46e5')}
+    ${statChip('🏷️', customerSegments().length, 'segments', '#0ea5e9')}
+    ${opps.length ? statChip('🔮', opps.length, 'future opportunities', '#f59e0b') : ''}
+  </div>`;
+  const filters = state.customers.length ? `<div class="mb-3 flex flex-wrap items-center gap-2">
+    <div class="relative min-w-[180px] flex-1">
+      <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">🔎</span>
+      <input id="cust-search" type="search" value="${escapeHtml(f.search)}" placeholder="Search customers…" class="w-full rounded-xl border-0 bg-white py-2 pl-9 pr-3 text-sm text-slate-700 shadow-sm ring-1 ring-slate-200 focus:ring-2 focus:ring-indigo-400 focus:outline-none" />
+    </div>
+    ${selectHtml('cust-seg', 'All segments', f.segment, customerSegments())}
+  </div>` : '';
+  const grid = state.customers.length
+    ? `<div id="custGrid" class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">${filteredCustomers().map(customerCard).join('') || custEmpty()}</div>` : '';
+  const oppBody = `<div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">${opps.map(opportunityCard).join('')}</div>`;
+  const oppSection = opps.length ? `<div class="mt-5">${chartCard('🔮', 'Future opportunities', 'New application areas from the client’s opportunity file (not yet customers)', oppBody)}</div>` : '';
+  return `<div class="fade-in">${stats}${filters}${grid}${oppSection}</div>`;
+}
+
 function renderCatalog() {
   const f = state.productFilters;
   const families = familiesPresent(state.products);
+  // Industry options: the canonical 8 PLUS any real segment values that arrived from the SharePoint sync.
+  const industries = [...new Set([...PRODUCT_SEGMENTS, ...state.products.flatMap((p) => p.segments || [])])].filter(Boolean);
   return `
     <div class="fade-in">
       <div class="mb-3 flex flex-wrap items-center gap-2">
@@ -1344,7 +1417,7 @@ function renderCatalog() {
           <input id="p-search" type="search" value="${escapeHtml(f.search)}" placeholder="Search products…"
             class="w-full rounded-xl border-0 bg-white py-2 pl-9 pr-3 text-sm text-slate-700 shadow-sm ring-1 ring-slate-200 focus:ring-2 focus:ring-indigo-400 focus:outline-none" />
         </div>
-        ${selectHtml('p-industry', 'All industries', f.industry, PRODUCT_SEGMENTS)}
+        ${selectHtml('p-industry', 'All industries', f.industry, industries)}
         ${selectHtml('p-family', 'All fabric families', f.family, families)}
       </div>
       <div class="mb-3 px-0.5 text-[12px] text-slate-500"><span id="pCount" class="tnum font-semibold text-slate-700">${filteredProducts().length}</span> products</div>
@@ -2380,11 +2453,13 @@ function openExhibitionModal(id) {
 function productMiniCard(p) {
   const props = (p.properties || []).slice(0, 6).map((x) => `<span class="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">${escapeHtml(x)}</span>`).join(' ');
   const segs = (p.segments || []).map((s) => coloredChip(segLabel(s), anyColor(s))).join(' ');
+  const cust = Number.isInteger(p.customer_count) && p.customer_count > 0
+    ? `<div class="mt-2 inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-600" title="Existing customers who buy this (from the SharePoint sync)">👥 ${p.customer_count} customer${p.customer_count === 1 ? '' : 's'}</div>` : '';
   return `<div class="rounded-xl bg-white p-3 ring-1 ring-slate-200">
     <div class="flex items-baseline justify-between gap-2"><div class="text-sm font-bold text-slate-800">${escapeHtml(p.name)}</div><div class="shrink-0 text-[11px] text-slate-400">${escapeHtml(p.family || '')}</div></div>
     <div class="mt-0.5 text-[12px] text-slate-500">${escapeHtml(p.base || '')}${p.deniers ? ' · ' + escapeHtml(p.deniers) : ''}${(p.coatings && p.coatings.length) ? ' · ' + escapeHtml(p.coatings.join(', ')) : ''}</div>
     ${props ? `<div class="mt-2 flex flex-wrap gap-1">${props}</div>` : ''}
-    ${segs ? `<div class="mt-2 flex flex-wrap gap-1">${segs}</div>` : ''}
+    ${segs ? `<div class="mt-2 flex flex-wrap gap-1">${segs}</div>` : ''}${cust}
   </div>`;
 }
 const existingProducts = () => state.products.filter((p) => p.kind !== 'new');
@@ -3979,6 +4054,7 @@ function render() {
   else if (state.tab === 'leads') view.innerHTML = renderLeads();
   else if (state.tab === 'competitors') view.innerHTML = renderCompetitors();
   else if (state.tab === 'outreach') view.innerHTML = renderOutreach();
+  else if (state.tab === 'customers') view.innerHTML = renderCustomers();
   else view.innerHTML = renderPlaceholder(tab);
 
   // Views with SVG/dot entrance animations.
@@ -4183,6 +4259,7 @@ function wireEvents() {
   view.addEventListener('input', (e) => {
     if (e.target.id === 'f-search') { state.filters.search = e.target.value; refreshExhibitionsTable(); }
     else if (e.target.id === 'p-search') { state.productFilters.search = e.target.value; refreshCatalog(); }
+    else if (e.target.id === 'cust-search') { state.customerFilters.search = e.target.value; refreshCustomers(); }
     else if (e.target.id === 'l-search') { state.leadFilters.search = e.target.value; refreshLeadsTable(); }
     else if (e.target.id === 'o-search') { state.trackerFilters.search = e.target.value; refreshTrackerTable(); }
     else if (e.target.id === 'pipe-search') { state.pipeSearch = e.target.value; refreshPipeList(); }
@@ -4196,6 +4273,7 @@ function wireEvents() {
     if (exMap[e.target.id]) { state.filters[exMap[e.target.id]] = e.target.value; render(); }
     else if (pMap[e.target.id]) { state.productFilters[pMap[e.target.id]] = e.target.value; refreshCatalog(); }
     else if (lMap[e.target.id]) { state.leadFilters[lMap[e.target.id]] = e.target.value; refreshLeadsTable(); }
+    else if (e.target.id === 'cust-seg') { state.customerFilters.segment = e.target.value; refreshCustomers(); }
     else if (e.target.id === 'o-stage') { state.trackerFilters.stage = e.target.value; refreshTrackerTable(); }
     else if (e.target.id === 'r-country') { state.researchFilters.country = e.target.value; render(); }
     else {
@@ -4336,7 +4414,7 @@ async function boot() {
     // no-store: always pull the freshest data JSON (the background engines update these
     // files on every run) so the page never shows stale numbers from a cached copy.
     const NS = { cache: 'no-store' };
-    const [meta, exhibitions, products, leads, competitors, outreach, research, market, reportContent, associations] = await Promise.all([
+    const [meta, exhibitions, products, leads, competitors, outreach, research, market, reportContent, associations, customers] = await Promise.all([
       fetch('data/meta.json', NS).then((r) => r.json()),
       fetch('data/exhibitions.json', NS).then((r) => r.json()),
       fetch('data/products.json', NS).then((r) => r.json()).catch(() => []),
@@ -4347,6 +4425,7 @@ async function boot() {
       fetch('data/market_intel.json', NS).then((r) => r.json()).catch(() => null),
       fetch('data/report_content.json', NS).then((r) => r.json()).catch(() => ({})),
       fetch('data/associations.json', NS).then((r) => r.json()).catch(() => ({})),
+      fetch('data/customers.json', NS).then((r) => r.json()).catch(() => ({})),
     ]);
     state.meta = meta;
     // Tolerate both the seed array and a pipeline { <items>, _meta, _debug } shape.
@@ -4358,6 +4437,8 @@ async function boot() {
     state.outreach = (outreach && typeof outreach === 'object' && !Array.isArray(outreach)) ? outreach : {};
     state.research = unwrap(research, 'targets').filter((t) => t && t.id && t.company);
     state.associations = unwrap(associations, 'associations').filter((a) => a && a.id && a.name);
+    state.customers = unwrap(customers, 'customers').filter((c) => c && c.name);
+    state.opportunities = (customers && Array.isArray(customers.opportunities)) ? customers.opportunities.filter((o) => o && o.name) : [];
     state.market = (market && typeof market === 'object' && market.hs5903) ? market : null;
     state.reportContent = (reportContent && typeof reportContent === 'object' && !Array.isArray(reportContent)) ? reportContent : {};
     state.researchSent = loadResearchSent();
