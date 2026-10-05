@@ -1,7 +1,4401 @@
 {
  "generated_by": "client-sharepoint",
- "updated_at": null,
- "source_note": "Pending first SharePoint sync — add the SHAREPOINT_USER / SHAREPOINT_PASS / SHAREPOINT_FOLDER_URL secrets, then run the 'Product & customer sync (SharePoint)' workflow. It fills this file with the real existing-customer list and future opportunities.",
- "customers": [],
+ "updated_at": "2026-10-05T09:34:55.265Z",
+ "source_note": "Imported from the client SharePoint folder — 6 file(s) (6.xlsx) read on 2026-10-05.",
+ "customers": [
+  {
+   "name": "370-AURO TEXTILES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp9432",
+    "product-pwpp9433"
+   ]
+  },
+  {
+   "name": "A&C Thai Co.,Ltd",
+   "segments": [],
+   "applications": [
+    "Paragliding/Parachute"
+   ],
+   "products": [
+    "product-cwnn4033"
+   ]
+  },
+  {
+   "name": "A.V.R. ENTERPRISES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9190e"
+   ]
+  },
+  {
+   "name": "ABG ventures doo",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-pwnn3603e",
+    "product-pwnn4097",
+    "product-pwnn8258",
+    "product-pwnn8347",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "ABITALIA INC.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm9505",
+    "product-pwnc9442",
+    "product-pwnn9233",
+    "product-pwnn9233c",
+    "product-pwnn9419a"
+   ]
+  },
+  {
+   "name": "ACI Oils Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063cyf"
+   ]
+  },
+  {
+   "name": "ACME CLOTHING LLP",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "ACROBAAZ",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-cwnn8266"
+   ]
+  },
+  {
+   "name": "ADITYA TECHNO SOLUTIONS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544b",
+    "product-cwmm3544h"
+   ]
+  },
+  {
+   "name": "Advanced Microdevices Pvt Ltd",
+   "segments": [],
+   "applications": [
+    "Microfiltration / Medical Devices"
+   ],
+   "products": [
+    "product-pwpp9679sa"
+   ]
+  },
+  {
+   "name": "Aero Safety Equipmentpty Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-ngwrr7053"
+   ]
+  },
+  {
+   "name": "Aerodyne Reasearch Mfg (Pty) Ltd",
+   "segments": [],
+   "applications": [
+    "Parachute / Skydiving"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-cwnn8045",
+    "product-cwnn9576",
+    "product-pwnn3603d",
+    "product-pwnn3603e",
+    "product-pwnn4201",
+    "product-pwnn8307",
+    "product-pwnn9152",
+    "product-pwnn9152a",
+    "product-pwnn9539a",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "Aeronav Industrial Safety Appliances",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063brc"
+   ]
+  },
+  {
+   "name": "AETHRONE AEROSPACE PVT LTD",
+   "segments": [],
+   "applications": [
+    "Paragliding"
+   ],
+   "products": [
+    "product-pwnn9351a"
+   ]
+  },
+  {
+   "name": "AFC ELASTOMERS TECHNOLOGY PVT LTD",
+   "segments": [],
+   "applications": [
+    "Paragliding/Parachute"
+   ],
+   "products": [
+    "product-cwmm4012"
+   ]
+  },
+  {
+   "name": "Ailga Rubber Works.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm4142"
+   ]
+  },
+  {
+   "name": "Airborne Systems Limited.",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-ngwnn7094",
+    "product-ngwnn7095",
+    "product-ngwnn7096",
+    "product-pwnn4089br",
+    "product-pwnn4089sb",
+    "product-pwnn4089sf",
+    "product-pwnn4089st",
+    "product-pwnn4201",
+    "product-pwnn4201sf",
+    "product-pwnn8355a",
+    "product-pwnn9011",
+    "product-pwnn9201"
+   ]
+  },
+  {
+   "name": "Airborne Systems North America of NJ Inc.",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn4089sb",
+    "product-pwnn4089sf",
+    "product-pwnn4089st",
+    "product-pwnn4201",
+    "product-pwnn9201"
+   ]
+  },
+  {
+   "name": "Airbotix Technology Private Limited",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-pwnn4033"
+   ]
+  },
+  {
+   "name": "Airtech Advanced Materials UK Ltd",
+   "segments": [],
+   "applications": [
+    "Impression For Wind Turbine Blade"
+   ],
+   "products": [
+    "product-pwpp8295",
+    "product-pwpp8295a",
+    "product-pwpp8296",
+    "product-pwpp8296a"
+   ]
+  },
+  {
+   "name": "AJIT INDUSTRIES PVT. LTD.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwpp9479sf"
+   ]
+  },
+  {
+   "name": "ALOK INDUSTRIES LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063brc",
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "Ami Polymer Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwpp9561",
+    "product-pkpp9106"
+   ]
+  },
+  {
+   "name": "Ami Textile",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-x01-240000mar610s01",
+    "product-y000700024n66000001",
+    "product-y001000034n66000001"
+   ]
+  },
+  {
+   "name": "AmSafe Bridport",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-cwnn9666",
+    "product-pwnn8052"
+   ]
+  },
+  {
+   "name": "Amsafe Bridport (Pvt) Ltd.",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-cwnn9666",
+    "product-ngwrr7055c1",
+    "product-pwnn4201",
+    "product-pwnn4201a",
+    "product-pwnn4201sf",
+    "product-pwnn9011",
+    "product-pwnn9201"
+   ]
+  },
+  {
+   "name": "ANDRITZ Kuesters GmbH,",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm9439at",
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "APCO Aviation Ltd",
+   "segments": [],
+   "applications": [
+    "Paragliders / Paraglider Wings"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn3663",
+    "product-pwnn3710h",
+    "product-pwnn3983",
+    "product-pwnn4033",
+    "product-pwnn4201",
+    "product-pwnn8355a",
+    "product-pwnn9193"
+   ]
+  },
+  {
+   "name": "Arrow Garments",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn9067a",
+    "product-cwpp9324"
+   ]
+  },
+  {
+   "name": "ARUNA CLOTHING COMPANY",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063a",
+    "product-cwpp4063ast",
+    "product-cwpp4063ayf",
+    "product-cwpp4063brc",
+    "product-cwpp4063byf",
+    "product-cwpp4063cyf",
+    "product-cwpp4184",
+    "product-cwpp9416st",
+    "product-h-ppe-bio-suit-sub-assembled"
+   ]
+  },
+  {
+   "name": "Autotech Nonwovens Private Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-dxppnwat"
+   ]
+  },
+  {
+   "name": "Aviation Safety Resources Inc",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn3603e"
+   ]
+  },
+  {
+   "name": "Badve Autocomps Private Limited",
+   "segments": [],
+   "applications": [
+    "Microfiltration"
+   ],
+   "products": [
+    "product-npwnn7135sf"
+   ]
+  },
+  {
+   "name": "BANGAR BUSINESS VENTURES PVT. LTD.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9268"
+   ]
+  },
+  {
+   "name": "Beltech India Inc.",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm4087i"
+   ]
+  },
+  {
+   "name": "BHARAT INDUSTRIES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm4087c",
+    "product-cwmm4087e",
+    "product-cwmm4087k",
+    "product-pwmm4087g"
+   ]
+  },
+  {
+   "name": "Big Valley Air",
+   "segments": [],
+   "applications": [
+    "Parachute/Skydiving"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "Big Valley Brands Inc.",
+   "segments": [],
+   "applications": [
+    "Parachute/Skydiving"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "BIT SANDRI",
+   "segments": [],
+   "applications": [
+    "Parachutes For Project"
+   ],
+   "products": [
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "Blackguard Fabricoats",
+   "segments": [],
+   "applications": [
+    "Coating Chemicals"
+   ],
+   "products": [
+    "product-kc-cl-502-cross-linker",
+    "product-kc-hub-1046-m",
+    "product-kc-ub-8038m"
+   ]
+  },
+  {
+   "name": "Bombay oil seals company",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3544",
+    "product-pwmm3544b",
+    "product-pwmm3544bsf",
+    "product-pwmm3544h",
+    "product-pwnn9180"
+   ]
+  },
+  {
+   "name": "Bombay Textile",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm4165"
+   ]
+  },
+  {
+   "name": "BRS Aerospace",
+   "segments": [],
+   "applications": [
+    "Parachute\\Canopy",
+    "Aerospace / Aircraft Parachute"
+   ],
+   "products": [
+    "product-100001c",
+    "product-100002c",
+    "product-pwnn4201",
+    "product-pwnn8263",
+    "product-pwnn9220",
+    "product-pwnn9220a",
+    "product-pwnn9654"
+   ]
+  },
+  {
+   "name": "BRÜGGEMANN GMBH & CO. KG",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwmm8453",
+    "product-pwnn3603d",
+    "product-pwnn3603e",
+    "product-pwnn4097",
+    "product-pwnn4189a",
+    "product-pwnn4201",
+    "product-pwnn8330",
+    "product-pwnn9011",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "Butler Parachute Systems Inc.",
+   "segments": [],
+   "applications": [
+    "Aerospace/Defence Parachute"
+   ],
+   "products": [
+    "product-pwnn8355a",
+    "product-pwnn8419a",
+    "product-pwnn9767"
+   ]
+  },
+  {
+   "name": "CANDOUR TECHTEX LIMITED",
+   "segments": [],
+   "applications": [
+    "Rollo Blind",
+    "Footwear, Knee And Elbow Patch"
+   ],
+   "products": [
+    "product-pkpp8398si",
+    "product-pwnn9496",
+    "product-pwpp9581a"
+   ]
+  },
+  {
+   "name": "CD TECHNOTEX LLP",
+   "segments": [],
+   "applications": [
+    "Handbag"
+   ],
+   "products": [
+    "product-cwpp3213a"
+   ]
+  },
+  {
+   "name": "CELESTIAL KNITS & FABS PVT LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ast",
+    "product-cwpp4063byf",
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "CENTRAL RESERVE POLICE FORCE",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-coat-combat-jacket"
+   ]
+  },
+  {
+   "name": "CERTOPLAST INDIA PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "Tape",
+    "Tape (For High Voltage Systems)"
+   ],
+   "products": [
+    "product-pwpp8349b",
+    "product-pwpp8406",
+    "product-pwpp8406a",
+    "product-pwpp8463",
+    "product-pwpp9264d",
+    "product-pwpp9390b",
+    "product-pwpp9390bsf",
+    "product-pwpp9700",
+    "product-pwpp9700sf",
+    "product-pwpp9739",
+    "product-pwpp9754"
+   ]
+  },
+  {
+   "name": "CERTOPLAST NORTH AMERICA INC.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwpp8013",
+    "product-pwpp9263a",
+    "product-pwpp9263b",
+    "product-pwpp9390",
+    "product-pwpp9390b",
+    "product-pwpp9390c"
+   ]
+  },
+  {
+   "name": "CERTOPLAST TECHNISCHE KLEBEBAN DER GMBH",
+   "segments": [],
+   "applications": [
+    "Tape",
+    "Tape (For High Voltage Systems)"
+   ],
+   "products": [
+    "product-pwnn9338a",
+    "product-pwpp8349",
+    "product-pwpp8406",
+    "product-pwpp8463",
+    "product-pwpp9264a",
+    "product-pwpp9264d",
+    "product-pwpp9390b",
+    "product-pwpp9390bsf",
+    "product-pwpp9700sf",
+    "product-pwpp9739"
+   ]
+  },
+  {
+   "name": "CHAKRADHAR INDUSTRIES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn3857a"
+   ]
+  },
+  {
+   "name": "CHASE CORPORATION",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwpp9428",
+    "product-gwpp9428agf",
+    "product-gwpp9428gf",
+    "product-pwnn9419",
+    "product-pwnn9419a",
+    "product-pwnn9420",
+    "product-pwnn9420a",
+    "product-pwpp4063a",
+    "product-pwpp4063ast",
+    "product-pwpp9428",
+    "product-pwpp9428a"
+   ]
+  },
+  {
+   "name": "CHHAPERIA CABLE MATERIAL PVT LTD",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwpp9069d",
+    "product-pwpp9069e",
+    "product-pwpp9069est",
+    "product-pwpp9416",
+    "product-pwpp9470",
+    "product-pwpp9612",
+    "product-pwpp9758"
+   ]
+  },
+  {
+   "name": "CIMSA Ingenieria de Sistemas S.A.",
+   "segments": [],
+   "applications": [
+    "Parachute Canopy"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "CK S.A.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-ngwnn7025",
+    "product-pwnn8070"
+   ]
+  },
+  {
+   "name": "COMBAT ROBOTICS INDIA PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwrr3692"
+   ]
+  },
+  {
+   "name": "Comelli Srl",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn3663"
+   ]
+  },
+  {
+   "name": "COMET s.p.a.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwpp9479",
+    "product-pwpp9479sf",
+    "product-pwpp9553"
+   ]
+  },
+  {
+   "name": "COMFORT SHOES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn3079"
+   ]
+  },
+  {
+   "name": "Composite Solution",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-dwggfrpa",
+    "product-dwppfrpa"
+   ]
+  },
+  {
+   "name": "COROPLAST FRITZ MULLER GMBH AND CO KG",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwmm9530b",
+    "product-pwmm9530c",
+    "product-pwmm9626",
+    "product-pwmm9626a",
+    "product-pwnn9339a",
+    "product-pwnn9339b",
+    "product-pwnn9339c",
+    "product-pwnn9339e",
+    "product-pwpp8309",
+    "product-pwpp8370",
+    "product-pwpp9307",
+    "product-pwpp9307a",
+    "product-pwpp9307c",
+    "product-pwpp9479sf",
+    "product-pwpp9523",
+    "product-pwpp9523a",
+    "product-pwpp9523asf",
+    "product-pwpp9523b",
+    "product-pwpp9523c",
+    "product-pwpp9585",
+    "product-pwpp9585a",
+    "product-pwpp9640"
+   ]
+  },
+  {
+   "name": "Coroplast Tape Corporation",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwmm9530c",
+    "product-pwmm9626",
+    "product-pwpp9307",
+    "product-pwpp9307a",
+    "product-pwpp9523a",
+    "product-pwpp9523asf",
+    "product-pwpp9523c"
+   ]
+  },
+  {
+   "name": "Creations Morin inc.",
+   "segments": [],
+   "applications": [
+    "Boat Cover"
+   ],
+   "products": [
+    "product-cwpp8275a"
+   ]
+  },
+  {
+   "name": "Creative Engineers",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3421",
+    "product-pwmm9076f"
+   ]
+  },
+  {
+   "name": "Creemos International Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9337a"
+   ]
+  },
+  {
+   "name": "D.Yoland.Ltd.",
+   "segments": [],
+   "applications": [
+    "Military Parachutes"
+   ],
+   "products": [
+    "product-pwnn3603a",
+    "product-pwnn3603b",
+    "product-pwnn3603c",
+    "product-pwnn3603d",
+    "product-pwnn3603e",
+    "product-pwnn4189a",
+    "product-pwnn8258",
+    "product-pwnn9220a",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "Darshan Rubber Industries",
+   "segments": [],
+   "applications": [
+    "Impression"
+   ],
+   "products": [
+    "product-pwmm2871a",
+    "product-pwmm4111",
+    "product-pwmm4111c",
+    "product-pwmm4111d"
+   ]
+  },
+  {
+   "name": "Defence Research and Development Organisation",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "Dellner India Pvt Ltd.",
+   "segments": [],
+   "applications": [
+    "Footwear, Knee And Elbow Patch"
+   ],
+   "products": [
+    "product-pwnn9496"
+   ]
+  },
+  {
+   "name": "Delta Marine Services",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4033"
+   ]
+  },
+  {
+   "name": "Dharam Trans Belts.",
+   "segments": [],
+   "applications": [
+    "Zero Impression Fabric",
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwmm4087m",
+    "product-pwmm4087n",
+    "product-pwmm4087o",
+    "product-pwtc4169f"
+   ]
+  },
+  {
+   "name": "Dharam Transmission Beltings.",
+   "segments": [],
+   "applications": [
+    "Zero Impression Fabric",
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwmm4087n",
+    "product-pwmm4087o"
+   ]
+  },
+  {
+   "name": "Dida Manufacturing Company",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwmm9018",
+    "product-gwmm9018d",
+    "product-pwmm3064",
+    "product-pwmm3758"
+   ]
+  },
+  {
+   "name": "Divekar Wallstabe & Schneider Precision Seals Pvt.Ltd",
+   "segments": [],
+   "applications": [
+    "Rubber Diaphragms"
+   ],
+   "products": [
+    "product-pwmm9331",
+    "product-pwmm9332",
+    "product-pwmm9332a",
+    "product-pwmm9332b",
+    "product-pwmm9332c"
+   ]
+  },
+  {
+   "name": "Dosepack India LLP",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn9539a"
+   ]
+  },
+  {
+   "name": "Dr B R Ambedkar National Institute of Technology",
+   "segments": [],
+   "applications": [
+    "Parachute For Project"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-cwnn8266",
+    "product-pwnn3603e",
+    "product-pwnn3663",
+    "product-pwnn3809",
+    "product-pwnn3983",
+    "product-pwnn3983sf",
+    "product-pwnn9576",
+    "product-pwnn9591",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "DR. SABHARWAL'S WOUND CARE",
+   "segments": [],
+   "applications": [
+    "Band Aid"
+   ],
+   "products": [
+    "product-pwpp3940"
+   ]
+  },
+  {
+   "name": "East LIFESTYLE",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp3845c"
+   ]
+  },
+  {
+   "name": "ECO POLYPACK PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwppecpp"
+   ]
+  },
+  {
+   "name": "ELGI ULTRA LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwmm8047",
+    "product-gwmm8047a",
+    "product-gwmm8066",
+    "product-gwmm9554",
+    "product-gwmm9554a",
+    "product-gwpp8048",
+    "product-pwmm8109",
+    "product-pwnn8109"
+   ]
+  },
+  {
+   "name": "ELGI ULTRA PVT LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwmc8146",
+    "product-gwmm9554",
+    "product-pwmm3544h"
+   ]
+  },
+  {
+   "name": "EMDET JAMSHEDPUR (P) LTD. FARIDABAD",
+   "segments": [],
+   "applications": [
+    "Air Brake Hoses, PTFE Hoses, High & Low Pressure Hose Assembly"
+   ],
+   "products": [
+    "product-pwaa9158",
+    "product-pwaa9158c",
+    "product-pwaa9159a",
+    "product-pwaa9159c",
+    "product-pwaa9159d",
+    "product-pwee9234a",
+    "product-pwee9234b"
+   ]
+  },
+  {
+   "name": "EMDET JAMSHEDPUR PVT LTD",
+   "segments": [],
+   "applications": [
+    "Air Brake Hoses, PTFE Hoses, High & Low Pressure Hose Assembly",
+    "Hoses"
+   ],
+   "products": [
+    "product-pwaa9158a",
+    "product-pwaa9158b",
+    "product-pwaa9158c",
+    "product-pwaa9519"
+   ]
+  },
+  {
+   "name": "Entremonde Polycoaters Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4155a",
+    "product-cwpp4155g",
+    "product-gwpp2827",
+    "product-gwpp2955",
+    "product-gwpp3115",
+    "product-gwpp3606",
+    "product-gwpp3631",
+    "product-gwpp4099",
+    "product-gwpp9592"
+   ]
+  },
+  {
+   "name": "Erez Thermoplastic Products",
+   "segments": [],
+   "applications": [
+    "Inflatable"
+   ],
+   "products": [
+    "product-pwmm8148",
+    "product-pwmm9636",
+    "product-pwnn3710h"
+   ]
+  },
+  {
+   "name": "Essity Operations Goa Limited",
+   "segments": [],
+   "applications": [
+    "Band Aid"
+   ],
+   "products": [
+    "product-pwpp3940",
+    "product-pwpp8049"
+   ]
+  },
+  {
+   "name": "FAdeA",
+   "segments": [],
+   "applications": [
+    "Military/Sporting Parachute"
+   ],
+   "products": [
+    "product-pwnn3603e",
+    "product-pwnn4201",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "Falcon Engineering Corporation",
+   "segments": [],
+   "applications": [
+    "Military Parachute Canopies"
+   ],
+   "products": [
+    "product-ngwrr7053",
+    "product-ngwrr7053a",
+    "product-ngwrr7054",
+    "product-ngwrr7054c1",
+    "product-ngwrr7055",
+    "product-ngwrr7055c1",
+    "product-ngwrr7057",
+    "product-ngwrr7057c1",
+    "product-pwnn4201",
+    "product-pwnn9220"
+   ]
+  },
+  {
+   "name": "Faze Three Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-dwppfaze3"
+   ]
+  },
+  {
+   "name": "FEAMAT CAMPING EQUIPMENT",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn9441",
+    "product-pwnn9441"
+   ]
+  },
+  {
+   "name": "FERRETERRO INDIA PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-y015000000par000001"
+   ]
+  },
+  {
+   "name": "FIBRE GLASS INSULATION",
+   "segments": [],
+   "applications": [
+    "Tapes"
+   ],
+   "products": [
+    "product-pwpp4063ast",
+    "product-pwpp9340",
+    "product-pwpp9340ast",
+    "product-pwpp9416st"
+   ]
+  },
+  {
+   "name": "FIDILITY TEXTILES (P) LTD.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwppftpl"
+   ]
+  },
+  {
+   "name": "Flexfab",
+   "segments": [],
+   "applications": [
+    "Automotive Hoses"
+   ],
+   "products": [
+    "product-gwaa9158c"
+   ]
+  },
+  {
+   "name": "FOUR SQUARE",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063",
+    "product-cwpp4063brc"
+   ]
+  },
+  {
+   "name": "Fruity Chutes",
+   "segments": [],
+   "applications": [
+    "Rocket Parachute Canopies"
+   ],
+   "products": [
+    "product-pwnn4201",
+    "product-pwnn8355"
+   ]
+  },
+  {
+   "name": "G.G Corporation",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ast"
+   ]
+  },
+  {
+   "name": "Ganpati Bullions Private Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm9370",
+    "product-pwpp9343"
+   ]
+  },
+  {
+   "name": "GARGO SALES CORPORATION",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn9380b"
+   ]
+  },
+  {
+   "name": "GARWARE BESTRETCH LTD.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp4063ast",
+    "product-pwpp4063b",
+    "product-pwpp4156",
+    "product-pwpp4156a",
+    "product-pwpp4156b",
+    "product-pwpp4156c",
+    "product-pwpp9300",
+    "product-pwpp9300a",
+    "product-pwpp9412",
+    "product-pwpp9430",
+    "product-pwpp9469",
+    "product-pwpp9470",
+    "product-pwpp9549"
+   ]
+  },
+  {
+   "name": "Garware Fulflex India Private Limited",
+   "segments": [],
+   "applications": [
+    "Peel Ply"
+   ],
+   "products": [
+    "product-ngwpm7050al",
+    "product-pwnn3663",
+    "product-pwnn8094",
+    "product-pwnn9027c",
+    "product-pwnn9041b",
+    "product-pwnn9580",
+    "product-pwnn9580a",
+    "product-pwpp4063a",
+    "product-pwpp4063ast",
+    "product-pwpp4156",
+    "product-pwpp4156a",
+    "product-pwpp9469",
+    "product-pwpp9469jw",
+    "product-pwpp9470",
+    "product-pwpp9470jw",
+    "product-pwpp9470st",
+    "product-pwpp9549",
+    "product-pwpp9550",
+    "product-pwpp9551"
+   ]
+  },
+  {
+   "name": "GAURI FABRICS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-y001500048pes000001"
+   ]
+  },
+  {
+   "name": "Gebruder Aurich GmbH",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-gwnn8437",
+    "product-gwpp9693pp",
+    "product-pwmm8157",
+    "product-pwnn8437"
+   ]
+  },
+  {
+   "name": "Gebrüder Jaeger GmbH",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm3544h",
+    "product-pwmm3544hsf",
+    "product-pwmm9505",
+    "product-pwnc9608",
+    "product-pwnn9233",
+    "product-pwnn9233c",
+    "product-pwnn9409a",
+    "product-pwnn9565"
+   ]
+  },
+  {
+   "name": "GLOBCHEM IMPORTS",
+   "segments": [],
+   "applications": [
+    "Coating Chemicals"
+   ],
+   "products": [
+    "product-kc-hub-1046-m"
+   ]
+  },
+  {
+   "name": "GM TRADING CO",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544j",
+    "product-cwmm3758j",
+    "product-cwnn4089st",
+    "product-cwnn9380",
+    "product-cwpp3205",
+    "product-cwpp3279a",
+    "product-cwpp3279ast",
+    "product-cwpp9190e",
+    "product-cwpp9365c",
+    "product-cwpp9365cst",
+    "product-cwpp9389bst",
+    "product-pwpp9343"
+   ]
+  },
+  {
+   "name": "Goodrich Aerospace Services Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn4097"
+   ]
+  },
+  {
+   "name": "GRINDWELL NORTON LIMITED",
+   "segments": [],
+   "applications": [
+    "Automotive Seat Part As Per Customer",
+    "Tape"
+   ],
+   "products": [
+    "product-cwmm3544b",
+    "product-cwmm3544bsf",
+    "product-cwmm3544h",
+    "product-cwpp9462",
+    "product-cwpp9462b",
+    "product-cwpp9462c",
+    "product-cwpp9462dkn",
+    "product-cwpp9462e",
+    "product-cwpp9640st",
+    "product-pwpp8161a",
+    "product-pwpp8349a",
+    "product-pwpp8349b",
+    "product-pwpp8349c",
+    "product-pwpp8353",
+    "product-pwpp8353a",
+    "product-pwpp8462",
+    "product-pwpp9264d",
+    "product-pwpp9342st",
+    "product-pwpp9470",
+    "product-pwpp9479",
+    "product-pwpp9523a",
+    "product-pwpp9523asf",
+    "product-pwpp9523b",
+    "product-pwpp9523c",
+    "product-pwpp9612",
+    "product-pwpp9612st",
+    "product-pwpp9640",
+    "product-pwpp9640st",
+    "product-pwpp9648"
+   ]
+  },
+  {
+   "name": "Guruparv Enterprises",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4089"
+   ]
+  },
+  {
+   "name": "H K BANSAL",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "Habasit Iakoka Pvt Ltd.",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-gwdd9065",
+    "product-gwmc9019b",
+    "product-gwmc9065",
+    "product-gwmc9065c",
+    "product-gwmc9085",
+    "product-gwmc9086",
+    "product-gwmm9018",
+    "product-gwmm9018c",
+    "product-pwmc9065",
+    "product-pwmm9018"
+   ]
+  },
+  {
+   "name": "Habasit India Pvt Ltd.",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-gwmc9019b",
+    "product-gwmc9019c",
+    "product-gwmc9019d",
+    "product-gwmc9019e",
+    "product-gwmc9065",
+    "product-gwmc9065d",
+    "product-gwmc9065e",
+    "product-gwmc9065f",
+    "product-gwmc9065g",
+    "product-gwmc9085",
+    "product-gwmc9085a",
+    "product-gwmc9085b",
+    "product-gwmc9086",
+    "product-gwmc9086a",
+    "product-gwmc9086b",
+    "product-gwmm9018",
+    "product-gwmm9018d",
+    "product-gwmm9170b",
+    "product-gwpp8133",
+    "product-gwpp8134",
+    "product-gwpp8135",
+    "product-gwpp8136",
+    "product-gwpp8138",
+    "product-gwpp8139",
+    "product-gwtt9542",
+    "product-pwmc8056",
+    "product-pwmm4012",
+    "product-pwmm8055a",
+    "product-pwmm9018",
+    "product-pwmm9018d",
+    "product-pwmm9170",
+    "product-pwmm9170a",
+    "product-pwmm9170b",
+    "product-pwpc8269",
+    "product-pwpp8137",
+    "product-pwpp8140",
+    "product-pwpp8141",
+    "product-pwtt9542",
+    "product-y002100024n06000001"
+   ]
+  },
+  {
+   "name": "Hartree Energy Systems Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3758h",
+    "product-cwnn9339a",
+    "product-cwpp3845c",
+    "product-cwpp9365c"
+   ]
+  },
+  {
+   "name": "He Yuan Fu Wah Sportsware Co. Ltd",
+   "segments": [],
+   "applications": [
+    "Outdoor/Sports Apparel/Bags"
+   ],
+   "products": [
+    "product-pwnn9752"
+   ]
+  },
+  {
+   "name": "HEMP ECOTEX",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwyy9614b"
+   ]
+  },
+  {
+   "name": "High Energy Batteries (India) Ltd.",
+   "segments": [],
+   "applications": [
+    "Workwear"
+   ],
+   "products": [
+    "product-pwmm3604",
+    "product-pwmm3604a",
+    "product-pwnn3568",
+    "product-pwnn3886"
+   ]
+  },
+  {
+   "name": "HI-TECH INDUSTRIES",
+   "segments": [],
+   "applications": [
+    "Workwear"
+   ],
+   "products": [
+    "product-pwmm2871a",
+    "product-pwmm2871b",
+    "product-pwmm3327",
+    "product-pwmm4111",
+    "product-pwmm4111d"
+   ]
+  },
+  {
+   "name": "HLL LIFECARE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "HLL LIFECARE LIMITED - CHENNAI",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "ICARUS CANOPIES S.L.",
+   "segments": [],
+   "applications": [
+    "Skydiving Parachute Canopy / Reserve Parachute."
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-cwnn8022",
+    "product-pwnn4201",
+    "product-pwnn8022",
+    "product-pwnn9220a",
+    "product-pwnn9727"
+   ]
+  },
+  {
+   "name": "Iconnect Business pvt ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "IDP Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544h",
+    "product-cwpp4063a",
+    "product-cwpp4063ast",
+    "product-cwpp4063ayf",
+    "product-cwpp4156a",
+    "product-cwpp9261",
+    "product-cwpp9413",
+    "product-cwpp9417st"
+   ]
+  },
+  {
+   "name": "Imperial Auto Industries Ltd",
+   "segments": [],
+   "applications": [
+    "Automotive Hose"
+   ],
+   "products": [
+    "product-pwee9234a"
+   ]
+  },
+  {
+   "name": "Imperial Auto Industries Ltd- HR",
+   "segments": [],
+   "applications": [
+    "Automotive Hose"
+   ],
+   "products": [
+    "product-gwaa9159a",
+    "product-gwaa9159c",
+    "product-pwaa9159",
+    "product-pwaa9159c",
+    "product-pwaa9382",
+    "product-pwaa9422",
+    "product-gwaa9158c",
+    "product-gwaa9159d"
+   ]
+  },
+  {
+   "name": "Imprint",
+   "segments": [],
+   "applications": [
+    "Autosock - Labels"
+   ],
+   "products": [
+    "product-cwmm3544b",
+    "product-cwmm3544bdk"
+   ]
+  },
+  {
+   "name": "INBOUND AEROSPACE PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "Spacecraft Recovery/Landing"
+   ],
+   "products": [
+    "product-cwnn3079b",
+    "product-cwnn4033"
+   ]
+  },
+  {
+   "name": "Indag Rubber Limited",
+   "segments": [],
+   "applications": [
+    "MRG – Mechanised Rubber Goods"
+   ],
+   "products": [
+    "product-gwll1041",
+    "product-pwpp9337a",
+    "product-pwpp9494",
+    "product-pwpp9494csf"
+   ]
+  },
+  {
+   "name": "Indian Armour Systems Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm9345a"
+   ]
+  },
+  {
+   "name": "Indian Institute Of Technology",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwxx8050a",
+    "product-gwrr8186",
+    "product-gwxx8050",
+    "product-gwxx8110",
+    "product-pwnn9034",
+    "product-pwnn9339a",
+    "product-pwpp2925",
+    "product-pwpp4155a"
+   ]
+  },
+  {
+   "name": "Indo British Garments Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544b",
+    "product-cwnn9067a"
+   ]
+  },
+  {
+   "name": "Indu Corporates",
+   "segments": [],
+   "applications": [
+    "Filtration"
+   ],
+   "products": [
+    "product-gwmm8130",
+    "product-gwmm9488",
+    "product-gwmm9507",
+    "product-gwmm9521",
+    "product-gwmm9528",
+    "product-gwmm9618",
+    "product-gwmm9661",
+    "product-pwmm9488",
+    "product-pwmm9507",
+    "product-pwmm9521",
+    "product-pwmm9528"
+   ]
+  },
+  {
+   "name": "INDUSTRIAL AUTO INDUSTRIES",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-cwmm4087e",
+    "product-cwmm4087i",
+    "product-cwmm4087o"
+   ]
+  },
+  {
+   "name": "Industrial Belts Mfg. Co.",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-cwmm4012",
+    "product-cwmm4012a",
+    "product-cwmm4087e",
+    "product-cwmm4087i",
+    "product-cwmm4087o",
+    "product-pwmm4087i"
+   ]
+  },
+  {
+   "name": "Innotiv Kft",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwee3060",
+    "product-pwee3281"
+   ]
+  },
+  {
+   "name": "INTEGRATED HEADQUARTERS MOD (ARMY)",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-m-tpu-sleep-mat"
+   ]
+  },
+  {
+   "name": "Intek Tapes Pvt Ltd.",
+   "segments": [],
+   "applications": [
+    "Tape",
+    "Tape For High Voltage Wire Harness"
+   ],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm3544h",
+    "product-pwmm4001",
+    "product-pwmm4001a",
+    "product-pwmm4001b",
+    "product-pwmm4001c",
+    "product-pwmm4165",
+    "product-pwmm4165a",
+    "product-pwmm4165d",
+    "product-pwpp9739"
+   ]
+  },
+  {
+   "name": "INTERCOM SKICORP MANUFACTURING PVT. LTD.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn9563",
+    "product-pwpp9562"
+   ]
+  },
+  {
+   "name": "INUIT INDUSTRIES CO.,LTD",
+   "segments": [],
+   "applications": [
+    "Paraglider Wings/Canopies And Parachute"
+   ],
+   "products": [
+    "product-pwnn8355",
+    "product-pwnn9752"
+   ]
+  },
+  {
+   "name": "IR Apparel & Accessories",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9190e"
+   ]
+  },
+  {
+   "name": "Irvin GQ",
+   "segments": [],
+   "applications": [
+    "Parachute Canopies For Military"
+   ],
+   "products": [
+    "product-ngwrr7055ac1",
+    "product-ngwrr7106ac1",
+    "product-pwnn3854",
+    "product-pwnn4201",
+    "product-pwnn9641"
+   ]
+  },
+  {
+   "name": "Isha Fashion",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "J.K.Fenner (India) Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwaa9158"
+   ]
+  },
+  {
+   "name": "JAEGER PRODUCTS PVT.LTD.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm3544bsf",
+    "product-pwmm3544bst",
+    "product-pwmm3544h",
+    "product-pwmm3544hsf",
+    "product-pwmm4165",
+    "product-pwmm4165a",
+    "product-pwmm4165f",
+    "product-pwmm4165fsf",
+    "product-pwmm9505",
+    "product-pwmm9505sf",
+    "product-pwmm9505st",
+    "product-pwmp9516",
+    "product-pwnc9436",
+    "product-pwnc9608",
+    "product-pwnn9233",
+    "product-pwnn9233c",
+    "product-pwnn9409a",
+    "product-pwpp4063a",
+    "product-pwpp4063ast",
+    "product-pwpp4063d",
+    "product-pwpp4063dst",
+    "product-pwpp8349b",
+    "product-pwpp9307a",
+    "product-pwpp9374"
+   ]
+  },
+  {
+   "name": "JAMSHEDJI CONSTRO EQUIP PVT. LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3544a",
+    "product-pwmm3544",
+    "product-pwmm3544e"
+   ]
+  },
+  {
+   "name": "JB ROCHE MANUFACTURING  LIMITED",
+   "segments": [],
+   "applications": [
+    "Aircraft Snow Cover"
+   ],
+   "products": [
+    "product-cwmm9610"
+   ]
+  },
+  {
+   "name": "JCT Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-kc-cl-502-cross-linker"
+   ]
+  },
+  {
+   "name": "Jeen Fabrics Pvt. Ltd.",
+   "segments": [],
+   "applications": [
+    "Antistatic Fabric For Workwear"
+   ],
+   "products": [
+    "product-pwnn9533sa",
+    "product-pwnn9534sa",
+    "product-pwnn9698sa"
+   ]
+  },
+  {
+   "name": "JEM IMPEX",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "Johnson & Johnson Limited.",
+   "segments": [],
+   "applications": [
+    "Adhesive Bandages"
+   ],
+   "products": [
+    "product-pwpp3940",
+    "product-pwpp3940a"
+   ]
+  },
+  {
+   "name": "K C Fabrics",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwppkcfb"
+   ]
+  },
+  {
+   "name": "K. M. International",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmc9355",
+    "product-pwmc9355c",
+    "product-pwmc9355d",
+    "product-pwmc9355e",
+    "product-pwmc9355f",
+    "product-pwpc9398c"
+   ]
+  },
+  {
+   "name": "Kapsyn Manufacturing Company.",
+   "segments": [],
+   "applications": [
+    "Immpression",
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm4087e",
+    "product-pwmm4087g",
+    "product-pwmm4087i",
+    "product-pwmm4087k",
+    "product-pwmm4192c"
+   ]
+  },
+  {
+   "name": "Kapurthala Durastic Pvt Ltd.",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm4087e",
+    "product-pwmm4087g",
+    "product-pwmm4087h",
+    "product-pwmm4087i",
+    "product-pwmm4087j",
+    "product-pwmm4087k",
+    "product-pwmm4087m",
+    "product-pwmm4087o",
+    "product-pwmm4087q",
+    "product-pwmm4171a",
+    "product-pwmm4192",
+    "product-pwmm4192c",
+    "product-pwmm4192m"
+   ]
+  },
+  {
+   "name": "Kapurthala Hi-Tech Transbelt P.Ltd.",
+   "segments": [],
+   "applications": [
+    "Belting",
+    "Immpression"
+   ],
+   "products": [
+    "product-pwmc4159",
+    "product-pwmm3544b",
+    "product-pwmm3544bsw",
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwmm4087o",
+    "product-pwmm4157a",
+    "product-pwmm4157c"
+   ]
+  },
+  {
+   "name": "Katbro Corporation Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063cyf",
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "KIRAN RUBBER INDUSTRIES",
+   "segments": [],
+   "applications": [
+    "Rubber Impression"
+   ],
+   "products": [
+    "product-pwnn9699",
+    "product-pwpp4020a"
+   ]
+  },
+  {
+   "name": "Kirtikant And Company",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm2001a"
+   ]
+  },
+  {
+   "name": "Kmc Export Corporation",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm3544bsf",
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwmm4157a",
+    "product-pwmm4192",
+    "product-pwmm4192b",
+    "product-pwmm4192c",
+    "product-pwmm4192m",
+    "product-pwmm9493"
+   ]
+  },
+  {
+   "name": "KNIT FOULDS PVT LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3544e",
+    "product-pwmm3544h",
+    "product-pwmm4142",
+    "product-pwpp4156"
+   ]
+  },
+  {
+   "name": "KOHINOOR LIGHTS EQUIPMENTS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ast"
+   ]
+  },
+  {
+   "name": "KPM Plasto Rubber",
+   "segments": [],
+   "applications": [
+    "Rubber Diaphragms"
+   ],
+   "products": [
+    "product-pwaa9159a",
+    "product-pwaa9159d"
+   ]
+  },
+  {
+   "name": "KRISHNA MARUTI LIMITED",
+   "segments": [],
+   "applications": [
+    "Microfiltration - Transmission Oil"
+   ],
+   "products": [
+    "product-ss-tf2u-auto"
+   ]
+  },
+  {
+   "name": "Krubber Private Limited",
+   "segments": [],
+   "applications": [
+    "Rubber Impression"
+   ],
+   "products": [
+    "product-pwaa9159a",
+    "product-pwnn9180",
+    "product-pwnn9498",
+    "product-pwnn9498a",
+    "product-pwnn9699",
+    "product-pwpp4155a",
+    "product-pwpp9342st"
+   ]
+  },
+  {
+   "name": "Kshitij Agro Chemicals",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063brc"
+   ]
+  },
+  {
+   "name": "Livinguard Technologies Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm4165"
+   ]
+  },
+  {
+   "name": "Loom Crafts Furniture India Pvt Ltd Unit 1",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4091asf"
+   ]
+  },
+  {
+   "name": "M  J MARKETING",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp9366a"
+   ]
+  },
+  {
+   "name": "M B Rubber Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn9179",
+    "product-cwnn9179d",
+    "product-cwnn9179e",
+    "product-cwnn9179g",
+    "product-cwnn9179h",
+    "product-cwnn9179i"
+   ]
+  },
+  {
+   "name": "M/S Supreme Industries",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-pwmc4158b",
+    "product-pwmc9065",
+    "product-pwmm4087c",
+    "product-pwmm4087i",
+    "product-pwmm9467b",
+    "product-pwmm9530c"
+   ]
+  },
+  {
+   "name": "M/S.NARENDRA BROTHERS,",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-y010000192pes000001"
+   ]
+  },
+  {
+   "name": "Magam safety Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4033"
+   ]
+  },
+  {
+   "name": "MANGAL CORPORATION",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4089"
+   ]
+  },
+  {
+   "name": "Mann Empowerment Foundation",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063a"
+   ]
+  },
+  {
+   "name": "Manta Air Ltd",
+   "segments": [],
+   "applications": [
+    "UAV / Drone Recovery Parachute"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn3663",
+    "product-pwnn8355",
+    "product-pwnn9752"
+   ]
+  },
+  {
+   "name": "MARINE AIR SYSTEMS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm2871a",
+    "product-pwmm4132"
+   ]
+  },
+  {
+   "name": "Mcmurray Fabrics INC",
+   "segments": [],
+   "applications": [
+    "Rollo Blind Top Layer"
+   ],
+   "products": [
+    "product-pwpp8217a",
+    "product-pwpp8381",
+    "product-pwpp9477",
+    "product-pwpp9581",
+    "product-pwpp9735"
+   ]
+  },
+  {
+   "name": "MEHTA SURGICARE PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp3940"
+   ]
+  },
+  {
+   "name": "MG Composites",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwpp2751",
+    "product-pwpp2751"
+   ]
+  },
+  {
+   "name": "MIATELA ETAIL PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-cwpp4063ast"
+   ]
+  },
+  {
+   "name": "Miltex Engineering Company",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-gwmc9065",
+    "product-gwmc9065d",
+    "product-gwmm9018",
+    "product-gwmm9018d",
+    "product-pwmc9019b",
+    "product-pwmc9019d",
+    "product-pwmc9019e",
+    "product-pwmc9065",
+    "product-pwmm4087c",
+    "product-pwmm4087e",
+    "product-pwmm4087g",
+    "product-pwmm4087i",
+    "product-pwmm4087o",
+    "product-pwmm4092c",
+    "product-pwmm4165",
+    "product-pwmm4165f",
+    "product-pwmm4165fsf",
+    "product-pwmm9018",
+    "product-pwmm9018d",
+    "product-pwmm9467",
+    "product-pwmm9467a",
+    "product-pwmm9467b"
+   ]
+  },
+  {
+   "name": "Miltex Equipments",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-cwmm4111",
+    "product-cwnn9339a",
+    "product-cwpp3205"
+   ]
+  },
+  {
+   "name": "MITHRA FLUIDTRANS PVT LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwll1041"
+   ]
+  },
+  {
+   "name": "Mku Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4166e"
+   ]
+  },
+  {
+   "name": "Mku Pvt Limited-100% Eou Division.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm9345a",
+    "product-cwnn9067a"
+   ]
+  },
+  {
+   "name": "MUTUAL INDUSTRIES LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp9069est"
+   ]
+  },
+  {
+   "name": "Mysore Polymers & Rubber Products Private Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn3743a"
+   ]
+  },
+  {
+   "name": "MYSORE POLYMERS AND RUBBER PRODUCTS LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn3743a"
+   ]
+  },
+  {
+   "name": "N Z Seasonal Wear Pvt Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9389a",
+    "product-cwpp9389bst"
+   ]
+  },
+  {
+   "name": "NADA POLY PLAST",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm4087i"
+   ]
+  },
+  {
+   "name": "Natural Canvas & Co.",
+   "segments": [],
+   "applications": [
+    "Tyre Cord Fabric"
+   ],
+   "products": [
+    "product-gwll1041",
+    "product-gwll1041b",
+    "product-gwll1041c",
+    "product-h-ppe-bio-suit-assembly",
+    "product-pkpp3579",
+    "product-pkpp9106",
+    "product-pwaa9158",
+    "product-pwaa9158c",
+    "product-pwaa9159a",
+    "product-pwee9234a",
+    "product-pwmm3544b",
+    "product-pwmm3678b",
+    "product-pwnn3809",
+    "product-pwnn4201",
+    "product-pwnn9179",
+    "product-pwnn9498",
+    "product-pwnn9580",
+    "product-pwnn9652",
+    "product-pwpp1057",
+    "product-pwpp1057a",
+    "product-pwpp1057b",
+    "product-pwpp3940",
+    "product-pwpp3940a",
+    "product-pwpp4042a",
+    "product-pwpp4042c",
+    "product-pwpp4042d",
+    "product-pwpp4063a",
+    "product-pwpp4063ast",
+    "product-pwpp4063b",
+    "product-pwpp9196a",
+    "product-pwpp9265",
+    "product-pwpp9337",
+    "product-pwpp9337a",
+    "product-pwpp9494",
+    "product-pwpp9494a",
+    "product-pwpp9494b",
+    "product-pwpp9494c",
+    "product-pwpp9494csf",
+    "product-pwpp9494sb"
+   ]
+  },
+  {
+   "name": "Natures Grace Inter. Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm4111a"
+   ]
+  },
+  {
+   "name": "NCFD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3758j",
+    "product-cwnn4089"
+   ]
+  },
+  {
+   "name": "New Tech Trans (India) Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3544",
+    "product-pwmm4087e",
+    "product-pwmm4157b"
+   ]
+  },
+  {
+   "name": "NexG Apparels LLP",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4156a"
+   ]
+  },
+  {
+   "name": "Nila Tech Private Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn9667sa"
+   ]
+  },
+  {
+   "name": "Nitesh Mittal",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn3754a"
+   ]
+  },
+  {
+   "name": "O.C.F.Shahjahanpur.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm9179",
+    "product-cwpp3845",
+    "product-cwpp3845c",
+    "product-cwpp3845cst",
+    "product-pwmm4107b",
+    "product-pwmm4107e",
+    "product-pwnn9242a"
+   ]
+  },
+  {
+   "name": "Ocean State Innovations Performance Textiles Division",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn4201",
+    "product-pwnn8330",
+    "product-pwnn9591"
+   ]
+  },
+  {
+   "name": "Orbit Exports Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpporex"
+   ]
+  },
+  {
+   "name": "Ordnance Clothing Factory - Avadi.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544",
+    "product-cwmm3544l",
+    "product-cwmm9345a",
+    "product-cwnn9048b"
+   ]
+  },
+  {
+   "name": "Ordnance Equipment Factory-Hazratpu",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-con-pu-pvc-tape",
+    "product-con-pu-pvc-tape-pcs",
+    "product-cwmm3544b",
+    "product-cwmm3544h"
+   ]
+  },
+  {
+   "name": "Ordnance Equipment Factory-Kanpur.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544h",
+    "product-cwmm9173b",
+    "product-cwmm9174",
+    "product-cwmm9345a",
+    "product-cwmm9367",
+    "product-cwnn3079",
+    "product-cwnn3520",
+    "product-cwnn4089",
+    "product-cwnn4173b",
+    "product-cwnn4188f",
+    "product-cwnn4188g",
+    "product-cwnn4188h",
+    "product-cwnn4188i",
+    "product-cwnn9179",
+    "product-cwnn9179b",
+    "product-cwnn9179d",
+    "product-cwnn9179e",
+    "product-cwnn9179g",
+    "product-cwnn9179h",
+    "product-cwnn9179i",
+    "product-cwnn9274",
+    "product-cwnn9325",
+    "product-cwnn9371",
+    "product-pwnn9273",
+    "product-pwpp9343"
+   ]
+  },
+  {
+   "name": "Ordnance Parachute Factory.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3797a",
+    "product-cwmm3797b",
+    "product-cwmm4111",
+    "product-cwnn9380a",
+    "product-cwnn9380b",
+    "product-cwnn9391",
+    "product-pwmm3654",
+    "product-pwmm9357",
+    "product-pwnn3710a",
+    "product-pwnn3710b",
+    "product-pwnn3879a",
+    "product-pwnn3983",
+    "product-pwnn52gsm",
+    "product-pwnn9128a",
+    "product-pwnn9297d"
+   ]
+  },
+  {
+   "name": "P & T PRODUCTS LTD.",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-pwnn8355"
+   ]
+  },
+  {
+   "name": "P.N.GUPTA & SONS.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544b"
+   ]
+  },
+  {
+   "name": "Parachute Engineering Research Institute",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn3663"
+   ]
+  },
+  {
+   "name": "Parafly S.A.",
+   "segments": [],
+   "applications": [
+    "Aerospace & Defence Parachute"
+   ],
+   "products": [
+    "product-pwnn4097",
+    "product-pwnn4189a",
+    "product-pwnn8330",
+    "product-pwnn9011",
+    "product-pwnn9220a",
+    "product-pwnn9737"
+   ]
+  },
+  {
+   "name": "Parapex co Ltd",
+   "segments": [],
+   "applications": [
+    "Aerospace & Defence Parachute"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn8355",
+    "product-pwnn8423"
+   ]
+  },
+  {
+   "name": "Parker Hannifin India P.Ltd.Nagpur",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-ckpp3575"
+   ]
+  },
+  {
+   "name": "Parker Hannifin India Pvt.Ltd.",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-ckpp3575"
+   ]
+  },
+  {
+   "name": "Pathana Upakorn Co. Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "Perfect Belt Ltd.",
+   "segments": [],
+   "applications": [
+    "Belting",
+    "Zero Impression Fabric",
+    "3 LAYER Belting"
+   ],
+   "products": [
+    "product-pwmc4158a",
+    "product-pwmm3544h",
+    "product-pwmm4012",
+    "product-pwmm4087c",
+    "product-pwmm4087e",
+    "product-pwmm4087g",
+    "product-pwmm4087h",
+    "product-pwmm4087i",
+    "product-pwmm4087j",
+    "product-pwmm4087m",
+    "product-pwmm4092",
+    "product-pwmm4092b",
+    "product-pwmm4157a",
+    "product-pwmm4157b",
+    "product-pwmm4165",
+    "product-pwmm4165d",
+    "product-pwmm4192",
+    "product-pwmm4192a",
+    "product-pwmm4192b",
+    "product-pwnn9371"
+   ]
+  },
+  {
+   "name": "PERFECT BELTS PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "Belting",
+    "Zero Impression Fabric",
+    "3 LAYER Belting"
+   ],
+   "products": [
+    "product-pwmc4158",
+    "product-pwmc4158a",
+    "product-pwmc4158b",
+    "product-pwmc9065",
+    "product-pwmm3544b",
+    "product-pwmm3544bsf",
+    "product-pwmm4012",
+    "product-pwmm4087c",
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwmm4087m",
+    "product-pwmm4087n",
+    "product-pwmm4087o",
+    "product-pwmm4087q",
+    "product-pwmm4092",
+    "product-pwmm4157a",
+    "product-pwmm4157c",
+    "product-pwmm4165",
+    "product-pwmm4165a",
+    "product-pwmm4165f",
+    "product-pwmm4165fst",
+    "product-pwmm4192",
+    "product-pwmm4192b",
+    "product-pwmm4192c",
+    "product-pwmm4192d",
+    "product-pwmm4192m",
+    "product-pwmm8424",
+    "product-pwmm9018",
+    "product-pwmm9467",
+    "product-pwmm9467a",
+    "product-pwmm9467b",
+    "product-pwmm9467bsf",
+    "product-pwmm9472",
+    "product-pwmm9493",
+    "product-pwmm9650",
+    "product-pwmm9706",
+    "product-pwmm9707",
+    "product-pwmm9778",
+    "product-pwmm9785",
+    "product-pwnn3809",
+    "product-pwnn9642"
+   ]
+  },
+  {
+   "name": "Perfect Gears",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm4087e"
+   ]
+  },
+  {
+   "name": "Permalon Transmission Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwnn9498"
+   ]
+  },
+  {
+   "name": "Petrotech processors",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-y-meta-aramid-fiber"
+   ]
+  },
+  {
+   "name": "Photoquip India Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn9180"
+   ]
+  },
+  {
+   "name": "POLMANN INDIA LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwaa9158jw",
+    "product-pwaa9159jw"
+   ]
+  },
+  {
+   "name": "Polyhose India Rubber P. Ltd.",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-cwmm4068",
+    "product-cwmm4068a",
+    "product-pwpp4042a",
+    "product-pwpp4042d",
+    "product-pwpp9494",
+    "product-pwpp9494a",
+    "product-pwpp9494b"
+   ]
+  },
+  {
+   "name": "PolymerTechnik Ortrand GmbH",
+   "segments": [],
+   "applications": [
+    "Elastomer-Coated Fabrics"
+   ],
+   "products": [
+    "product-cwpp8281",
+    "product-gwaa9159a",
+    "product-gwpp8281",
+    "product-gwpp9747",
+    "product-pwaa9159c",
+    "product-pwpp8281"
+   ]
+  },
+  {
+   "name": "POLYNOVA INDUSTRIES LTD",
+   "segments": [],
+   "applications": [
+    "Soft Interior Trims, Car Seat Covers, And Convertible Car Tops Used In Light Trucks And Cars"
+   ],
+   "products": [
+    "product-cwpp3845",
+    "product-cwpp3845c",
+    "product-cwpp3845cst",
+    "product-cwpp9255d",
+    "product-cwpp9255dsf",
+    "product-cwpp9255e",
+    "product-cwpp9255eddf",
+    "product-cwpp9255edpr",
+    "product-cwpp9255edsf",
+    "product-cwpp9255edst",
+    "product-gwpp4078a",
+    "product-pwee3060",
+    "product-pwee3281",
+    "product-pwee8410",
+    "product-pwee9372",
+    "product-pwee9372a",
+    "product-pwep9443",
+    "product-pwep9443a",
+    "product-pwgg3649",
+    "product-pwgg3649a",
+    "product-pwgg3649b",
+    "product-pwgg3649c",
+    "product-pwll9353",
+    "product-pwnn4129a",
+    "product-pwpp3376",
+    "product-pwpp3376a",
+    "product-pwpp4078",
+    "product-pwpp4078a",
+    "product-pwpp8183",
+    "product-pwpp8383",
+    "product-pwpp8384",
+    "product-pwpp8411",
+    "product-pwyy8322",
+    "product-pwyy9490a"
+   ]
+  },
+  {
+   "name": "POLYTAPES INDUSTRIES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm9505",
+    "product-pwpp4063drc",
+    "product-pwpp9416"
+   ]
+  },
+  {
+   "name": "Powair sp. z o.o.",
+   "segments": [],
+   "applications": [
+    "Aerospace & Defence Parachute"
+   ],
+   "products": [
+    "product-cwnn8423",
+    "product-pwnn8355",
+    "product-pwnn9767"
+   ]
+  },
+  {
+   "name": "Praveena Plastronics",
+   "segments": [],
+   "applications": [
+    "Microfiltration - Diesel Water Separation",
+    "Microfiltration - CNG Filter"
+   ],
+   "products": [
+    "product-con-cpg-drop-seam-l",
+    "product-con-cpg-drop-seam-s",
+    "product-con-cpg-drops-tube",
+    "product-h-p-pa-15-11-tube-monolayer"
+   ]
+  },
+  {
+   "name": "Prayosha Impex",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwppftpl"
+   ]
+  },
+  {
+   "name": "PRECISION COATINGS PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "Band Aid"
+   ],
+   "products": [
+    "product-pwpp3940",
+    "product-pwpp3940c"
+   ]
+  },
+  {
+   "name": "PRIHODA s.r.o",
+   "segments": [],
+   "applications": [
+    "Ducting"
+   ],
+   "products": [
+    "product-cwrr3691"
+   ]
+  },
+  {
+   "name": "Prime Transmission.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm3544b",
+    "product-pwmm3544bsf",
+    "product-pwmm3544bst",
+    "product-pwmm4087i",
+    "product-pwmm4087m"
+   ]
+  },
+  {
+   "name": "PROMISUM d. o. o.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwpp9414st",
+    "product-pwpp9416",
+    "product-pwpp9416st"
+   ]
+  },
+  {
+   "name": "PROTECHNIC SKICORP PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "PROTEXIA SYSTEMS PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "Customs"
+   ],
+   "products": [
+    "product-con-polyethylene-fabric",
+    "product-gwrr3692",
+    "product-ngwrr7047",
+    "product-pwrr3692"
+   ]
+  },
+  {
+   "name": "Prs Permacel Private Limited",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-cwnn4089",
+    "product-cwpp4063brc",
+    "product-cwpp9263b",
+    "product-cwpp9342st",
+    "product-cwpp9462",
+    "product-cwpp9462a",
+    "product-cwpp9462sk",
+    "product-pwaa9382",
+    "product-pwnn3809",
+    "product-pwpp8161a",
+    "product-pwpp9263a",
+    "product-pwpp9263b",
+    "product-pwpp9264",
+    "product-pwpp9307",
+    "product-pwpp9307a",
+    "product-pwpp9342st",
+    "product-pwpp9523a",
+    "product-pwpp9523b"
+   ]
+  },
+  {
+   "name": "Purosil Performance Hose LLP",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-gwaa9158",
+    "product-gwaa9158a",
+    "product-pkpp9106",
+    "product-pwaa8165a",
+    "product-pwaa8210",
+    "product-pwaa9158c",
+    "product-pwee9234a"
+   ]
+  },
+  {
+   "name": "Qualiance International Limited .",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ayf",
+    "product-cwpp4063byf",
+    "product-cwpp4063cyf",
+    "product-cwpp9389a",
+    "product-cwpp9389bst"
+   ]
+  },
+  {
+   "name": "R.K. Fibers",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-ykevlar0000par000001"
+   ]
+  },
+  {
+   "name": "Radnik Auto Exports. (EXPORT)",
+   "segments": [],
+   "applications": [
+    "Autosock"
+   ],
+   "products": [
+    "product-cwmm4111",
+    "product-cwnn3079",
+    "product-cwnn3079a",
+    "product-cwnn4129a",
+    "product-cwpp9720",
+    "product-gwpn9721",
+    "product-gwpp3213a",
+    "product-gwpp3213b",
+    "product-gwpp3548",
+    "product-gwpp3548a",
+    "product-gwpp3548c",
+    "product-gwpp3548d",
+    "product-gwpp3548e",
+    "product-gwpp3548f",
+    "product-gwpp3548g",
+    "product-gwpp8487",
+    "product-gwpp8488",
+    "product-gwpp8489",
+    "product-gwpp8490",
+    "product-gwpp8491",
+    "product-gwpp8492",
+    "product-gwpp9720",
+    "product-pwmm4154"
+   ]
+  },
+  {
+   "name": "Radnik Exports",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544h",
+    "product-cwmm4111",
+    "product-cwmm4111d",
+    "product-cwmm4111e",
+    "product-cwmm9174",
+    "product-cwmm9367",
+    "product-cwmm9437at",
+    "product-cwnn9179",
+    "product-cwnn9180",
+    "product-cwnn9339a",
+    "product-cwnn9371a",
+    "product-cwnn9371b",
+    "product-cwnn9441",
+    "product-cwnn9495",
+    "product-cwpp4063a",
+    "product-cwpp4063ast",
+    "product-cwpp4063ayf",
+    "product-cwpp4063cyf",
+    "product-cwpp4184",
+    "product-cwpp9258",
+    "product-cwpp9365c",
+    "product-cwpp9365cst",
+    "product-cwpp9365f",
+    "product-cwpp9413",
+    "product-cwpp9413a",
+    "product-cwpp9415st",
+    "product-cwpp9418tg",
+    "product-h-ppe-bio-suit-assembly",
+    "product-h-ppe-bio-suit-sub-assembled",
+    "product-pwmm9460",
+    "product-pwnn9180",
+    "product-pwnn9441"
+   ]
+  },
+  {
+   "name": "Raghav International.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwmm4157c"
+   ]
+  },
+  {
+   "name": "RAKSHA POLYCOATS PVT. LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp3205",
+    "product-cwpp3845c",
+    "product-gwrr9402",
+    "product-gwrr9520",
+    "product-pwmm2871",
+    "product-pwmm2871a",
+    "product-pwmm4111",
+    "product-pwmm4132",
+    "product-pwmm4142",
+    "product-pwpp4091",
+    "product-pwpp4091st",
+    "product-pwpp4155a",
+    "product-pwpp4155g",
+    "product-pwpp8100",
+    "product-pwrr3691"
+   ]
+  },
+  {
+   "name": "Ratan Textile Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm9174",
+    "product-cwmm9178",
+    "product-pwmm9173b"
+   ]
+  },
+  {
+   "name": "RELIANCE CHEMOTEX INDUSTRIES LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-y-meta-aramid-fiber"
+   ]
+  },
+  {
+   "name": "RENAISSANCE INCORPORATIONS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063brc",
+    "product-pwpp9416st"
+   ]
+  },
+  {
+   "name": "Rewatex",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4033"
+   ]
+  },
+  {
+   "name": "Richa Global Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "RiKi Security Solutions Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn3377",
+    "product-cwnn3520a"
+   ]
+  },
+  {
+   "name": "Royal Inti Internasional",
+   "segments": [],
+   "applications": [
+    "Military & Civilian Parachute"
+   ],
+   "products": [
+    "product-cwnn3079b",
+    "product-cwnn9496",
+    "product-pwnn4201",
+    "product-pwnn9011"
+   ]
+  },
+  {
+   "name": "Rvj leather products",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwrr3691"
+   ]
+  },
+  {
+   "name": "S K ENTERPRISE",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-y001500048pes000001"
+   ]
+  },
+  {
+   "name": "S. K. EXPORTS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp3845",
+    "product-pwmm4107b"
+   ]
+  },
+  {
+   "name": "S.P. & ASSOCIATES LTD",
+   "segments": [],
+   "applications": [
+    "Parachutes"
+   ],
+   "products": [
+    "product-pwnn3603e",
+    "product-pwnn4201",
+    "product-pwnn4201sf",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "SAATI DEUTSCHLAND GMBH",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwll8068",
+    "product-x006000100ppl060z01",
+    "product-y00-250001ppl000001"
+   ]
+  },
+  {
+   "name": "SAFRAN AEROSYSTEMS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn3079a",
+    "product-pwnn3983"
+   ]
+  },
+  {
+   "name": "SAFRAN ELECTRONICS & DEFENSE",
+   "segments": [],
+   "applications": [
+    "Aerospace & Defense – Parachute"
+   ],
+   "products": [
+    "product-cwnn3079",
+    "product-cwnn3079a",
+    "product-cwnn3079b",
+    "product-cwnn9517",
+    "product-pwnn3568",
+    "product-pwnn3663",
+    "product-pwnn3854",
+    "product-pwnn3983",
+    "product-pwnn3983sf",
+    "product-pwnn4201",
+    "product-pwnn8298"
+   ]
+  },
+  {
+   "name": "SAFRAN ELECTRONICS & DEFENSE SA PTY",
+   "segments": [],
+   "applications": [
+    "Aerospace & Defense – Parachute"
+   ],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn3568",
+    "product-pwnn3663",
+    "product-pwnn3983",
+    "product-pwnn4201",
+    "product-pwnn9539a",
+    "product-pwnn9560"
+   ]
+  },
+  {
+   "name": "Sai Synergy Llp",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "Sai Transmission Belt Co",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm4087e"
+   ]
+  },
+  {
+   "name": "Sandeep Kumar",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn8106",
+    "product-pwnn8107"
+   ]
+  },
+  {
+   "name": "Sarla Performance Fibers Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwmm9554"
+   ]
+  },
+  {
+   "name": "SAUBHA AERIAL SYSTEMS PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "UAV / Drone Parachute Recovery"
+   ],
+   "products": [
+    "product-pwnn4201",
+    "product-pwnn8355",
+    "product-pwnn9752"
+   ]
+  },
+  {
+   "name": "Sb Drive Power Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063a",
+    "product-cwpp4063ast"
+   ]
+  },
+  {
+   "name": "Sbl Plastics Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn9380",
+    "product-cwnn9380a",
+    "product-cwnn9380b",
+    "product-cwpp3205"
+   ]
+  },
+  {
+   "name": "SCAPA ITALIA S.p.A.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwpp9480",
+    "product-pwpp9523asf",
+    "product-pwpp9739"
+   ]
+  },
+  {
+   "name": "Scapa Tapes India Pvt Ltd",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwpp9307"
+   ]
+  },
+  {
+   "name": "Scapa UK Ltd",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-gwpp8438",
+    "product-pwmm8098a",
+    "product-pwnn8099a",
+    "product-pwnn8212a"
+   ]
+  },
+  {
+   "name": "SFO Technologies Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwcc9558"
+   ]
+  },
+  {
+   "name": "Shan Fab (India)",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-dwmm9296"
+   ]
+  },
+  {
+   "name": "SHEELA FOAM LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4155a"
+   ]
+  },
+  {
+   "name": "Shipra International",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3797",
+    "product-cwnn4089",
+    "product-cwnn4089mi",
+    "product-cwnn9179",
+    "product-cwpp3845c",
+    "product-pwmm4107b",
+    "product-pwnn3904",
+    "product-pwnn3904e"
+   ]
+  },
+  {
+   "name": "Shiva Industries",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544b",
+    "product-cwmm3544h",
+    "product-cwmm3544l",
+    "product-cwmm3797",
+    "product-cwmm9174",
+    "product-cwmm9178",
+    "product-cwnn4089",
+    "product-cwnn9141m",
+    "product-cwnn9179",
+    "product-cwnn9179d",
+    "product-cwnn9179e",
+    "product-cwnn9179g",
+    "product-cwnn9179i",
+    "product-cwnn9380",
+    "product-cwpp3845",
+    "product-cwpp3845c",
+    "product-pwmm4107b",
+    "product-pwmm4107e",
+    "product-pwmm9173b",
+    "product-pwmm9370",
+    "product-pwmm9405",
+    "product-pwpp9139"
+   ]
+  },
+  {
+   "name": "Shore Auto Rubber Exports Pvt Ltd. (100% EOU)",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-pkpp9106",
+    "product-pwaa9158",
+    "product-pwaa9158c",
+    "product-pwaa9159d",
+    "product-pwee9234a"
+   ]
+  },
+  {
+   "name": "SHREE DEEPAK EXPORT",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ast"
+   ]
+  },
+  {
+   "name": "Shree Ram Timber Trading Co.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4089",
+    "product-pwmm9370",
+    "product-pwpp9343"
+   ]
+  },
+  {
+   "name": "Shri Shyam Military Store",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9190e"
+   ]
+  },
+  {
+   "name": "Shubh Swasan (India)Pvt Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp9366"
+   ]
+  },
+  {
+   "name": "Silicone International Private Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn9498"
+   ]
+  },
+  {
+   "name": "SKICORP TRINITY PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf",
+    "product-cwpp4063cyf"
+   ]
+  },
+  {
+   "name": "SKS ENTERPRISES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp4042a"
+   ]
+  },
+  {
+   "name": "Skytec Solutions LLP",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "Skytec Solutions LLP (UP)",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4033",
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "SMARTAIR LLC",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn3663"
+   ]
+  },
+  {
+   "name": "Sneham International.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-gwpp9190a",
+    "product-gwpp9190e",
+    "product-pwmm3544b",
+    "product-pwmm3544h",
+    "product-pwmm3544l",
+    "product-pwmm3544m",
+    "product-pwmm4001",
+    "product-pwnn4089",
+    "product-pwnn9202",
+    "product-pwnn9435",
+    "product-pwnnsi2211",
+    "product-pwpp2025b",
+    "product-pwpp4020a",
+    "product-pwpp4063a",
+    "product-pwpp4063ast",
+    "product-pwpp4063b",
+    "product-pwpp4063st",
+    "product-pwpp4156",
+    "product-pwpp4156a",
+    "product-pwpp4156b",
+    "product-pwpp4156c",
+    "product-pwpp4184",
+    "product-pwpp9069d",
+    "product-pwpp9069e",
+    "product-pwpp9069est",
+    "product-pwpp9268",
+    "product-pwpp9268a",
+    "product-pwpp9268st",
+    "product-pwpp9284",
+    "product-pwpp9284st",
+    "product-pwpp9342",
+    "product-pwpp9342a",
+    "product-pwpp9342b",
+    "product-pwpp9342c",
+    "product-pwpp9342d",
+    "product-pwpp9342e",
+    "product-pwpp9342st",
+    "product-pwpp9397",
+    "product-pwpp9411",
+    "product-pwpp9470",
+    "product-pwpp9471",
+    "product-pwpp9525",
+    "product-pwvu9440ny"
+   ]
+  },
+  {
+   "name": "Sneham Taping Solutions Private Limited",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwnn8475",
+    "product-pwnn9613",
+    "product-pwpp4020a",
+    "product-pwpp4063",
+    "product-pwpp4063a",
+    "product-pwpp4063asf",
+    "product-pwpp4063ast",
+    "product-pwpp9069",
+    "product-pwpp9069e",
+    "product-pwpp9069est",
+    "product-pwpp9069f",
+    "product-pwpp9284",
+    "product-pwpp9470",
+    "product-pwpp9470st",
+    "product-pwpp9612",
+    "product-pwpp9612st",
+    "product-pwpp9755si"
+   ]
+  },
+  {
+   "name": "SP TRADERS",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp9069d",
+    "product-pwpp9069e",
+    "product-pwpp9069est",
+    "product-pwpp9069gst"
+   ]
+  },
+  {
+   "name": "SPECIALTY FABRICS PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwrr3692",
+    "product-gwrr3691",
+    "product-pwrr3691",
+    "product-pwrr3692"
+   ]
+  },
+  {
+   "name": "SRI AVANTIKA INDUSTRIES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ast",
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "Srivasavi Adhesive Tapes Pvt. Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9462a",
+    "product-pwmm4001a",
+    "product-pwpp4063ast",
+    "product-pwpp9069e",
+    "product-pwpp9284st",
+    "product-pwpp9307a",
+    "product-pwpp9342st",
+    "product-pwpp9468ast",
+    "product-pwpp9470"
+   ]
+  },
+  {
+   "name": "STAR BELTING",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm4192m"
+   ]
+  },
+  {
+   "name": "Star Wire (India) Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm9345a"
+   ]
+  },
+  {
+   "name": "Sterimed Surgicals (india) Pvt ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9462a",
+    "product-cwpp9462e"
+   ]
+  },
+  {
+   "name": "SUJAN INDUSTRIES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn9498",
+    "product-pwnn9498a",
+    "product-pwnn9699",
+    "product-pwpp9470"
+   ]
+  },
+  {
+   "name": "Sujay Hospital Pvt ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-h-ppe-bio-suit-assembly"
+   ]
+  },
+  {
+   "name": "SUNDARAM INDUSTRIES PVT LTD",
+   "segments": [],
+   "applications": [
+    "MRG – Mechanised Rubber Goods"
+   ],
+   "products": [
+    "product-pwaa9159c",
+    "product-pwaa9159d",
+    "product-pwkk8264",
+    "product-pwkk8457",
+    "product-pwnn3809",
+    "product-pwnn8027",
+    "product-pwnn9339a",
+    "product-pwnn9652",
+    "product-cwnn9496"
+   ]
+  },
+  {
+   "name": "Sunil Industries Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544b",
+    "product-cwmm3544h",
+    "product-cwmm3797a",
+    "product-cwnn4089st",
+    "product-cwnn4188h",
+    "product-cwnn4188i",
+    "product-cwnn9179",
+    "product-cwnn9179d",
+    "product-cwnn9179e",
+    "product-cwnn9179f",
+    "product-cwnn9179g",
+    "product-cwnn9179h",
+    "product-cwnn9179i",
+    "product-pwmm3654",
+    "product-pwmm4107b",
+    "product-pwmm4154",
+    "product-pwnn3710b",
+    "product-pwnn3710h",
+    "product-pwnn3754",
+    "product-pwnn3754a",
+    "product-pwnn3809",
+    "product-pwnn3879a",
+    "product-pwnn3886",
+    "product-pwnn4089",
+    "product-pwnn52gsm",
+    "product-pwnn9297d"
+   ]
+  },
+  {
+   "name": "SUNLIGHT BARTER PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063brc"
+   ]
+  },
+  {
+   "name": "Sunrise Manufacturing International Inc",
+   "segments": [],
+   "applications": [
+    "Skydiving / Sport Parachute"
+   ],
+   "products": [
+    "product-cwnn3079b",
+    "product-cwnn4033",
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "SUPER HOZE INDUSTRIES PVT.LTD.",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-ckpp3575"
+   ]
+  },
+  {
+   "name": "SUREKA INTERNATIONAL",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm3544",
+    "product-cwmm3544b",
+    "product-cwmm3544h",
+    "product-cwmm3544l",
+    "product-cwmm3544m",
+    "product-cwmm3544n",
+    "product-cwmm9370"
+   ]
+  },
+  {
+   "name": "SURYA CLS PVT LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm4087e",
+    "product-cwmm4087o",
+    "product-pwmm4087e",
+    "product-pwmm4087h",
+    "product-pwmm4087i",
+    "product-pwmm4087j",
+    "product-pwmm4087m",
+    "product-pwmm4087o",
+    "product-pwmm4192b",
+    "product-pwmm4192c",
+    "product-pwmm4192m",
+    "product-pwmm9467a",
+    "product-pwmm9467b",
+    "product-pwmm9467c"
+   ]
+  },
+  {
+   "name": "SURYA ENTERPRISE",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-cwmm4087e",
+    "product-cwmm4087i",
+    "product-cwmm4087j",
+    "product-cwmm4087n",
+    "product-cwmm4087o",
+    "product-pwmm4087e",
+    "product-pwmm4087n",
+    "product-pwmm4087o",
+    "product-pwmm4192",
+    "product-pwmm4192c"
+   ]
+  },
+  {
+   "name": "Swastik Belts Mfg.Co.",
+   "segments": [],
+   "applications": [
+    "Belting"
+   ],
+   "products": [
+    "product-pwmm4087e",
+    "product-pwmm4087i",
+    "product-pwmm4087n",
+    "product-pwmm4087o",
+    "product-pwmm4092",
+    "product-pwmm4092a",
+    "product-pwmm4092b",
+    "product-pwmm4192",
+    "product-pwmm4192a",
+    "product-pwmm4192c",
+    "product-pwmm4192m",
+    "product-pwmm9175"
+   ]
+  },
+  {
+   "name": "SWASTIK ENTERPRISE",
+   "segments": [],
+   "applications": [
+    "Workwear"
+   ],
+   "products": [
+    "product-pwmm4087i"
+   ]
+  },
+  {
+   "name": "Syn Fab - Dr",
+   "segments": [],
+   "applications": [
+    "Workwear"
+   ],
+   "products": [
+    "product-bwmm9275a",
+    "product-bwmm9275b",
+    "product-bwnn9275a",
+    "product-pwmm9275a",
+    "product-pwmm9275bf",
+    "product-pwmm9275bst",
+    "product-pwmm9275bsy",
+    "product-pwnn9180",
+    "product-pwnn9203",
+    "product-y000400036n06000001"
+   ]
+  },
+  {
+   "name": "Synthite Industries",
+   "segments": [],
+   "applications": [
+    "Workwear"
+   ],
+   "products": [
+    "product-pwpp9474si",
+    "product-pwpp9475si"
+   ]
+  },
+  {
+   "name": "Syspa Aero Systems",
+   "segments": [],
+   "applications": [
+    "Paragliding"
+   ],
+   "products": [
+    "product-cwmm3064",
+    "product-cwmm3091",
+    "product-cwnn4033",
+    "product-cwnn8266",
+    "product-cwnn8267a",
+    "product-cwnn9543",
+    "product-pwmm3758i",
+    "product-pwnn4201",
+    "product-pwnn8423",
+    "product-pwnn9752"
+   ]
+  },
+  {
+   "name": "Tata Advance Materials Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwmm9345a",
+    "product-cwnn3710a"
+   ]
+  },
+  {
+   "name": "TECHNOVA TAPES (INDIA) PVT.LTD.",
+   "segments": [],
+   "applications": [
+    "Tapes"
+   ],
+   "products": [
+    "product-pwpp8429",
+    "product-pwpp9470",
+    "product-pwpp9470st",
+    "product-pwpp9471",
+    "product-pwpp9758"
+   ]
+  },
+  {
+   "name": "Tesa Plant Sparta",
+   "segments": [],
+   "applications": [
+    "Tapes"
+   ],
+   "products": [
+    "product-pwpp9523a",
+    "product-pwpp9553",
+    "product-pwpp9628",
+    "product-pwpp9701",
+    "product-pwpp9701a"
+   ]
+  },
+  {
+   "name": "tesa Site Haiphong Company Limited",
+   "segments": [],
+   "applications": [
+    "Tapes"
+   ],
+   "products": [
+    "product-pwpp9701a"
+   ]
+  },
+  {
+   "name": "TEXPORT INDUSTRIES PVT LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "Texport Syndicate (India) Limited",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "THE BHOR CHEMICALS & PLASTICS PVT.LTD.",
+   "segments": [],
+   "applications": [
+    "Reinforcement"
+   ],
+   "products": [
+    "product-cwpp4063",
+    "product-cwpp4063a",
+    "product-cwpp4063brc",
+    "product-pwmm9626",
+    "product-pwpp4063a",
+    "product-pwpp4063ast"
+   ]
+  },
+  {
+   "name": "The British Millerain Co. Ltd.",
+   "segments": [],
+   "applications": [
+    "Horseware"
+   ],
+   "products": [
+    "product-cwmm8114",
+    "product-cwnn8175",
+    "product-cwpp3376b",
+    "product-cwpp3697a",
+    "product-gwaa9159a",
+    "product-gwaa9159d",
+    "product-gwll8211",
+    "product-pwpp9343"
+   ]
+  },
+  {
+   "name": "The South India Textile Research Association",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp9416st"
+   ]
+  },
+  {
+   "name": "Tradwiz",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp9582",
+    "product-pwpp9583"
+   ]
+  },
+  {
+   "name": "Trelleborg Coated Systems Us Inc.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9293",
+    "product-gwnn9294a",
+    "product-gwpp9294a",
+    "product-pwnn4059",
+    "product-pwnn9393"
+   ]
+  },
+  {
+   "name": "TRENDSETTERS SERVICES PVT. LTD.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwnn4089"
+   ]
+  },
+  {
+   "name": "Trinity Tapes P. Ltd.",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-cwnn3079",
+    "product-pwee9091a",
+    "product-pwmc9355c",
+    "product-pwmm2871",
+    "product-pwmm3544b",
+    "product-pwmm3544h",
+    "product-pwmm4165",
+    "product-pwmm4165a",
+    "product-pwnn9162a",
+    "product-pwnn9163",
+    "product-pwnn9203",
+    "product-pwpc9398",
+    "product-pwpc9398a",
+    "product-pwpc9398b",
+    "product-pwpc9398c",
+    "product-pwpp4063a",
+    "product-pwpp4063asf",
+    "product-pwpp4063ast",
+    "product-pwpp4063d",
+    "product-pwpp4063dst",
+    "product-pwpp4063st",
+    "product-pwpp4184",
+    "product-pwpp8161a",
+    "product-pwpp9190e",
+    "product-pwpp9222",
+    "product-pwpp9222d",
+    "product-pwpp9222dst",
+    "product-pwpp9222f",
+    "product-pwpp9319",
+    "product-pwpp9337a",
+    "product-pwpp9468",
+    "product-pwpp9468a",
+    "product-pwpp9468ast",
+    "product-pwpp9468b",
+    "product-pwpp9494sb"
+   ]
+  },
+  {
+   "name": "Tube Cuts and Shapes",
+   "segments": [],
+   "applications": [
+    "Microfiltration"
+   ],
+   "products": [
+    "product-con-pa-18-14",
+    "product-con-pa-80-37",
+    "product-con-pes-25-27-wr",
+    "product-pwll9665sa",
+    "product-pwnn9662sa",
+    "product-pwnn9696sa"
+   ]
+  },
+  {
+   "name": "TVSMOBILITY POLYMERIC PRODUCTS PRIVATE LIMITED",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-pwkk8264b",
+    "product-pwkk9772",
+    "product-pwnn3809"
+   ]
+  },
+  {
+   "name": "TVSMobility Polymeric Products Pvt Ltd( 100% EOU )",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-pwaa9158c",
+    "product-pwaa9159d"
+   ]
+  },
+  {
+   "name": "Unirub Techno India Pvt Ltd",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-pwaa9159c",
+    "product-pwkk8457"
+   ]
+  },
+  {
+   "name": "United Rubber Industries(I)Pvt Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-gwaa9158",
+    "product-gwaa9159a",
+    "product-pkpp9106",
+    "product-pkpp9106si",
+    "product-pwaa9158",
+    "product-pwaraara8058",
+    "product-pwarar8059"
+   ]
+  },
+  {
+   "name": "UNIVERSAL AGENCIES",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwmm4087e"
+   ]
+  },
+  {
+   "name": "UT YARN & FABRIC PRIVATE LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9190e"
+   ]
+  },
+  {
+   "name": "UV&W PRODUCTS PVT LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063cyf"
+   ]
+  },
+  {
+   "name": "Vamani Overseas Pvt Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ast",
+    "product-cwpp4063byf",
+    "product-cwpp4063cyf",
+    "product-cwpp9389a",
+    "product-cwpp9389bst"
+   ]
+  },
+  {
+   "name": "VAMSHI RUBBER LIMITED",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp4042a"
+   ]
+  },
+  {
+   "name": "VARDHMAN HOSES PVT.LTD.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn9498a"
+   ]
+  },
+  {
+   "name": "Varun Medimpex inc",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwpp8049a"
+   ]
+  },
+  {
+   "name": "Vijay Sabre Safety Pvt Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063byf"
+   ]
+  },
+  {
+   "name": "Vinko Auto Industries Limited (Unit-2)",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-pwaa9158c"
+   ]
+  },
+  {
+   "name": "VINKO AUTO INDUSTRIES LTD",
+   "segments": [],
+   "applications": [
+    "Hoses"
+   ],
+   "products": [
+    "product-pwaa9158",
+    "product-pwaa9158a",
+    "product-pwaa9158c",
+    "product-pwaa9159d"
+   ]
+  },
+  {
+   "name": "Viraj Syntex Pvt.Ltd",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-x002100034n66100s01",
+    "product-y008400140n66000001",
+    "product-y010000000par000001",
+    "product-y015000000par000001"
+   ]
+  },
+  {
+   "name": "VITAG DEFENCE SDN BHD",
+   "segments": [],
+   "applications": [
+    "Military & Defence Parachute"
+   ],
+   "products": [
+    "product-pwnn9737"
+   ]
+  },
+  {
+   "name": "VRIJESH NATURAL FIBRE & FABRICS (I) P. LTD-UNIT-1",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp9501"
+   ]
+  },
+  {
+   "name": "Wellproof Technologies Pvt. Ltd.",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn4089"
+   ]
+  },
+  {
+   "name": "Wool Research Association",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-x01-320000spe500s01",
+    "product-y005000096pes000001"
+   ]
+  },
+  {
+   "name": "X-SKY LTD",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-pwnn4201"
+   ]
+  },
+  {
+   "name": "Yes Fashions Pvt Ltd S D",
+   "segments": [],
+   "applications": [],
+   "products": [
+    "product-cwpp4063ayf",
+    "product-cwpp4063byf",
+    "product-cwpp4063cyf",
+    "product-cwpp4184"
+   ]
+  },
+  {
+   "name": "Yoland Corporation",
+   "segments": [],
+   "applications": [
+    "Military & Defence – Parachute"
+   ],
+   "products": [
+    "product-pwnn3603a",
+    "product-pwnn3603b",
+    "product-pwnn3603d",
+    "product-pwnn3603e",
+    "product-pwnn9152",
+    "product-pwnn9152a",
+    "product-pwnn9351",
+    "product-pwnn9351a",
+    "product-pwnn9653"
+   ]
+  },
+  {
+   "name": "ZENITEC",
+   "segments": [],
+   "applications": [
+    "Tape"
+   ],
+   "products": [
+    "product-pwnn3710b",
+    "product-pwnn3710g",
+    "product-pwnn3710h"
+   ]
+  },
+  {
+   "name": "Zenith Industrial Rubber products Pvt Ltd.",
+   "segments": [],
+   "applications": [
+    "EPDM ROOFING WRAPPING SECTION"
+   ],
+   "products": [
+    "product-cwmm9464",
+    "product-pwaa9159c",
+    "product-pwmm2871",
+    "product-pwmm2871a",
+    "product-pwmm3327",
+    "product-pwmm4111",
+    "product-pwnn3568",
+    "product-pwnn3809",
+    "product-pwnn9180",
+    "product-pwnn9498",
+    "product-pwnn9498a"
+   ]
+  },
+  {
+   "name": "Zeon Belts Pvt Ltd.",
+   "segments": [],
+   "applications": [
+    "Belting",
+    "Zero Impression Fabric"
+   ],
+   "products": [
+    "product-cwnn3636a",
+    "product-pwee8021",
+    "product-pwee8318",
+    "product-pwee9388",
+    "product-pwee9615",
+    "product-pwmc4158a",
+    "product-pwmc4158b",
+    "product-pwmm3544bsf",
+    "product-pwmm3544h",
+    "product-pwmm3544l",
+    "product-pwmm4012",
+    "product-pwmm4087c",
+    "product-pwmm4087e",
+    "product-pwmm4087g",
+    "product-pwmm4087i",
+    "product-pwmm4087m",
+    "product-pwmm4087n",
+    "product-pwmm4087o",
+    "product-pwmm4092",
+    "product-pwmm4092a",
+    "product-pwmm4092c",
+    "product-pwmm4157a",
+    "product-pwmm4157b",
+    "product-pwmm4157c",
+    "product-pwmm4165",
+    "product-pwmm4165f",
+    "product-pwmm4165fst",
+    "product-pwmm4192",
+    "product-pwmm4192b",
+    "product-pwmm4192c",
+    "product-pwmm4192d",
+    "product-pwmm8233",
+    "product-pwmm9635",
+    "product-pwnn3636a",
+    "product-pwnn3809",
+    "product-pwtc4169e",
+    "product-pwtc4169f",
+    "product-pwtc4169h",
+    "product-pwtc9060c",
+    "product-pwtc9060d",
+    "product-pwtc9060e",
+    "product-pwtt4169d",
+    "product-pwtt9060b"
+   ]
+  },
+  {
+   "name": "Scrap",
+   "segments": [
+    "Luggage"
+   ],
+   "applications": [],
+   "products": []
+  }
+ ],
  "opportunities": []
 }
