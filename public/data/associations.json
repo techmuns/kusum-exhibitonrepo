@@ -1,9 +1,9 @@
 {
  "_meta": {
-  "total": 12,
+  "total": 14,
   "source": "Kusumgar curated association list — the industry bodies Kusumgar should join / attend, per segment",
   "note": "verified=false rows await the associations robot (scripts/refresh-associations.mjs) — it reads each body's OWN website and fills next_event / membership_note from that page text only; nothing is invented.",
-  "updated_at": "2026-09-23"
+  "updated_at": "2026-10-07"
  },
  "associations": [
   {
@@ -25,7 +25,7 @@
    "next_event": "Advanced Textiles Expo 2026",
    "next_event_date": "November 3 – 5, 2026",
    "verify_source_url": "https://www.textiles.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -44,7 +44,7 @@
    "next_event": "Advanced Textiles Expo 2026",
    "next_event_date": "November 3 – 5, 2026",
    "verify_source_url": "https://www.textiles.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -62,7 +62,7 @@
    "next_event": "Marine Fabricators Conference",
    "next_event_date": "",
    "verify_source_url": "https://marine.textiles.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -81,7 +81,7 @@
    "next_event": "",
    "next_event_date": "",
    "verify_source_url": "https://www.edana.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -97,10 +97,10 @@
    "why_relevant": "The North American nonwovens association (host of the IDEA show) — medical, hygiene and technical nonwovens producers and buyers.",
    "source": "Kusumgar curated",
    "membership_note": "INDA serves hundreds of member companies across the nonwovens and engineered fabrics industry, helping members convene and connect, innovate, and grow through industry-leading events, professional development courses, market intelligence, test methods, consulting services, and advocacy.",
-   "next_event": "Spunbond Technology Course",
-   "next_event_date": "September 22 @ 8:00 am - September 24 @ 6:00 am",
+   "next_event": "Webinar: Professional Cleaning Wipes: Voice of Customer Insights",
+   "next_event_date": "October 7 @ 11:00 am - 12:00 pm",
    "verify_source_url": "https://www.inda.org/events-calendar/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -115,11 +115,11 @@
    "website": "https://www.pia.com/",
    "why_relevant": "The global body for parachute and aerial-delivery manufacturers — a direct fit for Kusumgar's parachute-fabric heritage and defence/aeronautical textiles.",
    "source": "Kusumgar curated",
-   "membership_note": "PIA welcomes members from every aspect of the parachute business, including suppliers, manufacturers, government agencies, industry-relevant businesses, riggers and DZOs, and interested individuals can see the Membership Application on their website.",
+   "membership_note": "PIA welcomes members from every aspect of the parachute business, including suppliers, manufacturers, government agencies, industry-relevant businesses, riggers and DZOs, and interested individuals can see their Membership Application to join.",
    "next_event": "2027 First Regular PIA Meeting",
    "next_event_date": "February 5, 2027 - February 7, 2027",
    "verify_source_url": "https://www.pia.com/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -133,11 +133,11 @@
    "website": "https://www.ndia.org/",
    "why_relevant": "The largest US defence-industry association — the route into military & defence textile programs, primes and procurement events.",
    "source": "Kusumgar curated",
-   "membership_note": "NDIA is a membership-driven association that offers membership options including corporate roster participation, with members gaining access to resources, chapters, divisions, and exclusive content such as CMMC & PPBE webinar materials.",
-   "next_event": "2026 Undersea Warfare Fall Conference",
-   "next_event_date": "9/21/2026 - 9/23/2026",
+   "membership_note": "NDIA is a membership-driven association where members can join through membership options, access member resources, and participate in chapters led by volunteer leaders with deep knowledge of local defense ecosystems.",
+   "next_event": "2026 UNDERSEA WARFARE FALL CONFERENCE",
+   "next_event_date": "September 21 - 23, 2026",
    "verify_source_url": "https://www.ndia.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -152,11 +152,11 @@
    "website": "https://outdoorindustry.org/",
    "why_relevant": "The US outdoor-products trade body (packs, bags and outdoor gear) — relevant to technical bag fabrics and outdoor-cover materials.",
    "source": "Kusumgar curated",
-   "membership_note": "OIA membership brings organizations into the room where trade policy to climate action decisions are made, offering advocacy representation, exclusive data and market intelligence, and sustainability tools and peer support to help outdoor industry businesses grow with purpose and resilience.",
+   "membership_note": "OIA membership brings organizations together to shape the future of the outdoor industry with access to advocacy, sustainability resources, business intelligence, and a community of leaders and innovators.",
    "next_event": "Catalyst Conference",
    "next_event_date": "2026",
    "verify_source_url": "https://outdoorindustry.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -170,11 +170,11 @@
    "website": "https://www.phta.org/",
    "why_relevant": "The US pool & spa industry body — the buyer community for pool safety covers and winter cover fabrics.",
    "source": "Kusumgar curated",
-   "membership_note": "PHTA membership offers exclusive benefits, industry insights, and advocacy support for pool and hot tub professionals.",
+   "membership_note": "Members can join a powerful network of pool and hot tub professionals with exclusive benefits, industry insights, and advocacy support.",
    "next_event": "Pool Spa Patio Expo",
-   "next_event_date": "November 14-19, 2026",
+   "next_event_date": "November 14-19",
    "verify_source_url": "https://www.phta.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -188,11 +188,11 @@
    "website": "https://iahtm.com/",
    "why_relevant": "The network for healthcare laundry and reusable medical textiles — relevant to medical & emergency fabric applications.",
    "source": "Kusumgar curated",
-   "membership_note": "IAHTM membership provides shared learning opportunities and educational programs to senior-level experts in healthcare textile management, allowing members to learn from industry experts, share insights, and connect with peers across North America.",
-   "next_event": "2026 Annual Education Conference",
-   "next_event_date": "28 August 2026",
+   "membership_note": "IAHTM provides shared learning opportunities and educational programs to senior-level experts and their peers in healthcare textile management, with benefits including learning from industry experts, sharing insights, and connecting with peers across North America.",
+   "next_event": "2026 European Education Tour – Italy/Switzerland/France",
+   "next_event_date": "23 October 2026",
    "verify_source_url": "https://iahtm.com/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -207,11 +207,11 @@
    "website": "https://contracttextiles.org/",
    "why_relevant": "Sets voluntary standards for commercial/contract interior textiles (upholstery, healthcare and seating fabrics) — relevant to seating and healthcare interior applications.",
    "source": "Kusumgar curated",
-   "membership_note": "ACT member companies include Principal Members and Associate Members who are among the industry's most respected leaders and support the standards and initiatives of ACT.",
+   "membership_note": "ACT member companies include Principal Members and Associate Members who are companies and individuals involved in the design, development, production, promotion and application of textiles for commercial environments, supporting the standards and initiatives of ACT.",
    "next_event": "",
    "next_event_date": "",
    "verify_source_url": "https://contracttextiles.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
    "verified": true
   },
   {
@@ -226,11 +226,47 @@
    "website": "https://www.textileinstitute.org/",
    "why_relevant": "The global professional body for textiles (UK-based, worldwide membership) — standards, qualifications and conferences spanning technical and medical textiles.",
    "source": "Kusumgar curated",
-   "membership_note": "By joining the TI, you will instantly be part of an International, professionally diverse network of members with benefits including access to a global network, ability to apply for professional qualifications, discounts on publications, attendance at events and training courses, access to informati",
+   "membership_note": "By joining the TI, members gain access to a global network, can apply for professional qualifications, receive discounts on publications, attend events and training courses, and access industry news and job opportunities.",
    "next_event": "Parliamentary Lunch",
    "next_event_date": "13 Nov 2026",
    "verify_source_url": "https://www.textileinstitute.org/",
-   "last_checked": "2026-09-23",
+   "last_checked": "2026-10-07",
+   "verified": true
+  },
+  {
+   "id": "ittaindia",
+   "name": "Indian Technical Textile Association",
+   "acronym": "ITTA",
+   "segments": [
+    "Technical textiles"
+   ],
+   "region": "",
+   "website": "https://ittaindia.org/",
+   "why_relevant": "Represents the technical textile industry in India covering all 13 segments including composites, with nearly 400 members representing the entire technical textile value chain from raw material to finished goods producers, machinery manufacturers, consultants, centers of excellence and R&D/Academic ",
+   "source": "engine proposed",
+   "membership_note": "ITTA offers three types of membership: Primary/Patron, Associate, and Student, with nearly 400 members representing the entire technical textile value chain from raw material to finished goods producers, machinery manufacturers, consultants, centers of excellence and R&D/Academic institutions.",
+   "next_event": "15th ITTA AGM 2025",
+   "next_event_date": "2025",
+   "verify_source_url": "https://ittaindia.org/",
+   "last_checked": "2026-10-07",
+   "verified": true
+  },
+  {
+   "id": "ncto",
+   "name": "National Council of Textile Organizations",
+   "acronym": "NCTO",
+   "segments": [
+    "Technical textiles"
+   ],
+   "region": "",
+   "website": "https://ncto.org/",
+   "why_relevant": "Represents the entire spectrum of the U.S. textile industry including manufacturers across the full textile supply chain.",
+   "source": "engine proposed",
+   "membership_note": "NCTO represents the entire spectrum of the textile industry and offers membership to those interested in joining the voice of U.S. textiles in Washington.",
+   "next_event": "ITMA 2027",
+   "next_event_date": "2027",
+   "verify_source_url": "https://ncto.org/",
+   "last_checked": "2026-10-07",
    "verified": true
   }
  ]
