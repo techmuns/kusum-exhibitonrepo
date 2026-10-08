@@ -2,37 +2,45 @@
   "ambu": {
     "email": {
       "subject": "Technical Textiles for Medical & Emergency / Kusumgar",
-      "body": "Dear Thomas Hauberg,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the medical and emergency equipment industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with water-repellent (DWR) and antimicrobial finishes, ideal for emergency equipment bags and medical carry solutions\n- Lightweight yet durable ripstop nylon fabrics for portable emergency kits and field medical equipment\n- Custom PU and PVC coated fabrics with antimicrobial treatments for hygiene-critical medical applications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Finn Möhring,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the medical and emergency equipment industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with water-repellent (DWR) and antimicrobial finishes, ideal for emergency equipment bags and medical carry solutions\n- Lightweight yet durable ripstop nylon fabrics for portable emergency kits and field medical equipment\n- Custom PU and PVC coated fabrics with antimicrobial treatments for hygiene-critical medical applications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:40:32.299Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Thomas Hauberg",
-      "title": "Senior Category Manager, Direct Procurement - Mechanics",
-      "linkedin_url": "https://dk.linkedin.com/in/thomashauberg",
-      "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "name": "Finn Möhring",
+      "title": "Chief Technology Officer",
+      "linkedin_url": "https://dk.linkedin.com/in/finn-m%C3%B6hring",
+      "email": "purchase_orders@ambuUSA.com",
+      "email_status": "published",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper+website",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Chief Technology"
     }
   },
   "bosch-power-tools": {
     "email": {
       "subject": "Technical Textiles for Tool & Equipment Bags / Kusumgar",
-      "body": "Dear Laura Petrescu,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool storage and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with abrasion-resistant PU or PVC coatings for durable tool bag construction\n- Water-repellent (DWR) and custom surface finishes for enhanced protection and longevity in demanding work environments\n- Vertically integrated cut-and-sew capabilities to deliver finished bag components or complete assemblies to your specifications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Christopher Barker,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool storage and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with abrasion-resistant PU or PVC coatings for durable tool bag construction\n- Water-repellent (DWR) and custom surface finishes for enhanced protection and longevity in demanding work environments\n- Vertically integrated cut-and-sew capabilities to deliver finished bag components or complete assemblies to your specifications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:40:38.767Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Laura Petrescu",
-      "title": "Commodity Buyer",
-      "linkedin_url": "https://ro.linkedin.com/in/laura-petrescu-184a6910",
-      "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "name": "Christopher Barker",
+      "title": "Power Tool Product Development - Product Owner for carpentry tools: Nail Guns, Routers, Drywall Tools",
+      "linkedin_url": "https://www.linkedin.com/in/christopher-barker-551037b1",
+      "email": "christopher.barker@us.bosch.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Product Development"
     }
   },
   "bound-tree-medical": {
@@ -74,37 +82,45 @@
   "carver-industries": {
     "email": {
       "subject": "Technical Textiles for Marine Covers / Kusumgar",
-      "body": "Dear Lori Wallace,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the marine covers industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU or PVC coatings for durability and weather resistance\n- Water-repellent (DWR) and UV-resistant finishes tailored for outdoor marine applications\n- PFAS-free coating options with custom surface treatments to meet evolving environmental standards\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Brian Willard,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the marine covers industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU or PVC coatings for durability and weather resistance\n- Water-repellent (DWR) and UV-resistant finishes tailored for outdoor marine applications\n- PFAS-free coating options with custom surface treatments to meet evolving environmental standards\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:40:56.155Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Lori Wallace",
-      "title": "Materials/Purchasing Manager",
-      "linkedin_url": "https://www.linkedin.com/in/lori-wallace-13413417",
+      "name": "Brian Willard",
+      "title": "Research And Development Specialist",
+      "linkedin_url": "https://www.linkedin.com/in/brian-willard-700694156",
       "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "email_status": "none",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "R&D"
     }
   },
   "clc-work-gear": {
     "email": {
       "subject": "Technical Textiles for Tool & Equipment Bags / Kusumgar",
-      "body": "Dear Cathy Sanchez,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester fabrics with PU or PVC coatings for durability and water resistance\n- Abrasion-resistant coated fabrics suitable for heavy-duty workwear and industrial applications\n- Custom surface treatments and finishes including water-repellent (DWR) and antimicrobial options\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Louie Morales,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester fabrics with PU or PVC coatings for durability and water resistance\n- Abrasion-resistant coated fabrics suitable for heavy-duty workwear and industrial applications\n- Custom surface treatments and finishes including water-repellent (DWR) and antimicrobial options\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:41:01.716Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Cathy Sanchez",
-      "title": "Senior Buyer",
-      "linkedin_url": "https://www.linkedin.com/in/cathy-sanchez-42b08892",
+      "name": "Louie Morales",
+      "title": "Product Management / Development Professional",
+      "linkedin_url": "https://www.linkedin.com/in/louie-morales-443b895",
       "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "email_status": "none",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper",
+      "confidence": "low",
+      "role_tier": null,
+      "match_reason": ""
     }
   },
   "covercraft": {
@@ -128,55 +144,67 @@
   "dewalt": {
     "email": {
       "subject": "Technical Textiles for Tool & Equipment Bags / Kusumgar",
-      "body": "Dear Ed Lull,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with abrasion-resistant PU or PVC coatings for durable tool bag construction\n- Water-repellent (DWR) and custom surface treatments tailored for heavy-duty workwear and industrial applications\n- Vertically integrated cut-and-sew capabilities to support finished bag production or component manufacturing\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Daniel Nace,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with abrasion-resistant PU or PVC coatings for durable tool bag construction\n- Water-repellent (DWR) and custom surface treatments tailored for heavy-duty workwear and industrial applications\n- Vertically integrated cut-and-sew capabilities to support finished bag production or component manufacturing\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:41:45.192Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Ed Lull",
-      "title": "Purchasing Manager",
-      "linkedin_url": "https://www.linkedin.com/in/ed-lull-431bb7125",
-      "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "name": "Daniel Nace",
+      "title": "Engineering Manager of DEWALT Power Tools",
+      "linkedin_url": "https://www.linkedin.com/in/daniel-nace",
+      "email": "joe@domain.com",
+      "email_status": "published",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper+website",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Engineering"
     }
   },
   "dowco-marine": {
     "email": {
       "subject": "Technical Textiles for Marine Covers / Kusumgar",
-      "body": "Dear Rick Byrd,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the marine covers industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU or PVC coatings for durability and weather resistance\n- Water-repellent (DWR) and UV-resistant finishes tailored for outdoor marine applications\n- PFAS-free coating options with custom surface treatments to meet environmental and performance standards\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Zackery Walk,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the marine covers industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU or PVC coatings for durability and weather resistance\n- Water-repellent (DWR) and UV-resistant finishes tailored for outdoor marine applications\n- PFAS-free coating options with custom surface treatments to meet environmental and performance standards\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:41:51.053Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Rick Byrd",
-      "title": "Lead Industrial Designer",
-      "linkedin_url": "https://www.linkedin.com/in/rick-byrd-6b85b332",
+      "name": "Zackery Walk",
+      "title": "Lead Engineer",
+      "linkedin_url": "https://www.linkedin.com/in/zackery-walk-63812157",
       "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "email_status": "none",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper",
+      "confidence": "low",
+      "role_tier": null,
+      "match_reason": ""
     }
   },
   "ferno": {
     "email": {
       "subject": "Technical Textiles for Medical & Emergency / Kusumgar",
-      "body": "Dear Rhett Snyder,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the medical and emergency industry. Some of the solutions we can offer:\n- High-tenacity coated nylon and polyester fabrics with water-repellent (DWR) and antimicrobial finishes, ideal for durable EMS bags and medical equipment carriers\n- FR (fire-retardant) and antimicrobial coated-laminated fabrics for institutional and medical mattresses\n- Custom PU, PVC and silicone coatings with tailored surface treatments for easy-clean, fluid-resistant applications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Jacob Cartner,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the medical and emergency industry. Some of the solutions we can offer:\n- High-tenacity coated nylon and polyester fabrics with water-repellent (DWR) and antimicrobial finishes, ideal for durable EMS bags and medical equipment carriers\n- FR (fire-retardant) and antimicrobial coated-laminated fabrics for institutional and medical mattresses\n- Custom PU, PVC and silicone coatings with tailored surface treatments for easy-clean, fluid-resistant applications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:41:57.232Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Rhett Snyder",
-      "title": "Purchasing Manager",
-      "linkedin_url": "https://www.linkedin.com/in/rhett-snyder-94a5569a",
-      "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "name": "Jacob Cartner",
+      "title": "Director of Engineering",
+      "linkedin_url": "https://www.linkedin.com/in/jacob-cartner-96308547",
+      "email": "j.cartner@ferno.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Engineering"
     }
   },
   "ge-healthcare": {
@@ -200,37 +228,45 @@
   "hilti": {
     "email": {
       "subject": "Technical Textiles for Tool & Equipment Bags / Kusumgar",
-      "body": "Dear Sumit Bhawar,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the professional tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester fabrics (20D–3000D) with PU or PVC coatings for durability, abrasion resistance and weather protection\n- Water-repellent (DWR) and antimicrobial finishes for enhanced performance in demanding work environments\n- Custom weaves and coatings tailored for heavy-duty applications, with options for cut-and-sew integration\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Maciej Chmielewski,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the professional tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester fabrics (20D–3000D) with PU or PVC coatings for durability, abrasion resistance and weather protection\n- Water-repellent (DWR) and antimicrobial finishes for enhanced performance in demanding work environments\n- Custom weaves and coatings tailored for heavy-duty applications, with options for cut-and-sew integration\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:42:09.992Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Sumit Bhawar",
-      "title": "Buyer | Global Strategic Purchaser",
-      "linkedin_url": "https://de.linkedin.com/in/sumit-bhawar",
-      "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "name": "Maciej Chmielewski, PhD",
+      "title": "R&D Group Manager",
+      "linkedin_url": "https://at.linkedin.com/in/mac-chmielewski",
+      "email": "maciej.chmielewski@hilti.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "R&D"
     }
   },
   "icu-medical": {
     "email": {
       "subject": "Technical Textiles for Medical & Emergency / Kusumgar",
-      "body": "Dear Laurie Fischer,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with antimicrobial finishes, suitable for medical transport bags and healthcare applications\n- PU and PVC coated fabrics with custom surface treatments, offering durability and easy-clean properties for medical use\n- Lightweight yet robust multifilament woven fabrics (20D–3000D) that can be tailored with water-repellent and antimicrobial treatments\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Robert Cousineau,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with antimicrobial finishes, suitable for medical transport bags and healthcare applications\n- PU and PVC coated fabrics with custom surface treatments, offering durability and easy-clean properties for medical use\n- Lightweight yet robust multifilament woven fabrics (20D–3000D) that can be tailored with water-repellent and antimicrobial treatments\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:42:16.542Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "laurie fischer",
-      "title": "buyer",
-      "linkedin_url": "https://linkedin.com/in/laurie-fischer-a685b9b",
-      "email": null,
-      "email_status": null,
-      "source": "pdl",
-      "confidence": "high"
+      "name": "Robert Cousineau",
+      "title": "Sr. Director, Global R&D",
+      "linkedin_url": "https://www.linkedin.com/in/robertcousineau",
+      "email": "robert.cousineau@icumed.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "R&D"
     }
   },
   "klein-tools": {
@@ -256,37 +292,45 @@
   "laerdal": {
     "email": {
       "subject": "Technical Textiles for Medical & Emergency / Kusumgar",
-      "body": "Dear Karoline Raugstad,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the medical and emergency response industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for medical applications\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for emergency response kits and medical equipment\n- Custom-finished lightweight to heavy-duty Nylon and Polyester fabrics with PU or PVC coatings for durability and hygiene\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Tore Sagstuen,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the medical and emergency response industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for medical applications\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for emergency response kits and medical equipment\n- Custom-finished lightweight to heavy-duty Nylon and Polyester fabrics with PU or PVC coatings for durability and hygiene\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:42:28.937Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Karoline Raugstad",
-      "title": "Sourcing Specialist",
-      "linkedin_url": "https://no.linkedin.com/in/karoline-raugstad",
-      "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "name": "Tore Sagstuen",
+      "title": "Head of Technology (VP)",
+      "linkedin_url": "https://no.linkedin.com/in/toresagstuen",
+      "email": "tore.sagstuen@laerdal.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Technology"
     }
   },
   "makita": {
     "email": {
       "subject": "Technical Textiles for Tool & Equipment Bags / Kusumgar",
-      "body": "Dear Chris Surtees,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with water-repellent (DWR) finishes for durable, weather-resistant tool bags\n- PU and PVC coated fabrics for enhanced abrasion resistance and easy-clean surfaces\n- Custom finishing options including antimicrobial treatments and various colour/coating combinations to meet your exact specifications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Andrew Bowden,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bags industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with water-repellent (DWR) finishes for durable, weather-resistant tool bags\n- PU and PVC coated fabrics for enhanced abrasion resistance and easy-clean surfaces\n- Custom finishing options including antimicrobial treatments and various colour/coating combinations to meet your exact specifications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:42:35.080Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "chris surtees",
-      "title": "Purchasing Manager at Makita UK",
-      "linkedin_url": "https://uk.linkedin.com/in/chris-surtees-3969935b",
+      "name": "Andrew Bowden",
+      "title": "technical director at makita international",
+      "linkedin_url": "https://uk.linkedin.com/in/andrew-bowden-1b77b84a",
       "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "email_status": "none",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Technical"
     }
   },
   "mastercraft": {
@@ -818,19 +862,23 @@
   "allied-medical": {
     "email": {
       "subject": "Technical Textiles for Medical & Emergency / Kusumgar",
-      "body": "Dear Brian Hartenstine,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for institutional and medical mattresses\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for medical textiles and protective applications\n- Custom surface treatments and finishes including PU, PVC and silicone coatings, with PFAS-free options available\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Akhil Kohli,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for institutional and medical mattresses\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for medical textiles and protective applications\n- Custom surface treatments and finishes including PU, PVC and silicone coatings, with PFAS-free options available\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:45:40.725Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Brian Hartenstine",
-      "title": "Materials Manager Allied Medical LLC",
-      "linkedin_url": "https://www.linkedin.com/in/brian-hartenstine-27094a43",
+      "name": "Akhil Kohli",
+      "title": "Technical Director",
+      "linkedin_url": "https://in.linkedin.com/in/akhil-kohli-85764b59",
       "email": null,
-      "email_status": null,
-      "source": "web",
-      "confidence": "medium"
+      "email_status": "none",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Technical"
     }
   },
   "allient-defense": {
@@ -899,19 +947,23 @@
   "ameritex-fabric-systems": {
     "email": {
       "subject": "Technical Textiles for Marine Covers / Kusumgar",
-      "body": "Dear Don Zirkelbach,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the marine covers industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU, PVC or silicone coatings for durability and weather resistance\n- Water-repellent (DWR) and UV-resistant finishes tailored for outdoor marine applications\n- Custom surface treatments and lamination options to meet specific performance requirements\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Brent Bucks,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the marine covers industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU, PVC or silicone coatings for durability and weather resistance\n- Water-repellent (DWR) and UV-resistant finishes tailored for outdoor marine applications\n- Custom surface treatments and lamination options to meet specific performance requirements\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:46:10.579Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "don zirkelbach",
-      "title": "president",
-      "linkedin_url": "https://linkedin.com/in/don-zirkelbach-b7425a8",
-      "email": null,
-      "email_status": "none",
-      "source": "pdl",
-      "confidence": "high"
+      "name": "Brent Bucks",
+      "title": "Director of Innovation",
+      "linkedin_url": "https://www.linkedin.com/in/brent-bucks-12b68114",
+      "email": "brent.bucks@fam-stumabo.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Innovation"
     }
   },
   "angel-armor": {
@@ -1148,19 +1200,23 @@
   "bahco": {
     "email": {
       "subject": "Technical Textiles for Tool & Equipment Bags / Kusumgar",
-      "body": "Dear Chris Martensen,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bag industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with PU or PVC coatings for durability, abrasion resistance and water repellency\n- Water-repellent (DWR) and antimicrobial finishes to protect contents and extend product life\n- Custom surface treatments and coating formulations tailored to your performance and aesthetic requirements\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Miguel Ivo Gomes,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bag industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics (20D–3000D) with PU or PVC coatings for durability, abrasion resistance and water repellency\n- Water-repellent (DWR) and antimicrobial finishes to protect contents and extend product life\n- Custom surface treatments and coating formulations tailored to your performance and aesthetic requirements\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:47:48.996Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "chris martensen",
-      "title": "recruiter, hiring and training manager-bahco bandsaw products",
-      "linkedin_url": "https://linkedin.com/in/chris-martensen-b8a25812",
-      "email": null,
-      "email_status": "none",
-      "source": "pdl",
-      "confidence": "high"
+      "name": "Miguel Ivo Gomes",
+      "title": "In charge of the product development plan/ priorities based on the market and product application. The link between production, R&D and sales.",
+      "linkedin_url": "https://pt.linkedin.com/in/miguel-ivo-gomes-988039b",
+      "email": "miguel.gomes@snaeurope.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "R&D"
     }
   },
   "bainbridge-marine": {
@@ -1804,19 +1860,23 @@
   "curaplex": {
     "email": {
       "subject": "Technical Textiles for Medical & Emergency / Kusumgar",
-      "body": "Dear Jennifer Tsang,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for institutional and medical mattresses\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for medical textiles and protective applications\n- Custom-finished synthetic fabrics with PFAS-free coating options for healthcare and emergency equipment\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Erica Schirmann,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for institutional and medical mattresses\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for medical textiles and protective applications\n- Custom-finished synthetic fabrics with PFAS-free coating options for healthcare and emergency equipment\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T12:51:29.277Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Jennifer Tsang",
-      "title": "Curaplex Buyer",
-      "linkedin_url": "https://www.linkedin.com/in/jennifer-tsang-09522b50",
-      "email": null,
-      "email_status": "none",
-      "source": "web",
-      "confidence": "medium"
+      "name": "Erica Schirmann, MBA",
+      "title": "New Product Development - Product Manager",
+      "linkedin_url": "https://www.linkedin.com/in/ericaley",
+      "email": "erica.schirmann@sarnova.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Product Development"
     }
   },
   "custom-leathercraft": {
@@ -4935,19 +4995,23 @@
   "harita-seating": {
     "email": {
       "subject": "Technical Textiles for Automotive Seating / Kusumgar",
-      "body": "Dear Karunamoorthy C,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the automotive seating industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU or PVC coatings for durable seat covers and upholstery applications\n- Water-repellent (DWR) and antimicrobial finishes for enhanced comfort and hygiene in commercial vehicle interiors\n- Custom surface treatments and coatings tailored for automotive specifications, with various colour and finish options\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "body": "Dear Yogesh Kale,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the automotive seating industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester woven fabrics with PU or PVC coatings for durable seat covers and upholstery applications\n- Water-repellent (DWR) and antimicrobial finishes for enhanced comfort and hygiene in commercial vehicle interiors\n- Custom surface treatments and coatings tailored for automotive specifications, with various colour and finish options\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
       "drafted_at": "2026-09-15T15:10:16.188Z",
       "model": "bedrock-converse",
       "voice": 2
     },
     "contact": {
-      "name": "Karunamoorthy C",
-      "title": "Head of Procurement : Strategic Sourcing",
-      "linkedin_url": "https://in.linkedin.com/in/karunamoorthy-c-991a9624",
+      "name": "yogesh kale",
+      "title": "vp-R&D",
+      "linkedin_url": "https://in.linkedin.com/in/yogesh-kale-927674a",
       "email": null,
       "email_status": "none",
-      "source": "web",
-      "confidence": "medium"
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "R&D"
     }
   },
   "latham-pool-products": {
@@ -9935,11 +9999,11 @@
       "name": "Suzanne Hunt",
       "title": "R&D Admin at Sigmatex",
       "linkedin_url": "https://uk.linkedin.com/in/suzanne-hunt-6774961a0",
-      "email": null,
-      "email_status": "none",
+      "email": "sales@sigmatex.co.uk",
+      "email_status": "published",
       "email_verified": false,
       "email_checked_at": null,
-      "source": "serper",
+      "source": "serper+website",
       "confidence": "medium",
       "role_tier": "A",
       "match_reason": "R&D"
@@ -10093,6 +10157,123 @@
       "confidence": "medium",
       "role_tier": "A",
       "match_reason": "R&D"
+    }
+  },
+  "der-new-material": {
+    "contact": {
+      "name": "Jade Chen",
+      "title": "Sales Manager",
+      "linkedin_url": "https://cn.linkedin.com/in/jadechan2023",
+      "email": "inquire@derflex.com",
+      "email_status": "published",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper+website",
+      "confidence": "low",
+      "role_tier": null,
+      "match_reason": ""
+    }
+  },
+  "e-squared": {
+    "contact": {
+      "name": "Bailey Hatfield",
+      "title": "Research And Development Engineer",
+      "linkedin_url": "https://www.linkedin.com/in/bailey-hatfield-81a812128",
+      "email": "esilva@e2techtextiles.com",
+      "email_status": "published",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper+website",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "R&D"
+    }
+  },
+  "eastex-products": {
+    "contact": {
+      "name": "Dan Camara",
+      "title": "Textiles Professional",
+      "linkedin_url": "https://www.linkedin.com/in/dan-camara-4362156",
+      "email": "dcamara@eastexproducts.com",
+      "email_status": "verified",
+      "email_verified": true,
+      "email_checked_at": "2026-10-08",
+      "source": "serper+prospeo",
+      "confidence": "low",
+      "role_tier": null,
+      "match_reason": ""
+    }
+  },
+  "erez-technical-textiles": {
+    "contact": {
+      "name": "Daniel Lanternari",
+      "title": "Technical Support",
+      "linkedin_url": null,
+      "email": "sales_etp@erez-therm.com",
+      "email_status": "published",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "website+website",
+      "confidence": "medium",
+      "role_tier": "A",
+      "match_reason": "Technical"
+    }
+  },
+  "hui-liang": {
+    "contact": {
+      "name": "Hui Liang",
+      "title": "Director Of Research Development",
+      "linkedin_url": "https://cn.linkedin.com/in/hui-liang-8055a188",
+      "email": null,
+      "email_status": "none",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper",
+      "confidence": "low",
+      "role_tier": null,
+      "match_reason": ""
+    }
+  },
+  "lonatarp": {
+    "contact": {
+      "name": "Adam Lu",
+      "title": "Manufacturer Of Vinyl Tarps & Finished Products - LonaTarp®",
+      "linkedin_url": "https://www.linkedin.com/posts/xuting-anastasia-shao_researches-show-that-the-traditional-urea-formaldehyde-activity-7402524591648337920-C1TZ",
+      "email": "yunying@pvctarpaulin.com",
+      "email_status": "published",
+      "email_verified": false,
+      "email_checked_at": null,
+      "source": "serper+website",
+      "confidence": "low",
+      "role_tier": null,
+      "match_reason": ""
+    }
+  },
+  "1millikelvin-pty-ltd": {
+    "email": {
+      "subject": "Technical Textiles for Medical & Emergency Applications / Kusumgar",
+      "body": "Dear Sir/Madam,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for institutional and medical mattresses\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for medical textiles and emergency equipment\n- Custom surface treatments and coatings (PU, PVC, silicone) tailored for medical-grade applications\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "drafted_at": "2026-10-08T15:16:14.678Z",
+      "model": "bedrock-converse",
+      "voice": 2
+    }
+  },
+  "2excel-aviation": {
+    "email": {
+      "subject": "Technical Textiles for Tool & Equipment Bags / Kusumgar",
+      "body": "Dear Sir/Madam,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the tool and equipment bag industry. Some of the solutions we can offer:\n- High-tenacity Nylon and Polyester fabrics (210D–1000D) with PU or PVC coatings for durability, abrasion resistance and water repellency\n- Custom surface treatments and finishes including water-repellent (DWR) and antimicrobial options for enhanced performance\n- In-house cut-and-sew capabilities to support prototyping or finished product requirements\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "drafted_at": "2026-10-08T15:16:21.093Z",
+      "model": "bedrock-converse",
+      "voice": 2
+    }
+  },
+  "acacia": {
+    "email": {
+      "subject": "Technical Textiles for Medical & Emergency Applications / Kusumgar",
+      "body": "Dear Sir/Madam,\n\nLet me take this opportunity to briefly introduce Kusumgar Limited (www.kusumgar.com), one of India's leading manufacturers of high-performance technical textiles, with over 50 years of expertise. We operate a fully vertically integrated setup — weaving, dyeing, finishing, coating, lamination and cut-and-sew — producing synthetic multifilament fabrics in Nylon, Polyester and Aramids from 20D to 3000D, with in-house finishes and performance coatings.\n\nWe believe our capabilities align well with the Medical & Emergency industry. Some of the solutions we can offer:\n- Coated and laminated fabrics with fire-retardant (FR) and antimicrobial finishes for institutional and medical mattresses\n- Water-repellent (DWR) and antimicrobial treated fabrics suitable for medical textiles and protective applications\n- Custom-finished fabrics with PU, PVC or silicone coatings tailored for medical and emergency equipment\n\nThese fabrics can be tailored with various colour, finish and coating options to meet your exact specifications.\n\nWe would be keen to support your fabric sourcing requirements, and I would welcome the opportunity to arrange a brief call — or share samples for your evaluation.\n\nLook forward to hearing from you.\n\nBest Regards,\nNishad Ansari\nDGM – Sales & Marketing\nKusumgar Limited | www.kusumgar.com",
+      "drafted_at": "2026-10-08T15:16:27.601Z",
+      "model": "bedrock-converse",
+      "voice": 2
     }
   }
 }

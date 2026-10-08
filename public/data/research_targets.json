@@ -221,7 +221,18 @@
    "product_evidence": "Harita Seating Systems, a manufacturer of complete vehicle seats for commercial vehicles and buses... Harita Seating has a leading and dominant position in the tractor and commercial vehicle driver seats",
    "verify_source_url": "https://www.motorindiaonline.in/harita-seatings-jv-with-fehrer/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "yogesh kale",
+   "person_title": "vp-R&D",
+   "person_linkedin": "https://in.linkedin.com/in/yogesh-kale-927674a",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "bharat-seats",
@@ -304,7 +315,18 @@
    "product_evidence": "The Emergency Care Learning Lab provides a comprehensive, portable training solution for basic emergency care and CPR. Designed for WHO's Basic Emergency Care program, it includes adult and infant manikins, airway management tools, and wound care trainers",
    "verify_source_url": "https://www.laerdal.com/us/products/simulation-training/emergency-care-trauma/emergency-care-learning-lab/?srsltid=AU7gw4XWfGuOqGs_7cJbI2HpAx3PlDmnok0hATZvAa0DpzmGLOq4wYiO",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Tore Sagstuen",
+   "person_title": "Head of Technology (VP)",
+   "person_linkedin": "https://no.linkedin.com/in/toresagstuen",
+   "person_role_tier": "A",
+   "person_match_reason": "Technology",
+   "person_email": "tore.sagstuen@laerdal.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "medtronic",
@@ -376,7 +398,18 @@
    "product_evidence": "FERNO's EMS bags are the solution your agency needs to keep EMS supplies organized and ready to deploy at a moment's notice.",
    "verify_source_url": "https://ferno.com/ems/ems-bags?hl=en-us",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Jacob Cartner",
+   "person_title": "Director of Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/jacob-cartner-96308547",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": "j.cartner@ferno.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "bound-tree-medical",
@@ -412,7 +445,18 @@
    "product_evidence": "Emergency Care & Training Resuscitators Extrication Collars Head Immobilizers Video Laryngoscopes Training Manikins Products Laryngeal Tubes Clinical Evidence Ambu® Resuscitators Ambu® Military Mark lll Ambu® SPUR® II",
    "verify_source_url": "https://www.ambuusa.com/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Finn Möhring",
+   "person_title": "Chief Technology Officer",
+   "person_linkedin": "https://dk.linkedin.com/in/finn-m%C3%B6hring",
+   "person_role_tier": "A",
+   "person_match_reason": "Chief Technology",
+   "person_email": "purchase_orders@ambuUSA.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "icu-medical",
@@ -430,7 +474,18 @@
    "product_evidence": "Medical & Emergency products confirmed through multiple product lines including: 'Infusion Therapy', 'Vascular Access', 'Airway Management', 'Temperature Management Blood and Fluid Warming Systems', 'Hemodynamic Monitoring', 'Pain Management', and 'life-saving, life-enhancing medical devices'",
    "verify_source_url": "https://www.icumed.com/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Robert Cousineau",
+   "person_title": "Sr. Director, Global R&D",
+   "person_linkedin": "https://www.linkedin.com/in/robertcousineau",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "robert.cousineau@icumed.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "milwaukee-tool",
@@ -511,7 +566,18 @@
    "product_evidence": "DEWALT Tool Bags deliver durable, portable storage and organization for tools and accessories.",
    "verify_source_url": "https://www.dewalt.com/en-us/products/storage-organization/tool-bags",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Daniel Nace",
+   "person_title": "Engineering Manager of DEWALT Power Tools",
+   "person_linkedin": "https://www.linkedin.com/in/daniel-nace",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": "joe@domain.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "bosch-power-tools",
@@ -529,7 +595,18 @@
    "product_evidence": "Organization Systems & Solutions",
    "verify_source_url": "https://www.boschtools.com/us/en/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Christopher Barker",
+   "person_title": "Power Tool Product Development - Product Owner for carpentry tools: Nail Guns, Routers, Drywall Tools",
+   "person_linkedin": "https://www.linkedin.com/in/christopher-barker-551037b1",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "christopher.barker@us.bosch.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "makita",
@@ -547,7 +624,18 @@
    "product_evidence": "Tool Bags & Cases",
    "verify_source_url": "https://makitatools.com/products/accessories/tool-storage-and-organization/tool-bags-and-cases",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Andrew Bowden",
+   "person_title": "technical director at makita international",
+   "person_linkedin": "https://uk.linkedin.com/in/andrew-bowden-1b77b84a",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "hilti",
@@ -565,7 +653,18 @@
    "product_evidence": "Wide-mouth tool bag made from durable 600 denier recycled polyester, for protecting and transporting power tools and accessories",
    "verify_source_url": "https://www.hilti.com/c/CLS_TOOL_STORAGE_TRANSPORT/CLS_SOFTBAGS_BACKPACKS/2437854",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Maciej Chmielewski, PhD",
+   "person_title": "R&D Group Manager",
+   "person_linkedin": "https://at.linkedin.com/in/mac-chmielewski",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "maciej.chmielewski@hilti.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "snap-on",
@@ -630,7 +729,18 @@
    "product_evidence": "Tool Carriers CLC Tech Gear™ Molded Base Bags Nail and Tool Bags Softside Tool Carriers Tool Pouches Work Gear",
    "verify_source_url": "https://goclc.com/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Louie Morales",
+   "person_title": "Product Management / Development Professional",
+   "person_linkedin": "https://www.linkedin.com/in/louie-morales-443b895",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "coverstore",
@@ -939,7 +1049,18 @@
    "product_evidence": "Carver Bimini Tops by Boat Make/Model Carver bimini tops for many boat makes, models, and years... Carver Boat Tops are designed and engineered in Landrum, SC and production takes place in Carver's state-of-the-art manufacturing facilities.",
    "verify_source_url": "https://www.boatcoversdirect.com/products/bimini_tops/carver/?srsltid=AU7gw4Xt_EYDBJIsYyPWtkL0LIf8Y9AEUgrtXLKYQ2ioE4lIbGUkFRcY",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Brian Willard",
+   "person_title": "Research And Development Specialist",
+   "person_linkedin": "https://www.linkedin.com/in/brian-willard-700694156",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "dowco-marine",
@@ -957,7 +1078,18 @@
    "product_evidence": "Replacement canvas to be installed on enclosure structure. Canvas only, does not include frame or hardware. Manufactured using Dowco's own ClimaShield Plus fabric technology",
    "verify_source_url": "https://www.dowcomarine.com/products/boat-enclosures/elite_22_c_enclosure_canvas_full-44086?srsltid=AU7gw4U5FRhnk-8-c3qdvx4rCvcs2MGnFsqF0QNx_YPcSSkhzWYSbos9",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Zackery Walk",
+   "person_title": "Lead Engineer",
+   "person_linkedin": "https://www.linkedin.com/in/zackery-walk-63812157",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "shoremaster",
@@ -1706,7 +1838,7 @@
    "verify_source_url": "https://www.canvasetc.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-08"
   },
   {
    "id": "ohio-awning",
@@ -2060,7 +2192,18 @@
    "product_evidence": "mooring covers, T-Top canvas and more. The canvas AmeritexDirect provides is highly-engineered, a far cry from the tarps some people cover their boats with.",
    "verify_source_url": "https://ameritexdirect.com/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Brent Bucks",
+   "person_title": "Director of Innovation",
+   "person_linkedin": "https://www.linkedin.com/in/brent-bucks-12b68114",
+   "person_role_tier": "A",
+   "person_match_reason": "Innovation",
+   "person_email": "brent.bucks@fam-stumabo.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "taylor-made-products",
@@ -2564,7 +2707,7 @@
    "verify_source_url": "https://www.imarsales.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-08"
   },
   {
    "id": "sea-ray-accessories",
@@ -2881,7 +3024,8 @@
    "product_evidence": "Cover & Awning Fabrics Solacryl Acrylic Cover Fabrics KingsGuard Elite Cover Fabrics Trim & Binding Marlen Textiles Cover Fabrics Window Material PVC Cover Fabrics Flame Retardant Fabric Bag & Flag Fabrics Pattern Material Covermaking Hardware",
    "verify_source_url": "https://www.bainbridgeint.com/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08"
   },
   {
    "id": "marine-canvas-creations",
@@ -3300,7 +3444,18 @@
    "product_evidence": "Textile & Leather Equipment... Closed Top Bag MRO Toolkit... Fabric Tool Bag Service Engineer's Toolkit... Leather Bag Electrician Toolkit... 24 L Open Top Fabric Tool Bags with Rigid Base",
    "verify_source_url": "https://www.bahco.com/int_en/products/tool-storage-toolkits/textile-leather-equipment.html",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Miguel Ivo Gomes",
+   "person_title": "In charge of the product development plan/ priorities based on the market and product application. The link between production, R&D and sales.",
+   "person_linkedin": "https://pt.linkedin.com/in/miguel-ivo-gomes-988039b",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "miguel.gomes@snaeurope.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "wera-tools",
@@ -4222,7 +4377,18 @@
    "product_evidence": "Curaplex EMS Equipment Bags | Bound Tree Shop Curaplex Equipment Bags for EMS and first responders",
    "verify_source_url": "https://www.boundtree.com/equipment-bags/c/53?srsltid=AU7gw4UPPdNJvbLeiHMf8OAajHe1zN8eoZKH4eeBAnfa4ABK_pU66Ofw",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Erica Schirmann, MBA",
+   "person_title": "New Product Development - Product Manager",
+   "person_linkedin": "https://www.linkedin.com/in/ericaley",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "erica.schirmann@sarnova.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "rescue-essentials",
@@ -4267,7 +4433,18 @@
    "product_evidence": "Allied Medical LLC is a worldwide supplier of emergency medical products, respiratory products and medical gas construction equipment. We are a leading manufacturer of Ventilators, Carbon Dioxide Absorbents, Suction Regulators/Aspirators and Medical Gas Systems, for hospital and patient care in home or emergency situations.",
    "verify_source_url": "http://alliedmedicalllc.com/en-us/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Akhil Kohli",
+   "person_title": "Technical Director",
+   "person_linkedin": "https://in.linkedin.com/in/akhil-kohli-85764b59",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "hartwell-medical",
@@ -4286,7 +4463,7 @@
    "verify_source_url": "https://www.hartwellmedical.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-08"
   },
   {
    "id": "chinook-medical",
@@ -4625,7 +4802,8 @@
    "product_evidence": "Karl Bollmann doctor's bags stand for precise craftsmanship, robust materials, and uncompromising quality... Karl Bollmann bags are made for doctors, nurses, and midwives – robust, hygienic, and suitable for everyday use. Perfect for clinics and home visits.",
    "verify_source_url": "https://www.pullupcase.com/en/pages/karl-bollmann-arztetaschen-b2c?srsltid=AU7gw4WGPaFQ4FvZhlrvWXa2g9yQfrTRPFgfK82zhZb6Bym2R0rjc1_v",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-08"
   },
   {
    "id": "weinmann-emergency",
@@ -5864,7 +6042,7 @@
    "verify_source_url": "https://americantarping.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-08"
   },
   {
    "id": "dtr-fabricators",
@@ -6133,11 +6311,11 @@
    "person_linkedin": "https://uk.linkedin.com/in/suzanne-hunt-6774961a0",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
+   "person_email": "sales@sigmatex.co.uk",
+   "person_email_status": "published",
    "person_email_verified": false,
    "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_source": "serper+website"
   },
   {
    "id": "chomarat",
@@ -7118,7 +7296,18 @@
    "product_evidence": "TPU-coated fabrics are waterproof and stand up longer to harsh weather and marine conditions... With over 30 years of experience, Erez is a world leader in the manufacturer of boat bladder fabric, supplying most manufacturers in Europe.",
    "verify_source_url": "https://erez-therm.com/benefits-of-tpu-boats/",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Daniel Lanternari",
+   "person_title": "Technical Support",
+   "person_linkedin": null,
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": "sales_etp@erez-therm.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "website+website"
   },
   {
    "id": "unitarp",
@@ -7154,7 +7343,18 @@
    "product_evidence": "Inflatable Boat Fabric: TPU & PVC Coated Materials... Rez-Coat™ TPU-Coated Fabrics... TPU 2051 – Aliphatic TPU | 40 oz/yd²... Applications: Inflatable whitewater rafts, rescue RIB collars",
    "verify_source_url": "https://www.e2techtextiles.com/inflatable-boat-fabric/",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Bailey Hatfield",
+   "person_title": "Research And Development Engineer",
+   "person_linkedin": "https://www.linkedin.com/in/bailey-hatfield-81a812128",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "esilva@e2techtextiles.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "eastex-products",
@@ -7172,7 +7372,18 @@
    "product_evidence": "RF Weldable TPU and Sealable Fabrics are deployed across multiple sectors where airtight reliability and fluid resistance are mandatory. Healthcare RF-weldable materials are essential for critical care and patient support surfaces. Our cleanable, fluid-proof TPU fabrics are utilized in hospital mattresses, patient repositioning devices, and wheelchair cushions.",
    "verify_source_url": "https://eastexproducts.com/product/rf-weldable-tpu-and-sealable-fabrics/",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Dan Camara",
+   "person_title": "Textiles Professional",
+   "person_linkedin": "https://www.linkedin.com/in/dan-camara-4362156",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "dcamara@eastexproducts.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-08",
+   "person_source": "serper+prospeo"
   },
   {
    "id": "nanxiongtpu",
@@ -7244,7 +7455,18 @@
    "product_evidence": "TPU coated fabrics...supplies textile material like...apparel, workwear...HL is specialized in Sustainable Fabric, Functional Fabric",
    "verify_source_url": "https://www.huiliang-textile.com/en/product/HL23LB0818.html",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Hui Liang",
+   "person_title": "Director Of Research Development",
+   "person_linkedin": "https://cn.linkedin.com/in/hui-liang-8055a188",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper"
   },
   {
    "id": "der-new-material",
@@ -7262,7 +7484,18 @@
    "product_evidence": "TPU Coated Polyester Fabric is widely used for medical massage air beds, air cushions, oxygen bags, airbags, outdoor camping inflatable tents, jet skis, inflatable boats, life jackets, diving suits, raincoats, escape cushions, diving buoys, blood pressure bags, massage air bags, airships, diving Bags, life-saving equipment, field tent back pads, water bed oil bladders, water storage tank storage b",
    "verify_source_url": "https://m.derflex-sign.com/tpu-coated-nylon-fabric",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Jade Chen",
+   "person_title": "Sales Manager",
+   "person_linkedin": "https://cn.linkedin.com/in/jadechan2023",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "inquire@derflex.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "lonatarp",
@@ -7280,7 +7513,18 @@
    "product_evidence": "Custom TPU Coated Fabrics... TPU Fabric: Structure, Uses & Custom Supply | LonaTarp... Made-to-Order TPU Fabric Rolls | MOQ 5,000 m²",
    "verify_source_url": "https://lonatarp.com/tpu-fabrics/",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08",
+   "person_name": "Adam Lu",
+   "person_title": "Manufacturer Of Vinyl Tarps & Finished Products - LonaTarp®",
+   "person_linkedin": "https://www.linkedin.com/posts/xuting-anastasia-shao_researches-show-that-the-traditional-urea-formaldehyde-activity-7402524591648337920-C1TZ",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "yunying@pvctarpaulin.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "serper+website"
   },
   {
    "id": "anhui-der-new-material-technology-co-ltd",
@@ -7298,7 +7542,8 @@
    "product_evidence": "TPU coating fabric is mainly used to coat a layer of coating fabric TPU with special functions on the basis of fabric... Application scope of TPU tarpaulin",
    "verify_source_url": "http://www.der-factory.com/en/TPU-coated-fabric.html",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08"
   },
   {
    "id": "alltextilesupplier-com",
@@ -7316,7 +7561,8 @@
    "product_evidence": "PVC coated fabric and TPU coated fabric are the two most widely used materials for waterproof outdoor bags... TPU is commonly used in: Premium outdoor backpacks... Inflatable sports products... Sports Equipment",
    "verify_source_url": "https://www.alltextilesupplier.com/a/Article/companynews/pvc-coated-fabric-vs-tpu-dry-bag.html",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-08"
   }
  ]
 }
