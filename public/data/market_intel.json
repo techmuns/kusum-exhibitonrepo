@@ -4,7 +4,7 @@
   "year": 2025,
   "year_reason": "2025 — latest complete year; 2026 still partial (no data yet)",
   "latest_complete_year": 2025,
-  "updated_at": "2026-10-03T12:48:31.888Z",
+  "updated_at": "2026-10-10T14:03:36.750Z",
   "note": "All figures are real UN Comtrade import/export values — nothing modeled.",
   "monthly_through": "202607"
  },
@@ -14,12 +14,12 @@
    "imports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=5903&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025",
    "exports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=5903&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025"
   },
-  "world_import_value": 8949661194.425003,
-  "world_export_value": 14062985583.052998,
-  "world_import_netWgt": 835970985.2850002,
-  "world_export_netWgt": 2598232636.0389986,
-  "reporting_importers": 112,
-  "reporting_exporters": 94,
+  "world_import_value": 8953131872.522003,
+  "world_export_value": 14062278358.017998,
+  "world_import_netWgt": 843014581.9110003,
+  "world_export_netWgt": 2598293485.540999,
+  "reporting_importers": 118,
+  "reporting_exporters": 96,
   "top_importers": [
    {
     "code": 842,
@@ -242,7 +242,7 @@
    },
    {
     "region": "Asia",
-    "value": 2917068107.977,
+    "value": 2917065107.977,
     "pct": 32.6
    },
    {
@@ -252,7 +252,7 @@
    },
    {
     "region": "Africa",
-    "value": 640586636.733,
+    "value": 644024947.217,
     "pct": 7.2
    },
    {
@@ -262,7 +262,7 @@
    },
    {
     "region": "Oceania",
-    "value": 103631715.64799999,
+    "value": 103667083.26099999,
     "pct": 1.2
    }
   ]
@@ -273,11 +273,11 @@
    "imports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=590320&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025",
    "exports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=590320&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025"
   },
-  "world_import_value": 3315824914.338,
-  "world_export_value": 5876566504.194999,
-  "world_import_netWgt": 239824631.22900018,
-  "world_export_netWgt": 740477579.059,
-  "reporting_importers": 107,
+  "world_import_value": 3315847584.1029997,
+  "world_export_value": 5876525504.194999,
+  "world_import_netWgt": 239825269.5290002,
+  "world_export_netWgt": 740475623.304,
+  "reporting_importers": 110,
   "reporting_exporters": 77,
   "top_importers": [
    {
@@ -511,7 +511,7 @@
    },
    {
     "region": "Africa",
-    "value": 279374426.511,
+    "value": 279397096.276,
     "pct": 8.4
    },
    {
@@ -567,49 +567,49 @@
    },
    {
     "period": "202601",
-    "import_value": 587459394.417,
-    "export_value": 498793970.8209999,
-    "import_netWgt": 60886827.33699999
+    "import_value": 587488770.616,
+    "export_value": 498792910.46799994,
+    "import_netWgt": 60887798.32099999
    },
    {
     "period": "202602",
-    "import_value": 582236604.414,
-    "export_value": 492024484.18799996,
+    "import_value": 582236605.7650001,
+    "export_value": 492024484.30399996,
     "import_netWgt": 60886439.283999994
    },
    {
     "period": "202603",
-    "import_value": 617459368.031,
-    "export_value": 561289418.433,
-    "import_netWgt": 56383256.99
+    "import_value": 617793998.9679999,
+    "export_value": 561130120.537,
+    "import_netWgt": 56411526.99
    },
    {
     "period": "202604",
-    "import_value": 597150731.3759999,
-    "export_value": 552563498.5999999,
-    "import_netWgt": 54163126.98899999
+    "import_value": 597175674.839,
+    "export_value": 552525308.556,
+    "import_netWgt": 54163102.98699999
    },
    {
     "period": "202605",
-    "import_value": 572358036.7919998,
-    "export_value": 532057684.62799996,
-    "import_netWgt": 50754346.10000002
+    "import_value": 572310182.7419999,
+    "export_value": 532040701.254,
+    "import_netWgt": 50752514.10000002
    },
    {
     "period": "202606",
-    "import_value": 579964477.8620001,
-    "export_value": 523541218.71599996,
-    "import_netWgt": 48565724.317999996
+    "import_value": 579908096.845,
+    "export_value": 523505700.22,
+    "import_netWgt": 48562392.317999996
    },
    {
     "period": "202607",
-    "import_value": 455093483.39400005,
-    "export_value": 357134106.251,
-    "import_netWgt": 35360427.951
+    "import_value": 473528562.657,
+    "export_value": 366626315.45400006,
+    "import_netWgt": 39215330.444
    }
   ],
-  "last12_import_value": 7322686931.837999,
-  "last12_export_value": 6387436328.092,
+  "last12_import_value": 7341406727.984,
+  "last12_export_value": 6396677487.248,
   "months_count": 12
  }
 }
