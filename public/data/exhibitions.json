@@ -76,7 +76,8 @@
   "start": "2026-10-12",
   "status": "Not yet",
   "end": "2026-10-14",
-  "website": "https://meetings.ausa.org/annual/2026/index.cfm"
+  "website": "https://meetings.ausa.org/annual/2026/index.cfm",
+  "registration": "https://meetings.ausa.org/annual/2026/Badge_Registration_ticket_sales_2026.cfm"
  },
  {
   "id": "cansec",
@@ -653,7 +654,7 @@
   "dates": "24 Oct 2026",
   "start": "2026-10-24",
   "website": null,
-  "registration": null,
+  "registration": "https://en.jufair.com/exhibition/china-marine-economy-expo/ticket",
   "status": "Not yet",
   "source": "discovered",
   "discovered_at": "2026-09-17T12:19:18.585Z",
@@ -706,5 +707,21 @@
   "discovered_at": "2026-09-17T12:19:26.922Z",
   "relevance_reason": "International Exhibition on Garments and Textiles Machinery, Manufacturing Technology, Materials - relevant for technical textile manufacturing",
   "end": "2027-08-06"
+ },
+ {
+  "id": "indo-defence-expo-forum",
+  "segment": "Military & Tactical",
+  "name": "INDO DEFENCE EXPO & FORUM",
+  "country": "Indonesia",
+  "place": "Jakarta",
+  "dates": "18–21 Nov 2026",
+  "start": "2026-11-18",
+  "website": "https://indodefence.com",
+  "registration": null,
+  "status": "Not yet",
+  "source": "discovered",
+  "discovered_at": "2026-10-12T13:40:25.580Z",
+  "relevance_reason": "Leading international exhibition for tri-service defence, aerospace, maritime, and security industries - relevant for military, tactical, aeronautical and marine technical textiles",
+  "end": "2026-11-21"
  }
 ]
