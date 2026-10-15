@@ -279,7 +279,18 @@
    "product_evidence": "Stryker's EMS products deliver a powerful, connected ecosystem of tools—helping you save lives, coordinate care and face challenges head-on.",
    "verify_source_url": "https://www.stryker.com/us/en/emergency-care/emergency-medical-services.html",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "John Daniel",
+   "person_title": "Stryker Distinguished R&D Fellow",
+   "person_linkedin": "https://www.linkedin.com/in/johnmkdaniel",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "zoll-medical",
@@ -380,7 +391,18 @@
    "product_evidence": "Find monitors, EKG machines, hospital supplies and replacement parts.",
    "verify_source_url": "https://www.usa.philips.com/healthcare/support/e-commerce",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "Marty Mason",
+   "person_title": "Senior Director, R&D",
+   "person_linkedin": "https://www.linkedin.com/in/marty-mason-17a8387",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "philips.water@gozerowater.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl+website"
   },
   {
    "id": "ferno",
@@ -503,7 +525,18 @@
    "product_evidence": "Shop heavy duty and durable jobsite solutions including backpacks, rolling bags and other soft storage solutions.",
    "verify_source_url": "https://www.milwaukeetool.com/products/storage-solutions/soft-storage",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "Craig A. Kottke",
+   "person_title": "Director New Product Development, Cordless Power Tools",
+   "person_linkedin": "https://www.linkedin.com/in/craig-a-kottke-98b7b911",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "craig.kottke@milwaukeetool.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-15",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "klein-tools",
@@ -548,7 +581,18 @@
    "product_evidence": "DEWALT® Expands ToughSystem® 2.0 Storage Line With Soft Tool Bags & Organizers... the new ToughSystem 2.0 Compact 11-in Tool Bag (DWST08025) and 22-in Jobsite Tool Bag (DWST08350)",
    "verify_source_url": "https://newsroom.stanleyblackanddecker.com/DEWALT-R-Expands-ToughSystem-R-2-0-Storage-Line-With-Soft-Tool-Bags-Organizers-To-Provide-Customizable,-Convenient-and-Durable-Solutions-For-Extreme-Jobsite-Conditions",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "Andy Weisbeck, PE",
+   "person_title": "Responsible for global engineering teams including R&D, Product Development, Applications, and Resident",
+   "person_linkedin": "https://www.linkedin.com/in/andy-weisbeck-pe-60288410",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "Debora.Raymond@sbdinc.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl+website"
   },
   {
    "id": "dewalt",
@@ -682,7 +726,18 @@
    "product_evidence": "Snap-on Tool Bags",
    "verify_source_url": "https://www.ebay.com/b/Snap-on-Tool-Tool-Bags/130140/bn_7898200",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "Bob D'Agostino",
+   "person_title": "Director of Engineering at Snap-on Equipment",
+   "person_linkedin": "https://www.linkedin.com/in/bob-d-agostino-1b464129",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "veto-pro-pac",
@@ -1107,7 +1162,18 @@
    "product_evidence": "Protect your boat with ShoreMaster canopy systems. Choose from Traditional, Hip Roof, or TowerMaxx frames with premium canopy covers",
    "verify_source_url": "https://www.shoremaster.com/boat-lifts/boat-lift-canopies/",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "david king",
+   "person_title": "production manager",
+   "person_linkedin": "https://linkedin.com/in/david-king-650256140",
+   "person_role_tier": "B",
+   "person_match_reason": "Production",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl"
   },
   {
    "id": "covercraft",
@@ -1161,7 +1227,18 @@
    "product_evidence": "Boat Covers",
    "verify_source_url": "https://www.ebay.com/shop/sea-ray-canvas?_nkw=sea+ray+canvas",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "Terry McNew",
+   "person_title": "Executive VP BBG/Manufacturing, PD&E, Quality",
+   "person_linkedin": "https://www.linkedin.com/in/terry-mcnew-18918012",
+   "person_role_tier": "B",
+   "person_match_reason": "Manufacturing",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "mastercraft",
@@ -1179,7 +1256,18 @@
    "product_evidence": "Factory Original (OEM) Canvas & Covers, Copy Your Canvas or Covers, Bimini-Tops and Boat or PWC Covers for MasterCraft boats",
    "verify_source_url": "https://rnr-marine.com/MasterCraft.shtml",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "bart downing",
+   "person_title": "president",
+   "person_linkedin": "https://linkedin.com/in/bartdowning",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl"
   },
   {
    "id": "yamaha-marine",
@@ -1458,7 +1546,8 @@
    "product_evidence": "PoolTux Royal Mesh Safety Pool Cover - 20ft x 40ft Rectangle Safety Swimming Pool Cover",
    "verify_source_url": "https://mightycovers.com/product/pooltux-royal-mesh-safety-pool-cover-7/?srsltid=AU7gw4UgJKVyPMGTR7jBkBghVRomDeq4P0v0BpGtjoKSXSZ324ThvRy8",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15"
   },
   {
    "id": "tara-manufacturing",
@@ -1838,7 +1927,17 @@
    "verify_source_url": "https://www.canvasetc.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15",
+   "person_name": "russell spear",
+   "person_title": "owner",
+   "person_linkedin": "https://linkedin.com/in/russell-spear-41005035",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "cs@canvasetc.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl+website"
   },
   {
    "id": "ohio-awning",
@@ -2342,7 +2441,17 @@
    "verify_source_url": "https://rnr-marine.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15",
+   "person_name": "Daniel Løfberg",
+   "person_title": "Operations Manager Denmark & Norway",
+   "person_linkedin": "https://dk.linkedin.com/in/daniel-l%C3%B8fberg-63b78023",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "d.lofberg@palfinger.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-15",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "boat-covers-direct",
@@ -2688,7 +2797,18 @@
    "product_evidence": "SureShade designs and manufactures innovative boat shade systems that enhance and facilitate the boating experience.",
    "verify_source_url": "https://www.lippert.com/brands/sureshade?srsltid=AU7gw4WMIIRF9uH8d5EBq-GhM_Fh3583zwHXkwCha1dYdw6sNO4fMTah",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-15",
+   "person_name": "jake holohan",
+   "person_title": "product engineer",
+   "person_linkedin": "https://linkedin.com/in/jake-holohan-8384b2123",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "sales@orders.lippert.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl+website"
   },
   {
    "id": "imar-marine",
@@ -2707,7 +2827,17 @@
    "verify_source_url": "https://www.imarsales.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15",
+   "person_name": "Zara Teixeira",
+   "person_title": "Biologist, Environmental Geographer, R&D projects team member",
+   "person_linkedin": "https://pt.linkedin.com/in/zarafaniteixeira",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "info@imarsales.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl+website"
   },
   {
    "id": "sea-ray-accessories",
@@ -3025,7 +3155,7 @@
    "verify_source_url": "https://www.bainbridgeint.com/",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15"
   },
   {
    "id": "marine-canvas-creations",
@@ -3145,7 +3275,7 @@
    "verify_source_url": "https://www.sailrite.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15"
   },
   {
    "id": "harken-canvas-solutions",
@@ -4463,7 +4593,17 @@
    "verify_source_url": "https://www.hartwellmedical.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15",
+   "person_name": "mike medina",
+   "person_title": "production coordinator",
+   "person_linkedin": null,
+   "person_role_tier": "B",
+   "person_match_reason": "Production",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl"
   },
   {
    "id": "chinook-medical",
@@ -4656,7 +4796,17 @@
    "verify_source_url": "https://rescue-one.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15",
+   "person_name": "Salvador RODRIGUEZ",
+   "person_title": "Operations Manager",
+   "person_linkedin": "https://www.linkedin.com/in/salvador-rodriguez-095586136",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "zoll",
@@ -4803,7 +4953,17 @@
    "verify_source_url": "https://www.pullupcase.com/en/pages/karl-bollmann-arztetaschen-b2c?srsltid=AU7gw4WGPaFQ4FvZhlrvWXa2g9yQfrTRPFgfK82zhZb6Bym2R0rjc1_v",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15",
+   "person_name": "arne thelen",
+   "person_title": "geschäftsführer",
+   "person_linkedin": null,
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "info@pullupcase.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl+website"
   },
   {
    "id": "weinmann-emergency",
@@ -5150,7 +5310,7 @@
    "verify_source_url": "https://www.rescuetech1.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15"
   },
   {
    "id": "dynamic-rescue-systems",
@@ -5382,7 +5542,17 @@
    "verify_source_url": "https://www.nationalcovers.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15",
+   "person_name": "jamie cottee",
+   "person_title": "owner / manager",
+   "person_linkedin": "https://linkedin.com/in/jamie-cottee-15a21b51",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "service@nationalcovers.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl+website"
   },
   {
    "id": "durabilt-covers",
@@ -5796,7 +5966,17 @@
    "verify_source_url": "https://tarpamerica.net/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15",
+   "person_name": "logan harding",
+   "person_title": "laborer",
+   "person_linkedin": "https://linkedin.com/in/logan-harding-51751617b",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl"
   },
   {
    "id": "industrial-shadeports",
@@ -6042,7 +6222,17 @@
    "verify_source_url": "https://americantarping.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15",
+   "person_name": "Michael Soletti",
+   "person_title": "Owner",
+   "person_linkedin": "https://www.linkedin.com/in/michael-soletti-02213813",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "dtr-fabricators",
@@ -6758,7 +6948,7 @@
    "verify_source_url": "https://www.marexcompositesinc.com/wind-energy",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15"
   },
   {
    "id": "sky-composites",
@@ -6893,7 +7083,7 @@
    "verify_source_url": "https://noahcomposites.com/sports-equipments/",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15"
   },
   {
    "id": "jcsportline",
@@ -7249,7 +7439,17 @@
    "verify_source_url": "https://www.perfectex.com/tpu-coated-industrial-fabrics/",
    "verified_at": "2026-09-27",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-15",
+   "person_name": "Dawn Hunter",
+   "person_title": "Director of Operations",
+   "person_linkedin": "https://www.linkedin.com/in/dawnhunter",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "info@perfectex.com",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl+website"
   },
   {
    "id": "u-long",
@@ -7401,7 +7601,8 @@
    "product_evidence": "Anti-decubitus mattress, medical massage bed, oxygen bag, blood pressure cuff, tourniquet... Super sealing for medical oxygen bag, blood pressure cuff, medical anti-decubitus mattress... Anti-bacterial and non-toxic",
    "verify_source_url": "https://www.nanxiongtpu.net/news/industry-news/how-to-choose-a-good-tpu-coated-fabric-manufacturer/",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-15"
   },
   {
    "id": "primetex",
@@ -7419,7 +7620,18 @@
    "product_evidence": "PrimeTex TPU Medical Fabric is a functional composite material made from medical-grade thermoplastic polyurethane (Medical Grade TPU) and high-performance textile substrates... widely used in medical devices, rehabilitation equipment, hospital care products, and medical protective applications.",
    "verify_source_url": "https://m.primepvc.hk/tpu-fabric/tpu-medical-fabric.html",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-15",
+   "person_name": "pahan sankalpa",
+   "person_title": "marketing executive",
+   "person_linkedin": "https://linkedin.com/in/pahan-sankalpa-660307203",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "info@primepvc.hk",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl+website"
   },
   {
    "id": "sikor-tex",
@@ -7437,7 +7649,18 @@
    "product_evidence": "TPU coated fabric is a versatile and high-performance material... Apparel: Raincoats, jackets, and protective clothing often use TPU coated polyester or nylon for weather resistance and comfort.",
    "verify_source_url": "https://www.sikortex.com/tpu-coated-fabric/",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-15",
+   "person_name": "Moritz Beckmann",
+   "person_title": "Director of Research and Development",
+   "person_linkedin": "https://de.linkedin.com/in/moritzbeckmann",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "moritz.beckmann@sikora.net",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-15",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "hui-liang",
@@ -7543,7 +7766,17 @@
    "verify_source_url": "http://www.der-factory.com/en/TPU-coated-fabric.html",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15",
+   "person_name": "Wayne Ma",
+   "person_title": "Director of Technical Operations",
+   "person_linkedin": "https://www.linkedin.com/in/wayne-ma-53323224",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "alltextilesupplier-com",
@@ -7562,7 +7795,7 @@
    "verify_source_url": "https://www.alltextilesupplier.com/a/Article/companynews/pvc-coated-fabric-vs-tpu-dry-bag.html",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-08"
+   "person_checked_at": "2026-10-15"
   }
  ]
 }
