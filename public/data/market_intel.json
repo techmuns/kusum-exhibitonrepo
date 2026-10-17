@@ -4,7 +4,7 @@
   "year": 2025,
   "year_reason": "2025 — latest complete year; 2026 still partial (no data yet)",
   "latest_complete_year": 2025,
-  "updated_at": "2026-10-10T14:03:36.750Z",
+  "updated_at": "2026-10-17T11:48:52.309Z",
   "note": "All figures are real UN Comtrade import/export values — nothing modeled.",
   "monthly_through": "202607"
  },
@@ -14,12 +14,12 @@
    "imports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=5903&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025",
    "exports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=5903&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025"
   },
-  "world_import_value": 8953131872.522003,
-  "world_export_value": 14062278358.017998,
-  "world_import_netWgt": 843014581.9110003,
-  "world_export_netWgt": 2598293485.540999,
-  "reporting_importers": 118,
-  "reporting_exporters": 96,
+  "world_import_value": 9195234765.727003,
+  "world_export_value": 14069998154.087997,
+  "world_import_netWgt": 896111355.6930004,
+  "world_export_netWgt": 2599577338.670999,
+  "reporting_importers": 121,
+  "reporting_exporters": 98,
   "top_importers": [
    {
     "code": 842,
@@ -106,6 +106,13 @@
     "netWgt": 42863738
    },
    {
+    "code": 116,
+    "country": "Cambodia",
+    "iso2": "KH",
+    "value": 238086474.638,
+    "netWgt": 51884194.832
+   },
+   {
     "code": 251,
     "country": "France",
     "iso2": "FR",
@@ -118,13 +125,6 @@
     "iso2": "GB",
     "value": 173798983.359,
     "netWgt": 14694989.314
-   },
-   {
-    "code": 203,
-    "country": "Czechia",
-    "iso2": "CZ",
-    "value": 169164305,
-    "netWgt": 0
    }
   ],
   "top_exporters": [
@@ -236,34 +236,34 @@
   ],
   "region_split": [
    {
-    "region": "Europe",
-    "value": 2988246845.278001,
-    "pct": 33.4
+    "region": "Asia",
+    "value": 3155151582.615,
+    "pct": 34.3
    },
    {
-    "region": "Asia",
-    "value": 2917065107.977,
-    "pct": 32.6
+    "region": "Europe",
+    "value": 2988246845.278001,
+    "pct": 32.5
    },
    {
     "region": "North America",
-    "value": 2025602613.8350003,
-    "pct": 22.6
+    "value": 2029499957.9150002,
+    "pct": 22.1
    },
    {
     "region": "Africa",
-    "value": 644024947.217,
-    "pct": 7.2
+    "value": 644144021.704,
+    "pct": 7
    },
    {
     "region": "South America",
     "value": 274525274.95400006,
-    "pct": 3.1
+    "pct": 3
    },
    {
     "region": "Oceania",
     "value": 103667083.26099999,
-    "pct": 1.2
+    "pct": 1.1
    }
   ]
  },
@@ -273,12 +273,12 @@
    "imports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=590320&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025",
    "exports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=590320&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025"
   },
-  "world_import_value": 3315847584.1029997,
-  "world_export_value": 5876525504.194999,
-  "world_import_netWgt": 239825269.5290002,
-  "world_export_netWgt": 740475623.304,
-  "reporting_importers": 110,
-  "reporting_exporters": 77,
+  "world_import_value": 3350000918.683,
+  "world_export_value": 5876968263.974998,
+  "world_import_netWgt": 246623603.25900018,
+  "world_export_netWgt": 740538705.694,
+  "reporting_importers": 113,
+  "reporting_exporters": 78,
   "top_importers": [
    {
     "code": 360,
@@ -496,23 +496,23 @@
   "region_split": [
    {
     "region": "Asia",
-    "value": 1186777633.1889997,
-    "pct": 35.8
+    "value": 1220695172.3189998,
+    "pct": 36.4
    },
    {
     "region": "Europe",
     "value": 1129495742.6809995,
-    "pct": 34.1
+    "pct": 33.7
    },
    {
     "region": "North America",
-    "value": 624152046.687,
-    "pct": 18.8
+    "value": 624379546.6270001,
+    "pct": 18.6
    },
    {
     "region": "Africa",
-    "value": 279397096.276,
-    "pct": 8.4
+    "value": 279405391.786,
+    "pct": 8.3
    },
    {
     "region": "South America",
@@ -567,49 +567,49 @@
    },
    {
     "period": "202601",
-    "import_value": 587488770.616,
-    "export_value": 498792910.46799994,
-    "import_netWgt": 60887798.32099999
+    "import_value": 587614496.639,
+    "export_value": 498788627.47599995,
+    "import_netWgt": 60890722.451999985
    },
    {
     "period": "202602",
-    "import_value": 582236605.7650001,
-    "export_value": 492024484.30399996,
-    "import_netWgt": 60886439.283999994
+    "import_value": 582209064.813,
+    "export_value": 492016585.30399996,
+    "import_netWgt": 60885824.869
    },
    {
     "period": "202603",
-    "import_value": 617793998.9679999,
-    "export_value": 561130120.537,
-    "import_netWgt": 56411526.99
+    "import_value": 617755106.9679999,
+    "export_value": 561115309.4879999,
+    "import_netWgt": 56410826.292
    },
    {
     "period": "202604",
-    "import_value": 597175674.839,
-    "export_value": 552525308.556,
-    "import_netWgt": 54163102.98699999
+    "import_value": 597273716.839,
+    "export_value": 552526389.556,
+    "import_netWgt": 54165787.98699999
    },
    {
     "period": "202605",
-    "import_value": 572310182.7419999,
-    "export_value": 532040701.254,
-    "import_netWgt": 50752514.10000002
+    "import_value": 572445561.0149999,
+    "export_value": 532044423.38,
+    "import_netWgt": 50761848.08900002
    },
    {
     "period": "202606",
-    "import_value": 579908096.845,
-    "export_value": 523505700.22,
-    "import_netWgt": 48562392.317999996
+    "import_value": 579571515.2310001,
+    "export_value": 523306603.22,
+    "import_netWgt": 48545221.31299999
    },
    {
     "period": "202607",
-    "import_value": 473528562.657,
-    "export_value": 366626315.45400006,
-    "import_netWgt": 39215330.444
+    "import_value": 512961071.65700006,
+    "export_value": 399626591.45400006,
+    "import_netWgt": 44007279.705
    }
   ],
-  "last12_import_value": 7341406727.984,
-  "last12_export_value": 6396677487.248,
+  "last12_import_value": 7380795368.714001,
+  "last12_export_value": 6429456476.333,
   "months_count": 12
  }
 }
