@@ -74,8 +74,8 @@ with no paid search, scraping or model credentials. The bounded queue rotates
 through `scripts/exhibition-sources.json`, including reviewed organisers and
 paginated EventsEye listings. JSON-LD event data and reviewed date expressions
 update existing editions; directory rows discover new events. At most 24 pages
-and five minutes are used per run. With the initial 70-source queue, a complete
-attempt rotation normally takes three successful scheduled runs. A failed or
+and five minutes are used per run. The oldest-attempted queue includes newly discovered organiser event pages;
+source receipts distinguish successful event data from unresolved formats. A failed or
 unparseable page remains an explicit follow-up, not evidence of fresh coverage.
 
 `public/data/exhibition-checks.json` distinguishes attempts from successful event
@@ -90,3 +90,10 @@ invoked by the exhibition schedule. Research Central imports a pinned catalogue
 commit hourly and uses its existing checked publication/deployment flow. Source
 failures and blocked publication can delay freshness; no exhaustive coverage is
 claimed.
+
+Organiser event announcements can discover new CBRN and parachute events with
+unknown dates, then queue their exact event pages for a later bounded detail read.
+The Airship Association next-conference statement retains its literal location
+and season/year. Existing owner segment categories remain intact. Registration
+links use the actual organiser-published destination; URL text does not establish
+an edition or whether booking is open.

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {iso,publicUrl,structuredEvents,reviewedEvent,directoryEvents,refreshCatalogue,MARKETS} from './lib/public-exhibitions.mjs';
+import {iso,publicUrl,structuredEvents,reviewedEvent,directoryEvents,refreshCatalogue,announcedEvents,MARKETS} from './lib/public-exhibitions.mjs';
 test('source dates reject rollovers and unsafe or missing links stay missing',()=>{assert.equal(iso('2027-02-30'),null);for(const s of [undefined,'','javascript:bad','https://u:p@host.example/'])assert.equal(publicUrl(s,'https://example.org'),null);});
 test('structured dates are event dates rather than article timestamps',()=>{const r=structuredEvents('<script type="application/ld+json">{"@graph":[{"@type":"Article","datePublished":"2027-01-01"},{"@type":"Event","name":"Show","startDate":"2027-02-03","endDate":"2027-02-05"}]}</script>',{url:'https://example.org/'});assert.equal(r.length,1);assert.equal(r[0].start,'2027-02-03');assert.equal(r[0].registration,null);});
 test('reviewed ranges refresh next editions without using page years as dates',()=>{const s={name:'Show',identity:'Show',url:'https://example.org',date_pattern:'(?<from>\\d+)[–-](?<to>\\d+) (?<month>March) (?<year>20\\d{2})'};assert.equal(reviewedEvent('Show 2–4 March 2027',s,{today:'2026-10-19'})[0].end,'2027-03-04');assert.deepEqual(reviewedEvent('Show copyright 2027',s,{today:'2026-10-19'}),[]);});
@@ -13,5 +13,14 @@ test('stale structured editions cannot replace an upcoming event, and next means
  const event=(year)=>({"@type":"Event",name:'Show '+year,startDate:year+'-03-02',endDate:year+'-03-04'}),html=events=>'<script type="application/ld+json">'+JSON.stringify(events)+'</script>',source={name:'Show',url:'https://example.org/'};
  assert.deepEqual(reviewedEvent(html(event('2026')),source,{today:'2026-10-19'}),[]);
  assert.equal(reviewedEvent(html([event('2028'),event('2027')]),source,{today:'2026-10-19'})[0].start,'2027-03-02');
- assert.equal(reviewedEvent(html(event('2027'))+'<a href="https://show25registration.example/">Register</a>',source,{today:'2026-10-19'})[0].registration,null);
+ assert.equal(reviewedEvent(html(event('2027'))+'<a href="https://show25registration.example/">Register</a>',source,{today:'2026-10-19'})[0].registration,'https://show25registration.example/');
+});
+
+
+test('new organiser event announcements enter a bounded detail queue without guessing dates or fetching links from visits',async()=>{
+ const source={id:'calendar',url:'https://organiser.example/',adapter:'announcements',markets:[MARKETS[3]],event_subject:'CBRN',event_path:'/events/'};
+ const html='<a href="/events/cbrn-2027">High Intensity CBRN 2027</a><a href="https://other.example/events/x">CBRN 2027</a><a href="/news/cbrn">CBRN 2027</a><a href="/events/old">CBRN 2025</a>';
+ const events=announcedEvents(html,source,{today:'2026-10-19'});assert.equal(events.length,1);assert.equal(events[0].start,null);
+ let reads=0;const result=await refreshCatalogue([],{sources:{}},{sources:[source]},{now:'2026-10-19T00:00:00Z',read:async()=>{reads++;return html;}});
+ assert.equal(reads,1);assert.equal(result.shows.length,1);assert.equal(result.ledger.discovered_sources.length,1);assert.equal(result.shows[0].date_evidence.kind,'announcement');
 });

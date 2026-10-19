@@ -28,6 +28,15 @@ export function directoryEvents(html,source){
  }
  return out;
 }
+export function announcedEvents(html,source,{today=new Date().toISOString().slice(0,10)}={}){
+ const seen=new Set(),out=[];
+ for(const link of links(html,source.url)){
+  const u=new URL(link.url),parent=new URL(source.url),year=link.label.match(/\b(20\d{2})\b/)?.[1];
+  if(u.hostname.replace(/^www\./,'')!==parent.hostname.replace(/^www\./,'')||!u.pathname.startsWith(source.event_path||'/events/')||!year||year<today.slice(0,4)||!new RegExp(source.event_subject,'i').test(link.label)||seen.has(link.url))continue;
+  seen.add(link.url);out.push({id:'calendar-'+digest(link.url).slice(0,20),name:link.label,website:link.url,start:null,end:null,edition_year:year,dates:'Dates to be announced',event_status:'dates-pending',announcement_only:true,evidence:'Organiser event announcement: '+link.label+' — '+link.url});
+ }
+ return out;
+}
 const month=s=>{const n=Number(s);return n>=1&&n<=12?n:['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(String(s).toLowerCase().slice(0,3))+1;};
 export function reviewedEvent(html,source,{today=new Date().toISOString().slice(0,10)}={}){
  const body=text(html);if(source.identity&&!new RegExp(source.identity,'i').test(body))throw Error('Event identity missing from source');
@@ -39,14 +48,15 @@ export function reviewedEvent(html,source,{today=new Date().toISOString().slice(
    if(start&&end&&end>=start&&Date.parse(end)-Date.parse(start)<=30*86400000)event={name:source.name,start,end,dates:`${start} – ${end}`,evidence:match[0],event_status:'scheduled'};
   }
  }
- if(!event&&source.announcement_pattern){const m=body.match(new RegExp(source.announcement_pattern,'i'));if(m)event={name:source.name,start:null,end:null,dates:m[0],evidence:m[0],event_status:'dates-pending'};}
+ if(!event&&source.announcement_pattern){const m=body.match(new RegExp(source.announcement_pattern,'i'));if(m)event={name:m.groups?.name||source.name,place:m.groups?.place,start:null,end:null,dates:m.groups?.when||'Dates to be announced',evidence:m[0],event_status:'dates-pending',announcement_only:true};}
  if(!event||event.start&&(event.end||event.start)<today)return [];
+ const editionYear=event.start?.slice(0,4)||event.evidence?.match(/\b(20\d{2})\b/)?.[1];
+ if(editionYear&&editionYear<today.slice(0,4))return [];
  const candidates=links(html,source.url),registration=candidates.find(l=>new RegExp(source.registration_label||'^(?:Register(?: now| to attend)?|Become a Visitor|Visitor registration|Get (?:free )?tickets?)$','i').test(l.label));
  let destination=registration?.url||event.registration||null;
- // Old edition portals remain in history; do not offer them as current tickets.
- const year=event.start?.slice(0,4),full=destination?.match(/\b(20\d{2})\b/g)||[],short=destination?.match(/[a-z]{3,}(\d{2})(?=registration|tickets?|[/.]|$)/i)?.[1];
- if(year&&(full.some(y=>y!==year)||short&&'20'+short!==year))destination=null;
- return [{...event,name:event.name||source.name,place:source.place||event.place,country:source.country||event.country,website:source.website||source.url,registration:destination}];
+ // Organisers may reuse a booking URL after a postponement. URL text alone
+ // does not establish the registration edition or whether booking is open.
+ return [{...event,edition_year:editionYear,name:event.name||source.name,place:source.place||event.place,country:source.country||event.country,website:source.website||source.url,registration:destination,registration_evidence_excerpt:destination?(registration?.label||'Structured event offer')+' — '+destination:undefined}];
 }
 export async function readPage(url,{fetcher=fetch,limit=2_000_000}={}){
  if(!publicUrl(url))throw Error('Invalid public source URL');
@@ -61,14 +71,24 @@ export async function readPage(url,{fetcher=fetch,limit=2_000_000}={}){
 }
 export async function refreshCatalogue(shows,ledger,config,{now=new Date().toISOString(),limit=24,read=readPage,budgetMs=300000}={}){
  const started=Date.now();ledger.sources||={};const byId=new Map(shows.map(r=>[r.id,r]));let added=0,updated=0,failed=0,reads=0;
- const queue=[...config.sources].sort((a,b)=>String(ledger.sources[a.id]?.attempted_at||'').localeCompare(ledger.sources[b.id]?.attempted_at||''));
+ ledger.discovered_sources||=[];
+ const approved=new Set(config.sources.map(s=>new URL(s.url).hostname.replace(/^www\./,'')));
+ const discovered=ledger.discovered_sources.filter(s=>publicUrl(s.url)&&approved.has(new URL(s.url).hostname.replace(/^www\./,''))&&new URL(s.url).pathname.startsWith('/events/'));
+ if(discovered.length>256)throw Error('Discovered event pages need additional queue storage before publication');
+ const queue=[...config.sources,...discovered.filter(s=>!config.sources.some(c=>c.id===s.id))].sort((a,b)=>String(ledger.sources[a.id]?.attempted_at||'').localeCompare(ledger.sources[b.id]?.attempted_at||''));
  for(const source of queue){if(reads>=limit||Date.now()-started>=budgetMs)break;const old=ledger.sources[source.id]||{};reads++;
-  try{const html=await read(source.url),events=source.adapter==='reviewed'?reviewedEvent(html,source,{today:now.slice(0,10)}):directoryEvents(html,source);if(!events.length)throw Error('No supported next-edition dates or announcement extracted; last-good data retained');
+  try{const html=await read(source.url),events=source.adapter==='announcements'?announcedEvents(html,source,{today:now.slice(0,10)}):source.adapter==='reviewed'?reviewedEvent(html,source,{today:now.slice(0,10)}):directoryEvents(html,source);if(!events.length)throw Error('No supported next-edition dates or announcement extracted; last-good data retained');
    for(const event of events){
-    const series=source.show_id||'public-'+digest((event.listing||event.website||'')+'|'+norm(event.name)).slice(0,16),id=source.show_id||series+'-'+event.start;
-    const prior=byId.get(id),receipt={source_id:source.id,url:source.url,content_sha256:digest(html),checked_at:now,excerpt:event.evidence,attribution:source.adapter==='eventseye'?'directory-reported':'organiser-reported'};
+    const series=source.show_id||'public-'+digest((event.listing||event.website||'')+'|'+norm(event.name)).slice(0,16),id=event.id||source.show_id||series+'-'+event.start;
+    const prior=byId.get(id),receipt={source_id:source.id,url:source.url,content_sha256:digest(html),checked_at:now,excerpt:event.evidence,kind:event.announcement_only?'announcement':'dates',attribution:source.adapter==='eventseye'?'directory-reported':'organiser-reported'};
+    if(event.announcement_only&&prior?.start){event.start=prior.start;event.end=prior.end;event.dates=prior.dates;event.registration=prior.registration;}
+    if(!event.country&&prior?.country&&event.place?.split(',').at(-1)?.trim()===prior.country)event.country=prior.country;
     const next={...prior,...event,id,segment:source.segment||prior?.segment||'Industrial',market_ids:source.markets,relevance_reason:source.relevance,status:prior?.status||'Not yet',source:'public-calendar',discovered_at:prior?.discovered_at||now,source_checked_at:now,date_evidence:receipt,registration_status:event.registration?'published':'not-published',previous_editions:prior?.previous_editions||[]};
     delete next.evidence;
+    if(event.registration)next.registration_evidence={...receipt,kind:'registration',excerpt:event.registration_evidence_excerpt||event.registration};
+    delete next.registration_evidence_excerpt;
+    if(event.announcement_only&&prior?.date_evidence)next.date_evidence=prior.date_evidence;
+    if(source.adapter==='announcements'&&!ledger.discovered_sources.some(s=>s.url===event.website))ledger.discovered_sources.push({id:'detail-'+event.id,show_id:event.id,name:event.name,url:event.website,adapter:'reviewed',markets:source.markets,relevance:source.relevance,segment:source.segment});
     if(prior&&['name','start','end','dates','website','registration','place','event_status'].some(k=>prior[k]!==next[k])){const {previous_editions,...previous}=prior;next.previous_editions=[...next.previous_editions,previous];}
     if(prior)updated++;else added++;byId.set(id,next);
    }

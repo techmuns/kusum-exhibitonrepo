@@ -76,16 +76,14 @@
    ],
    "relevance": "Airship developers, operators and infrastructure; lighter-than-air industry relevance.",
    "identity": "Airship Association",
-   "place": "Ottawa",
-   "country": "Canada",
-   "announcement_pattern": "UpShip! Ottawa.{0,40}will be held in Ottawa, Canada in Spring 20\\d{2}",
+   "announcement_pattern": "Our next conference, (?<name>[^,]{4,100}), will be held in (?<place>.{3,120}?) in (?<when>(?:Spring|Summer|Autumn|Fall|Winter) 20\\d{2})",
    "segment": "Aeronautical"
   },
   {
    "id": "pia-symposium",
    "show_id": "pia-symposium",
    "name": "PIA Symposium",
-   "url": "https://www.pia.com/events/",
+   "url": "https://www.pia.com/events/info-pricing/",
    "adapter": "reviewed",
    "markets": [
     "parachute-systems"
@@ -95,7 +93,10 @@
    "place": "Cincinnati, Ohio",
    "country": "USA",
    "date_pattern": "(?<month>February)\\s+(?<from>\\d{1,2})\\s*[\u2013-]\\s*(?<to>\\d{1,2}),?\\s+(?<year>20\\d{2})",
-   "segment": "Aeronautical"
+   "segment": "Aeronautical",
+   "announcement_pattern": "(?<name>20\\d{2}\\s+PIA\\s+Symposium)",
+   "registration_label": "Register as an Attendee",
+   "website": "https://www.pia.com/events/"
   },
   {
    "id": "afera-tape-week",
@@ -689,6 +690,30 @@
    "adapter": "reviewed",
    "markets": [],
    "relevance": "International Exhibition on Garments and Textiles Machinery, Manufacturing Technology, Materials - relevant for technical textile manufacturing"
+  },
+  {
+   "id": "cbrne-announcements",
+   "url": "https://cbrneworld.com/",
+   "adapter": "announcements",
+   "markets": [
+    "cbrn-colpro"
+   ],
+   "relevance": "CBRN protection and response exhibition; review the organiser programme for shelter relevance.",
+   "segment": "Military & Tactical",
+   "event_path": "/events/",
+   "event_subject": "CBRN|Convergence"
+  },
+  {
+   "id": "pia-announcements",
+   "url": "https://www.pia.com/events/",
+   "adapter": "announcements",
+   "markets": [
+    "parachute-systems"
+   ],
+   "relevance": "Parachute industry exhibitions and symposia.",
+   "segment": "Aeronautical",
+   "event_path": "/events/",
+   "event_subject": "Symposium"
   }
  ]
 }
