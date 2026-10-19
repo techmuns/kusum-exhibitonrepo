@@ -295,7 +295,8 @@
   "start": "2027-05-12",
   "status": "Exhibited",
   "end": "2027-05-15",
-  "website": "https://indodefence.com"
+  "website": "https://indodefence.com",
+  "registration": "https://indodefence.com/to-visit"
  },
  {
   "id": "iav",
@@ -717,7 +718,7 @@
   "dates": "18–21 Nov 2026",
   "start": "2026-11-18",
   "website": "https://indodefence.com",
-  "registration": null,
+  "registration": "https://indodefence.com/to-visit",
   "status": "Not yet",
   "source": "discovered",
   "discovered_at": "2026-10-12T13:40:25.580Z",
