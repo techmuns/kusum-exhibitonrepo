@@ -24,3 +24,10 @@ test('new organiser event announcements enter a bounded detail queue without gue
  let reads=0;const result=await refreshCatalogue([],{sources:{}},{sources:[source]},{now:'2026-10-19T00:00:00Z',read:async()=>{reads++;return html;}});
  assert.equal(reads,1);assert.equal(result.shows.length,1);assert.equal(result.ledger.discovered_sources.length,1);assert.equal(result.shows[0].date_evidence.kind,'announcement');
 });
+
+test('unsupported formats cool down without consuming the next run before readable calendars',async()=>{
+ const sources=['bad','good'].map(id=>({id,show_id:id,name:id,adapter:'reviewed',url:'https://example.org/'+id,markets:[MARKETS[0]],date_pattern:'(?<from>2)[–-](?<to>4) (?<month>March) (?<year>20\\d{2})'}));let reads=[];
+ const read=async url=>{reads.push(url);return url.endsWith('/bad')?'Unknown layout':'good 2–4 March 2027';};
+ let result=await refreshCatalogue([],{sources:{}},{sources},{now:'2026-10-19T00:00:00Z',read});assert.equal(result.ledger.sources.bad.next_check_at,'2026-10-26T00:00:00.000Z');
+ reads=[];result=await refreshCatalogue(result.shows,result.ledger,{sources},{now:'2026-10-19T06:00:00Z',read});assert.deepEqual(reads,['https://example.org/good']);assert.equal(result.shows.length,1);
+});
