@@ -31,7 +31,9 @@
   "segments": [
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "Bags"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -76,7 +78,9 @@
   "applications": [
    "Rainwear Jacket",
    "Rainwear",
+   "Jackets",
    "Interlinings",
+   "Plate Carrier Cover",
    "Wheel Chair Fabric"
   ],
   "customer_count": 0,
@@ -136,7 +140,9 @@
   "segments": [
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "Industrial Tapes"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -244,7 +250,8 @@
    "Luggage"
   ],
   "applications": [
-   "Downjacket"
+   "Downjacket",
+   "ECWS Clothing"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -343,7 +350,8 @@
    "Uniforms"
   ],
   "applications": [
-   "Parachute (Brake And Heavy Drop)"
+   "Parachute (Brake And Heavy Drop)",
+   "Workwear"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -380,6 +388,7 @@
    "Luggage"
   ],
   "applications": [
+   "Bags",
    "Wheel Chair Fabric"
   ],
   "customer_count": 0,
@@ -400,7 +409,9 @@
    "Workwear",
    "Sportswear/Activewear"
   ],
-  "applications": [],
+  "applications": [
+   "Workwear"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -418,7 +429,9 @@
    "Luggage"
   ],
   "applications": [
+   "Poncho",
    "Parachute (Brake And Heavy Drop)",
+   "Bullet Proof Jacet",
    "Bullet Proof Fabric",
    "Poncho Fabric (Raincover)"
   ],
@@ -443,7 +456,8 @@
   ],
   "applications": [
    "Workwear, Uniforms",
-   "Plate Carrier"
+   "Plate Carrier",
+   "Combact Kit, ICK, ( Molle System )"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -504,7 +518,9 @@
   "segments": [
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "Impression"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -521,7 +537,10 @@
   "segments": [
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "Carry Bags",
+   "Pouches"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -784,6 +803,7 @@
   "applications": [
    "Pouches (Sealable Fabric)",
    "Inner Jacket",
+   "Trousers",
    "Parachute",
    "Coat ECWC ( Extreme Cold Weather Clothing)"
   ],
@@ -842,7 +862,9 @@
    "Sportswear/Activewear"
   ],
   "applications": [
-   "Tent Cover, Bag"
+   "Tent Cover, Bag",
+   "Bag, Tent, Outer Shell",
+   "Shoes"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -860,7 +882,9 @@
   "segments": [
    "Sportswear/Activewear"
   ],
-  "applications": [],
+  "applications": [
+   "Coat ECC"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -988,7 +1012,8 @@
    "Uniforms"
   ],
   "applications": [
-   "Back Pack"
+   "Back Pack",
+   "Bag"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -1030,23 +1055,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "8366"
- },
- {
-  "id": "product-8357",
-  "family": "Other",
-  "name": "8357",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Sportswear/Activewear"
-  ],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "8357"
  },
  {
   "id": "product-4200",
@@ -1165,7 +1173,10 @@
   "segments": [
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "ECWS Clothing",
+   "Tent, Bag, Car Cover"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -1534,7 +1545,8 @@
    "Luggage"
   ],
   "applications": [
-   "Kit Bag"
+   "Kit Bag",
+   "Industrial Tapes"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -1685,21 +1697,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "9614"
- },
- {
-  "id": "product-8077",
-  "family": "Other",
-  "name": "8077",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "8077"
  },
  {
   "id": "product-8084",
@@ -2357,60 +2354,6 @@
   "code": "3520"
  },
  {
-  "id": "product-9339",
-  "family": "Other",
-  "name": "9339",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Luggage"
-  ],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "9339"
- },
- {
-  "id": "product-9380",
-  "family": "Other",
-  "name": "9380",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Sportswear/Activewear",
-   "Uniforms"
-  ],
-  "applications": [
-   "Parachute (Brake And Heavy Drop)"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "9380"
- },
- {
-  "id": "product-9498",
-  "family": "Other",
-  "name": "9498",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Luggage"
-  ],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "9498"
- },
- {
   "id": "product-9642",
   "family": "Other",
   "name": "9642",
@@ -2419,7 +2362,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bottoms And Shorts"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -2441,23 +2386,6 @@
   "code": "8086"
  },
  {
-  "id": "product-8092",
-  "family": "Other",
-  "name": "8092",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Luggage"
-  ],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "8092"
- },
- {
   "id": "product-8145",
   "family": "Other",
   "name": "8145",
@@ -2466,7 +2394,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bags"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -2546,23 +2476,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "8223"
- },
- {
-  "id": "product-9462",
-  "family": "Other",
-  "name": "9462",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Tapes"
-  ],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "9462"
  },
  {
   "id": "product-9544",
@@ -2735,180 +2648,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "8160"
- },
- {
-  "id": "product-00160009606000001",
-  "family": "Other",
-  "name": "00160009606000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "00160009606000001"
- },
- {
-  "id": "product-00160013606000001",
-  "family": "Other",
-  "name": "00160013606000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "00160013606000001"
- },
- {
-  "id": "product-001700144000001",
-  "family": "Other",
-  "name": "001700144000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Sportswear/Activewear"
-  ],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "001700144000001"
- },
- {
-  "id": "product-003000096000002",
-  "family": "Other",
-  "name": "003000096000002",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "003000096000002"
- },
- {
-  "id": "product-00330013666000001",
-  "family": "Other",
-  "name": "00330013666000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [
-   "Luggage"
-  ],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "00330013666000001"
- },
- {
-  "id": "product-00420013666000001",
-  "family": "Other",
-  "name": "00420013666000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "00420013666000001"
- },
- {
-  "id": "product-00420013666000002",
-  "family": "Other",
-  "name": "00420013666000002",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "00420013666000002"
- },
- {
-  "id": "product-00500013606000001",
-  "family": "Other",
-  "name": "00500013606000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "00500013606000001"
- },
- {
-  "id": "product-00500014066000001",
-  "family": "Other",
-  "name": "00500014066000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "00500014066000001"
- },
- {
-  "id": "product-01100021006000001",
-  "family": "Other",
-  "name": "01100021006000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "TBC"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "01100021006000001"
  },
  {
   "id": "product-8346",
@@ -3096,6 +2835,23 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "8393"
+ },
+ {
+  "id": "product-9462",
+  "family": "Other",
+  "name": "9462",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [
+   "Tapes"
+  ],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "9462"
  },
  {
   "id": "product-7128",
@@ -3550,7 +3306,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Jackets"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -3568,7 +3326,9 @@
    "Workwear"
   ],
   "applications": [
-   "Poncho"
+   "Jackets",
+   "Poncho",
+   "Rugsacks"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -3584,11 +3344,32 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bottoms And Shorts"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "8254"
+ },
+ {
+  "id": "product-001700144000001",
+  "family": "Other",
+  "name": "001700144000001",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [
+   "Sportswear/Activewear"
+  ],
+  "applications": [
+   "TBC"
+  ],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "001700144000001"
  },
  {
   "id": "product-610",
@@ -3600,6 +3381,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Coating Chemicals",
    "Coating Chemical"
   ],
   "customer_count": 0,
@@ -3617,6 +3399,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Coating Chemicals",
    "Coating Chemical"
   ],
   "customer_count": 0,
@@ -3634,6 +3417,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Coating Chemicals",
    "Coating Chemical"
   ],
   "customer_count": 0,
@@ -3651,6 +3435,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Coating Chemicals",
    "Coating Chemical"
   ],
   "customer_count": 0,
@@ -3788,7 +3573,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Track Suits"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -3831,6 +3618,27 @@
   "code": "9219"
  },
  {
+  "id": "product-9380",
+  "family": "Other",
+  "name": "9380",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [
+   "Sportswear/Activewear",
+   "Uniforms"
+  ],
+  "applications": [
+   "Parachute (Brake And Heavy Drop)",
+   "Vest Cover"
+  ],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "9380"
+ },
+ {
   "id": "product-9521",
   "family": "Other",
   "name": "9521",
@@ -3863,6 +3671,23 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "9528"
+ },
+ {
+  "id": "product-8357",
+  "family": "Other",
+  "name": "8357",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [
+   "Sportswear/Activewear"
+  ],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "8357"
  },
  {
   "id": "product-8376",
@@ -4011,21 +3836,6 @@
   "code": "9691"
  },
  {
-  "id": "product-001500048000001",
-  "family": "Other",
-  "name": "001500048000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "001500048000001"
- },
- {
   "id": "product-9688",
   "family": "Other",
   "name": "9688",
@@ -4136,7 +3946,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Workwear, Uniforms"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4205,7 +4017,9 @@
   "segments": [
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "Poncho Fabric (Raincover), Poncho Glacier"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4239,7 +4053,9 @@
   "segments": [
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "Sleepong Bag"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4263,6 +4079,23 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "9636"
+ },
+ {
+  "id": "product-8092",
+  "family": "Other",
+  "name": "8092",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [
+   "Luggage"
+  ],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "8092"
  },
  {
   "id": "product-8341",
@@ -4310,7 +4143,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bag Linning, Tracking Bags"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4344,7 +4179,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Track Suits"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4741,7 +4578,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bag"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4759,7 +4598,9 @@
    "Sportswear/Activewear",
    "Luggage"
   ],
-  "applications": [],
+  "applications": [
+   "Sleeping Bags"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4823,7 +4664,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bags"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -4855,11 +4698,30 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bags"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "00150004835001"
+ },
+ {
+  "id": "product-001500048000001",
+  "family": "Other",
+  "name": "001500048000001",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bags"
+  ],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "001500048000001"
  },
  {
   "id": "product-8285",
@@ -4913,6 +4775,23 @@
   "code": "9313"
  },
  {
+  "id": "product-9339",
+  "family": "Other",
+  "name": "9339",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [
+   "Luggage"
+  ],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "9339"
+ },
+ {
   "id": "product-3846",
   "family": "Other",
   "name": "3846",
@@ -4964,6 +4843,23 @@
   "code": "3854"
  },
  {
+  "id": "product-9498",
+  "family": "Other",
+  "name": "9498",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [
+   "Luggage"
+  ],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "9498"
+ },
+ {
   "id": "product-9275",
   "family": "Other",
   "name": "9275",
@@ -5007,7 +4903,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Jacket And Trousers, (JDTD)"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -5026,6 +4924,7 @@
   ],
   "applications": [
    "BPJ",
+   "Bullet Proof Jackets",
    "Coat ECWC ( Extreme Cold Weather Clothing)"
   ],
   "customer_count": 0,
@@ -5097,7 +4996,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Lab Aprons"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -5112,11 +5013,30 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Lab Aprons"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "9726"
+ },
+ {
+  "id": "product-8077",
+  "family": "Other",
+  "name": "8077",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottoms And Shorts"
+  ],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "8077"
  },
  {
   "id": "product-9288",
@@ -5333,7 +5253,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Trousers"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -5442,7 +5364,8 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Interlinings"
+   "Interlinings",
+   "Hapo Chamber"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -6050,7 +5973,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bag"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6155,7 +6080,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bullet Proof Jacet",
+   "Bullet Proof Helmets"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6200,7 +6128,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "BPJ, Bullet Proof Jacket",
+   "Bullet Proof Jacet"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6260,7 +6191,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Aerospace"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6290,26 +6223,13 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Rugsack"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "9367"
- },
- {
-  "id": "product-9067",
-  "family": "Other",
-  "name": "9067",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "9067"
  },
  {
   "id": "product-9371",
@@ -6320,7 +6240,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Workwear"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6335,7 +6257,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Shorts And Trousers"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6421,6 +6345,21 @@
   "code": "9460"
  },
  {
+  "id": "product-9067",
+  "family": "Other",
+  "name": "9067",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "9067"
+ },
+ {
   "id": "product-400026",
   "family": "Other",
   "name": "400026",
@@ -6504,7 +6443,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bag"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6519,7 +6460,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Molle System",
+   "Rugsacks"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6806,7 +6750,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Joint And Knee Patches"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -6856,24 +6802,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "9590"
- },
- {
-  "id": "product-9556",
-  "family": "Other",
-  "name": "9556",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "Parachute (Brake And Heavy Drop)",
-   "Coat Combact High Altitute Clothing"
-  ],
-  "customer_count": 0,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "9556"
  },
  {
   "id": "product-9629",
@@ -6975,7 +6903,8 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Parachute (Brake And Heavy Drop)"
+   "Parachute (Brake And Heavy Drop)",
+   "Parachutes"
   ],
   "customer_count": 0,
   "source": "client-sharepoint",
@@ -7153,6 +7082,24 @@
   "code": "9518"
  },
  {
+  "id": "product-9556",
+  "family": "Other",
+  "name": "9556",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Parachute (Brake And Heavy Drop)",
+   "Coat Combact High Altitute Clothing"
+  ],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "9556"
+ },
+ {
   "id": "product-9509",
   "family": "Other",
   "name": "9509",
@@ -7161,7 +7108,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "SHAA Suit, High Altitute Suits"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -7957,7 +7906,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Bullet Proof Jackets"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -8079,7 +8030,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Rug Sacks"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -8274,7 +8227,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Parachute"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -8439,7 +8394,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Workwear"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -8499,7 +8456,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Coat Combact"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -8911,6 +8870,21 @@
   "code": "400004"
  },
  {
+  "id": "product-00160009606000001",
+  "family": "Other",
+  "name": "00160009606000001",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "00160009606000001"
+ },
+ {
   "id": "product-003200192000001",
   "family": "Other",
   "name": "003200192000001",
@@ -8924,6 +8898,21 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "003200192000001"
+ },
+ {
+  "id": "product-00500014066000001",
+  "family": "Other",
+  "name": "00500014066000001",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "00500014066000001"
  },
  {
   "id": "product-00500014466000001",
@@ -8969,6 +8958,21 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "01000028866000001"
+ },
+ {
+  "id": "product-01100021006000001",
+  "family": "Other",
+  "name": "01100021006000001",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "01100021006000001"
  },
  {
   "id": "product-8350",
@@ -9811,6 +9815,21 @@
   "code": "002500048000001"
  },
  {
+  "id": "product-003000096000002",
+  "family": "Other",
+  "name": "003000096000002",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [],
+  "customer_count": 0,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "003000096000002"
+ },
+ {
   "id": "product-005000096000001",
   "family": "Other",
   "name": "005000096000001",
@@ -10158,7 +10177,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Cords"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -10173,7 +10194,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Webbing , Cords"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -10188,7 +10211,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Webbing , Cords"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -10237,7 +10262,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "BPJ, Bullet Proof Jacket"
+  ],
   "customer_count": 0,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -10811,8 +10838,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
-  "customer_count": 9,
+  "applications": [
+   "Belting Fabrics"
+  ],
+  "customer_count": 8,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWPP4063CYF"
@@ -10826,8 +10855,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
-  "customer_count": 14,
+  "applications": [
+   "Belting Fabrics"
+  ],
+  "customer_count": 12,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWPP4063BYF"
@@ -11476,51 +11507,6 @@
   "code": "PKPP9106"
  },
  {
-  "id": "product-x01-240000mar610s01",
-  "family": "Other",
-  "name": "X01/240000MAR610S01",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "X01/240000MAR610S01"
- },
- {
-  "id": "product-y000700024n66000001",
-  "family": "Other",
-  "name": "Y000700024N66000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "Y000700024N66000001"
- },
- {
-  "id": "product-y001000034n66000001",
-  "family": "Other",
-  "name": "Y001000034N66000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "Y001000034N66000001"
- },
- {
   "id": "product-cwnn9666",
   "family": "Other",
   "name": "CWNN9666",
@@ -11720,6 +11706,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Industrial Tapes, Liners",
    "Reinforcement"
   ],
   "customer_count": 6,
@@ -11737,7 +11724,8 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Belting"
+   "Belting",
+   "Interlinings, Industrial Tapes"
   ],
   "customer_count": 11,
   "source": "client-sharepoint",
@@ -11753,7 +11741,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Belting Fabrics"
+  ],
   "customer_count": 5,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -11768,7 +11758,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Belting Fabrics"
+  ],
   "customer_count": 3,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -11798,7 +11790,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "PPE Suit",
+   "Bio Suits, PPE"
+  ],
   "customer_count": 2,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -12064,9 +12059,10 @@
   "segments": [],
   "applications": [
    "Tape",
-   "Belting"
+   "Belting",
+   "Tapes"
   ],
-  "customer_count": 9,
+  "customer_count": 10,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWMM4165"
@@ -12344,7 +12340,9 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Tyre Cord Fabric"
+   "PPE Suit",
+   "Tyre Cord Fabric",
+   "Bio Suits, PPE"
   ],
   "customer_count": 13,
   "source": "client-sharepoint",
@@ -12360,7 +12358,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Coat Combact Jacket"
+  ],
   "customer_count": 1,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -12737,21 +12737,6 @@
   "code": "GWPP9428AGF"
  },
  {
-  "id": "product-gwpp9428gf",
-  "family": "Other",
-  "name": "GWPP9428GF",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "GWPP9428GF"
- },
- {
   "id": "product-pwnn9419",
   "family": "Other",
   "name": "PWNN9419",
@@ -12815,27 +12800,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWPP4063A"
- },
- {
-  "id": "product-pwpp4063ast",
-  "family": "Other",
-  "name": "PWPP4063AST",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "Tapes",
-   "Peel Ply",
-   "Tape",
-   "Tyre Cord Fabric",
-   "Reinforcement"
-  ],
-  "customer_count": 11,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "PWPP4063AST"
  },
  {
   "id": "product-pwpp9428",
@@ -12946,6 +12910,7 @@
   "segments": [],
   "applications": [
    "Tape",
+   "Rubber Impression",
    "Peel Ply",
    "Tapes"
   ],
@@ -14701,6 +14666,28 @@
   "code": "Y015000000PAR000001"
  },
  {
+  "id": "product-pwpp4063ast",
+  "family": "Other",
+  "name": "PWPP4063AST",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Tapes",
+   "Industrial Tapes, Rubber Impression, Liners",
+   "Peel Ply",
+   "Tape",
+   "Tyre Cord Fabric",
+   "Reinforcement"
+  ],
+  "customer_count": 10,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP4063AST"
+ },
+ {
   "id": "product-pwpp9340",
   "family": "Other",
   "name": "PWPP9340",
@@ -14795,9 +14782,10 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Reinforcement"
+   "Reinforcement",
+   "Rainwear"
   ],
-  "customer_count": 2,
+  "customer_count": 3,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWPP4063"
@@ -14872,24 +14860,6 @@
   "code": "CWNN9380B"
  },
  {
-  "id": "product-pwpp4063b",
-  "family": "Other",
-  "name": "PWPP4063B",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "Tyre Cord Fabric",
-   "Tape"
-  ],
-  "customer_count": 3,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "PWPP4063B"
- },
- {
   "id": "product-pwpp4156",
   "family": "Other",
   "name": "PWPP4156",
@@ -14917,6 +14887,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Rubber Impression",
    "Peel Ply",
    "Tape"
   ],
@@ -14924,40 +14895,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWPP4156A"
- },
- {
-  "id": "product-pwpp4156b",
-  "family": "Other",
-  "name": "PWPP4156B",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "Tape"
-  ],
-  "customer_count": 2,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "PWPP4156B"
- },
- {
-  "id": "product-pwpp4156c",
-  "family": "Other",
-  "name": "PWPP4156C",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [
-   "Tape"
-  ],
-  "customer_count": 2,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "PWPP4156C"
  },
  {
   "id": "product-pwpp9300",
@@ -14968,26 +14905,13 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Rubber Impression"
+  ],
   "customer_count": 1,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWPP9300"
- },
- {
-  "id": "product-pwpp9300a",
-  "family": "Other",
-  "name": "PWPP9300A",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "PWPP9300A"
  },
  {
   "id": "product-pwpp9412",
@@ -15029,6 +14953,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Rubber Impression",
    "Peel Ply"
   ],
   "customer_count": 2,
@@ -15046,6 +14971,7 @@
   "properties": [],
   "segments": [],
   "applications": [
+   "Belting , Rubber Impression",
    "Peel Ply"
   ],
   "customer_count": 2,
@@ -15132,9 +15058,10 @@
   "segments": [],
   "applications": [
    "Peel Ply",
-   "Tyre Cord Fabric"
+   "Tyre Cord Fabric",
+   "Mrg/Hoses"
   ],
-  "customer_count": 2,
+  "customer_count": 3,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWNN9580"
@@ -15403,7 +15330,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Inner Bags"
+  ],
   "customer_count": 1,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -15464,9 +15393,10 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Belting"
+   "Belting",
+   "Back Packs"
   ],
-  "customer_count": 4,
+  "customer_count": 5,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWPP3205"
@@ -15510,7 +15440,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Rug Sack, Bag Packs"
+  ],
   "customer_count": 3,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -15541,7 +15473,7 @@
   "properties": [],
   "segments": [],
   "applications": [],
-  "customer_count": 4,
+  "customer_count": 3,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWPP9389BST"
@@ -16534,21 +16466,6 @@
   "code": "PWTT9542"
  },
  {
-  "id": "product-y002100024n06000001",
-  "family": "Other",
-  "name": "Y002100024N06000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "Y002100024N06000001"
- },
- {
   "id": "product-cwmm3758h",
   "family": "Other",
   "name": "CWMM3758H",
@@ -17452,7 +17369,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "TPU Sleep Mat"
+  ],
   "customer_count": 1,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -17601,7 +17520,9 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "Narrow Tapes"
+  ],
   "customer_count": 1,
   "source": "client-sharepoint",
   "kind": "existing",
@@ -18433,21 +18354,6 @@
   "code": "CWPP4091ASF"
  },
  {
-  "id": "product-pwpp9366a",
-  "family": "Other",
-  "name": "PWPP9366A",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "PWPP9366A"
- },
- {
   "id": "product-cwnn9179",
   "family": "Other",
   "name": "CWNN9179",
@@ -18846,9 +18752,10 @@
   "segments": [],
   "applications": [
    "Belting",
-   "Autosock"
+   "Autosock",
+   "Back Packs"
   ],
-  "customer_count": 4,
+  "customer_count": 5,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWMM4111"
@@ -19106,6 +19013,24 @@
   "code": "PWPP4042D"
  },
  {
+  "id": "product-pwpp4063b",
+  "family": "Other",
+  "name": "PWPP4063B",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Tyre Cord Fabric",
+   "Tape"
+  ],
+  "customer_count": 2,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP4063B"
+ },
+ {
   "id": "product-pwpp9196a",
   "family": "Other",
   "name": "PWPP9196A",
@@ -19314,7 +19239,8 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Soft Interior Trims, Car Seat Covers, And Convertible Car Tops Used In Light Trucks And Cars"
+   "Soft Interior Trims, Car Seat Covers, And Convertible Car Tops Used In Light Trucks And Cars",
+   "Car Roof Fabrics"
   ],
   "customer_count": 4,
   "source": "client-sharepoint",
@@ -19497,8 +19423,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
-  "customer_count": 4,
+  "applications": [
+   "Back Packs"
+  ],
+  "customer_count": 5,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWMM9174"
@@ -19911,9 +19839,10 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Hoses"
+   "Hoses",
+   "Mrg/Hoses"
   ],
-  "customer_count": 3,
+  "customer_count": 4,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CKPP3575"
@@ -20202,9 +20131,10 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Belting"
+   "Belting",
+   "Mrg/Hoses"
   ],
-  "customer_count": 1,
+  "customer_count": 2,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWNN9642"
@@ -21569,8 +21499,11 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
-  "customer_count": 1,
+  "applications": [
+   "Bags",
+   "Back Packs"
+  ],
+  "customer_count": 2,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWMM4111D"
@@ -21659,8 +21592,10 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
-  "customer_count": 1,
+  "applications": [
+   "Laminated 2L Jackets"
+  ],
+  "customer_count": 2,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWNN9495"
@@ -21948,7 +21883,8 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Military & Civilian Parachute"
+   "Military & Civilian Parachute",
+   "Belting Fabrics"
   ],
   "customer_count": 2,
   "source": "client-sharepoint",
@@ -22501,6 +22437,40 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWPP4063ST"
+ },
+ {
+  "id": "product-pwpp4156b",
+  "family": "Other",
+  "name": "PWPP4156B",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Tape"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP4156B"
+ },
+ {
+  "id": "product-pwpp4156c",
+  "family": "Other",
+  "name": "PWPP4156C",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Tape"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP4156C"
  },
  {
   "id": "product-pwpp4184",
@@ -23630,26 +23600,13 @@
   "coatings": [],
   "properties": [],
   "segments": [],
-  "applications": [],
+  "applications": [
+   "PPE Suits"
+  ],
   "customer_count": 1,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWPP9293"
- },
- {
-  "id": "product-gwnn9294a",
-  "family": "Other",
-  "name": "GWNN9294A",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "GWNN9294A"
  },
  {
   "id": "product-gwpp9294a",
@@ -23910,9 +23867,10 @@
   "properties": [],
   "segments": [],
   "applications": [
-   "Tape"
+   "Tape",
+   "Tapes"
   ],
-  "customer_count": 1,
+  "customer_count": 2,
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "PWPP9468"
@@ -24163,21 +24121,6 @@
   "code": "X002100034N66100S01"
  },
  {
-  "id": "product-y008400140n66000001",
-  "family": "Other",
-  "name": "Y008400140N66000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "Y008400140N66000001"
- },
- {
   "id": "product-y010000000par000001",
   "family": "Other",
   "name": "Y010000000PAR000001",
@@ -24206,36 +24149,6 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "CWPP9501"
- },
- {
-  "id": "product-x01-320000spe500s01",
-  "family": "Other",
-  "name": "X01/320000SPE500S01",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "X01/320000SPE500S01"
- },
- {
-  "id": "product-y005000096pes000001",
-  "family": "Other",
-  "name": "Y005000096PES000001",
-  "base": "",
-  "deniers": "",
-  "coatings": [],
-  "properties": [],
-  "segments": [],
-  "applications": [],
-  "customer_count": 1,
-  "source": "client-sharepoint",
-  "kind": "existing",
-  "code": "Y005000096PES000001"
  },
  {
   "id": "product-pwnn9351",
@@ -24557,6 +24470,295 @@
   "source": "client-sharepoint",
   "kind": "existing",
   "code": "Y000400036N06000001"
+ },
+ {
+  "id": "product-cwmm3911a",
+  "family": "Other",
+  "name": "CWMM3911A",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Back Packs"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWMM3911A"
+ },
+ {
+  "id": "product-cwmm4111c",
+  "family": "Other",
+  "name": "CWMM4111C",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Back Packs"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWMM4111C"
+ },
+ {
+  "id": "product-cwpp8131",
+  "family": "Other",
+  "name": "CWPP8131",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Thermal/Insulated Jackets"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWPP8131"
+ },
+ {
+  "id": "product-cwpp8132",
+  "family": "Other",
+  "name": "CWPP8132",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Thermal/Insulated Jackets"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWPP8132"
+ },
+ {
+  "id": "product-cwpp8155",
+  "family": "Other",
+  "name": "CWPP8155",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Thermal/Insulated Jackets"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWPP8155"
+ },
+ {
+  "id": "product-cwpp8285",
+  "family": "Other",
+  "name": "CWPP8285",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Thermal/Insulated Jackets"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWPP8285"
+ },
+ {
+  "id": "product-pwmm8305",
+  "family": "Other",
+  "name": "PWMM8305",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Thermal/Insulated Jackets"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWMM8305"
+ },
+ {
+  "id": "product-pwpp9478",
+  "family": "Other",
+  "name": "PWPP9478",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottom Wear-Shorts/Track Pants/Trousers"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP9478"
+ },
+ {
+  "id": "product-pwp9423",
+  "family": "Other",
+  "name": "PWP9423",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottom Wear-Shorts/Track Pants/Trousers"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWP9423"
+ },
+ {
+  "id": "product-pwpp9458",
+  "family": "Other",
+  "name": "PWPP9458",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Track Suits/Premium Lining"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP9458"
+ },
+ {
+  "id": "product-cwpp9670",
+  "family": "Other",
+  "name": "CWPP9670",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottom Wear-Shorts/Track Pants/Trousers"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWPP9670"
+ },
+ {
+  "id": "product-pwpp8314",
+  "family": "Other",
+  "name": "PWPP8314",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottom Wear-Shorts/Track Suits"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP8314"
+ },
+ {
+  "id": "product-pwpp8315",
+  "family": "Other",
+  "name": "PWPP8315",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottom Wear-Shorts/Track Suits"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWPP8315"
+ },
+ {
+  "id": "product-pwmm8293",
+  "family": "Other",
+  "name": "PWMM8293",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottom Wear-Shorts/Track Pants/Trousers"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWMM8293"
+ },
+ {
+  "id": "product-pwmm8019",
+  "family": "Other",
+  "name": "PWMM8019",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Bottom Wear-Shorts/Track Pants/Trousers"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "PWMM8019"
+ },
+ {
+  "id": "product-cwpp9529",
+  "family": "Other",
+  "name": "CWPP9529",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Laminated 2L Jackets"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWPP9529"
+ },
+ {
+  "id": "product-cwmm9321",
+  "family": "Other",
+  "name": "CWMM9321",
+  "base": "",
+  "deniers": "",
+  "coatings": [],
+  "properties": [],
+  "segments": [],
+  "applications": [
+   "Laminated 2L Jackets"
+  ],
+  "customer_count": 1,
+  "source": "client-sharepoint",
+  "kind": "existing",
+  "code": "CWMM9321"
  },
  {
   "id": "carbon-fibre",

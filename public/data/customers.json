@@ -1,7 +1,7 @@
 {
  "generated_by": "client-sharepoint",
- "updated_at": "2026-10-12T09:41:21.591Z",
- "source_note": "Imported from the client SharePoint folder — 6 file(s) (6.xlsx) read on 2026-10-12.",
+ "updated_at": "2026-10-19T08:04:30.411Z",
+ "source_note": "Imported from the client SharePoint folder — 6 file(s) (6.xlsx) read on 2026-10-19.",
  "customers": [
   {
    "name": "370-AURO TEXTILES",
@@ -255,16 +255,6 @@
    ]
   },
   {
-   "name": "Ami Textile",
-   "segments": [],
-   "applications": [],
-   "products": [
-    "product-x01-240000mar610s01",
-    "product-y000700024n66000001",
-    "product-y001000034n66000001"
-   ]
-  },
-  {
    "name": "AmSafe Bridport",
    "segments": [],
    "applications": [
@@ -320,16 +310,22 @@
   {
    "name": "Arrow Garments",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Back Packs"
+   ],
    "products": [
     "product-cwnn9067a",
-    "product-cwpp9324"
+    "product-cwpp9324",
+    "product-cwmm9174"
    ]
   },
   {
    "name": "ARUNA CLOTHING COMPANY",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "PPE Suit",
+    "Back Packs"
+   ],
    "products": [
     "product-cwpp4063a",
     "product-cwpp4063ast",
@@ -339,7 +335,8 @@
     "product-cwpp4063cyf",
     "product-cwpp4184",
     "product-cwpp9416st",
-    "product-h-ppe-bio-suit-sub-assembled"
+    "product-h-ppe-bio-suit-sub-assembled",
+    "product-cwpp3205"
    ]
   },
   {
@@ -353,9 +350,12 @@
   {
    "name": "Aviation Safety Resources Inc",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Mrg/Hoses"
+   ],
    "products": [
-    "product-pwnn3603e"
+    "product-pwnn3603e",
+    "product-ckpp3575"
    ]
   },
   {
@@ -545,9 +545,13 @@
   {
    "name": "CENTRAL RESERVE POLICE FORCE",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Coat Combact Jacket",
+    "Tapes"
+   ],
    "products": [
-    "product-h-coat-combat-jacket"
+    "product-h-coat-combat-jacket",
+    "product-pwmm4165"
    ]
   },
   {
@@ -617,19 +621,20 @@
   {
    "name": "CHASE CORPORATION",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Back Packs"
+   ],
    "products": [
     "product-gwpp9428",
     "product-gwpp9428agf",
-    "product-gwpp9428gf",
     "product-pwnn9419",
     "product-pwnn9419a",
     "product-pwnn9420",
     "product-pwnn9420a",
     "product-pwpp4063a",
-    "product-pwpp4063ast",
     "product-pwpp9428",
-    "product-pwpp9428a"
+    "product-pwpp9428a",
+    "product-cwmm4111"
    ]
   },
   {
@@ -671,9 +676,12 @@
   {
    "name": "COMBAT ROBOTICS INDIA PRIVATE LIMITED",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Mrg/Hoses"
+   ],
    "products": [
-    "product-gwrr3692"
+    "product-gwrr3692",
+    "product-pwnn9580"
    ]
   },
   {
@@ -1099,9 +1107,12 @@
   {
    "name": "FERRETERRO INDIA PRIVATE LIMITED",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Mrg/Hoses"
+   ],
    "products": [
-    "product-y015000000par000001"
+    "product-y015000000par000001",
+    "product-pwnn9642"
    ]
   },
   {
@@ -1184,21 +1195,23 @@
   {
    "name": "GARWARE BESTRETCH LTD.",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Industrial Tapes, Rubber Impression, Liners",
+    "Rubber Impression",
+    "Belting , Rubber Impression",
+    "Back Packs"
+   ],
    "products": [
     "product-pwpp4063ast",
-    "product-pwpp4063b",
     "product-pwpp4156",
     "product-pwpp4156a",
-    "product-pwpp4156b",
-    "product-pwpp4156c",
     "product-pwpp9300",
-    "product-pwpp9300a",
     "product-pwpp9412",
     "product-pwpp9430",
     "product-pwpp9469",
     "product-pwpp9470",
-    "product-pwpp9549"
+    "product-pwpp9549",
+    "product-cwmm4111c"
    ]
   },
   {
@@ -1281,7 +1294,10 @@
   {
    "name": "GM TRADING CO",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Inner Bags",
+    "Back Packs"
+   ],
    "products": [
     "product-cwmm3544j",
     "product-cwmm3758j",
@@ -1294,7 +1310,8 @@
     "product-cwpp9365c",
     "product-cwpp9365cst",
     "product-cwpp9389bst",
-    "product-pwpp9343"
+    "product-pwpp9343",
+    "product-cwmm4111d"
    ]
   },
   {
@@ -1355,9 +1372,13 @@
   {
    "name": "H K BANSAL",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "PPE Suit",
+    "Thermal/Insulated Jackets"
+   ],
    "products": [
-    "product-h-ppe-bio-suit-assembly"
+    "product-h-ppe-bio-suit-assembly",
+    "product-cwpp8131"
    ]
   },
   {
@@ -1383,7 +1404,8 @@
    "name": "Habasit India Pvt Ltd.",
    "segments": [],
    "applications": [
-    "Belting"
+    "Belting",
+    "Thermal/Insulated Jackets"
    ],
    "products": [
     "product-gwmc9019b",
@@ -1424,18 +1446,22 @@
     "product-pwpp8140",
     "product-pwpp8141",
     "product-pwtt9542",
-    "product-y002100024n06000001"
+    "product-cwpp8132"
    ]
   },
   {
    "name": "Hartree Energy Systems Pvt Ltd",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Rug Sack, Bag Packs",
+    "Thermal/Insulated Jackets"
+   ],
    "products": [
     "product-cwmm3758h",
     "product-cwnn9339a",
     "product-cwpp3845c",
-    "product-cwpp9365c"
+    "product-cwpp9365c",
+    "product-cwpp8155"
    ]
   },
   {
@@ -1486,17 +1512,25 @@
   {
    "name": "HLL LIFECARE LIMITED",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "PPE Suit",
+    "Thermal/Insulated Jackets"
+   ],
    "products": [
-    "product-h-ppe-bio-suit-assembly"
+    "product-h-ppe-bio-suit-assembly",
+    "product-cwpp8285"
    ]
   },
   {
    "name": "HLL LIFECARE LIMITED - CHENNAI",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "PPE Suit",
+    "Thermal/Insulated Jackets"
+   ],
    "products": [
-    "product-h-ppe-bio-suit-assembly"
+    "product-h-ppe-bio-suit-assembly",
+    "product-pwmm8305"
    ]
   },
   {
@@ -1517,9 +1551,13 @@
   {
    "name": "Iconnect Business pvt ltd",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "PPE Suit",
+    "Bottom Wear-Shorts/Track Pants/Trousers"
+   ],
    "products": [
-    "product-h-ppe-bio-suit-assembly"
+    "product-h-ppe-bio-suit-assembly",
+    "product-pwpp9478"
    ]
   },
   {
@@ -1690,9 +1728,13 @@
   {
    "name": "INTEGRATED HEADQUARTERS MOD (ARMY)",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "TPU Sleep Mat",
+    "Bottom Wear-Shorts/Track Pants/Trousers"
+   ],
    "products": [
-    "product-h-m-tpu-sleep-mat"
+    "product-h-m-tpu-sleep-mat",
+    "product-pwp9423"
    ]
   },
   {
@@ -1747,14 +1789,17 @@
    "name": "Irvin GQ",
    "segments": [],
    "applications": [
-    "Parachute Canopies For Military"
+    "Narrow Tapes",
+    "Parachute Canopies For Military",
+    "Track Suits/Premium Lining"
    ],
    "products": [
     "product-ngwrr7055ac1",
     "product-ngwrr7106ac1",
     "product-pwnn3854",
     "product-pwnn4201",
-    "product-pwnn9641"
+    "product-pwnn9641",
+    "product-pwpp9458"
    ]
   },
   {
@@ -1850,9 +1895,13 @@
   {
    "name": "JEM IMPEX",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "PPE Suit",
+    "Bottom Wear-Shorts/Track Pants/Trousers"
+   ],
    "products": [
-    "product-h-ppe-bio-suit-assembly"
+    "product-h-ppe-bio-suit-assembly",
+    "product-cwpp9670"
    ]
   },
   {
@@ -2071,14 +2120,6 @@
    ]
   },
   {
-   "name": "M  J MARKETING",
-   "segments": [],
-   "applications": [],
-   "products": [
-    "product-pwpp9366a"
-   ]
-  },
-  {
    "name": "M B Rubber Pvt Ltd",
    "segments": [],
    "applications": [],
@@ -2133,9 +2174,13 @@
   {
    "name": "Mann Empowerment Foundation",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Industrial Tapes, Liners",
+    "Bottom Wear-Shorts/Track Suits"
+   ],
    "products": [
-    "product-cwpp4063a"
+    "product-cwpp4063a",
+    "product-pwpp8315"
    ]
   },
   {
@@ -2154,10 +2199,13 @@
   {
    "name": "MARINE AIR SYSTEMS",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Bottom Wear-Shorts/Track Pants/Trousers"
+   ],
    "products": [
     "product-pwmm2871a",
-    "product-pwmm4132"
+    "product-pwmm4132",
+    "product-pwmm8293"
    ]
   },
   {
@@ -2255,9 +2303,12 @@
   {
    "name": "Mku Limited",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Bottom Wear-Shorts/Track Pants/Trousers"
+   ],
    "products": [
-    "product-cwnn4166e"
+    "product-cwnn4166e",
+    "product-pwmm8019"
    ]
   },
   {
@@ -2427,13 +2478,15 @@
    "name": "Ocean State Innovations Performance Textiles Division",
    "segments": [],
    "applications": [
-    "Parachutes"
+    "Parachutes",
+    "Laminated 2L Jackets"
    ],
    "products": [
     "product-cwnn4033",
     "product-pwnn4201",
     "product-pwnn8330",
-    "product-pwnn9591"
+    "product-pwnn9591",
+    "product-cwpp9529"
    ]
   },
   {
@@ -2565,12 +2618,14 @@
    "name": "Parapex co Ltd",
    "segments": [],
    "applications": [
-    "Aerospace & Defence Parachute"
+    "Aerospace & Defence Parachute",
+    "Laminated 2L Jackets"
    ],
    "products": [
     "product-cwnn4033",
     "product-pwnn8355",
-    "product-pwnn8423"
+    "product-pwnn8423",
+    "product-cwnn9495"
    ]
   },
   {
@@ -2596,9 +2651,13 @@
   {
    "name": "Pathana Upakorn Co. Ltd",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Parachutes",
+    "Laminated 2L Jackets"
+   ],
    "products": [
-    "product-pwnn4201"
+    "product-pwnn4201",
+    "product-cwmm9321"
    ]
   },
   {
@@ -2762,7 +2821,8 @@
    "name": "POLYNOVA INDUSTRIES LTD",
    "segments": [],
    "applications": [
-    "Soft Interior Trims, Car Seat Covers, And Convertible Car Tops Used In Light Trucks And Cars"
+    "Soft Interior Trims, Car Seat Covers, And Convertible Car Tops Used In Light Trucks And Cars",
+    "Car Roof Fabrics"
    ],
    "products": [
     "product-cwpp3845",
@@ -2957,21 +3017,25 @@
   {
    "name": "Qualiance International Limited .",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Rainwear"
+   ],
    "products": [
     "product-cwpp4063ayf",
-    "product-cwpp4063byf",
     "product-cwpp4063cyf",
     "product-cwpp9389a",
-    "product-cwpp9389bst"
+    "product-cwpp4063"
    ]
   },
   {
    "name": "R.K. Fibers",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Tapes"
+   ],
    "products": [
-    "product-ykevlar0000par000001"
+    "product-ykevlar0000par000001",
+    "product-pwpp9468"
    ]
   },
   {
@@ -3009,7 +3073,10 @@
   {
    "name": "Radnik Exports",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Bags",
+    "Bio Suits, PPE"
+   ],
    "products": [
     "product-cwmm3544h",
     "product-cwmm4111",
@@ -3670,7 +3737,9 @@
   {
    "name": "Sujay Hospital Pvt ltd",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Bio Suits, PPE"
+   ],
    "products": [
     "product-h-ppe-bio-suit-assembly"
    ]
@@ -3679,7 +3748,8 @@
    "name": "SUNDARAM INDUSTRIES PVT LTD",
    "segments": [],
    "applications": [
-    "MRG – Mechanised Rubber Goods"
+    "MRG – Mechanised Rubber Goods",
+    "Belting Fabrics"
    ],
    "products": [
     "product-pwaa9159c",
@@ -4005,10 +4075,11 @@
   {
    "name": "Trelleborg Coated Systems Us Inc.",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "PPE Suits"
+   ],
    "products": [
     "product-cwpp9293",
-    "product-gwnn9294a",
     "product-gwpp9294a",
     "product-pwnn4059",
     "product-pwnn9393"
@@ -4156,7 +4227,10 @@
   {
    "name": "Vamani Overseas Pvt Ltd",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Interlinings, Industrial Tapes",
+    "Belting Fabrics"
+   ],
    "products": [
     "product-cwpp4063ast",
     "product-cwpp4063byf",
@@ -4226,7 +4300,6 @@
    "applications": [],
    "products": [
     "product-x002100034n66100s01",
-    "product-y008400140n66000001",
     "product-y010000000par000001",
     "product-y015000000par000001"
    ]
@@ -4258,15 +4331,6 @@
    ]
   },
   {
-   "name": "Wool Research Association",
-   "segments": [],
-   "applications": [],
-   "products": [
-    "product-x01-320000spe500s01",
-    "product-y005000096pes000001"
-   ]
-  },
-  {
    "name": "X-SKY LTD",
    "segments": [],
    "applications": [],
@@ -4277,11 +4341,11 @@
   {
    "name": "Yes Fashions Pvt Ltd S D",
    "segments": [],
-   "applications": [],
+   "applications": [
+    "Belting Fabrics"
+   ],
    "products": [
     "product-cwpp4063ayf",
-    "product-cwpp4063byf",
-    "product-cwpp4063cyf",
     "product-cwpp4184"
    ]
   },
@@ -4387,6 +4451,38 @@
     "product-pwtt4169d",
     "product-pwtt9060b"
    ]
+  },
+  {
+   "name": "Ami Textile",
+   "segments": [],
+   "applications": [
+    "Back Packs"
+   ],
+   "products": [
+    "product-cwmm3911a"
+   ]
+  },
+  {
+   "name": "M  J MARKETING",
+   "segments": [],
+   "applications": [
+    "Bottom Wear-Shorts/Track Suits"
+   ],
+   "products": [
+    "product-pwpp8314"
+   ]
+  },
+  {
+   "name": "SUPREME NONWOVEN INDUSTRIES PVT LTD.",
+   "segments": [],
+   "applications": [],
+   "products": []
+  },
+  {
+   "name": "Wool Research Association",
+   "segments": [],
+   "applications": [],
+   "products": []
   },
   {
    "name": "Scrap",
