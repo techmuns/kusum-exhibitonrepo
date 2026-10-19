@@ -1,0 +1,691 @@
+{
+ "version": 1,
+ "note": "Market labels describe research relevance, not material capability or participation. Direct public sources only; receipts retain failures and last-good observations.",
+ "sources": [
+  {
+   "id": "techtextil",
+   "show_id": "techtextil",
+   "name": "Techtextil",
+   "url": "https://techtextil.messefrankfurt.com/frankfurt/en.html",
+   "adapter": "reviewed",
+   "markets": [
+    "technical-tapes",
+    "tpu-coated-fabric",
+    "carbon-fibre"
+   ],
+   "relevance": "Technical textiles, coated fabrics and composite materials; broad sourcing relevance.",
+   "identity": "Techtextil",
+   "place": "Frankfurt",
+   "country": "Germany",
+   "date_pattern": "from (?<from>\\d{1,2}) to (?<to>\\d{1,2}) (?<month>\\w+) (?<year>20\\d{2})"
+  },
+  {
+   "id": "jec-world",
+   "show_id": "jec-world",
+   "name": "JEC World",
+   "url": "https://www.jec-world.events/",
+   "adapter": "reviewed",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "relevance": "Composites materials, reinforcement and processing exhibition.",
+   "identity": "JEC World",
+   "place": "Paris",
+   "country": "France",
+   "date_pattern": "(?<month>March) (?<from>\\d{1,2})[–-](?<to>\\d{1,2}), (?<year>20\\d{2})"
+  },
+  {
+   "id": "tape-functional-film-usa",
+   "show_id": "tape-functional-film-usa",
+   "name": "Tape & Functional Film Expo USA",
+   "url": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
+   "adapter": "reviewed",
+   "markets": [
+    "technical-tapes"
+   ],
+   "relevance": "Adhesive tapes, functional films, converters and manufacturing equipment.",
+   "identity": "Tape.*Functional Film",
+   "place": "Detroit",
+   "country": "USA",
+   "date_pattern": "(?<from>\\d{1,2})\\s*[–-]\\s*(?<to>\\d{1,2})\\s+(?<month>October)\\s+(?<year>20\\d{2})"
+  },
+  {
+   "id": "cbrne-convergence-knoxville",
+   "show_id": "cbrne-convergence-knoxville",
+   "name": "CBRNe Convergence Knoxville",
+   "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
+   "adapter": "reviewed",
+   "markets": [
+    "cbrn-colpro"
+   ],
+   "relevance": "CBRN protection and response exhibition; assess collective-protection and shelter suppliers.",
+   "identity": "CBRNe Convergence",
+   "place": "Knoxville, Tennessee",
+   "country": "USA",
+   "date_pattern": "From (?<from>\\d{1,2})\\s*-\\s*(?<to>\\d{1,2}) (?<month>November) (?<year>20\\d{2})"
+  },
+  {
+   "id": "upship-ottawa",
+   "show_id": "upship-ottawa",
+   "name": "UpShip! Ottawa",
+   "url": "https://www.airship-association.org/conferences",
+   "adapter": "reviewed",
+   "markets": [
+    "haps-maps-aerostats"
+   ],
+   "relevance": "Airship developers, operators and infrastructure; lighter-than-air industry relevance.",
+   "identity": "Airship Association",
+   "place": "Ottawa",
+   "country": "Canada",
+   "announcement_pattern": "UpShip! Ottawa.{0,40}will be held in Ottawa, Canada in Spring 20\\d{2}"
+  },
+  {
+   "id": "pia-symposium",
+   "show_id": "pia-symposium",
+   "name": "PIA Symposium",
+   "url": "https://www.pia.com/events/",
+   "adapter": "reviewed",
+   "markets": [
+    "parachute-systems"
+   ],
+   "relevance": "Parachute equipment manufacturers, rigging and deployment systems.",
+   "identity": "PIA.*Symposium",
+   "place": "Cincinnati, Ohio",
+   "country": "USA",
+   "date_pattern": "(?<month>February)\\s+(?<from>\\d{1,2})\\s*[–-]\\s*(?<to>\\d{1,2}),?\\s+(?<year>20\\d{2})"
+  },
+  {
+   "id": "afera-tape-week",
+   "show_id": "afera-tape-week",
+   "name": "Afera European Tape Week",
+   "url": "https://afera.com/agenda/afera-technical-seminar/",
+   "adapter": "reviewed",
+   "markets": [
+    "technical-tapes"
+   ],
+   "relevance": "Adhesive tape materials, manufacture and technical industry programme.",
+   "identity": "Technical Seminar",
+   "place": "Porto",
+   "country": "Portugal",
+   "date_pattern": "(?<year>20\\d{2}).{0,65}?run from (?<from>\\d{1,2})[–-](?<to>\\d{1,2}) (?<month>September)"
+  },
+  {
+   "id": "afera-events",
+   "url": "https://afera.com/agenda/",
+   "adapter": "structured",
+   "markets": [
+    "technical-tapes"
+   ],
+   "relevance": "Adhesive tape industry event."
+  },
+  {
+   "id": "eventseye-technical-textiles-0",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
+   "adapter": "eventseye",
+   "markets": [
+    "technical-tapes",
+    "tpu-coated-fabric"
+   ],
+   "subject": "technical textil|functional fabric|coated fabric|industrial fabric",
+   "relevance": "Technical and functional textile sourcing; broad coated-fabric and textile-tape relevance."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-0",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-1",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_1.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-2",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_2.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-3",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-4",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_4.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-5",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_5.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-6",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_6.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-7",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_7.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "eventseye-plastics-rubber-composites-8",
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_8.html",
+   "adapter": "eventseye",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "subject": "carbon.{0,15}fi[br]|prepreg|composit",
+   "relevance": "Composite materials and processing event; review carbon/prepreg exhibitors and programme."
+  },
+  {
+   "id": "organiser-coupe-icare",
+   "show_id": "coupe-icare",
+   "name": "Coupe Icare",
+   "url": "https://www.coupe-icare.org/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-euro-skydiving",
+   "show_id": "euro-skydiving",
+   "name": "European Skydiving Symposium",
+   "url": "https://skydivingsymposium.eu",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-ata-expo",
+   "show_id": "ata-expo",
+   "name": "ATA Expo",
+   "url": "https://advancedtextilesexpo.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-global-tape-forum",
+   "show_id": "global-tape-forum",
+   "name": "Global Tape Forum",
+   "url": "https://www.c-linkage.co.jp/gtf2026",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-iree",
+   "show_id": "iree",
+   "name": "IREE / Indian Railway Equipment Show",
+   "url": "https://www.ireeindia.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-innotrans",
+   "show_id": "innotrans",
+   "name": "InnoTrans Railways Expo",
+   "url": "https://www.innotrans.de/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-ausa",
+   "show_id": "ausa",
+   "name": "AUSA Annual Meeting",
+   "url": "https://meetings.ausa.org/annual/2026/index.cfm",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-cansec",
+   "show_id": "cansec",
+   "name": "CANSEC",
+   "url": "https://cansec.defenceandsecurity.ca",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-dimdex",
+   "show_id": "dimdex",
+   "name": "DIMDEX 2026",
+   "url": "https://dimdex.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-dsa",
+   "show_id": "dsa",
+   "name": "DSA",
+   "url": "https://www.dsaexhibition.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-dsei",
+   "show_id": "dsei",
+   "name": "DSEI",
+   "url": "https://www.dsei.co.uk",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-dvd",
+   "show_id": "dvd",
+   "name": "DVD (MoD/Army)",
+   "url": "https://theevent.co.uk",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-dx-korea",
+   "show_id": "dx-korea",
+   "name": "DX Korea",
+   "url": "http://www.dxkorea.org",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-defence-tech-expo",
+   "show_id": "defence-tech-expo",
+   "name": "Defence.Tech Expo",
+   "url": "https://defensetech-expo.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-drone-world-expo",
+   "show_id": "drone-world-expo",
+   "name": "Drone World Expo",
+   "url": "https://warsawexpo.eu/en/fair-calendar/drone-world-expo",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-edex",
+   "show_id": "edex",
+   "name": "EDEX",
+   "url": "https://www.egyptdefenceexpo.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-enforce-tac",
+   "show_id": "enforce-tac",
+   "name": "Enforce Tac",
+   "url": "https://www.enforcetac.com/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-eurosatory",
+   "show_id": "eurosatory",
+   "name": "Eurosatory",
+   "url": "https://www.eurosatory.com/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-future-forces",
+   "show_id": "future-forces",
+   "name": "Future Forces Forum",
+   "url": "https://www.future-forces-forum.org",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-iitsec",
+   "show_id": "iitsec",
+   "name": "I/ITSEC",
+   "url": "https://www.iitsec.org",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-idex",
+   "show_id": "idex",
+   "name": "IDEX",
+   "url": "https://www.idexuae.ae",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-iwa",
+   "show_id": "iwa",
+   "name": "IWA OutdoorClassics",
+   "url": "https://www.iwa.info/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-iodsc",
+   "show_id": "iodsc",
+   "name": "Indian Ocean Defence & Security Conference",
+   "url": "https://iods.com.au",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-indo-defence",
+   "show_id": "indo-defence",
+   "name": "Indo Defence",
+   "url": "https://indodefence.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-iav",
+   "show_id": "iav",
+   "name": "Intl. Armoured Vehicles",
+   "url": "https://www.defenceiq.com/events-internationalarmouredvehicles",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-laad",
+   "show_id": "laad",
+   "name": "LAAD",
+   "url": "https://laadexpo.com.br/defence/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-land-forces",
+   "show_id": "land-forces",
+   "name": "LAND FORCES",
+   "url": "https://landforces.com.au",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-mspo",
+   "show_id": "mspo",
+   "name": "MSPO",
+   "url": "https://www.targikielce.pl/en/mspo",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-milipol-france",
+   "show_id": "milipol-france",
+   "name": "Milipol Paris",
+   "url": "https://www.milipol.com/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-milipol-qatar",
+   "show_id": "milipol-qatar",
+   "name": "Milipol Qatar",
+   "url": "https://www.milipolqatar.com/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-modern-day-marine",
+   "show_id": "modern-day-marine",
+   "name": "Modern Day Marine",
+   "url": "https://marinemilitaryexpos.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-shot-show",
+   "show_id": "shot-show",
+   "name": "SHOT Show",
+   "url": "https://shotshow.org",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-sof-week",
+   "show_id": "sof-week",
+   "name": "SOF Week",
+   "url": "https://sofweek.org",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-security-policing",
+   "show_id": "security-policing",
+   "name": "Security & Policing",
+   "url": "https://www.securityandpolicing.co.uk",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-singapore-airshow",
+   "show_id": "singapore-airshow",
+   "name": "Singapore Airshow",
+   "url": "https://www.singaporeairshow.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-world-defence-show",
+   "show_id": "world-defence-show",
+   "name": "World Defence Show",
+   "url": "https://www.worlddefenseshow.com/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-aplusa",
+   "show_id": "aplusa",
+   "name": "A+A",
+   "url": "https://www.aplusa-online.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-expoprotection",
+   "show_id": "expoprotection",
+   "name": "ExpoProtection",
+   "url": "https://www.expoprotection.com/en-gb.html",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-intersec",
+   "show_id": "intersec",
+   "name": "Intersec",
+   "url": "https://intersecglobal.ae.messefrankfurt.com/dubai/en.html",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-nsc",
+   "show_id": "nsc",
+   "name": "NSC Safety Congress & Expo",
+   "url": "https://2026congress.nsc.org",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-safety-health-expo",
+   "show_id": "safety-health-expo",
+   "name": "Safety & Health Expo",
+   "url": "https://www.healthandsafetyevent.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Review the organiser programme for market relevance."
+  },
+  {
+   "id": "organiser-techtextil-north-america",
+   "show_id": "techtextil-north-america",
+   "name": "Techtextil North America",
+   "url": "https://techtextil-north-america.us.messefrankfurt.com/us/en.html",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Dedicated tradeshow for Technical Textiles and Nonwovens, directly relevant to Kusumgar's technical textile manufacturing capabilities across multiple fabric types"
+  },
+  {
+   "id": "organiser-pacific-marine-expo",
+   "show_id": "pacific-marine-expo",
+   "name": "Pacific Marine Expo",
+   "url": "https://www.pacificmarineexpo.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Premier marine industry event where Kusumgar's marine-grade fabrics (PU-coated, PVC-coated polyester) would be relevant for boat and marine applications"
+  },
+  {
+   "id": "organiser-southampton-boat-show",
+   "show_id": "southampton-boat-show",
+   "name": "Southampton Boat Show",
+   "url": "https://www.southamptonboatshow.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Major boat show where marine fabrics and technical textiles for maritime applications would be showcased and sourced"
+  },
+  {
+   "id": "organiser-boat-technica",
+   "show_id": "boat-technica",
+   "name": "Boat Technica",
+   "url": "https://boattechnica.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Premier boat industry event bringing together marine professionals who would require technical fabrics for boat manufacturing and marine equipment"
+  },
+  {
+   "id": "organiser-euronaval",
+   "show_id": "euronaval",
+   "name": "EURONAVAL",
+   "url": "https://www.euronaval.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "International Naval Defence & Maritime Exhibition focusing on high technology for naval defence and maritime security - relevant for military-grade technical textiles like tactical nylon and high-tenacity fabrics used in naval/maritime defense applications"
+  },
+  {
+   "id": "organiser-sidec",
+   "show_id": "sidec",
+   "name": "SIDEC",
+   "url": "https://www.sidec.si/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Slovenian International Defence Industry Exhibition showcasing innovations for the defence industry - relevant for military and tactical textile applications including parachute fabrics, tactical nylon, and ballistic polyester"
+  },
+  {
+   "id": "organiser-osh-india",
+   "show_id": "osh-india",
+   "name": "OSH India",
+   "url": "https://www.oshindia.com/mumbai",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Occupational Safety & Health exhibition focusing on workwear and PPE, directly relevant for technical fabrics used in protective workwear applications"
+  },
+  {
+   "id": "organiser-textile-prom",
+   "show_id": "textile-prom",
+   "name": "Textile Prom",
+   "url": "https://textilexpo.ru/en",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "International Exhibition of Textile and Light Industry, relevant for technical textile manufacturers to showcase industrial fabric applications"
+  },
+  {
+   "id": "organiser-textile-asia-faisalabad",
+   "show_id": "textile-asia-faisalabad",
+   "name": "TEXTILE ASIA - FAISALABAD",
+   "url": "https://www.textileasia.com.pk",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "Pakistan International Textiles and Textile Machinery Exhibition - one of South Asia's largest textile industry events, relevant for technical textile manufacturing"
+  },
+  {
+   "id": "organiser-textile-asia",
+   "show_id": "textile-asia",
+   "name": "TEXTILE ASIA",
+   "url": "https://www.textileasia.com.pk/home.php?id=lahore",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "South Asia's largest Textile Industry Exhibition & Conference, relevant for technical textile manufacturing and machinery"
+  },
+  {
+   "id": "organiser-igt-indo-garment-textile-expo",
+   "show_id": "igt-indo-garment-textile-expo",
+   "name": "IGT - INDO GARMENT & TEXTILE EXPO",
+   "url": "https://indogartexexpo.com",
+   "adapter": "reviewed",
+   "markets": [],
+   "relevance": "International Exhibition on Garments and Textiles Machinery, Manufacturing Technology, Materials - relevant for technical textile manufacturing"
+  }
+ ]
+}
