@@ -10,5 +10,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test scripts/public-exhibitions.test.mjs
+      - run: node --test scripts/public-exhibitions.test.mjs scripts/publication-review.test.mjs
       - run: node --check scripts/publish-public-exhibitions.mjs
