@@ -1,0 +1,18 @@
+name: Probe exhibition publication permission
+on: [workflow_dispatch]
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Create and close a draft against a staging base
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/probe-publication-permission.mjs

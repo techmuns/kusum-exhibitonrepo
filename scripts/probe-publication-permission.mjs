@@ -1,0 +1,10 @@
+import {execFileSync} from 'node:child_process';
+const repo=process.env.GITHUB_REPOSITORY,branch=process.env.GITHUB_REF_NAME,run=process.env.GITHUB_RUN_ID;
+if(repo!=='techmuns/kusum-exhibitonrepo'||!branch?.startsWith('codex/')||!/^\d+$/.test(run||''))throw Error('Permission probes require a codex/* staging branch');
+const gh=(...args)=>execFileSync('gh',args,{encoding:'utf8'}).trim();
+const head=JSON.parse(gh('api',`repos/${repo}/commits/${process.env.GITHUB_SHA}`)),base=`codex/exhibition-probe-base-${run}`;
+gh('api',`repos/${repo}/git/refs`,'-f',`ref=refs/heads/${base}`,'-f',`sha=${head.parents[0].sha}`);
+const pr=JSON.parse(gh('api',`repos/${repo}/pulls`,'-f','title=Staging exhibition publication permission probe','-f','body=Temporary permission test against a codex staging base. This draft is closed without merging; it cannot publish to main.','-f',`head=${branch}`,'-f',`base=${base}`,'-F','draft=true'));
+console.log('Created staging draft:',pr.html_url);
+gh('api',`repos/${repo}/pulls/${pr.number}`,'--method','PATCH','-f','state=closed');
+console.log('Closed staging draft without merging:',pr.html_url);

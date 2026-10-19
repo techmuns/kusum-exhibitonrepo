@@ -97,3 +97,13 @@ The Airship Association next-conference statement retains its literal location
 and season/year. Existing owner segment categories remain intact. Registration
 links use the actual organiser-published destination; URL text does not establish
 an edition or whether booking is open.
+
+Readable calendars and newly discovered event pages take priority in each run.
+Unsupported formats and past-only archived pages retry weekly; access/network
+failures retry after 24 hours. Receipts retain the next attempt time and all
+last-good data. This keeps unresolved pages from consuming every refresh slot.
+
+The manual **Probe exhibition publication permission** workflow must run on a
+`codex/*` staging branch. It creates and closes a draft against a separate staging
+base, without merging or changing main, to verify that the workflow token may
+create the checked publication PRs. It never approves a review or deploys data.

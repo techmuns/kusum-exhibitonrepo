@@ -75,7 +75,8 @@ export async function refreshCatalogue(shows,ledger,config,{now=new Date().toISO
  const approved=new Set(config.sources.map(s=>new URL(s.url).hostname.replace(/^www\./,'')));
  const discovered=ledger.discovered_sources.filter(s=>publicUrl(s.url)&&approved.has(new URL(s.url).hostname.replace(/^www\./,''))&&new URL(s.url).pathname.startsWith('/events/'));
  if(discovered.length>256)throw Error('Discovered event pages need additional queue storage before publication');
- const queue=[...config.sources,...discovered.filter(s=>!config.sources.some(c=>c.id===s.id))].sort((a,b)=>String(ledger.sources[a.id]?.attempted_at||'').localeCompare(ledger.sources[b.id]?.attempted_at||''));
+ const priority=s=>!ledger.sources[s.id]?0:ledger.sources[s.id].status==='failed'?2:1;
+ const queue=[...config.sources,...discovered.filter(s=>!config.sources.some(c=>c.id===s.id))].filter(s=>{const due=Date.parse(ledger.sources[s.id]?.next_check_at);return !Number.isFinite(due)||due<=Date.parse(now);}).sort((a,b)=>priority(a)-priority(b)||String(ledger.sources[a.id]?.attempted_at||'').localeCompare(ledger.sources[b.id]?.attempted_at||''));
  for(const source of queue){if(reads>=limit||Date.now()-started>=budgetMs)break;const old=ledger.sources[source.id]||{};reads++;
   try{const html=await read(source.url),events=source.adapter==='announcements'?announcedEvents(html,source,{today:now.slice(0,10)}):source.adapter==='reviewed'?reviewedEvent(html,source,{today:now.slice(0,10)}):directoryEvents(html,source);if(!events.length)throw Error('No supported next-edition dates or announcement extracted; last-good data retained');
    for(const event of events){
@@ -92,8 +93,8 @@ export async function refreshCatalogue(shows,ledger,config,{now=new Date().toISO
     if(prior&&['name','start','end','dates','website','registration','place','event_status'].some(k=>prior[k]!==next[k])){const {previous_editions,...previous}=prior;next.previous_editions=[...next.previous_editions,previous];}
     if(prior)updated++;else added++;byId.set(id,next);
    }
-   ledger.sources[source.id]={...old,url:source.url,markets:source.markets,attempted_at:now,last_success_at:now,status:'success',accepted:events.length,error:null};
-  }catch(error){failed++;ledger.sources[source.id]={...old,url:source.url,markets:source.markets,attempted_at:now,status:'failed',error:String(error.message).slice(0,180)};}
+   ledger.sources[source.id]={...old,url:source.url,markets:source.markets,attempted_at:now,last_success_at:now,status:'success',accepted:events.length,error:null,next_check_at:null};
+  }catch(error){const hours=/No supported|exceeds|outside its approved host/.test(error.message)?168:24;failed++;ledger.sources[source.id]={...old,url:source.url,markets:source.markets,attempted_at:now,status:'failed',error:String(error.message).slice(0,180),next_check_at:new Date(Date.parse(now)+hours*3600000).toISOString()};}
  }
  ledger.last_run={attempted_at:now,reads,added,updated,failed,status:failed?'partial':'success'};
  return {shows:[...byId.values()],ledger};
