@@ -72,10 +72,35 @@ function summaryState(row,headSha,resolvedCommits){
   return resolved===headSha?'completed':'stale';
 }
 
+// A known quota refusal can also produce a failed status table. It contains no
+// review findings and must not be mistaken for either findings or approval.
+// Validate the complete metadata-only template and exact head; all real review
+// comments, inline findings and required review decisions remain gates.
+export function unavailableReviewSummary(comment,headSha){
+  if(!isCodex(comment)||typeof comment.body!=='string')return false;
+  const marker=comment.body.match(/<!-- codex-review-state:v1 (\{[^\n]+\}) -->/);
+  if(!marker)return false;
+  let state;try{state=JSON.parse(marker[1]);}catch{return false;}
+  if(Object.keys(state).sort().join('|')!=='code_review|security_review')return false;
+  let failures=0;
+  for(const section of Object.values(state)){
+    if(!section||Object.keys(section).sort().join('|')!=='commit_sha|has_any_findings|has_unresolved_findings|status')return false;
+    if(section.status==='failed'){
+      if(section.commit_sha!==headSha||section.has_any_findings!==true||section.has_unresolved_findings!==true)return false;
+      failures++;section.status='completed';section.has_any_findings=false;section.has_unresolved_findings=false;
+    }else if(Object.values(section).some(value=>value!==null))return false;
+  }
+  if(!failures)return false;
+  const metadata={...comment,body:comment.body.replace(marker[0],'<!-- codex-review-state:v1 '+JSON.stringify(state)+' -->').replaceAll('⚠️ **Failed**','✅ **Completed**')};
+  return !!codexReviewSummary(metadata);
+}
+
 export function publicationFeedback(comments,{headSha,resolvedCommits=new Map()}={}){
   const feedback={actionable:[],pending:[],summaries:[],unavailable:false};
+  const quotaUnavailable=(comments||[]).some(reviewUnavailableNotice);
   for(const comment of comments || []){
     if(reviewUnavailableNotice(comment)){feedback.unavailable=true;continue;}
+    if(quotaUnavailable&&unavailableReviewSummary(comment,headSha)){feedback.unavailable=true;continue;}
     // Preserve the existing deployment-notification exception; review bots do
     // not receive an author-wide exception.
     if(comment?.author?.login==='cloudflare-workers-and-pages')continue;
