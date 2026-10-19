@@ -20,7 +20,7 @@ const SUMMARY_FOOTER=[
   '</details>',
 ];
 const TIMESTAMP='[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,9})?Z';
-const SUMMARY_ROW=new RegExp('^\\| (\\p{Extended_Pictographic}(?:\\p{Extended_Pictographic}|\\uFE0F|\\u200D|\\p{Emoji_Modifier}){0,7}) \\*\\*(Code Review|Security Review)\\*\\* \\| (🔄 \\*\\*Running\\*\\* since|✅ \\*\\*Completed\\*\\*) <relative-time datetime="('+TIMESTAMP+')">('+TIMESTAMP+')</relative-time> \\| `([a-f0-9]{7,40})` \\| (PR opened|Manual request) \\|$','u');
+const SUMMARY_ROW=new RegExp('^\\| (\\p{Extended_Pictographic}(?:\\p{Extended_Pictographic}|\\uFE0F|\\u200D|\\p{Emoji_Modifier}){0,7}) \\*\\*(Code Review|Security Review)\\*\\* \\| (🔄 \\*\\*Running\\*\\* since|✅ \\*\\*Completed\\*\\*|⚠️ \\*\\*Failed\\*\\*) <relative-time datetime="('+TIMESTAMP+')">('+TIMESTAMP+')</relative-time> \\| `([a-f0-9]{7,40})` \\| (PR opened|Manual request|Draft marked ready) \\|$','u');
 const isCodex=comment=>CODEX_AUTHORS.has(comment?.author?.login || comment?.user?.login);
 export function reviewUnavailableNotice(comment){
   return isCodex(comment) && comment.body?.trim()===CODEX_QUOTA_NOTICE;
@@ -28,7 +28,7 @@ export function reviewUnavailableNotice(comment){
 
 // Only the complete, known bot status-table template is metadata. A marker,
 // author or title alone cannot exempt freeform feedback or appended findings.
-export function codexReviewSummary(comment){
+function parseReviewSummary(comment,quotaFailure=false){
   if(!isCodex(comment) || typeof comment.body!=='string')return null;
   let lines=comment.body.replace(/\r\n/g,'\n').split('\n').map(line=>line.trim()).filter(Boolean);
   let state;
@@ -41,7 +41,8 @@ export function codexReviewSummary(comment){
     for(const section of Object.values(state)){
       if(!section||Object.keys(section).sort().join('|')!=='commit_sha|has_any_findings|has_unresolved_findings|status')return null;
       const nullableBoolean=value=>value===null||typeof value==='boolean';
-      if(![null,'running','completed'].includes(section.status)||section.commit_sha!==null&&!/^[a-f0-9]{40}$/.test(section.commit_sha)||!nullableBoolean(section.has_any_findings)||!nullableBoolean(section.has_unresolved_findings)||section.has_unresolved_findings===true)return null;
+      if(![null,'running','completed',...(quotaFailure?['failed']:[])].includes(section.status)||section.commit_sha!==null&&!/^[a-f0-9]{40}$/.test(section.commit_sha)||!nullableBoolean(section.has_any_findings)||!nullableBoolean(section.has_unresolved_findings)||section.has_unresolved_findings===true&&section.status!=='failed')return null;
+      if(section.status==='failed'&&(section.has_any_findings!==true||section.has_unresolved_findings!==true))return null;
       if(section.status==='completed'&&(section.has_unresolved_findings!==false||typeof section.has_any_findings!=='boolean'))return null;
     }
     lines=lines.filter(line=>line!==stateLines[0]);
@@ -55,11 +56,23 @@ export function codexReviewSummary(comment){
     if(!match || match[4]!==match[5] || !Number.isFinite(Date.parse(match[4])))return null;
     const review=match[2]==='Code Review'?'code':'security';
     if(rows.some(row=>row.review===review))return null;
-    rows.push({review,status:match[3].startsWith('🔄')?'running':'completed',at:match[4],commit:match[6],trigger:match[7]});
+    const status=match[3].startsWith('🔄')?'running':match[3].startsWith('⚠️')?'failed':'completed';if(status==='failed'&&!quotaFailure)return null;
+    rows.push({review,status,at:match[4],commit:match[6],trigger:match[7]});
   }
   if(state)for(const row of rows){const section=state[row.review==='code'?'code_review':'security_review'];if(section.status!==row.status||!section.commit_sha?.startsWith(row.commit))return null;}
   if(state)for(const [key,section]of Object.entries(state))if(section.status!==null&&!rows.some(row=>row.review===(key==='code_review'?'code':'security')))return null;
-  return {rows};
+  return {rows,...(quotaFailure?{structuredFailure:state?.code_review?.status==='failed'}:{})};
+}
+export const codexReviewSummary=comment=>parseReviewSummary(comment);
+
+function quotaFailureSummary(comment,comments){
+  const summary=parseReviewSummary(comment,true);
+  if(!summary?.structuredFailure||summary.rows.length!==1||summary.rows[0].review!=='code'||summary.rows[0].status!=='failed')return null;
+  const at=Date.parse(summary.rows[0].at);
+  // The provider's exact quota notice must immediately follow this failure.
+  // An old quota notice cannot dismiss a later failure or a pending review.
+  const paired=comments.some(value=>{const gap=Date.parse(value.createdAt||value.created_at)-at;return reviewUnavailableNotice(value)&&gap>=0&&gap<=120_000;});
+  return paired?summary:null;
 }
 
 function summaryState(row,headSha,resolvedCommits){
@@ -72,38 +85,15 @@ function summaryState(row,headSha,resolvedCommits){
   return resolved===headSha?'completed':'stale';
 }
 
-// A known quota refusal can also produce a failed status table. It contains no
-// review findings and must not be mistaken for either findings or approval.
-// Validate the complete metadata-only template and exact head; all real review
-// comments, inline findings and required review decisions remain gates.
-export function unavailableReviewSummary(comment,headSha){
-  if(!isCodex(comment)||typeof comment.body!=='string')return false;
-  const marker=comment.body.match(/<!-- codex-review-state:v1 (\{[^\n]+\}) -->/);
-  if(!marker)return false;
-  let state;try{state=JSON.parse(marker[1]);}catch{return false;}
-  if(Object.keys(state).sort().join('|')!=='code_review|security_review')return false;
-  let failures=0;
-  for(const section of Object.values(state)){
-    if(!section||Object.keys(section).sort().join('|')!=='commit_sha|has_any_findings|has_unresolved_findings|status')return false;
-    if(section.status==='failed'){
-      if(section.commit_sha!==headSha||section.has_any_findings!==true||section.has_unresolved_findings!==true)return false;
-      failures++;section.status='completed';section.has_any_findings=false;section.has_unresolved_findings=false;
-    }else if(Object.values(section).some(value=>value!==null))return false;
-  }
-  if(!failures)return false;
-  const metadata={...comment,body:comment.body.replace(marker[0],'<!-- codex-review-state:v1 '+JSON.stringify(state)+' -->').replaceAll('⚠️ **Failed**','✅ **Completed**')};
-  return !!codexReviewSummary(metadata);
-}
-
 export function publicationFeedback(comments,{headSha,resolvedCommits=new Map()}={}){
   const feedback={actionable:[],pending:[],summaries:[],unavailable:false};
-  const quotaUnavailable=(comments||[]).some(reviewUnavailableNotice);
   for(const comment of comments || []){
     if(reviewUnavailableNotice(comment)){feedback.unavailable=true;continue;}
-    if(quotaUnavailable&&unavailableReviewSummary(comment,headSha)){feedback.unavailable=true;continue;}
     // Preserve the existing deployment-notification exception; review bots do
     // not receive an author-wide exception.
     if(comment?.author?.login==='cloudflare-workers-and-pages')continue;
+    const quotaFailure=quotaFailureSummary(comment,comments);
+    if(quotaFailure){feedback.unavailable=true;feedback.summaries.push({rows:quotaFailure.rows.map(row=>({...row,state:'unavailable'}))});continue;}
     const summary=codexReviewSummary(comment);
     if(!summary){feedback.actionable.push(comment);continue;}
     const rows=summary.rows.map(row=>({...row,state:summaryState(row,headSha,resolvedCommits)}));

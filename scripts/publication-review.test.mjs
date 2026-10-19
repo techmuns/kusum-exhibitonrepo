@@ -139,17 +139,13 @@ test('the exact quota notice is unavailable evidence, and cannot override pendin
   assert.deepEqual(pending.pending.map(r=>r.state),['running']);
 });
 
-
-test('exact-head failed status metadata plus a known quota refusal is unavailable, without hiding findings',()=>{
-  const head='a'.repeat(40),section={status:'failed',commit_sha:head,has_any_findings:true,has_unresolved_findings:true};
-  const state={code_review:section,security_review:{status:null,commit_sha:null,has_any_findings:null,has_unresolved_findings:null}};
-  const at='2026-10-19T13:40:56Z';
-  const body=['<!-- codex-pull-request-review-summary -->','<!-- codex-review-state:v1 '+JSON.stringify(state)+' -->','## Codex Review Summary','This comment shows the latest Codex review activity on this pull request.','| Review | Status | Commit | Review trigger |','| --- | --- | --- | --- |','| 📝 **Code Review** | ⚠️ **Failed** <relative-time datetime="'+at+'">'+at+'</relative-time> | `aaaaaaa` | PR opened |','<details> <summary>ℹ️ About Codex in GitHub</summary>','<br/>','[Your team has set up Codex to review pull requests in this repo](https://chatgpt.com/codex/cloud/settings/general). Reviews are triggered when you','- Open a pull request for review','- Mark a draft as ready','- Comment "@codex review" or "@codex security review".','Codex reacts with 👀 while any review is running, comments if it has suggestions, and reacts with 👍 once all reviews finish with no findings.','</details>'].join('\n');
-  const comment={author:{login:'chatgpt-codex-connector'},body};
-  const quota={author:comment.author,body:'You have reached your Codex usage limits for code reviews. You can see your limits in the [Codex usage dashboard](https://chatgpt.com/codex/cloud/settings/usage).'};
-  assert.equal(publicationFeedback([comment,quota],{headSha:head}).actionable.length,0);
-  assert(publicationFeedback([comment,quota],{headSha:head}).unavailable);
-  assert.equal(publicationFeedback([comment],{headSha:head}).actionable.length,1);
-  assert.equal(publicationFeedback([comment,quota],{headSha:'b'.repeat(40)}).actionable.length,1);
-  assert.equal(publicationFeedback([{...comment,body:body+'\nCorrect the registration date.'},quota],{headSha:head}).actionable.length,1);
+test('only the observed failed-summary and immediately paired quota notice report unavailability without approval',()=>{
+  const state={code_review:{commit_sha:HEAD,has_any_findings:true,has_unresolved_findings:true,status:'failed'},security_review:{commit_sha:null,has_any_findings:null,has_unresolved_findings:null,status:null}};
+  const failed=bot(summary([row({status:'Completed',trigger:'Draft marked ready'})]).replace('✅ **Completed**','⚠️ **Failed**').replace('<!-- codex-pull-request-review-summary -->','<!-- codex-pull-request-review-summary -->\n<!-- codex-review-state:v1 '+JSON.stringify(state)+' -->'));
+  const notice={...bot(quota),createdAt:'2026-10-06T16:53:22Z'},result=classify([failed,notice]);
+  assert.equal(codexReviewSummary(failed),null);assert.equal(result.unavailable,true);assert.equal(result.actionable.length,0);assert.equal(result.pending.length,0);assert.equal(result.summaries[0].rows[0].state,'unavailable');
+  for(const paired of [undefined,bot(quota),{...notice,createdAt:'2026-10-06T16:53:16Z'},{...notice,createdAt:'2026-10-06T16:56:00Z'},{...notice,author:{login:'someone-else'}}])assert.equal(classify([failed,...(paired?[paired]:[])]).actionable.filter(c=>c===failed).length,1);
+  for(const changed of [failed.body+'\n[P1] Correct the notice.',failed.body.replace('"failed"','"completed"'),failed.body.replace('has_unresolved_findings":true','has_unresolved_findings":false')])assert.equal(classify([{...failed,body:changed},notice]).actionable.length,1);
+  assert.equal(classify([failed,notice,bot('[P1] Preserve source evidence.')]).actionable.length,1);
+  assert.deepEqual(classify([failed,notice,bot(summary())]).pending.map(r=>r.state),['running']);
 });
