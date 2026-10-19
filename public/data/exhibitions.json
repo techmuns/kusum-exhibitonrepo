@@ -118,7 +118,7 @@
  },
  {
   "id": "dsei",
-  "segment": "Industrial",
+  "segment": "Military & Tactical",
   "name": "DSEI",
   "country": "",
   "place": "Excel London",
@@ -209,7 +209,7 @@
  },
  {
   "id": "edex",
-  "segment": "Industrial",
+  "segment": "Military & Tactical",
   "name": "EDEX",
   "country": "",
   "place": "",
@@ -218,7 +218,7 @@
   "status": "Not yet",
   "end": "2027-12-09",
   "website": "https://www.egyptdefenceexpo.com",
-  "registration": null,
+  "registration": "https://edex25registration.macber.cloud/",
   "event_status": "scheduled",
   "market_ids": [],
   "relevance_reason": "Review the organiser programme for market relevance.",
@@ -233,7 +233,7 @@
    "excerpt": "{\"name\":\"EDEX 2027\",\"startDate\":\"2027-12-06T09:00:00Z\",\"endDate\":\"2027-12-09T17:00:00Z\",\"eventStatus\":\"EventScheduled\"}",
    "attribution": "organiser-reported"
   },
-  "registration_status": "current-edition-link-pending",
+  "registration_status": "published",
   "previous_editions": [
    {
     "id": "edex",
@@ -249,9 +249,19 @@
    },
    {
     "registration": "https://edex25registration.macber.cloud/",
-    "reason": "Prior-edition registration destination retained for evidence"
+    "reason": "Prior-edition registration destination retained for evidence",
+    "review_note": "URL text alone does not establish a registration edition; use the destination actually published by the organiser."
    }
-  ]
+  ],
+  "registration_evidence": {
+   "source_id": "organiser-edex",
+   "url": "https://www.egyptdefenceexpo.com",
+   "content_sha256": "d03abeeefab37af7a4f9defd0ce94884ce5f7bd1183d93bfc34bb3386d22b474",
+   "checked_at": "2026-10-19T13:52:12.334Z",
+   "excerpt": "https://edex25registration.macber.cloud/",
+   "attribution": "organiser-reported",
+   "kind": "registration"
+  }
  },
  {
   "id": "enforce-tac",
@@ -580,7 +590,7 @@
  },
  {
   "id": "techtextil",
-  "segment": "Industrial",
+  "segment": "Workwear",
   "name": "Techtextil",
   "country": "Germany",
   "place": "Frankfurt",
@@ -618,7 +628,16 @@
     "registration": null,
     "date_evidence": null
    }
-  ]
+  ],
+  "registration_evidence": {
+   "source_id": "techtextil",
+   "url": "https://techtextil.messefrankfurt.com/frankfurt/en.html",
+   "content_sha256": "e83f957878cf262969ffc477788f159117619d8edd64493e207bad38d18b8180",
+   "checked_at": "2026-10-19T13:20:45.540Z",
+   "excerpt": "https://techtextil.messefrankfurt.com/frankfurt/en/planning-preparation/exhibitors/intention-exhibit.html",
+   "attribution": "organiser-reported",
+   "kind": "registration"
+  }
  },
  {
   "id": "techtextil-north-america",
@@ -637,7 +656,7 @@
  },
  {
   "id": "pacific-marine-expo",
-  "segment": "Industrial",
+  "segment": "Marine",
   "name": "Pacific Marine Expo",
   "country": "",
   "place": "",
@@ -678,7 +697,16 @@
     "end": "2026-11-21",
     "website": "https://www.pacificmarineexpo.com"
    }
-  ]
+  ],
+  "registration_evidence": {
+   "source_id": "organiser-pacific-marine-expo",
+   "url": "https://www.pacificmarineexpo.com",
+   "content_sha256": "ec0745d26fb65b8f24a8812304771810fcc5163e774d0420cdf2064de9d0eb15",
+   "checked_at": "2026-10-19T13:53:45.853Z",
+   "excerpt": "https://www.xpressreg.net/register/PMEX1126/landing.php?sc=PMEX26",
+   "attribution": "organiser-reported",
+   "kind": "registration"
+  }
  },
  {
   "id": "southampton-boat-show",
@@ -879,20 +907,28 @@
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
-  "previous_editions": []
+  "previous_editions": [],
+  "registration_evidence": {
+   "source_id": "jec-world",
+   "url": "https://www.jec-world.events/",
+   "content_sha256": "d9c82c4722e89254fb0b52921cddf1612b619563b29822703b8ef2da186cecc0",
+   "checked_at": "2026-10-19T13:20:45.540Z",
+   "excerpt": "https://www.jec-world.events/visit/become-visitor",
+   "attribution": "organiser-reported",
+   "kind": "registration"
+  }
  },
  {
-  "name": "UpShip! Ottawa",
+  "name": "UpShip! Ottawa '27",
   "start": null,
   "end": null,
-  "dates": "UpShip! Ottawa '27, will be held in Ottawa, Canada in Spring 2027",
+  "dates": "Spring 2027",
   "event_status": "dates-pending",
-  "place": "Ottawa",
-  "country": "Canada",
+  "place": "Ottawa, Canada",
   "website": "https://www.airship-association.org/conferences",
   "registration": null,
   "id": "upship-ottawa",
-  "segment": "Industrial",
+  "segment": "Aeronautical",
   "market_ids": [
    "haps-maps-aerostats"
   ],
@@ -900,7 +936,7 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-19T14:09:55.651Z",
   "date_evidence": {
    "source_id": "upship-ottawa",
    "url": "https://www.airship-association.org/conferences",
@@ -910,7 +946,40 @@
    "attribution": "organiser-reported"
   },
   "registration_status": "not-published",
-  "previous_editions": []
+  "previous_editions": [
+   {
+    "name": "UpShip! Ottawa",
+    "start": null,
+    "end": null,
+    "dates": "UpShip! Ottawa '27, will be held in Ottawa, Canada in Spring 2027",
+    "event_status": "dates-pending",
+    "place": "Ottawa",
+    "country": "Canada",
+    "website": "https://www.airship-association.org/conferences",
+    "registration": null,
+    "id": "upship-ottawa",
+    "segment": "Aeronautical",
+    "market_ids": [
+     "haps-maps-aerostats"
+    ],
+    "relevance_reason": "Airship developers, operators and infrastructure; lighter-than-air industry relevance.",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T13:18:19.501Z",
+    "source_checked_at": "2026-10-19T13:20:45.540Z",
+    "date_evidence": {
+     "source_id": "upship-ottawa",
+     "url": "https://www.airship-association.org/conferences",
+     "content_sha256": "4e4b2b062f552bcfd0421d0b664469b5577682eebd466b319be826d2bd6d8f02",
+     "checked_at": "2026-10-19T13:20:45.540Z",
+     "excerpt": "UpShip! Ottawa '27, will be held in Ottawa, Canada in Spring 2027",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "not-published"
+   }
+  ],
+  "announcement_only": true,
+  "country": "Canada"
  },
  {
   "name": "PERFORMANCE DAYS - MUNICH",
@@ -2082,7 +2151,7 @@
   "place": "Detroit",
   "country": "USA",
   "website": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
-  "registration": null,
+  "registration": "https://events.american-tradeshow.com/mwusa26",
   "id": "tape-functional-film-usa",
   "segment": "Industrial",
   "market_ids": [
@@ -2101,13 +2170,23 @@
    "excerpt": "26 – 28 October 2027",
    "attribution": "organiser-reported"
   },
-  "registration_status": "current-edition-link-pending",
+  "registration_status": "published",
   "previous_editions": [
    {
     "registration": "https://events.american-tradeshow.com/mwusa26",
-    "reason": "Prior-edition registration destination retained for evidence"
+    "reason": "Prior-edition registration destination retained for evidence",
+    "review_note": "URL text alone does not establish a registration edition; use the destination actually published by the organiser."
    }
-  ]
+  ],
+  "registration_evidence": {
+   "source_id": "tape-functional-film-usa",
+   "url": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
+   "content_sha256": "e4095e0d827dc684e8bf043883e049831480a7bfd882338695231c28637bba59",
+   "checked_at": "2026-10-19T13:15:30.263Z",
+   "excerpt": "https://events.american-tradeshow.com/mwusa26",
+   "attribution": "organiser-reported",
+   "kind": "registration"
+  }
  },
  {
   "name": "CBRNe Convergence Knoxville",
@@ -2120,7 +2199,7 @@
   "registration": "https://www.eventora.com/en/Events/CBRNe_Knoxville_2026",
   "event_status": "scheduled",
   "id": "cbrne-convergence-knoxville",
-  "segment": "Industrial",
+  "segment": "Military & Tactical",
   "market_ids": [
    "cbrn-colpro"
   ],
@@ -2138,6 +2217,165 @@
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
-  "previous_editions": []
+  "previous_editions": [],
+  "registration_evidence": {
+   "source_id": "cbrne-convergence-knoxville",
+   "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
+   "content_sha256": "4fdec7c618c45c716d4b2db5335aa47da9fe64e55ced491b6e6f075506f779d8",
+   "checked_at": "2026-10-19T13:15:32.449Z",
+   "excerpt": "https://www.eventora.com/en/Events/CBRNe_Knoxville_2026",
+   "attribution": "organiser-reported",
+   "kind": "registration"
+  }
+ },
+ {
+  "id": "calendar-458f4b09cd5d901d32a3",
+  "name": "High Intensity CBRN 2027",
+  "website": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+  "start": "2027-06-08",
+  "end": "2027-06-10",
+  "dates": "2027-06-08 – 2027-06-10",
+  "event_status": "scheduled",
+  "announcement_only": true,
+  "segment": "Military & Tactical",
+  "market_ids": [
+   "cbrn-colpro"
+  ],
+  "relevance_reason": "CBRN protection and response exhibition; review the organiser programme for shelter relevance.",
+  "status": "Not yet",
+  "source": "public-calendar",
+  "discovered_at": "2026-10-19T14:09:55.651Z",
+  "source_checked_at": "2026-10-19T14:12:30.793Z",
+  "date_evidence": {
+   "source_id": "detail-calendar-458f4b09cd5d901d32a3",
+   "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+   "content_sha256": "5bab521b59a10f64d9b6b18e76d1c24e75866fa5b5c737102406b039d6a52ca7",
+   "checked_at": "2026-10-19T14:12:30.793Z",
+   "excerpt": "{\"name\":\"High Intensity CBRN 2027\",\"startDate\":\"2027-06-08T09:03:52+01:00\",\"endDate\":\"2027-06-10T09:03:52+01:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+   "kind": "dates",
+   "attribution": "organiser-reported"
+  },
+  "registration_status": "published",
+  "previous_editions": [
+   {
+    "id": "calendar-458f4b09cd5d901d32a3",
+    "name": "High Intensity CBRN 2027",
+    "website": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+    "start": null,
+    "end": null,
+    "dates": "Dates to be announced",
+    "event_status": "dates-pending",
+    "announcement_only": true,
+    "segment": "Military & Tactical",
+    "market_ids": [
+     "cbrn-colpro"
+    ],
+    "relevance_reason": "CBRN protection and response exhibition; review the organiser programme for shelter relevance.",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T14:09:55.651Z",
+    "source_checked_at": "2026-10-19T14:09:55.651Z",
+    "date_evidence": {
+     "source_id": "cbrne-announcements",
+     "url": "https://cbrneworld.com/",
+     "content_sha256": "4fe626e11efbb3fedacf0fac55a6e810961af74f08b2660e25d7a778d3afeb0a",
+     "checked_at": "2026-10-19T14:09:55.651Z",
+     "excerpt": "Organiser event announcement: High Intensity CBRN 2027 — https://cbrneworld.com/events/high-intensity-cbrn-2027",
+     "kind": "announcement",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "not-published"
+   }
+  ],
+  "place": "Warsaw",
+  "country": "PL",
+  "registration": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+  "edition_year": "2027",
+  "registration_evidence": {
+   "source_id": "detail-calendar-458f4b09cd5d901d32a3",
+   "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+   "content_sha256": "5bab521b59a10f64d9b6b18e76d1c24e75866fa5b5c737102406b039d6a52ca7",
+   "checked_at": "2026-10-19T14:12:30.793Z",
+   "excerpt": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  }
+ },
+ {
+  "name": "2027 PIA Symposium",
+  "place": "Cincinnati, Ohio",
+  "start": null,
+  "end": null,
+  "dates": "Dates to be announced",
+  "event_status": "dates-pending",
+  "announcement_only": true,
+  "country": "USA",
+  "website": "https://www.pia.com/events/",
+  "registration": "https://www.eventsquid.com/register/32988?profileName=Attendee",
+  "id": "pia-symposium",
+  "segment": "Aeronautical",
+  "market_ids": [
+   "parachute-systems"
+  ],
+  "relevance_reason": "Parachute equipment manufacturers, rigging and deployment systems.",
+  "status": "Not yet",
+  "source": "public-calendar",
+  "discovered_at": "2026-10-19T14:09:55.651Z",
+  "source_checked_at": "2026-10-19T14:18:07.113Z",
+  "date_evidence": {
+   "source_id": "pia-symposium",
+   "url": "https://www.pia.com/events/",
+   "content_sha256": "d31e76c5d5348b6a4667bc3b5181f7b3b23e72459612a555436d731e384420dd",
+   "checked_at": "2026-10-19T14:09:55.651Z",
+   "excerpt": "2027 PIA Symposium",
+   "kind": "announcement",
+   "attribution": "organiser-reported"
+  },
+  "registration_status": "published",
+  "previous_editions": [
+   {
+    "name": "2027 PIA Symposium",
+    "place": "Cincinnati, Ohio",
+    "start": null,
+    "end": null,
+    "dates": "Dates to be announced",
+    "event_status": "dates-pending",
+    "announcement_only": true,
+    "country": "USA",
+    "website": "https://www.pia.com/events/",
+    "registration": null,
+    "id": "pia-symposium",
+    "segment": "Aeronautical",
+    "market_ids": [
+     "parachute-systems"
+    ],
+    "relevance_reason": "Parachute equipment manufacturers, rigging and deployment systems.",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T14:09:55.651Z",
+    "source_checked_at": "2026-10-19T14:14:29.515Z",
+    "date_evidence": {
+     "source_id": "pia-symposium",
+     "url": "https://www.pia.com/events/",
+     "content_sha256": "d31e76c5d5348b6a4667bc3b5181f7b3b23e72459612a555436d731e384420dd",
+     "checked_at": "2026-10-19T14:09:55.651Z",
+     "excerpt": "2027 PIA Symposium",
+     "kind": "announcement",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "not-published",
+    "edition_year": "2027"
+   }
+  ],
+  "edition_year": "2027",
+  "registration_evidence": {
+   "source_id": "pia-symposium",
+   "url": "https://www.pia.com/events/info-pricing/",
+   "content_sha256": "87b21d5e51eedb30734e09ad4a9275ad4a32b206e745c1ddf8091a6cb474ed53",
+   "checked_at": "2026-10-19T14:18:07.113Z",
+   "excerpt": "Click to Register as an Attendee — https://www.eventsquid.com/register/32988?profileName=Attendee",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  }
  }
 ]

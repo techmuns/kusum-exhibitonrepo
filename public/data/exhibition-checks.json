@@ -52,20 +52,22 @@
    "markets": [
     "haps-maps-aerostats"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-19T14:09:55.651Z",
+   "last_success_at": "2026-10-19T14:09:55.651Z",
    "status": "success",
    "accepted": 1,
    "error": null
   },
   "pia-symposium": {
-   "url": "https://www.pia.com/events/",
+   "url": "https://www.pia.com/events/info-pricing/",
    "markets": [
     "parachute-systems"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "status": "failed",
-   "error": "No supported event dates or announcement extracted; last-good data retained"
+   "attempted_at": "2026-10-19T14:18:07.113Z",
+   "status": "success",
+   "error": null,
+   "last_success_at": "2026-10-19T14:18:07.113Z",
+   "accepted": 1
   },
   "afera-tape-week": {
    "url": "https://afera.com/agenda/afera-technical-seminar/",
@@ -609,14 +611,59 @@
    "attempted_at": "2026-10-19T13:54:27.628Z",
    "status": "failed",
    "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "cbrne-announcements": {
+   "url": "https://cbrneworld.com/",
+   "markets": [
+    "cbrn-colpro"
+   ],
+   "attempted_at": "2026-10-19T14:09:55.651Z",
+   "last_success_at": "2026-10-19T14:09:55.651Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
+  },
+  "pia-announcements": {
+   "url": "https://www.pia.com/events/",
+   "markets": [
+    "parachute-systems"
+   ],
+   "attempted_at": "2026-10-19T14:09:55.651Z",
+   "status": "failed",
+   "error": "No supported next-edition dates or announcement extracted; last-good data retained"
+  },
+  "detail-calendar-458f4b09cd5d901d32a3": {
+   "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+   "markets": [
+    "cbrn-colpro"
+   ],
+   "attempted_at": "2026-10-19T14:12:30.793Z",
+   "last_success_at": "2026-10-19T14:12:30.793Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
   }
  },
  "last_run": {
-  "attempted_at": "2026-10-19T13:54:27.628Z",
-  "reads": 4,
+  "attempted_at": "2026-10-19T14:18:07.113Z",
+  "reads": 1,
   "added": 0,
-  "updated": 0,
-  "failed": 4,
-  "status": "partial"
- }
+  "updated": 1,
+  "failed": 0,
+  "status": "success"
+ },
+ "discovered_sources": [
+  {
+   "id": "detail-calendar-458f4b09cd5d901d32a3",
+   "show_id": "calendar-458f4b09cd5d901d32a3",
+   "name": "High Intensity CBRN 2027",
+   "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+   "adapter": "reviewed",
+   "markets": [
+    "cbrn-colpro"
+   ],
+   "relevance": "CBRN protection and response exhibition; review the organiser programme for shelter relevance.",
+   "segment": "Military & Tactical"
+  }
+ ]
 }
