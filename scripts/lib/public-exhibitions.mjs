@@ -67,7 +67,7 @@ export async function refreshCatalogue(shows,ledger,config,{now=new Date().toISO
    for(const event of events){
     const series=source.show_id||'public-'+digest((event.listing||event.website||'')+'|'+norm(event.name)).slice(0,16),id=source.show_id||series+'-'+event.start;
     const prior=byId.get(id),receipt={source_id:source.id,url:source.url,content_sha256:digest(html),checked_at:now,excerpt:event.evidence,attribution:source.adapter==='eventseye'?'directory-reported':'organiser-reported'};
-    const next={...prior,...event,id,segment:source.segment||'Industrial',market_ids:source.markets,relevance_reason:source.relevance,status:prior?.status||'Not yet',source:'public-calendar',discovered_at:prior?.discovered_at||now,source_checked_at:now,date_evidence:receipt,registration_status:event.registration?'published':'not-published',previous_editions:prior?.previous_editions||[]};
+    const next={...prior,...event,id,segment:source.segment||prior?.segment||'Industrial',market_ids:source.markets,relevance_reason:source.relevance,status:prior?.status||'Not yet',source:'public-calendar',discovered_at:prior?.discovered_at||now,source_checked_at:now,date_evidence:receipt,registration_status:event.registration?'published':'not-published',previous_editions:prior?.previous_editions||[]};
     delete next.evidence;
     if(prior&&['name','start','end','dates','website','registration','place','event_status'].some(k=>prior[k]!==next[k])){const {previous_editions,...previous}=prior;next.previous_editions=[...next.previous_editions,previous];}
     if(prior)updated++;else added++;byId.set(id,next);

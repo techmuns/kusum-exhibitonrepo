@@ -32,7 +32,7 @@
    "identity": "JEC World",
    "place": "Paris",
    "country": "France",
-   "date_pattern": "(?<month>March) (?<from>\\d{1,2})[–-](?<to>\\d{1,2}), (?<year>20\\d{2})"
+   "date_pattern": "(?<month>March) (?<from>\\d{1,2})[\u2013-](?<to>\\d{1,2}), (?<year>20\\d{2})"
   },
   {
    "id": "tape-functional-film-usa",
@@ -47,7 +47,7 @@
    "identity": "Tape.*Functional Film",
    "place": "Detroit",
    "country": "USA",
-   "date_pattern": "(?<from>\\d{1,2})\\s*[–-]\\s*(?<to>\\d{1,2})\\s+(?<month>October)\\s+(?<year>20\\d{2})"
+   "date_pattern": "(?<from>\\d{1,2})\\s*[\u2013-]\\s*(?<to>\\d{1,2})\\s+(?<month>October)\\s+(?<year>20\\d{2})"
   },
   {
    "id": "cbrne-convergence-knoxville",
@@ -62,7 +62,8 @@
    "identity": "CBRNe Convergence",
    "place": "Knoxville, Tennessee",
    "country": "USA",
-   "date_pattern": "From (?<from>\\d{1,2})\\s*-\\s*(?<to>\\d{1,2}) (?<month>November) (?<year>20\\d{2})"
+   "date_pattern": "From (?<from>\\d{1,2})\\s*-\\s*(?<to>\\d{1,2}) (?<month>November) (?<year>20\\d{2})",
+   "segment": "Military & Tactical"
   },
   {
    "id": "upship-ottawa",
@@ -77,7 +78,8 @@
    "identity": "Airship Association",
    "place": "Ottawa",
    "country": "Canada",
-   "announcement_pattern": "UpShip! Ottawa.{0,40}will be held in Ottawa, Canada in Spring 20\\d{2}"
+   "announcement_pattern": "UpShip! Ottawa.{0,40}will be held in Ottawa, Canada in Spring 20\\d{2}",
+   "segment": "Aeronautical"
   },
   {
    "id": "pia-symposium",
@@ -92,7 +94,8 @@
    "identity": "PIA.*Symposium",
    "place": "Cincinnati, Ohio",
    "country": "USA",
-   "date_pattern": "(?<month>February)\\s+(?<from>\\d{1,2})\\s*[–-]\\s*(?<to>\\d{1,2}),?\\s+(?<year>20\\d{2})"
+   "date_pattern": "(?<month>February)\\s+(?<from>\\d{1,2})\\s*[\u2013-]\\s*(?<to>\\d{1,2}),?\\s+(?<year>20\\d{2})",
+   "segment": "Aeronautical"
   },
   {
    "id": "afera-tape-week",
@@ -107,7 +110,7 @@
    "identity": "Technical Seminar",
    "place": "Porto",
    "country": "Portugal",
-   "date_pattern": "(?<year>20\\d{2}).{0,65}?run from (?<from>\\d{1,2})[–-](?<to>\\d{1,2}) (?<month>September)"
+   "date_pattern": "(?<year>20\\d{2}).{0,65}?run from (?<from>\\d{1,2})[\u2013-](?<to>\\d{1,2}) (?<month>September)"
   },
   {
    "id": "afera-events",
