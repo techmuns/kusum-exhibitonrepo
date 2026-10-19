@@ -29,10 +29,10 @@ export function directoryEvents(html,source){
  return out;
 }
 const month=s=>{const n=Number(s);return n>=1&&n<=12?n:['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'].indexOf(String(s).toLowerCase().slice(0,3))+1;};
-export function reviewedEvent(html,source){
+export function reviewedEvent(html,source,{today=new Date().toISOString().slice(0,10)}={}){
  const body=text(html);if(source.identity&&!new RegExp(source.identity,'i').test(body))throw Error('Event identity missing from source');
- const structured=structuredEvents(html,source).filter(r=>norm(r.name)===norm(source.name));
- let event=structured.sort((a,b)=>b.start.localeCompare(a.start))[0];
+ const structured=structuredEvents(html,source).filter(r=>norm(r.name)===norm(source.name)&&(r.end||r.start)>=today);
+ let event=structured.sort((a,b)=>a.start.localeCompare(b.start))[0];
  if(!event&&source.date_pattern){
   const match=body.match(new RegExp(source.date_pattern,'i')),g=match?.groups;
   if(g){const date=(d,m,y)=>iso(`${y}-${String(month(m)).padStart(2,'0')}-${String(d).padStart(2,'0')}`),start=date(g.from,g.month,g.year),end=date(g.to||g.from,g.month2||g.month,g.year2||g.year);
@@ -40,9 +40,13 @@ export function reviewedEvent(html,source){
   }
  }
  if(!event&&source.announcement_pattern){const m=body.match(new RegExp(source.announcement_pattern,'i'));if(m)event={name:source.name,start:null,end:null,dates:m[0],evidence:m[0],event_status:'dates-pending'};}
- if(!event)return [];
+ if(!event||event.start&&(event.end||event.start)<today)return [];
  const candidates=links(html,source.url),registration=candidates.find(l=>new RegExp(source.registration_label||'^(?:Register(?: now| to attend)?|Become a Visitor|Visitor registration|Get (?:free )?tickets?)$','i').test(l.label));
- return [{...event,name:source.name,place:source.place||event.place,country:source.country||event.country,website:source.website||source.url,registration:registration?.url||event.registration||null}];
+ let destination=registration?.url||event.registration||null;
+ // Old edition portals remain in history; do not offer them as current tickets.
+ const year=event.start?.slice(0,4),full=destination?.match(/\b(20\d{2})\b/g)||[],short=destination?.match(/[a-z]{3,}(\d{2})(?=registration|tickets?|[/.]|$)/i)?.[1];
+ if(year&&(full.some(y=>y!==year)||short&&'20'+short!==year))destination=null;
+ return [{...event,name:event.name||source.name,place:source.place||event.place,country:source.country||event.country,website:source.website||source.url,registration:destination}];
 }
 export async function readPage(url,{fetcher=fetch,limit=2_000_000}={}){
  if(!publicUrl(url))throw Error('Invalid public source URL');
@@ -59,7 +63,7 @@ export async function refreshCatalogue(shows,ledger,config,{now=new Date().toISO
  const started=Date.now();ledger.sources||={};const byId=new Map(shows.map(r=>[r.id,r]));let added=0,updated=0,failed=0,reads=0;
  const queue=[...config.sources].sort((a,b)=>String(ledger.sources[a.id]?.attempted_at||'').localeCompare(ledger.sources[b.id]?.attempted_at||''));
  for(const source of queue){if(reads>=limit||Date.now()-started>=budgetMs)break;const old=ledger.sources[source.id]||{};reads++;
-  try{const html=await read(source.url),events=source.adapter==='reviewed'?reviewedEvent(html,source):directoryEvents(html,source);if(!events.length)throw Error('No supported event dates or announcement extracted; last-good data retained');
+  try{const html=await read(source.url),events=source.adapter==='reviewed'?reviewedEvent(html,source,{today:now.slice(0,10)}):directoryEvents(html,source);if(!events.length)throw Error('No supported next-edition dates or announcement extracted; last-good data retained');
    for(const event of events){
     const series=source.show_id||'public-'+digest((event.listing||event.website||'')+'|'+norm(event.name)).slice(0,16),id=source.show_id||series+'-'+event.start;
     const prior=byId.get(id),receipt={source_id:source.id,url:source.url,content_sha256:digest(html),checked_at:now,excerpt:event.evidence,attribution:source.adapter==='eventseye'?'directory-reported':'organiser-reported'};
