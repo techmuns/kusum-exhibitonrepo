@@ -118,15 +118,45 @@
  },
  {
   "id": "dsei",
-  "segment": "Military & Tactical",
+  "segment": "Industrial",
   "name": "DSEI",
-  "country": "UK",
-  "place": "London",
-  "dates": "7–10 Sep 2027",
+  "country": "",
+  "place": "Excel London",
+  "dates": "2027-09-07 – 2027-09-10",
   "start": "2027-09-07",
   "status": "Exhibited",
   "end": "2027-09-10",
-  "website": "https://www.dsei.co.uk"
+  "website": "https://www.dsei.co.uk",
+  "registration": null,
+  "event_status": "scheduled",
+  "market_ids": [],
+  "relevance_reason": "Review the organiser programme for market relevance.",
+  "source": "public-calendar",
+  "discovered_at": "2026-10-19T13:52:12.334Z",
+  "source_checked_at": "2026-10-19T13:52:12.334Z",
+  "date_evidence": {
+   "source_id": "organiser-dsei",
+   "url": "https://www.dsei.co.uk",
+   "content_sha256": "380ff44486b88cba3e392a37af00724c91d8b085f1e8f369847c1cd9ed466800",
+   "checked_at": "2026-10-19T13:52:12.334Z",
+   "excerpt": "{\"name\":\"DSEI 2025\",\"startDate\":\"2027-09-07T00:00:00Z\",\"endDate\":\"2027-09-10T00:00:00Z\",\"eventStatus\":\"EventScheduled\"}",
+   "attribution": "organiser-reported"
+  },
+  "registration_status": "not-published",
+  "previous_editions": [
+   {
+    "id": "dsei",
+    "segment": "Military & Tactical",
+    "name": "DSEI",
+    "country": "UK",
+    "place": "London",
+    "dates": "7–10 Sep 2027",
+    "start": "2027-09-07",
+    "status": "Exhibited",
+    "end": "2027-09-10",
+    "website": "https://www.dsei.co.uk"
+   }
+  ]
  },
  {
   "id": "dvd",
@@ -179,15 +209,49 @@
  },
  {
   "id": "edex",
-  "segment": "Military & Tactical",
+  "segment": "Industrial",
   "name": "EDEX",
-  "country": "Egypt",
-  "place": "Cairo",
-  "dates": "6–9 Dec 2027",
+  "country": "",
+  "place": "",
+  "dates": "2027-12-06 – 2027-12-09",
   "start": "2027-12-06",
   "status": "Not yet",
   "end": "2027-12-09",
-  "website": "https://www.egyptdefenceexpo.com"
+  "website": "https://www.egyptdefenceexpo.com",
+  "registration": null,
+  "event_status": "scheduled",
+  "market_ids": [],
+  "relevance_reason": "Review the organiser programme for market relevance.",
+  "source": "public-calendar",
+  "discovered_at": "2026-10-19T13:52:12.334Z",
+  "source_checked_at": "2026-10-19T13:52:12.334Z",
+  "date_evidence": {
+   "source_id": "organiser-edex",
+   "url": "https://www.egyptdefenceexpo.com",
+   "content_sha256": "d03abeeefab37af7a4f9defd0ce94884ce5f7bd1183d93bfc34bb3386d22b474",
+   "checked_at": "2026-10-19T13:52:12.334Z",
+   "excerpt": "{\"name\":\"EDEX 2027\",\"startDate\":\"2027-12-06T09:00:00Z\",\"endDate\":\"2027-12-09T17:00:00Z\",\"eventStatus\":\"EventScheduled\"}",
+   "attribution": "organiser-reported"
+  },
+  "registration_status": "current-edition-link-pending",
+  "previous_editions": [
+   {
+    "id": "edex",
+    "segment": "Military & Tactical",
+    "name": "EDEX",
+    "country": "Egypt",
+    "place": "Cairo",
+    "dates": "6–9 Dec 2027",
+    "start": "2027-12-06",
+    "status": "Not yet",
+    "end": "2027-12-09",
+    "website": "https://www.egyptdefenceexpo.com"
+   },
+   {
+    "registration": "https://edex25registration.macber.cloud/",
+    "reason": "Prior-edition registration destination retained for evidence"
+   }
+  ]
  },
  {
   "id": "enforce-tac",
@@ -573,18 +637,48 @@
  },
  {
   "id": "pacific-marine-expo",
-  "segment": "Marine",
+  "segment": "Industrial",
   "name": "Pacific Marine Expo",
-  "country": "United States",
-  "place": "Seattle",
-  "dates": "19–21 Nov 2026",
+  "country": "",
+  "place": "",
+  "dates": "2026-11-19 – 2026-11-21",
   "start": "2026-11-19",
   "status": "Not yet",
-  "source": "discovered",
+  "source": "public-calendar",
   "discovered_at": "2026-09-09T14:16:21.664Z",
   "relevance_reason": "Premier marine industry event where Kusumgar's marine-grade fabrics (PU-coated, PVC-coated polyester) would be relevant for boat and marine applications",
   "end": "2026-11-21",
-  "website": "https://www.pacificmarineexpo.com"
+  "website": "https://www.pacificmarineexpo.com",
+  "registration": "https://www.xpressreg.net/register/PMEX1126/landing.php?sc=PMEX26",
+  "event_status": "scheduled",
+  "market_ids": [],
+  "source_checked_at": "2026-10-19T13:53:45.853Z",
+  "date_evidence": {
+   "source_id": "organiser-pacific-marine-expo",
+   "url": "https://www.pacificmarineexpo.com",
+   "content_sha256": "ec0745d26fb65b8f24a8812304771810fcc5163e774d0420cdf2064de9d0eb15",
+   "checked_at": "2026-10-19T13:53:45.853Z",
+   "excerpt": "{\"name\":\"Pacific Marine Expo 2026\",\"startDate\":\"2026-11-19T00:00:00-05:00\",\"endDate\":\"2026-11-21T00:00:00-05:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+   "attribution": "organiser-reported"
+  },
+  "registration_status": "published",
+  "previous_editions": [
+   {
+    "id": "pacific-marine-expo",
+    "segment": "Marine",
+    "name": "Pacific Marine Expo",
+    "country": "United States",
+    "place": "Seattle",
+    "dates": "19–21 Nov 2026",
+    "start": "2026-11-19",
+    "status": "Not yet",
+    "source": "discovered",
+    "discovered_at": "2026-09-09T14:16:21.664Z",
+    "relevance_reason": "Premier marine industry event where Kusumgar's marine-grade fabrics (PU-coated, PVC-coated polyester) would be relevant for boat and marine applications",
+    "end": "2026-11-21",
+    "website": "https://www.pacificmarineexpo.com"
+   }
+  ]
  },
  {
   "id": "southampton-boat-show",
@@ -1988,7 +2082,7 @@
   "place": "Detroit",
   "country": "USA",
   "website": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
-  "registration": "https://events.american-tradeshow.com/mwusa26",
+  "registration": null,
   "id": "tape-functional-film-usa",
   "segment": "Industrial",
   "market_ids": [
@@ -2007,8 +2101,13 @@
    "excerpt": "26 – 28 October 2027",
    "attribution": "organiser-reported"
   },
-  "registration_status": "published",
-  "previous_editions": []
+  "registration_status": "current-edition-link-pending",
+  "previous_editions": [
+   {
+    "registration": "https://events.american-tradeshow.com/mwusa26",
+    "reason": "Prior-edition registration destination retained for evidence"
+   }
+  ]
  },
  {
   "name": "CBRNe Convergence Knoxville",

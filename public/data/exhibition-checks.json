@@ -237,14 +237,386 @@
    "status": "failed",
    "error": "The operation was aborted due to timeout",
    "retired": true
+  },
+  "organiser-coupe-icare": {
+   "url": "https://www.coupe-icare.org/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-euro-skydiving": {
+   "url": "https://skydivingsymposium.eu",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "Source exceeds 2 MB budget"
+  },
+  "organiser-ata-expo": {
+   "url": "https://advancedtextilesexpo.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-global-tape-forum": {
+   "url": "https://www.c-linkage.co.jp/gtf2026",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-iree": {
+   "url": "https://www.ireeindia.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-innotrans": {
+   "url": "https://www.innotrans.de/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-ausa": {
+   "url": "https://meetings.ausa.org/annual/2026/index.cfm",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-cansec": {
+   "url": "https://cansec.defenceandsecurity.ca",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-dimdex": {
+   "url": "https://dimdex.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-dsa": {
+   "url": "https://www.dsaexhibition.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-dsei": {
+   "url": "https://www.dsei.co.uk",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "last_success_at": "2026-10-19T13:52:12.334Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
+  },
+  "organiser-dvd": {
+   "url": "https://theevent.co.uk",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-dx-korea": {
+   "url": "http://www.dxkorea.org",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "Source redirects outside its approved host"
+  },
+  "organiser-defence-tech-expo": {
+   "url": "https://defensetech-expo.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-drone-world-expo": {
+   "url": "https://warsawexpo.eu/en/fair-calendar/drone-world-expo",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-edex": {
+   "url": "https://www.egyptdefenceexpo.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "last_success_at": "2026-10-19T13:52:12.334Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
+  },
+  "organiser-enforce-tac": {
+   "url": "https://www.enforcetac.com/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "accepted": 0,
+   "error": "Only a past edition was exposed in structured metadata; retained upcoming dates need organiser review"
+  },
+  "organiser-eurosatory": {
+   "url": "https://www.eurosatory.com/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-future-forces": {
+   "url": "https://www.future-forces-forum.org",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-iitsec": {
+   "url": "https://www.iitsec.org",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-idex": {
+   "url": "https://www.idexuae.ae",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-iwa": {
+   "url": "https://www.iwa.info/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "accepted": 0,
+   "error": "Only a past edition was exposed in structured metadata; retained upcoming dates need organiser review"
+  },
+  "organiser-iodsc": {
+   "url": "https://iods.com.au",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-indo-defence": {
+   "url": "https://indodefence.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-iav": {
+   "url": "https://www.defenceiq.com/events-internationalarmouredvehicles",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-laad": {
+   "url": "https://laadexpo.com.br/defence/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-land-forces": {
+   "url": "https://landforces.com.au",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-mspo": {
+   "url": "https://www.targikielce.pl/en/mspo",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-milipol-france": {
+   "url": "https://www.milipol.com/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "HTTP 403"
+  },
+  "organiser-milipol-qatar": {
+   "url": "https://www.milipolqatar.com/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "HTTP 403"
+  },
+  "organiser-modern-day-marine": {
+   "url": "https://marinemilitaryexpos.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-shot-show": {
+   "url": "https://shotshow.org",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-sof-week": {
+   "url": "https://sofweek.org",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-security-policing": {
+   "url": "https://www.securityandpolicing.co.uk",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-singapore-airshow": {
+   "url": "https://www.singaporeairshow.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-world-defence-show": {
+   "url": "https://www.worlddefenseshow.com/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-aplusa": {
+   "url": "https://www.aplusa-online.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-expoprotection": {
+   "url": "https://www.expoprotection.com/en-gb.html",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-intersec": {
+   "url": "https://intersecglobal.ae.messefrankfurt.com/dubai/en.html",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-nsc": {
+   "url": "https://2026congress.nsc.org",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-safety-health-expo": {
+   "url": "https://www.healthandsafetyevent.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-techtextil-north-america": {
+   "url": "https://techtextil-north-america.us.messefrankfurt.com/us/en.html",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-pacific-marine-expo": {
+   "url": "https://www.pacificmarineexpo.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "last_success_at": "2026-10-19T13:53:45.853Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
+  },
+  "organiser-southampton-boat-show": {
+   "url": "https://www.southamptonboatshow.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-boat-technica": {
+   "url": "https://boattechnica.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-euronaval": {
+   "url": "https://www.euronaval.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-sidec": {
+   "url": "https://www.sidec.si/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-osh-india": {
+   "url": "https://www.oshindia.com/mumbai",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:53:45.853Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-textile-prom": {
+   "url": "https://textilexpo.ru/en",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:54:27.628Z",
+   "status": "failed",
+   "error": "fetch failed"
+  },
+  "organiser-textile-asia-faisalabad": {
+   "url": "https://www.textileasia.com.pk",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:54:27.628Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-textile-asia": {
+   "url": "https://www.textileasia.com.pk/home.php?id=lahore",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:54:27.628Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "organiser-igt-indo-garment-textile-expo": {
+   "url": "https://indogartexexpo.com",
+   "markets": [],
+   "attempted_at": "2026-10-19T13:54:27.628Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
   }
  },
  "last_run": {
-  "attempted_at": "2026-10-19T13:15:30.263Z",
-  "reads": 1,
+  "attempted_at": "2026-10-19T13:54:27.628Z",
+  "reads": 4,
   "added": 0,
-  "updated": 1,
-  "failed": 0,
-  "status": "success"
+  "updated": 0,
+  "failed": 4,
+  "status": "partial"
  }
 }
