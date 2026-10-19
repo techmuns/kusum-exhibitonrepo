@@ -1,79 +1,36 @@
 name: Discover exhibitions
-
-# Auto-discovers NEW relevant exhibitions from event directories into exhibitions.json.
-# Manual (with input) + weekly cron (Mondays). Commits only when exhibitions.json changed.
 on:
   workflow_dispatch:
-    inputs:
-      max:
-        description: 'Max source directories to scan per run'
-        required: false
-        default: '3'
-      max_dates:
-        description: 'Max undated shows to look up dates for per run'
-        required: false
-        default: '25'
   schedule:
-    - cron: '0 6 * * 1' # 06:00 UTC every Monday
-
+    - cron: '17 */6 * * *'
 permissions:
   contents: write
-
+  pull-requests: write
+  actions: write
 concurrency:
   group: discover-refresh
   cancel-in-progress: false
-
 jobs:
   discover:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
-
-      - name: Discover exhibitions (graceful without keys)
+      - name: Rotate direct public calendars and organiser dates
+        run: node scripts/refresh-public-exhibitions.mjs
+      - run: node scripts/update-meta.mjs
+      - run: node --test scripts/public-exhibitions.test.mjs
+      - name: Publish through a checked data pull request
+        if: github.ref_name == 'main'
         env:
-          BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
-          SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          BEDROCK_MODEL_IDS: ${{ secrets.BEDROCK_MODEL_IDS }}
-          MAX: ${{ github.event.inputs.max || '3' }}
-        run: node scripts/discover-exhibitions.mjs
-
-      - name: Fill missing show dates (graceful without keys)
-        env:
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
-          BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          BEDROCK_MODEL_IDS: ${{ secrets.BEDROCK_MODEL_IDS }}
-          MAX: ${{ github.event.inputs.max_dates || '25' }}
-        run: node scripts/find-show-dates.mjs
-
-      - name: Commit & push if changed
-        run: |
-          if [ -z "$(git status --porcelain public/data/exhibitions.json)" ]; then
-            echo "No changes to exhibitions.json — nothing to commit."
-            exit 0
-          fi
-          git config user.name "kgr-bot"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          node scripts/update-meta.mjs
-          git add public/data/exhibitions.json public/data/meta.json
-          git commit -m "chore(data): discover exhibitions & fill show dates"
-
-          branch="${GITHUB_REF_NAME}"
-          for i in 1 2 3 4; do
-            if git pull --rebase origin "$branch" && git push origin "HEAD:$branch"; then
-              echo "Pushed on attempt $i."
-              exit 0
-            fi
-            echo "Push attempt $i failed; retrying in $((2**i))s..."
-            sleep $((2**i))
-          done
-          echo "Failed to push after retries." >&2
-          exit 1
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publish-public-exhibitions.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: exhibition-source-receipts
+          path: public/data/exhibition-checks.json
+          retention-days: 30

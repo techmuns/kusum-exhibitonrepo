@@ -1,0 +1,250 @@
+{
+ "version": 1,
+ "sources": {
+  "techtextil": {
+   "url": "https://techtextil.messefrankfurt.com/frankfurt/en.html",
+   "markets": [
+    "technical-tapes",
+    "tpu-coated-fabric",
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
+  },
+  "jec-world": {
+   "url": "https://www.jec-world.events/",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
+  },
+  "tape-functional-film-usa": {
+   "url": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
+   "markets": [
+    "technical-tapes"
+   ],
+   "attempted_at": "2026-10-19T13:15:30.263Z",
+   "status": "success",
+   "error": null,
+   "last_success_at": "2026-10-19T13:15:30.263Z",
+   "accepted": 1
+  },
+  "cbrne-convergence-knoxville": {
+   "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
+   "markets": [
+    "cbrn-colpro"
+   ],
+   "attempted_at": "2026-10-19T13:15:32.449Z",
+   "status": "success",
+   "error": null,
+   "last_success_at": "2026-10-19T13:15:32.449Z",
+   "accepted": 1
+  },
+  "upship-ottawa": {
+   "url": "https://www.airship-association.org/conferences",
+   "markets": [
+    "haps-maps-aerostats"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 1,
+   "error": null
+  },
+  "pia-symposium": {
+   "url": "https://www.pia.com/events/",
+   "markets": [
+    "parachute-systems"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "status": "failed",
+   "error": "No supported event dates or announcement extracted; last-good data retained"
+  },
+  "afera-tape-week": {
+   "url": "https://afera.com/agenda/afera-technical-seminar/",
+   "markets": [
+    "technical-tapes"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "status": "failed",
+   "error": "fetch failed"
+  },
+  "cbrne-events": {
+   "url": "https://cbrneworld.com/events",
+   "markets": [
+    "cbrn-colpro"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "status": "failed",
+   "error": "HTTP 404",
+   "retired": true
+  },
+  "afera-events": {
+   "url": "https://afera.com/agenda/",
+   "markets": [
+    "technical-tapes"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "status": "failed",
+   "error": "fetch failed"
+  },
+  "eventseye-technical-textiles-0": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
+   "markets": [
+    "technical-tapes",
+    "tpu-coated-fabric"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:18:19.501Z",
+   "status": "failed",
+   "accepted": 9,
+   "error": "fetch failed"
+  },
+  "eventseye-technical-textiles-1": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles_1.html",
+   "markets": [
+    "technical-tapes",
+    "tpu-coated-fabric"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "status": "failed",
+   "error": "HTTP 404",
+   "retired": true
+  },
+  "eventseye-technical-textiles-2": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles_2.html",
+   "markets": [
+    "technical-tapes",
+    "tpu-coated-fabric"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "status": "failed",
+   "error": "HTTP 404",
+   "retired": true
+  },
+  "eventseye-plastics-rubber-composites-0": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 7,
+   "error": null
+  },
+  "eventseye-plastics-rubber-composites-1": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_1.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 2,
+   "error": null
+  },
+  "eventseye-plastics-rubber-composites-2": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_2.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 2,
+   "error": null
+  },
+  "eventseye-plastics-rubber-composites-3": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 5,
+   "error": null
+  },
+  "eventseye-plastics-rubber-composites-4": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_4.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 2,
+   "error": null
+  },
+  "eventseye-plastics-rubber-composites-5": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_5.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 3,
+   "error": null
+  },
+  "eventseye-plastics-rubber-composites-6": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_6.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "status": "success",
+   "accepted": 2,
+   "error": null
+  },
+  "eventseye-plastics-rubber-composites-7": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_7.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:18:19.501Z",
+   "status": "failed",
+   "accepted": 3,
+   "error": "The operation was aborted due to timeout"
+  },
+  "eventseye-plastics-rubber-composites-8": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_8.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "last_success_at": "2026-10-19T13:18:19.501Z",
+   "status": "failed",
+   "accepted": 1,
+   "error": "fetch failed"
+  },
+  "eventseye-plastics-rubber-composites-9": {
+   "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_9.html",
+   "markets": [
+    "carbon-fibre"
+   ],
+   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "status": "failed",
+   "error": "The operation was aborted due to timeout",
+   "retired": true
+  }
+ },
+ "last_run": {
+  "attempted_at": "2026-10-19T13:15:30.263Z",
+  "reads": 1,
+  "added": 0,
+  "updated": 1,
+  "failed": 0,
+  "status": "success"
+ }
+}

@@ -61,3 +61,32 @@ GitHub Actions will scrape and commit — ships to the live site with zero manua
 - **Phase 3** — Leads (target companies + buyers).
 - **Phase 4** — Competitors intelligence.
 - **Phase 5** — Outreach (cold-email machine).
+
+## Shared exhibition calendar — October 2026
+
+`public/data/exhibitions.json` is the shared catalogue consumed by Kusumgar
+Research Central's **Exhibitions** table. This integration contains event dates,
+location, market relevance and published registration links; it does not collect
+Signals, company news, buyers or outreach.
+
+`Discover exhibitions` now runs every six hours using direct public HTTP reads,
+with no paid search, scraping or model credentials. The bounded queue rotates
+through `scripts/exhibition-sources.json`, including reviewed organisers and
+paginated EventsEye listings. JSON-LD event data and reviewed date expressions
+update existing editions; directory rows discover new events. At most 24 pages
+and five minutes are used per run. With the initial 70-source queue, a complete
+attempt rotation normally takes three successful scheduled runs. A failed or
+unparseable page remains an explicit follow-up, not evidence of fresh coverage.
+
+`public/data/exhibition-checks.json` distinguishes attempts from successful event
+extraction. Previous dates and evidence remain retained. Registration URLs are
+kept only when actually published; absent URLs stay absent. Market assignments
+express event relevance, not material capabilities or confirmed participation.
+
+Updates use `codex/*` data pull requests, exact-head Exhibition checks and the
+trusted-main publication workflow. Required reviews remain gates. The existing
+legacy paid discovery scripts remain in Git history/source but are no longer
+invoked by the exhibition schedule. Research Central imports a pinned catalogue
+commit hourly and uses its existing checked publication/deployment flow. Source
+failures and blocked publication can delay freshness; no exhaustive coverage is
+claimed.
