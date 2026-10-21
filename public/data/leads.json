@@ -10335,18 +10335,274 @@
       "detail": "basic",
       "source": "exhibition:dsei",
       "type": "potential_customer"
+    },
+    {
+      "id": "caliber-armor",
+      "company": "Caliber Armor",
+      "segment": "Medical & Emergency",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "rts-tactical",
+      "company": "RTS Tactical",
+      "segment": "Medical & Emergency",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN9666",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "ceradyne",
+      "company": "Ceradyne",
+      "segment": "Medical & Emergency",
+      "country": "United States",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "celina",
+      "company": "Celina",
+      "segment": "Protective Covers & Industrial",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9614",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "zennison",
+      "company": "Zennison",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "PWNN4201",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "u-s-military-tents",
+      "company": "U.S. Military Tents",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "PWNN4201",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "shelter-structures",
+      "company": "Shelter Structures",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "PWNN4201",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "safran-electronics-defense",
+      "company": "Safran Electronics & Defense",
+      "segment": "Tool & Equipment Bags",
+      "country": "France",
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "paradigm-parachute",
+      "company": "Paradigm Parachute",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033, 4201, 8307, 9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "aero-tech-products-inc",
+      "company": "Aero Tech Products, Inc",
+      "segment": "Protective Covers & Industrial",
+      "country": "United States",
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033, 4201, 8307, 9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "air-pol-sp-zo-o",
+      "company": "AIR-POL Sp.zo.o.",
+      "segment": "Tool & Equipment Bags",
+      "country": "Poland",
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "mmist",
+      "company": "MMIST",
+      "segment": "Tool & Equipment Bags",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "irvin-aerospace",
+      "company": "Irvin Aerospace",
+      "segment": "Protective Covers & Industrial",
+      "country": "United States",
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033, 4201, 8307, 9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "gq-parachutes",
+      "company": "GQ Parachutes",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033, 4201, 8307, 9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "para-flite",
+      "company": "Para-Flite",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033, 4201, 8307, 9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "aml",
+      "company": "AML",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
     }
   ],
   "_meta": {
-    "scraped_at": "2026-10-20T12:38:40.680Z",
-    "targets": [
-      "dsa",
-      "dsei",
-      "enforce-tac"
+    "scraped_at": "2026-10-21T13:31:49.194Z",
+    "categories": [
+      "military tactical bag and pack manufacturers",
+      "ballistic vest and body armour plate carrier manufacturers",
+      "military tent and shelter system manufacturers",
+      "parachute and aerial delivery equipment manufacturers"
     ],
-    "pages_used": 6,
     "classified": 18,
-    "added_leads": 2,
+    "added_leads": 16,
     "added_competitors": 0
   },
   "_debug": [
@@ -10354,43 +10610,79 @@
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsaexhibition.com/exhibitor-list\",\"title\":\"Exhibitor List\",\"description\":\"## Exhibitor List\\n[![](https://www.dsaexhibition.com/data/editor/2026/exhibitor-list/cover-page-exhibitor-13-4-2026.jpeg?"
-    },
-    {
-      "path": "/v1/scrape",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Rectangle 131](https://www.expocaptive.com/wp-content/uploads/2025/09/Rectangle-131.png)\\n\\n- [Home](https://www.expocaptive.com/)\\n- [Security & Defense](https://www.expocaptive.com/security-defense-ev"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://condoroutdoor.com/collections/backpacks?srsltid=AU7gw4XdlGmdsFGZsucxwnArkR48HVS1lEwvFAZOYFL0FdpEkX0K4Q74\",\"title\":\"Tactical Backpacks & Sling Bags | Military & EDC Packs\",\"description\":\"Free delivery "
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsei.co.uk/visit/exhibiting-companies\",\"title\":\"2025 Exhibiting Companies\",\"description\":\"2025 Exhibiting Companies · \\\"NT Service\\\" UAB. Stand: N9-205 · 1MILLIKELVIN PTY LTD. Stand: S2-110 · 2Exc"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://armorguard.com/top-tactical-backpack-manufacturers/\",\"title\":\"Top 16 Tactical Backpack Manufacturers For Serious Buyers\",\"description\":\"Looking for good tactical backpack manufacturers? This in-depth "
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![10times](https://im.10times.com/1.png?c=web&s=eventdetail-exhibitors&p=pageview&e=4679336&k=fa29a33dbc071840140778001aba978d)\\n\\n[![Event logo](https://img.10times.com/event/15815/dsei-15815-logo-125x10"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Pre-loader](https://condoroutdoor.com/cdn/shop/t/79/assets/theme-preloader.svg?v=134562038640271236701784837122)\\n\\n# TACTICAL BACKPACKS\\n\\nDurable tactical backpacks, equipped with specialized features"
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.enforcetac.com/en/exhibitors-products/find-exhibitors\",\"title\":\"Find exhibitors\",\"description\":\"# Exhibitor Search 2027\\n- [Weapons (46)](https://www.enforcetac.com/en/exhibitors-products/find-exh"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://rmadefense.com/?srsltid=AU7gw4VEImi9og7kh_3Rkh2KwMkOLK9GFN26zIFELI6xBXXkqtPEFLCB\",\"title\":\"RMA Armament: Made-in-USA Body Armor & Plate Carriers\",\"description\":\"RMA Armament is a manufacturer of Ameri"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://usarmor.com/\",\"title\":\"Body Armor & Bulletproof Vests | NIJ Certified | U.S. Armor\",\"description\":\"# NIJ Certified Body Armor & Bulletproof Vests for Law Enforcement, Military, and Security\\n## OUR SU"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Exhibitor Search 2027\\n\\nSearch\\n\\nOpen filterfilter\\\\_alt\\n\\nclose\\n\\nFilters\\n\\nSelect product category\\n\\n- [Weapons (46)](https://www.enforcetac.com/en/exhibitors-products/find-exhibitors?state%5Bhi"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"22800 Dewey Rd. Centerville, IA 52544 \\\\| [866.978.7103](tel:866-978-7103)\\n\\n[Login/Register](https://rmadefense.com/my-account/ \\\"Login or Register\\\")\\n[My Account](https://rmadefense.com/my-account/ \\\""
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://rdsmilitarytents.com/\",\"title\":\"Rapid Deployable Systems – Expeditionary Military Tents\",\"description\":\"Rapid Deployable Systems manufactures American made and Berry compliant tents for expeditionary "
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dla.mil/Troop-Support/Clothing-and-Textiles/Tents/\",\"title\":\"Tents, Shelters, Base Camp Components, JOCOTAS\",\"description\":\"Tent and Shelter Component Search. DLA Troop Support's Clothing and Text"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Portable rocket launcher for military applications and tactical scenarios](https://www.enforcetac.com/_next/image?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fnurnbergmes0e18-nmmultisite6e34-prod50da-6065%"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://rdsmilitarytents.com/#content)\\n\\n[Expeditionary ECU Systems\\\\\\\\\\n\\\\\\\\\\nEngineered to perform in extreme conditions.\\\\\\\\\\n\\\\\\\\\\nLEARN MORE](https://rdsmilitarytents.com/shelter-s"
+    },
+    {
+      "path": "/v1/scrape",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"#learn-more {\\n scroll-margin: 150px;\\n}\\n\\n![](https://images.squarespace-cdn.com/content/v1/64f744bf13461c0de195db3d/563402a1-e267-490b-87a0-eb872a82498d/home+image+white+top+overlay+to+make+logo+show.p"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"we design, engineer, and manufacture the most innovative, reliable, and effective aerial delivery equipment in the world. . Our p"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"# A Full Suite Of Aerial Delivery Solutions\\nBill Gorlach\\n\\n## Aerial Delivery Products\\n- Parachutes and platforms to get milit"
+    },
+    {
+      "path": "/v1/scrape",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://capewell.com/solutions/#content)\\n\\n# Get Your Gear to the Ground\\n\\n# A Full Suite Of Aerial Delivery Solutions\\n\\nThe mission is in the details, and the first solution is very "
     }
   ]
 }
