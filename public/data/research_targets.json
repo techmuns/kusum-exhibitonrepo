@@ -308,7 +308,18 @@
    "product_evidence": "AEDs Automated CPR IPR therapy Monitors/defibrillators Trauma kits Ventilators",
    "verify_source_url": "https://www.zoll.com/en-us",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Jon Jaeb",
+   "person_title": "Vice President of Research and Development",
+   "person_linkedin": "https://www.linkedin.com/in/jon-jaeb-772b149",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "jjaeb@zoll.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-22",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "laerdal",
@@ -449,7 +460,18 @@
    "product_evidence": "Bound Tree is a national distributor of prehospital emergency medical supplies, equipment, and pharmaceuticals for EMS care providers.",
    "verify_source_url": "https://www.boundtree.com/?srsltid=AU7gw4WhSfBkuK9JMuC77r1YVXlLb-kpZv33uyDgVmrow6bMealLpAVS",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "adrienne nedler",
+   "person_title": "inside sales account manager",
+   "person_linkedin": "https://linkedin.com/in/adriennenedler",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "adrienne.nedler@boundtree.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-22",
+   "person_source": "pdl+prospeo"
   },
   {
    "id": "ambu",
@@ -1032,7 +1054,7 @@
    "verify_source_url": "https://treasuregarden.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "garden-leisure",
@@ -1068,7 +1090,18 @@
    "product_evidence": "At Taylor Made®, we know a thing or two when it comes to boat covers... we've expanded our capabilities to include boat tops and covers that fit like custom canvas, patented canvas-to-windshield attachment systems, protective covers, trailerable boat covers, stylish bimini tops, t-tops, accessories and more",
    "verify_source_url": "https://www.taylormadeproducts.com/boat-tops-and-covers",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Ray Corbett",
+   "person_title": "Marine Product Development Manager",
+   "person_linkedin": "https://ie.linkedin.com/in/ray-corbett-815aa714",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "westland-industries",
@@ -1086,7 +1119,18 @@
    "product_evidence": "A lot of companies make boat covers, but not a lot of companies make the \"Worlds Best Fitting Boat Cover\"",
    "verify_source_url": "https://westlandcovers.com/about-westland",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Chris Hill",
+   "person_title": "Director of Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/chris-hill-365859a",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "carver-industries",
@@ -1191,7 +1235,18 @@
    "product_evidence": "",
    "verify_source_url": "https://www.covercraft.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Robert Lawson",
+   "person_title": "Manager of Product Development",
+   "person_linkedin": "https://www.linkedin.com/in/robert-lawson-9039b3298",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "brunswick",
@@ -1209,7 +1264,18 @@
    "product_evidence": "",
    "verify_source_url": "https://boatplanet.com/ga/brunswick/boat-canvas-repair",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Marco Bracalente",
+   "person_title": "VP of Product Development & Engineering at Navico Group (Brunswick)",
+   "person_linkedin": "https://www.linkedin.com/in/marco-bracalente",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "sea-ray",
@@ -1547,7 +1613,7 @@
    "verify_source_url": "https://mightycovers.com/product/pooltux-royal-mesh-safety-pool-cover-7/?srsltid=AU7gw4UgJKVyPMGTR7jBkBghVRomDeq4P0v0BpGtjoKSXSZ324ThvRy8",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "tara-manufacturing",
@@ -2073,7 +2139,7 @@
    "verify_source_url": "https://arlmontco.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "covers-all",
@@ -2210,7 +2276,18 @@
    "product_evidence": "Marine Covers Boat Covers Pontoon Covers Jet Ski Covers Bimini Tops RV Covers",
    "verify_source_url": "https://cover.world/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Ian Hawkins",
+   "person_title": "Group Operations Manager",
+   "person_linkedin": "https://uk.linkedin.com/in/ian-hawkins-80350038",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "patio-watcher",
@@ -2395,7 +2472,7 @@
    "verify_source_url": "https://websweeper.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "oceansouth",
@@ -2914,7 +2991,18 @@
    "product_evidence": "",
    "verify_source_url": "https://correctcraft.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Paula Sleiman",
+   "person_title": "Director of Manufacturing Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/paula-sleiman",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": "psleiman@correctcraft.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-22",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "ranger-boats-accessories",
@@ -3073,7 +3161,8 @@
    "product_evidence": "",
    "verify_source_url": "https://crestliner.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "lund-boat-covers",
@@ -3155,7 +3244,7 @@
    "verify_source_url": "https://www.bainbridgeint.com/",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "marine-canvas-creations",
@@ -3275,7 +3364,7 @@
    "verify_source_url": "https://www.sailrite.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "harken-canvas-solutions",
@@ -3520,7 +3609,18 @@
    "product_evidence": "",
    "verify_source_url": "https://www.crescenttool.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Thomas K",
+   "person_title": "Technical and R&D (at Crescent Tools)",
+   "person_linkedin": "https://au.linkedin.com/in/thomas-k-188b0290",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "thomas.katsoulas@apextoolgroup.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-22",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "matco-tools",
@@ -4291,7 +4391,17 @@
    "verify_source_url": "https://thomasems.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-22",
+   "person_name": "chuck torres",
+   "person_title": "marketing administrator / appointment setter",
+   "person_linkedin": "https://linkedin.com/in/chuck-torres-b7a9381b6",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "info@thomasems.comWe",
+   "person_email_status": "published",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "pdl+website"
   },
   {
    "id": "north-american-rescue",
@@ -4570,11 +4680,11 @@
    "person_linkedin": "https://in.linkedin.com/in/akhil-kohli-85764b59",
    "person_role_tier": "A",
    "person_match_reason": "Technical",
-   "person_email": null,
-   "person_email_status": "none",
+   "person_email": "name@domain.com",
+   "person_email_status": "published",
    "person_email_verified": false,
    "person_email_checked_at": null,
-   "person_source": "serper"
+   "person_source": "serper+website"
   },
   {
    "id": "hartwell-medical",
@@ -4802,11 +4912,11 @@
    "person_linkedin": "https://www.linkedin.com/in/salvador-rodriguez-095586136",
    "person_role_tier": "B",
    "person_match_reason": "Operations",
-   "person_email": null,
-   "person_email_status": "none",
+   "person_email": "info@rescue-one.com",
+   "person_email_status": "published",
    "person_email_verified": false,
    "person_email_checked_at": null,
-   "person_source": "firecrawl"
+   "person_source": "firecrawl+website"
   },
   {
    "id": "zoll",
@@ -5310,7 +5420,7 @@
    "verify_source_url": "https://www.rescuetech1.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "dynamic-rescue-systems",
@@ -5328,7 +5438,8 @@
    "product_evidence": "Medical/First Aid, First Aid & Medical Training, Medical Response",
    "verify_source_url": "https://www.dynamicrescue.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "tarps-plus",
@@ -5570,7 +5681,8 @@
    "product_evidence": "",
    "verify_source_url": "https://durabiltusa.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "creative-covers",
@@ -6048,7 +6160,18 @@
    "product_evidence": "",
    "verify_source_url": "https://customcovercentral.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Kendall Bush",
+   "person_title": "Director of Product Development & Engineering",
+   "person_linkedin": "https://www.linkedin.com/in/kendallbush",
+   "person_role_tier": "A",
+   "person_match_reason": "Product Development",
+   "person_email": "kendall.bush@merryweather.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-22",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "cover-solutions",
@@ -6066,7 +6189,18 @@
    "product_evidence": "",
    "verify_source_url": "https://www.seatcoversolutions.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22",
+   "person_name": "Grant Pawlak",
+   "person_title": "Founder and CEO at Seat Cover Solutions",
+   "person_linkedin": "https://www.linkedin.com/in/grantpawlak",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "grant@seatcoversolutions.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-22",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "shelter-rite-fabricators",
@@ -6203,7 +6337,8 @@
    "product_evidence": "",
    "verify_source_url": "https://coveritcanada.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "american-tarping",
@@ -6250,7 +6385,8 @@
    "product_evidence": "",
    "verify_source_url": "https://www.coversunlimited.net/industrial-tarpaulin-fabricator",
    "verified_at": "2026-10-02",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "shade-systems-america",
@@ -6929,7 +7065,17 @@
    "verify_source_url": "https://www.vizonfiber.com/carbon-fiber-composites-in-wind-turbine-blade-manufacturing-for-onshore-and-offshore-wind-energy/",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-10-01"
+   "person_checked_at": "2026-10-22",
+   "person_name": "Santiago Rodriguez Montero",
+   "person_title": "Head of Americas @ VX Fiber",
+   "person_linkedin": "https://www.linkedin.com/in/srmonte",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "santiago.rodriguez@vxfiber.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-10-22",
+   "person_source": "firecrawl+prospeo"
   },
   {
    "id": "marex-composites-inc",
@@ -6948,7 +7094,17 @@
    "verify_source_url": "https://www.marexcompositesinc.com/wind-energy",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22",
+   "person_name": "Zoltan Horvath",
+   "person_title": "Plant manager/Production Manager",
+   "person_linkedin": "https://hu.linkedin.com/in/zoltan-horvath-productionmngr",
+   "person_role_tier": "B",
+   "person_match_reason": "Plant Manager",
+   "person_email": null,
+   "person_email_status": "none",
+   "person_email_verified": false,
+   "person_email_checked_at": null,
+   "person_source": "firecrawl"
   },
   {
    "id": "sky-composites",
@@ -7083,7 +7239,7 @@
    "verify_source_url": "https://noahcomposites.com/sports-equipments/",
    "verified_at": "2026-09-27",
    "product_id": "carbon-fibre",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "jcsportline",
@@ -7525,7 +7681,8 @@
    "product_evidence": "Unitarp — Best for cost-effective PVC inflatable tarp rolls and custom supply from China",
    "verify_source_url": "https://uni-tarp.com/top-10-inflatable-tarp-manufacturers/",
    "verified_at": "2026-10-04",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "e-squared",
@@ -7602,7 +7759,7 @@
    "verify_source_url": "https://www.nanxiongtpu.net/news/industry-news/how-to-choose-a-good-tpu-coated-fabric-manufacturer/",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22"
   },
   {
    "id": "primetex",
@@ -7795,7 +7952,7 @@
    "verify_source_url": "https://www.alltextilesupplier.com/a/Article/companynews/pvc-coated-fabric-vs-tpu-dry-bag.html",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-15"
+   "person_checked_at": "2026-10-22"
   }
  ]
 }
