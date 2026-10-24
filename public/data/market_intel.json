@@ -4,9 +4,9 @@
   "year": 2025,
   "year_reason": "2025 — latest complete year; 2026 still partial (no data yet)",
   "latest_complete_year": 2025,
-  "updated_at": "2026-10-17T11:48:52.309Z",
+  "updated_at": "2026-10-24T12:18:08.500Z",
   "note": "All figures are real UN Comtrade import/export values — nothing modeled.",
-  "monthly_through": "202607"
+  "monthly_through": "202608"
  },
  "hs5903": {
   "label": "All coated fabric (HS 5903)",
@@ -529,18 +529,12 @@
  "monthly": {
   "label": "Recent monthly activity (HS 5903) — provisional",
   "note": "Provisional: recent months are revised upward as more countries report, and China does not report monthly — so these totals run below the annual pace and must not be compared to the complete-year headline.",
-  "through": "202607",
+  "through": "202608",
   "query_urls": {
-   "imports": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?cmdCode=5903&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=202607",
-   "exports": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?cmdCode=5903&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=202607"
+   "imports": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?cmdCode=5903&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=202608",
+   "exports": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?cmdCode=5903&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=202608"
   },
   "series": [
-   {
-    "period": "202508",
-    "import_value": 635055781.253,
-    "export_value": 505742050.015,
-    "import_netWgt": 72549476.92899999
-   },
    {
     "period": "202509",
     "import_value": 728407115.219,
@@ -555,61 +549,67 @@
    },
    {
     "period": "202511",
-    "import_value": 632657303.802,
+    "import_value": 632657303.803,
     "export_value": 568842033.401,
     "import_netWgt": 67486007.701
    },
    {
     "period": "202512",
-    "import_value": 625948321.314,
+    "import_value": 625948321.315,
     "export_value": 547460766.748,
     "import_netWgt": 66885858.027999975
    },
    {
     "period": "202601",
-    "import_value": 587614496.639,
-    "export_value": 498788627.47599995,
+    "import_value": 586412000.2090001,
+    "export_value": 495242407.4269999,
     "import_netWgt": 60890722.451999985
    },
    {
     "period": "202602",
-    "import_value": 582209064.813,
+    "import_value": 582209064.815,
     "export_value": 492016585.30399996,
     "import_netWgt": 60885824.869
    },
    {
     "period": "202603",
-    "import_value": 617755106.9679999,
-    "export_value": 561115309.4879999,
-    "import_netWgt": 56410826.292
+    "import_value": 617806011.2509999,
+    "export_value": 561136718.624,
+    "import_netWgt": 56411847.209
    },
    {
     "period": "202604",
-    "import_value": 597273716.839,
-    "export_value": 552526389.556,
-    "import_netWgt": 54165787.98699999
+    "import_value": 601901575.173,
+    "export_value": 554386415.9399999,
+    "import_netWgt": 54774585.975999996
    },
    {
     "period": "202605",
-    "import_value": 572445561.0149999,
-    "export_value": 532044423.38,
-    "import_netWgt": 50761848.08900002
+    "import_value": 575988507.303,
+    "export_value": 534056400.957,
+    "import_netWgt": 51070640.820000015
    },
    {
     "period": "202606",
-    "import_value": 579571515.2310001,
-    "export_value": 523306603.22,
-    "import_netWgt": 48545221.31299999
+    "import_value": 584265077.195,
+    "export_value": 525142915.6559999,
+    "import_netWgt": 49171006.065
    },
    {
     "period": "202607",
-    "import_value": 512961071.65700006,
-    "export_value": 399626591.45400006,
-    "import_netWgt": 44007279.705
+    "import_value": 543862500.6320001,
+    "export_value": 481364274.67499995,
+    "import_netWgt": 47626189.611999996
+   },
+   {
+    "period": "202608",
+    "import_value": 153094476.34800002,
+    "export_value": 178283169.10599998,
+    "import_netWgt": 17879991.552
    }
   ],
-  "last12_import_value": 7380795368.714001,
-  "last12_export_value": 6429456476.333,
+  "last12_import_value": 6941448267.226999,
+  "last12_export_value": 6185918784.129,
   "months_count": 12
  }
 }
