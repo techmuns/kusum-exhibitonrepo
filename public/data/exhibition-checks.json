@@ -8,75 +8,84 @@
     "tpu-coated-fabric",
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "jec-world": {
    "url": "https://www.jec-world.events/",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "tape-functional-film-usa": {
    "url": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
    "markets": [
     "technical-tapes"
    ],
-   "attempted_at": "2026-10-19T13:15:30.263Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "error": null,
-   "last_success_at": "2026-10-19T13:15:30.263Z",
-   "accepted": 1
+   "last_success_at": "2026-10-25T20:50:42.034Z",
+   "accepted": 1,
+   "next_check_at": null
   },
   "cbrne-convergence-knoxville": {
    "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
    "markets": [
     "cbrn-colpro"
    ],
-   "attempted_at": "2026-10-19T13:15:32.449Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "error": null,
-   "last_success_at": "2026-10-19T13:15:32.449Z",
-   "accepted": 1
+   "last_success_at": "2026-10-25T20:50:42.034Z",
+   "accepted": 1,
+   "next_check_at": null
   },
   "upship-ottawa": {
    "url": "https://www.airship-association.org/conferences",
    "markets": [
     "haps-maps-aerostats"
    ],
-   "attempted_at": "2026-10-19T14:09:55.651Z",
-   "last_success_at": "2026-10-19T14:09:55.651Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "pia-symposium": {
    "url": "https://www.pia.com/events/info-pricing/",
    "markets": [
     "parachute-systems"
    ],
-   "attempted_at": "2026-10-19T14:18:07.113Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "error": null,
-   "last_success_at": "2026-10-19T14:18:07.113Z",
-   "accepted": 1
+   "last_success_at": "2026-10-25T20:50:42.034Z",
+   "accepted": 1,
+   "next_check_at": null
   },
   "afera-tape-week": {
    "url": "https://afera.com/agenda/afera-technical-seminar/",
    "markets": [
     "technical-tapes"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "status": "failed",
-   "error": "fetch failed"
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "status": "success",
+   "error": null,
+   "last_success_at": "2026-10-25T20:50:42.034Z",
+   "accepted": 1,
+   "next_check_at": null
   },
   "cbrne-events": {
    "url": "https://cbrneworld.com/events",
@@ -93,9 +102,10 @@
    "markets": [
     "technical-tapes"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
    "status": "failed",
-   "error": "fetch failed"
+   "error": "No supported next-edition dates or announcement extracted; last-good data retained",
+   "next_check_at": "2026-11-01T20:50:42.034Z"
   },
   "eventseye-technical-textiles-0": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
@@ -103,11 +113,12 @@
     "technical-tapes",
     "tpu-coated-fabric"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:18:19.501Z",
-   "status": "failed",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
+   "status": "success",
    "accepted": 9,
-   "error": "fetch failed"
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-technical-textiles-1": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles_1.html",
@@ -136,99 +147,108 @@
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 7,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-1": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_1.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 2,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-2": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_2.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 2,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-3": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 5,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-4": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_4.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 2,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-5": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_5.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 3,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-6": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_6.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:20:45.540Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 2,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-7": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_7.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:18:19.501Z",
-   "status": "failed",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
+   "status": "success",
    "accepted": 3,
-   "error": "The operation was aborted due to timeout"
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-8": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_8.html",
    "markets": [
     "carbon-fibre"
    ],
-   "attempted_at": "2026-10-19T13:20:45.540Z",
-   "last_success_at": "2026-10-19T13:18:19.501Z",
-   "status": "failed",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
+   "status": "success",
    "accepted": 1,
-   "error": "fetch failed"
+   "error": null,
+   "next_check_at": null
   },
   "eventseye-plastics-rubber-composites-9": {
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_9.html",
@@ -243,9 +263,10 @@
   "organiser-coupe-icare": {
    "url": "https://www.coupe-icare.org/en",
    "markets": [],
-   "attempted_at": "2026-10-19T13:52:12.334Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
    "status": "failed",
-   "error": "No supported event dates or announcement extracted; last-good data retained"
+   "error": "No supported next-edition dates or announcement extracted; last-good data retained",
+   "next_check_at": "2026-11-01T20:50:42.034Z"
   },
   "organiser-euro-skydiving": {
    "url": "https://skydivingsymposium.eu",
@@ -313,11 +334,12 @@
   "organiser-dsei": {
    "url": "https://www.dsei.co.uk",
    "markets": [],
-   "attempted_at": "2026-10-19T13:52:12.334Z",
-   "last_success_at": "2026-10-19T13:52:12.334Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "organiser-dvd": {
    "url": "https://theevent.co.uk",
@@ -350,11 +372,12 @@
   "organiser-edex": {
    "url": "https://www.egyptdefenceexpo.com",
    "markets": [],
-   "attempted_at": "2026-10-19T13:52:12.334Z",
-   "last_success_at": "2026-10-19T13:52:12.334Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "organiser-enforce-tac": {
    "url": "https://www.enforcetac.com/en",
@@ -543,11 +566,12 @@
   "organiser-pacific-marine-expo": {
    "url": "https://www.pacificmarineexpo.com",
    "markets": [],
-   "attempted_at": "2026-10-19T13:53:45.853Z",
-   "last_success_at": "2026-10-19T13:53:45.853Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "organiser-southampton-boat-show": {
    "url": "https://www.southamptonboatshow.com",
@@ -617,11 +641,12 @@
    "markets": [
     "cbrn-colpro"
    ],
-   "attempted_at": "2026-10-19T14:09:55.651Z",
-   "last_success_at": "2026-10-19T14:09:55.651Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   },
   "pia-announcements": {
    "url": "https://www.pia.com/events/",
@@ -637,20 +662,21 @@
    "markets": [
     "cbrn-colpro"
    ],
-   "attempted_at": "2026-10-19T14:12:30.793Z",
-   "last_success_at": "2026-10-19T14:12:30.793Z",
+   "attempted_at": "2026-10-25T20:50:42.034Z",
+   "last_success_at": "2026-10-25T20:50:42.034Z",
    "status": "success",
    "accepted": 1,
-   "error": null
+   "error": null,
+   "next_check_at": null
   }
  },
  "last_run": {
-  "attempted_at": "2026-10-19T14:18:07.113Z",
-  "reads": 1,
-  "added": 0,
-  "updated": 1,
-  "failed": 0,
-  "status": "success"
+  "attempted_at": "2026-10-25T20:50:42.034Z",
+  "reads": 24,
+  "added": 1,
+  "updated": 47,
+  "failed": 2,
+  "status": "partial"
  },
  "discovered_sources": [
   {
