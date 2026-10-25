@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "total": 317,
+  "total": 318,
   "source": "Kusumgar curated target list (600D_FABRIC_TGT_COMPANIES.xlsx + NEW_KUSUMGAR_DOWNLAD.xlsx)",
   "note": "verified=false rows await the research-verify robot (visits each company website; nothing invented)"
  },
@@ -7953,6 +7953,24 @@
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
    "person_checked_at": "2026-10-22"
+  },
+  {
+   "id": "epo",
+   "segment": "Sports Equipment",
+   "company": "EPO",
+   "country": "",
+   "application": "",
+   "est_fabric_consumption": "",
+   "sourcing_model": "",
+   "buyer_role": "",
+   "source": "New-product research engine",
+   "verified": true,
+   "website": "https://epotw.com",
+   "product_confirmed": true,
+   "product_evidence": "TPU coated fabrics are used in various products due to their superior properties... Bags Luggage Shoes Medical Bedding Motorcycle Bags",
+   "verify_source_url": "https://www.epotw.com/tpu-coated-fabric",
+   "verified_at": "2026-10-25",
+   "product_id": "tpu-coated"
   }
  ]
 }
