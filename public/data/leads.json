@@ -10591,18 +10591,50 @@
       "detail": "basic",
       "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
       "type": "potential_customer"
+    },
+    {
+      "id": "511-tactical",
+      "company": "511 Tactical",
+      "segment": "Tool & Equipment Bags",
+      "country": "United States",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9345",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "exhibition:enforce-tac",
+      "type": "potential_customer"
+    },
+    {
+      "id": "kong",
+      "company": "KONG",
+      "segment": "Tool & Equipment Bags",
+      "country": "Italy",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9496",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "exhibition:enforce-tac",
+      "type": "potential_customer"
     }
   ],
   "_meta": {
-    "scraped_at": "2026-10-21T13:31:49.194Z",
-    "categories": [
-      "military tactical bag and pack manufacturers",
-      "ballistic vest and body armour plate carrier manufacturers",
-      "military tent and shelter system manufacturers",
-      "parachute and aerial delivery equipment manufacturers"
+    "scraped_at": "2026-10-27T13:06:10.988Z",
+    "targets": [
+      "dsa",
+      "dsei",
+      "enforce-tac"
     ],
-    "classified": 18,
-    "added_leads": 16,
+    "pages_used": 6,
+    "classified": 19,
+    "added_leads": 2,
     "added_competitors": 0
   },
   "_debug": [
@@ -10610,79 +10642,37 @@
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://condoroutdoor.com/collections/backpacks?srsltid=AU7gw4XdlGmdsFGZsucxwnArkR48HVS1lEwvFAZOYFL0FdpEkX0K4Q74\",\"title\":\"Tactical Backpacks & Sling Bags | Military & EDC Packs\",\"description\":\"Free delivery "
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://armorguard.com/top-tactical-backpack-manufacturers/\",\"title\":\"Top 16 Tactical Backpack Manufacturers For Serious Buyers\",\"description\":\"Looking for good tactical backpack manufacturers? This in-depth "
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsaexhibition.com/exhibitor-list\",\"title\":\"Exhibitor List - DSA Exhibition\",\"description\":\"## Exhibitor List\\n[![](https://www.dsaexhibition.com/data/editor/2026/exhibitor-list/cover-page-exhibito"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Pre-loader](https://condoroutdoor.com/cdn/shop/t/79/assets/theme-preloader.svg?v=134562038640271236701784837122)\\n\\n# TACTICAL BACKPACKS\\n\\nDurable tactical backpacks, equipped with specialized features"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Rectangle 131](https://www.expocaptive.com/wp-content/uploads/2025/09/Rectangle-131.png)\\n\\n- [Home](https://www.expocaptive.com/)\\n- [Security & Defense](https://www.expocaptive.com/security-defense-ev"
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://rmadefense.com/?srsltid=AU7gw4VEImi9og7kh_3Rkh2KwMkOLK9GFN26zIFELI6xBXXkqtPEFLCB\",\"title\":\"RMA Armament: Made-in-USA Body Armor & Plate Carriers\",\"description\":\"RMA Armament is a manufacturer of Ameri"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://usarmor.com/\",\"title\":\"Body Armor & Bulletproof Vests | NIJ Certified | U.S. Armor\",\"description\":\"# NIJ Certified Body Armor & Bulletproof Vests for Law Enforcement, Military, and Security\\n## OUR SU"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsei.co.uk/visit/exhibiting-companies\",\"title\":\"2025 Exhibiting Companies - DSEI UK 2027\",\"description\":\"2025 Exhibiting Companies · \\\"NT Service\\\" UAB. Stand: N9-205 · 1MILLIKELVIN PTY LTD. Stand"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"22800 Dewey Rd. Centerville, IA 52544 \\\\| [866.978.7103](tel:866-978-7103)\\n\\n[Login/Register](https://rmadefense.com/my-account/ \\\"Login or Register\\\")\\n[My Account](https://rmadefense.com/my-account/ \\\""
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[How We Work](https://exhibitorsdata.com/how-we-work/) [Add Event](https://exhibitorsdata.com/add-event/) [Partner with us](https://exhibitorsdata.com/partners/) [FAQs](https://exhibitorsdata.com/faqs/) ["
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://rdsmilitarytents.com/\",\"title\":\"Rapid Deployable Systems – Expeditionary Military Tents\",\"description\":\"Rapid Deployable Systems manufactures American made and Berry compliant tents for expeditionary "
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dla.mil/Troop-Support/Clothing-and-Textiles/Tents/\",\"title\":\"Tents, Shelters, Base Camp Components, JOCOTAS\",\"description\":\"Tent and Shelter Component Search. DLA Troop Support's Clothing and Text"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.enforcetac.com/en/exhibitors-products/find-exhibitors\",\"title\":\"Find exhibitors | Enforce Tac\",\"description\":\"# Exhibitor Search 2027\\n- [Weapons (61)](https://www.enforcetac.com/en/exhibitors-pro"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://rdsmilitarytents.com/#content)\\n\\n[Expeditionary ECU Systems\\\\\\\\\\n\\\\\\\\\\nEngineered to perform in extreme conditions.\\\\\\\\\\n\\\\\\\\\\nLEARN MORE](https://rdsmilitarytents.com/shelter-s"
-    },
-    {
-      "path": "/v1/scrape",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"#learn-more {\\n scroll-margin: 150px;\\n}\\n\\n![](https://images.squarespace-cdn.com/content/v1/64f744bf13461c0de195db3d/563402a1-e267-490b-87a0-eb872a82498d/home+image+white+top+overlay+to+make+logo+show.p"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"we design, engineer, and manufacture the most innovative, reliable, and effective aerial delivery equipment in the world. . Our p"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"# A Full Suite Of Aerial Delivery Solutions\\nBill Gorlach\\n\\n## Aerial Delivery Products\\n- Parachutes and platforms to get milit"
-    },
-    {
-      "path": "/v1/scrape",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://capewell.com/solutions/#content)\\n\\n# Get Your Gear to the Ground\\n\\n# A Full Suite Of Aerial Delivery Solutions\\n\\nThe mission is in the details, and the first solution is very "
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[How We Work](https://exhibitorsdata.com/how-we-work/) [Add Event](https://exhibitorsdata.com/add-event/) [Partner with us](https://exhibitorsdata.com/partners/) [FAQs](https://exhibitorsdata.com/faqs/) ["
     }
   ]
 }
