@@ -119,7 +119,7 @@
  {
   "id": "dsei",
   "segment": "Military & Tactical",
-  "name": "DSEI",
+  "name": "DSEI 2025",
   "country": "",
   "place": "Excel London",
   "dates": "2027-09-07 – 2027-09-10",
@@ -133,13 +133,14 @@
   "relevance_reason": "Review the organiser programme for market relevance.",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:52:12.334Z",
-  "source_checked_at": "2026-10-19T13:52:12.334Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "organiser-dsei",
    "url": "https://www.dsei.co.uk",
-   "content_sha256": "380ff44486b88cba3e392a37af00724c91d8b085f1e8f369847c1cd9ed466800",
-   "checked_at": "2026-10-19T13:52:12.334Z",
+   "content_sha256": "8eaa47828725680eacaf9e6ec5917b3e9b612ad9ec437a54a83ba58b3fffe7e5",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "{\"name\":\"DSEI 2025\",\"startDate\":\"2027-09-07T00:00:00Z\",\"endDate\":\"2027-09-10T00:00:00Z\",\"eventStatus\":\"EventScheduled\"}",
+   "kind": "dates",
    "attribution": "organiser-reported"
   },
   "registration_status": "not-published",
@@ -155,8 +156,37 @@
     "status": "Exhibited",
     "end": "2027-09-10",
     "website": "https://www.dsei.co.uk"
+   },
+   {
+    "id": "dsei",
+    "segment": "Military & Tactical",
+    "name": "DSEI",
+    "country": "",
+    "place": "Excel London",
+    "dates": "2027-09-07 – 2027-09-10",
+    "start": "2027-09-07",
+    "status": "Exhibited",
+    "end": "2027-09-10",
+    "website": "https://www.dsei.co.uk",
+    "registration": null,
+    "event_status": "scheduled",
+    "market_ids": [],
+    "relevance_reason": "Review the organiser programme for market relevance.",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T13:52:12.334Z",
+    "source_checked_at": "2026-10-19T13:52:12.334Z",
+    "date_evidence": {
+     "source_id": "organiser-dsei",
+     "url": "https://www.dsei.co.uk",
+     "content_sha256": "380ff44486b88cba3e392a37af00724c91d8b085f1e8f369847c1cd9ed466800",
+     "checked_at": "2026-10-19T13:52:12.334Z",
+     "excerpt": "{\"name\":\"DSEI 2025\",\"startDate\":\"2027-09-07T00:00:00Z\",\"endDate\":\"2027-09-10T00:00:00Z\",\"eventStatus\":\"EventScheduled\"}",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "not-published"
    }
-  ]
+  ],
+  "edition_year": "2027"
  },
  {
   "id": "dvd",
@@ -210,7 +240,7 @@
  {
   "id": "edex",
   "segment": "Military & Tactical",
-  "name": "EDEX",
+  "name": "EDEX 2027",
   "country": "",
   "place": "",
   "dates": "2027-12-06 – 2027-12-09",
@@ -224,13 +254,14 @@
   "relevance_reason": "Review the organiser programme for market relevance.",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:52:12.334Z",
-  "source_checked_at": "2026-10-19T13:52:12.334Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "organiser-edex",
    "url": "https://www.egyptdefenceexpo.com",
-   "content_sha256": "d03abeeefab37af7a4f9defd0ce94884ce5f7bd1183d93bfc34bb3386d22b474",
-   "checked_at": "2026-10-19T13:52:12.334Z",
+   "content_sha256": "ab8dba054f7a2b50fa83775967d8010ea29d2c7b196d15344aa15a4867e51840",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "{\"name\":\"EDEX 2027\",\"startDate\":\"2027-12-06T09:00:00Z\",\"endDate\":\"2027-12-09T17:00:00Z\",\"eventStatus\":\"EventScheduled\"}",
+   "kind": "dates",
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
@@ -251,17 +282,55 @@
     "registration": "https://edex25registration.macber.cloud/",
     "reason": "Prior-edition registration destination retained for evidence",
     "review_note": "URL text alone does not establish a registration edition; use the destination actually published by the organiser."
+   },
+   {
+    "id": "edex",
+    "segment": "Military & Tactical",
+    "name": "EDEX",
+    "country": "",
+    "place": "",
+    "dates": "2027-12-06 – 2027-12-09",
+    "start": "2027-12-06",
+    "status": "Not yet",
+    "end": "2027-12-09",
+    "website": "https://www.egyptdefenceexpo.com",
+    "registration": "https://edex25registration.macber.cloud/",
+    "event_status": "scheduled",
+    "market_ids": [],
+    "relevance_reason": "Review the organiser programme for market relevance.",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T13:52:12.334Z",
+    "source_checked_at": "2026-10-19T13:52:12.334Z",
+    "date_evidence": {
+     "source_id": "organiser-edex",
+     "url": "https://www.egyptdefenceexpo.com",
+     "content_sha256": "d03abeeefab37af7a4f9defd0ce94884ce5f7bd1183d93bfc34bb3386d22b474",
+     "checked_at": "2026-10-19T13:52:12.334Z",
+     "excerpt": "{\"name\":\"EDEX 2027\",\"startDate\":\"2027-12-06T09:00:00Z\",\"endDate\":\"2027-12-09T17:00:00Z\",\"eventStatus\":\"EventScheduled\"}",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "published",
+    "registration_evidence": {
+     "source_id": "organiser-edex",
+     "url": "https://www.egyptdefenceexpo.com",
+     "content_sha256": "d03abeeefab37af7a4f9defd0ce94884ce5f7bd1183d93bfc34bb3386d22b474",
+     "checked_at": "2026-10-19T13:52:12.334Z",
+     "excerpt": "https://edex25registration.macber.cloud/",
+     "attribution": "organiser-reported",
+     "kind": "registration"
+    }
    }
   ],
   "registration_evidence": {
    "source_id": "organiser-edex",
    "url": "https://www.egyptdefenceexpo.com",
-   "content_sha256": "d03abeeefab37af7a4f9defd0ce94884ce5f7bd1183d93bfc34bb3386d22b474",
-   "checked_at": "2026-10-19T13:52:12.334Z",
-   "excerpt": "https://edex25registration.macber.cloud/",
-   "attribution": "organiser-reported",
-   "kind": "registration"
-  }
+   "content_sha256": "ab8dba054f7a2b50fa83775967d8010ea29d2c7b196d15344aa15a4867e51840",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "VISITOR REGISTRATION — https://edex25registration.macber.cloud/",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  },
+  "edition_year": "2027"
  },
  {
   "id": "enforce-tac",
@@ -609,13 +678,14 @@
   "relevance_reason": "Technical textiles, coated fabrics and composite materials; broad sourcing relevance.",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "techtextil",
    "url": "https://techtextil.messefrankfurt.com/frankfurt/en.html",
-   "content_sha256": "e83f957878cf262969ffc477788f159117619d8edd64493e207bad38d18b8180",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "content_sha256": "0580acdc7b72d02b2339399f8fad4b67573053c18b08497135debfff5dbc4bf1",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "from 4 to 7 April 2028",
+   "kind": "dates",
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
@@ -632,12 +702,13 @@
   "registration_evidence": {
    "source_id": "techtextil",
    "url": "https://techtextil.messefrankfurt.com/frankfurt/en.html",
-   "content_sha256": "e83f957878cf262969ffc477788f159117619d8edd64493e207bad38d18b8180",
-   "checked_at": "2026-10-19T13:20:45.540Z",
-   "excerpt": "https://techtextil.messefrankfurt.com/frankfurt/en/planning-preparation/exhibitors/intention-exhibit.html",
-   "attribution": "organiser-reported",
-   "kind": "registration"
-  }
+   "content_sha256": "0580acdc7b72d02b2339399f8fad4b67573053c18b08497135debfff5dbc4bf1",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "Register now — https://techtextil.messefrankfurt.com/frankfurt/en/planning-preparation/exhibitors/intention-exhibit.html",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  },
+  "edition_year": "2028"
  },
  {
   "id": "techtextil-north-america",
@@ -657,7 +728,7 @@
  {
   "id": "pacific-marine-expo",
   "segment": "Marine",
-  "name": "Pacific Marine Expo",
+  "name": "Pacific Marine Expo 2026",
   "country": "",
   "place": "",
   "dates": "2026-11-19 – 2026-11-21",
@@ -671,13 +742,14 @@
   "registration": "https://www.xpressreg.net/register/PMEX1126/landing.php?sc=PMEX26",
   "event_status": "scheduled",
   "market_ids": [],
-  "source_checked_at": "2026-10-19T13:53:45.853Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "organiser-pacific-marine-expo",
    "url": "https://www.pacificmarineexpo.com",
-   "content_sha256": "ec0745d26fb65b8f24a8812304771810fcc5163e774d0420cdf2064de9d0eb15",
-   "checked_at": "2026-10-19T13:53:45.853Z",
+   "content_sha256": "a3c2797cacd1b3a8f978c66c5f52053a69ab9c0a1a211d3e3d3953bc3a413e0c",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "{\"name\":\"Pacific Marine Expo 2026\",\"startDate\":\"2026-11-19T00:00:00-05:00\",\"endDate\":\"2026-11-21T00:00:00-05:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+   "kind": "dates",
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
@@ -696,17 +768,55 @@
     "relevance_reason": "Premier marine industry event where Kusumgar's marine-grade fabrics (PU-coated, PVC-coated polyester) would be relevant for boat and marine applications",
     "end": "2026-11-21",
     "website": "https://www.pacificmarineexpo.com"
+   },
+   {
+    "id": "pacific-marine-expo",
+    "segment": "Marine",
+    "name": "Pacific Marine Expo",
+    "country": "",
+    "place": "",
+    "dates": "2026-11-19 – 2026-11-21",
+    "start": "2026-11-19",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-09-09T14:16:21.664Z",
+    "relevance_reason": "Premier marine industry event where Kusumgar's marine-grade fabrics (PU-coated, PVC-coated polyester) would be relevant for boat and marine applications",
+    "end": "2026-11-21",
+    "website": "https://www.pacificmarineexpo.com",
+    "registration": "https://www.xpressreg.net/register/PMEX1126/landing.php?sc=PMEX26",
+    "event_status": "scheduled",
+    "market_ids": [],
+    "source_checked_at": "2026-10-19T13:53:45.853Z",
+    "date_evidence": {
+     "source_id": "organiser-pacific-marine-expo",
+     "url": "https://www.pacificmarineexpo.com",
+     "content_sha256": "ec0745d26fb65b8f24a8812304771810fcc5163e774d0420cdf2064de9d0eb15",
+     "checked_at": "2026-10-19T13:53:45.853Z",
+     "excerpt": "{\"name\":\"Pacific Marine Expo 2026\",\"startDate\":\"2026-11-19T00:00:00-05:00\",\"endDate\":\"2026-11-21T00:00:00-05:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "published",
+    "registration_evidence": {
+     "source_id": "organiser-pacific-marine-expo",
+     "url": "https://www.pacificmarineexpo.com",
+     "content_sha256": "ec0745d26fb65b8f24a8812304771810fcc5163e774d0420cdf2064de9d0eb15",
+     "checked_at": "2026-10-19T13:53:45.853Z",
+     "excerpt": "https://www.xpressreg.net/register/PMEX1126/landing.php?sc=PMEX26",
+     "attribution": "organiser-reported",
+     "kind": "registration"
+    }
    }
   ],
   "registration_evidence": {
    "source_id": "organiser-pacific-marine-expo",
    "url": "https://www.pacificmarineexpo.com",
-   "content_sha256": "ec0745d26fb65b8f24a8812304771810fcc5163e774d0420cdf2064de9d0eb15",
-   "checked_at": "2026-10-19T13:53:45.853Z",
-   "excerpt": "https://www.xpressreg.net/register/PMEX1126/landing.php?sc=PMEX26",
-   "attribution": "organiser-reported",
-   "kind": "registration"
-  }
+   "content_sha256": "a3c2797cacd1b3a8f978c66c5f52053a69ab9c0a1a211d3e3d3953bc3a413e0c",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "REGISTER NOW — https://www.xpressreg.net/register/PMEX1126/landing.php?sc=PMEX26",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  },
+  "edition_year": "2026"
  },
  {
   "id": "southampton-boat-show",
@@ -887,7 +997,7 @@
   "place": "Paris",
   "country": "France",
   "website": "https://www.jec-world.events/",
-  "registration": "https://www.jec-world.events/visit/become-visitor",
+  "registration": "https://registration.jec-world.events/Pro",
   "id": "jec-world",
   "segment": "Industrial",
   "market_ids": [
@@ -897,26 +1007,68 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "jec-world",
    "url": "https://www.jec-world.events/",
-   "content_sha256": "d9c82c4722e89254fb0b52921cddf1612b619563b29822703b8ef2da186cecc0",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "content_sha256": "0119f91223dfb2212e35a5b5cc8ba6c7c7e726eb731026766b73acbe09ad1c14",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "March 2–4, 2027",
+   "kind": "dates",
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
-  "previous_editions": [],
+  "previous_editions": [
+   {
+    "name": "JEC World",
+    "start": "2027-03-02",
+    "end": "2027-03-04",
+    "dates": "2027-03-02 – 2027-03-04",
+    "event_status": "scheduled",
+    "place": "Paris",
+    "country": "France",
+    "website": "https://www.jec-world.events/",
+    "registration": "https://www.jec-world.events/visit/become-visitor",
+    "id": "jec-world",
+    "segment": "Industrial",
+    "market_ids": [
+     "carbon-fibre"
+    ],
+    "relevance_reason": "Composites materials, reinforcement and processing exhibition.",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T13:18:19.501Z",
+    "source_checked_at": "2026-10-19T13:20:45.540Z",
+    "date_evidence": {
+     "source_id": "jec-world",
+     "url": "https://www.jec-world.events/",
+     "content_sha256": "d9c82c4722e89254fb0b52921cddf1612b619563b29822703b8ef2da186cecc0",
+     "checked_at": "2026-10-19T13:20:45.540Z",
+     "excerpt": "March 2–4, 2027",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "published",
+    "registration_evidence": {
+     "source_id": "jec-world",
+     "url": "https://www.jec-world.events/",
+     "content_sha256": "d9c82c4722e89254fb0b52921cddf1612b619563b29822703b8ef2da186cecc0",
+     "checked_at": "2026-10-19T13:20:45.540Z",
+     "excerpt": "https://www.jec-world.events/visit/become-visitor",
+     "attribution": "organiser-reported",
+     "kind": "registration"
+    }
+   }
+  ],
   "registration_evidence": {
    "source_id": "jec-world",
    "url": "https://www.jec-world.events/",
-   "content_sha256": "d9c82c4722e89254fb0b52921cddf1612b619563b29822703b8ef2da186cecc0",
-   "checked_at": "2026-10-19T13:20:45.540Z",
-   "excerpt": "https://www.jec-world.events/visit/become-visitor",
-   "attribution": "organiser-reported",
-   "kind": "registration"
-  }
+   "content_sha256": "0119f91223dfb2212e35a5b5cc8ba6c7c7e726eb731026766b73acbe09ad1c14",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "Become a Visitor — https://registration.jec-world.events/Pro",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  },
+  "edition_year": "2027"
  },
  {
   "name": "UpShip! Ottawa '27",
@@ -936,7 +1088,7 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T14:09:55.651Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "upship-ottawa",
    "url": "https://www.airship-association.org/conferences",
@@ -979,7 +1131,8 @@
    }
   ],
   "announcement_only": true,
-  "country": "Canada"
+  "country": "Canada",
+  "edition_year": "2027"
  },
  {
   "name": "PERFORMANCE DAYS - MUNICH",
@@ -1002,13 +1155,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "PERFORMANCE DAYS - MUNICH; Trade fair dedicated to functional fabrics, new fabrics and innovations. Created as a special platform for functional sports- and workwear fabrics to include yarns, finishes, and accessories, PERFORMANCE DAYS has become established as a semi-annual event; 10/13/2026 2 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1035,13 +1189,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "ADVANCED TEXTILES EXPO; For a century, Advanced Textiles Expo has been the industrial fabrics industry's flagship show. It is the place where industry stakeholders and leaders connect, dicover, and source in order to grow their businesses; 11/03/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1068,13 +1223,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "SUN SHADING EXPO NORTH AMERICA; At the 'Sun Shading Expo', find the newest products of exterior and interior sun shading systems, awnings, shutters and accessories, technical textiles for interior and exterior sun shading systems, drives and much more; 11/03/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1101,13 +1257,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "ITF INNOVATEX SPAIN; INNOVATEX is an international B2B exhibition dedicated to technical textiles, advanced materials, functional fabrics and innovative textile solutions for industrial applications; 11/17/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1134,13 +1291,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "INLEGMASH; International Exhibition for Equipment and Technologies in the light industry, as well as technical textile and nonwovens; 02/24/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1167,13 +1325,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "APPAREL TEXTILE SALON; Trade Fair for Textile and Light Industry Goods & Equipment. Technological equipment for textile and light industry, Spare parts, machining attachments, Thermal printing equipment, Technical Textile & Raw Materials, Knitted Fabrics...; 03/10/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1200,13 +1359,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "ITF INNOVATEX PORTUGAL; INNOVATEX is an international B2B exhibition dedicated to technical textiles, advanced materials, functional fabrics and innovative textile solutions for industrial applications; 05/11/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1233,13 +1393,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "TECHNOTEXTIL; International Trade Fair for Technical Textiles, Nonwovens, Textile Processing and Equipment; 09/28/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1266,13 +1427,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-technical-textiles-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_technical-textiles.html",
    "content_sha256": "6e6f032547875e8e43e1f9f3ff65a0791d055f0933f6c90a2f092aa7e17467d2",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "HIGHTEX; HIGHTEX Exhibition is the most important meeting point of the technical textiles and nonwovens sectors of the Middle East and Eastern Europe together with industry professionals, exhibitors, press members and visitors; 06/13/2028 5 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1298,13 +1460,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
    "content_sha256": "5c961d32481308604d4e3374204d4964d54a993dd60141490cbe974b4406ea38",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "FEIPLAR COMPOSITES & FEIPUR; FEIPLAR & FEIPUR: International Fair and Congress of Advanced Materials (composites, polyurethane, engineering plastics, thermoplastic compounds, nanotechnology, graphene, hybrid materials, elastomers) – in Latin America; 08/25/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1330,13 +1493,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
    "content_sha256": "5c961d32481308604d4e3374204d4964d54a993dd60141490cbe974b4406ea38",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "PLASTEX BRNO; International Plastics, Rubber and Composites Fair. PLASTEX BRNO takes place concurrently with the MSV International Engineering Fair; 10/06/2026 4 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1362,13 +1526,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
    "content_sha256": "5c961d32481308604d4e3374204d4964d54a993dd60141490cbe974b4406ea38",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "R4 COMPOSITES; Conference and business meeting dedicated to the circular economy of composite materials. Projects and solutions related to the Reduction, Repair, Reuse, and Recycling of composites will be highlighted; 10/06/2026 2 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1394,13 +1559,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
    "content_sha256": "5c961d32481308604d4e3374204d4964d54a993dd60141490cbe974b4406ea38",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "KOMPOZYT-EXPO; KOMPOZYT-EXPO is the largest trade fair in Poland dedicated entirely to the composite materials and technologies industry. One of the most important industry event in Central a; 10/07/2026 2 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1426,13 +1592,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
    "content_sha256": "5c961d32481308604d4e3374204d4964d54a993dd60141490cbe974b4406ea38",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "POLYMERS & COMPOSITES MINSK; International specialized Exhibition in Belarus for the production of Polymers and Composites. Materials, equipment and technologies; 10/14/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1458,13 +1625,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
    "content_sha256": "5c961d32481308604d4e3374204d4964d54a993dd60141490cbe974b4406ea38",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "JEC FORUM DACH; JEC FORUM DACH gathers buyers, suppliers, researchers and decision-makers from the entire composites value chain - from raw materials to final applications. The event focuses to the DACH Region (Deutschland, Austria & Switzerland); 10/20/2026 2 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1490,13 +1658,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-0",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites.html",
    "content_sha256": "5c961d32481308604d4e3374204d4964d54a993dd60141490cbe974b4406ea38",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "TURKCOMPOSITE; Turkish International Trade Fair for Composite Raw Materials, Semi-Finished and Intermediate Products, Final Products, Laboratory and Production Technologies; 10/21/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1522,13 +1691,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-1",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_1.html",
    "content_sha256": "72603bc94b8e79ed2cf7c9834f16245b24003d9f1fd358d44174bc9557492fec",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "COMPOSITES SPAIN; Composites Engineering is the only trade fair in Spain dedicated to composites and their applications. Discover the latest products and innovations in composite and advanced materials, raw materials, design, processing, and their applications; 11/04/2026 2 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1554,13 +1724,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-1",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_1.html",
    "content_sha256": "72603bc94b8e79ed2cf7c9834f16245b24003d9f1fd358d44174bc9557492fec",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "METALWORK AND WELDING SHOW; Specialized exhibition of machines, tools, equipment, units, technologies for all industrial branches. Metallurgy and Metal-work, Welding, Pumps. Compressors, Flow Detection, Composite Materials…; 11/18/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1586,13 +1757,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-2",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_2.html",
    "content_sha256": "19af191cb5d3b5887f6e110e8d360c44f3dee845a557618cd0f1cd032179eef3",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "WIND TURBINE BLADE MANUFACTURE; Global conference on MW wind blade design, composites, manufacturing and performance; 12/08/2026 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1618,13 +1790,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-2",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_2.html",
    "content_sha256": "19af191cb5d3b5887f6e110e8d360c44f3dee845a557618cd0f1cd032179eef3",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "SILICA WEEK; Conference dedicated to the latest developments in silica technology, sustainability and applications across tyres & rubber, polymers, coatings, adhesives, composites and more; 12/15/2026 2 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1650,13 +1823,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-3",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
    "content_sha256": "68b68b6dfca89e782ace05cda2efacd0346d90999873818198374f3b9b7499e3",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "PLASTIC JAPAN - HIGH-PERFORMANCE PLASTICS EXPO - NAGOYA; The world's largest exhibition showcasing cutting-edge material technologies such as functional films, plastics, cellulose, carbon fiber composites, metals, and ceramics. &#8203;; 02/17/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1682,13 +1856,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-3",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
    "content_sha256": "68b68b6dfca89e782ace05cda2efacd0346d90999873818198374f3b9b7499e3",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "JEC WORLD; JEC World is a leading International Composites Show, activating a global community from the business, manufacturing, research and academic worlds and enabling networking for new ideas and creates growth opportunities; 03/02/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1714,13 +1889,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-3",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
    "content_sha256": "68b68b6dfca89e782ace05cda2efacd0346d90999873818198374f3b9b7499e3",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "K-MTECH; Korea International Materials, Composites & Equipment Show. K-Mtech provides a platform where you can directly explore the latest trends and issues in the materials industry; 03/09/2027 4 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1746,13 +1922,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-3",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
    "content_sha256": "68b68b6dfca89e782ace05cda2efacd0346d90999873818198374f3b9b7499e3",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "KOPLAS; Korea International Plastics & Rubber Show. The KOPLAS exhibition will be held concurrently with the Korea Materials, Composites & Equipment Show (K-Mtech) and the International Mold & Related Equipment Fair (INTERMOLD KOREA); 03/09/2027 4 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1778,13 +1955,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-3",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_3.html",
    "content_sha256": "68b68b6dfca89e782ace05cda2efacd0346d90999873818198374f3b9b7499e3",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "COMPOSITE-EXPO; International Specialized Exhibition on raw materials, equipment and technologies for composites' producing. A platform for development and introduction of composite technologies and materials in different branches of industry; 03/16/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1810,13 +1988,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-4",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_4.html",
    "content_sha256": "d05e99ca8dac499b4e3b0da55b74d42289c89293343ab73d61ea8ee8ef05c34c",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "COMPOSITES; COMMPOSITES is an international conference bringing together leading researchers, engineers and industry experts in composites, biocomposites & and nanocomposites. A unique platform to share knowledge, explore innovations, and build global collaborations; 05/12/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1842,13 +2021,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-4",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_4.html",
    "content_sha256": "d05e99ca8dac499b4e3b0da55b74d42289c89293343ab73d61ea8ee8ef05c34c",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "PLASTIC JAPAN - HIGH-PERFORMANCE PLASTICS EXPO - OSAKA; The world's largest exhibition showcasing cutting-edge material technologies such as functional films, plastics, cellulose, carbon fiber composites, metals, and ceramics. &#8203;; 05/12/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1874,13 +2054,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-5",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_5.html",
    "content_sha256": "703303d73f498e12b18ba562aa3139a111468d407f861f7331104dcdceb87572",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "SAMPE NORTH AMERICA; International Exhibition and Conference on Composite Materials and Advanced Materials. SAMPE NORTH AMERICA brings together decision-makers from industrial companies, research institutes, and suppliers of modern materials and advanced technologies; 05/17/2027 4 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1906,13 +2087,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-5",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_5.html",
    "content_sha256": "703303d73f498e12b18ba562aa3139a111468d407f861f7331104dcdceb87572",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "PLAST EXPO; International exhibition of plastics, rubber, composites & petrochemicals in Morocco. Plasti, Petrochemistry, Rubbers & Composites, Raw materials, Machines & Accesories, Finished & Semi-finished products, Recycling, Green Process/Solutions, Innovation...; 06/02/2027 4 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1938,13 +2120,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-5",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_5.html",
    "content_sha256": "703303d73f498e12b18ba562aa3139a111468d407f861f7331104dcdceb87572",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "UTECH LAS AMERICAS; UTECH Las Americas is the only event in Latin America dedicated exclusively to the polyurethane industry, Foam and Composites. Discover the latest technologies and solutions from key suppliers to the industry; 06/22/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -1970,13 +2153,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-6",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_6.html",
    "content_sha256": "22e46c4bf4a957bff91a6e078b678d92512379eeb3db9c651d6f5355fa4d527f",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "JNC; The JNCs take stock of the latest scientific and technological advances in composite materials. They are also a place of meeting and debate for teachers, researchers and industrialists concerned with composites; 07/05/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -2002,13 +2186,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:20:45.540Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-6",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_6.html",
    "content_sha256": "22e46c4bf4a957bff91a6e078b678d92512379eeb3db9c651d6f5355fa4d527f",
-   "checked_at": "2026-10-19T13:20:45.540Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "INACOATING; Indonesia International Coating, Paintinf, Resins and Composite Exhibition; 07/27/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -2034,13 +2219,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-7",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_7.html",
    "content_sha256": "edff60696b70a4036c6c7fc2e286c343f0eaefe69dc5187ee42137f55fb889e9",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "PLASTIC JAPAN - HIGH-PERFORMANCE PLASTICS EXPO - TOKYO; The world's largest exhibition showcasing cutting-edge material technologies such as functional films, plastics, cellulose, carbon fiber composites, metals, and ceramics. &#8203;; 10/27/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -2066,13 +2252,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-7",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_7.html",
    "content_sha256": "edff60696b70a4036c6c7fc2e286c343f0eaefe69dc5187ee42137f55fb889e9",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "EURASIAN COMPOSITES SHOW; Turkish Trade Fair for the Composites Industry. International Composites Raw Materials, Semi-Finished, Final Products and Technologies; 11/24/2027 3 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -2098,13 +2285,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-7",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_7.html",
    "content_sha256": "edff60696b70a4036c6c7fc2e286c343f0eaefe69dc5187ee42137f55fb889e9",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "COMPOSITE MEETINGS; This business convention on Composites brings together international users and suppliers of composite materials in the form of qualified and pre-scheduled meetings. Prospect new customers, suppliers, partners, markets...; 12/01/2027 2 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -2130,13 +2318,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:18:19.501Z",
-  "source_checked_at": "2026-10-19T13:18:19.501Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "eventseye-plastics-rubber-composites-8",
    "url": "https://www.eventseye.com/fairs/st1_trade-shows_plastics-rubber-composites_8.html",
    "content_sha256": "d92b376a6760c2e592723099a6cc4d9842a9dd5ed22ee5781aa8994455580db0",
-   "checked_at": "2026-10-19T13:18:19.501Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "ECCM; European Conference on Composite Materials. As Europe's leading conference in composite materials and structures, ECCM is a premier platform for advancing research, fostering innovation, and strengthening collaboration across academia and industry; 06/27/2028 4 days",
+   "kind": "dates",
    "attribution": "directory-reported"
   },
   "registration_status": "not-published",
@@ -2161,13 +2350,14 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:20:45.540Z",
-  "source_checked_at": "2026-10-19T13:15:30.263Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "tape-functional-film-usa",
    "url": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
-   "content_sha256": "e4095e0d827dc684e8bf043883e049831480a7bfd882338695231c28637bba59",
-   "checked_at": "2026-10-19T13:15:30.263Z",
+   "content_sha256": "23e3ecea87f948c6f78ff5123b531ff261b3b68f8c129951a5da35ca5781ac13",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "26 – 28 October 2027",
+   "kind": "dates",
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
@@ -2181,15 +2371,16 @@
   "registration_evidence": {
    "source_id": "tape-functional-film-usa",
    "url": "https://tapeandfunctionalfilmexpo.materialsweekusa.com/",
-   "content_sha256": "e4095e0d827dc684e8bf043883e049831480a7bfd882338695231c28637bba59",
-   "checked_at": "2026-10-19T13:15:30.263Z",
-   "excerpt": "https://events.american-tradeshow.com/mwusa26",
-   "attribution": "organiser-reported",
-   "kind": "registration"
-  }
+   "content_sha256": "23e3ecea87f948c6f78ff5123b531ff261b3b68f8c129951a5da35ca5781ac13",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "GET FREE TICKET — https://events.american-tradeshow.com/mwusa26",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  },
+  "edition_year": "2027"
  },
  {
-  "name": "CBRNe Convergence Knoxville",
+  "name": "CBRNe Convergence Knoxville 2026",
   "start": "2026-11-03",
   "end": "2026-11-05",
   "dates": "2026-11-03 – 2026-11-05",
@@ -2207,26 +2398,68 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T13:20:45.540Z",
-  "source_checked_at": "2026-10-19T13:15:32.449Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "cbrne-convergence-knoxville",
    "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
-   "content_sha256": "4fdec7c618c45c716d4b2db5335aa47da9fe64e55ced491b6e6f075506f779d8",
-   "checked_at": "2026-10-19T13:15:32.449Z",
+   "content_sha256": "f6a896c1b136eae67995fa9390ae25f1851389cc9d2fcad61816134bfa0abd37",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "{\"name\":\"CBRNe Convergence Knoxville 2026\",\"startDate\":\"2026-11-03T07:59:27+00:00\",\"endDate\":\"2026-11-05T07:59:27+00:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+   "kind": "dates",
    "attribution": "organiser-reported"
   },
   "registration_status": "published",
-  "previous_editions": [],
+  "previous_editions": [
+   {
+    "name": "CBRNe Convergence Knoxville",
+    "start": "2026-11-03",
+    "end": "2026-11-05",
+    "dates": "2026-11-03 – 2026-11-05",
+    "place": "Knoxville, Tennessee",
+    "country": "USA",
+    "website": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
+    "registration": "https://www.eventora.com/en/Events/CBRNe_Knoxville_2026",
+    "event_status": "scheduled",
+    "id": "cbrne-convergence-knoxville",
+    "segment": "Military & Tactical",
+    "market_ids": [
+     "cbrn-colpro"
+    ],
+    "relevance_reason": "CBRN protection and response exhibition; assess collective-protection and shelter suppliers.",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T13:20:45.540Z",
+    "source_checked_at": "2026-10-19T13:15:32.449Z",
+    "date_evidence": {
+     "source_id": "cbrne-convergence-knoxville",
+     "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
+     "content_sha256": "4fdec7c618c45c716d4b2db5335aa47da9fe64e55ced491b6e6f075506f779d8",
+     "checked_at": "2026-10-19T13:15:32.449Z",
+     "excerpt": "{\"name\":\"CBRNe Convergence Knoxville 2026\",\"startDate\":\"2026-11-03T07:59:27+00:00\",\"endDate\":\"2026-11-05T07:59:27+00:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "published",
+    "registration_evidence": {
+     "source_id": "cbrne-convergence-knoxville",
+     "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
+     "content_sha256": "4fdec7c618c45c716d4b2db5335aa47da9fe64e55ced491b6e6f075506f779d8",
+     "checked_at": "2026-10-19T13:15:32.449Z",
+     "excerpt": "https://www.eventora.com/en/Events/CBRNe_Knoxville_2026",
+     "attribution": "organiser-reported",
+     "kind": "registration"
+    }
+   }
+  ],
   "registration_evidence": {
    "source_id": "cbrne-convergence-knoxville",
    "url": "https://cbrneworld.com/events/cbrne-convergence-knoxville-2026",
-   "content_sha256": "4fdec7c618c45c716d4b2db5335aa47da9fe64e55ced491b6e6f075506f779d8",
-   "checked_at": "2026-10-19T13:15:32.449Z",
-   "excerpt": "https://www.eventora.com/en/Events/CBRNe_Knoxville_2026",
-   "attribution": "organiser-reported",
-   "kind": "registration"
-  }
+   "content_sha256": "f6a896c1b136eae67995fa9390ae25f1851389cc9d2fcad61816134bfa0abd37",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "Register — https://www.eventora.com/en/Events/CBRNe_Knoxville_2026",
+   "kind": "registration",
+   "attribution": "organiser-reported"
+  },
+  "edition_year": "2026"
  },
  {
   "id": "calendar-458f4b09cd5d901d32a3",
@@ -2245,13 +2478,13 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T14:09:55.651Z",
-  "source_checked_at": "2026-10-19T14:12:30.793Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "detail-calendar-458f4b09cd5d901d32a3",
    "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
-   "content_sha256": "5bab521b59a10f64d9b6b18e76d1c24e75866fa5b5c737102406b039d6a52ca7",
-   "checked_at": "2026-10-19T14:12:30.793Z",
-   "excerpt": "{\"name\":\"High Intensity CBRN 2027\",\"startDate\":\"2027-06-08T09:03:52+01:00\",\"endDate\":\"2027-06-10T09:03:52+01:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+   "content_sha256": "3dcfe94fe7a2fdd5b9a92ae95071ceb5b1cbb3ca170acd1cb3d60fd3d581e7f0",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "{\"name\":\"High Intensity CBRN 2027\",\"startDate\":\"2027-06-08T10:57:56+01:00\",\"endDate\":\"2027-06-10T10:57:56+01:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
    "kind": "dates",
    "attribution": "organiser-reported"
   },
@@ -2285,6 +2518,90 @@
      "attribution": "organiser-reported"
     },
     "registration_status": "not-published"
+   },
+   {
+    "id": "calendar-458f4b09cd5d901d32a3",
+    "name": "High Intensity CBRN 2027",
+    "website": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+    "start": "2027-06-08",
+    "end": "2027-06-10",
+    "dates": "2027-06-08 – 2027-06-10",
+    "event_status": "scheduled",
+    "announcement_only": true,
+    "segment": "Military & Tactical",
+    "market_ids": [
+     "cbrn-colpro"
+    ],
+    "relevance_reason": "CBRN protection and response exhibition; review the organiser programme for shelter relevance.",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T14:09:55.651Z",
+    "source_checked_at": "2026-10-19T14:12:30.793Z",
+    "date_evidence": {
+     "source_id": "detail-calendar-458f4b09cd5d901d32a3",
+     "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+     "content_sha256": "5bab521b59a10f64d9b6b18e76d1c24e75866fa5b5c737102406b039d6a52ca7",
+     "checked_at": "2026-10-19T14:12:30.793Z",
+     "excerpt": "{\"name\":\"High Intensity CBRN 2027\",\"startDate\":\"2027-06-08T09:03:52+01:00\",\"endDate\":\"2027-06-10T09:03:52+01:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+     "kind": "dates",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "published",
+    "place": "Warsaw",
+    "country": "PL",
+    "registration": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+    "edition_year": "2027",
+    "registration_evidence": {
+     "source_id": "detail-calendar-458f4b09cd5d901d32a3",
+     "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+     "content_sha256": "5bab521b59a10f64d9b6b18e76d1c24e75866fa5b5c737102406b039d6a52ca7",
+     "checked_at": "2026-10-19T14:12:30.793Z",
+     "excerpt": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+     "kind": "registration",
+     "attribution": "organiser-reported"
+    }
+   },
+   {
+    "id": "calendar-458f4b09cd5d901d32a3",
+    "name": "High Intensity CBRN 2027",
+    "website": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+    "start": "2027-06-08",
+    "end": "2027-06-10",
+    "dates": "2027-06-08 – 2027-06-10",
+    "event_status": "dates-pending",
+    "announcement_only": true,
+    "segment": "Military & Tactical",
+    "market_ids": [
+     "cbrn-colpro"
+    ],
+    "relevance_reason": "CBRN protection and response exhibition; review the organiser programme for shelter relevance.",
+    "status": "Not yet",
+    "source": "public-calendar",
+    "discovered_at": "2026-10-19T14:09:55.651Z",
+    "source_checked_at": "2026-10-28T05:42:12.459Z",
+    "date_evidence": {
+     "source_id": "detail-calendar-458f4b09cd5d901d32a3",
+     "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+     "content_sha256": "5bab521b59a10f64d9b6b18e76d1c24e75866fa5b5c737102406b039d6a52ca7",
+     "checked_at": "2026-10-19T14:12:30.793Z",
+     "excerpt": "{\"name\":\"High Intensity CBRN 2027\",\"startDate\":\"2027-06-08T09:03:52+01:00\",\"endDate\":\"2027-06-10T09:03:52+01:00\",\"eventStatus\":\"https://schema.org/EventScheduled\"}",
+     "kind": "dates",
+     "attribution": "organiser-reported"
+    },
+    "registration_status": "published",
+    "place": "Warsaw",
+    "country": "PL",
+    "registration": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+    "edition_year": "2027",
+    "registration_evidence": {
+     "source_id": "cbrne-announcements",
+     "url": "https://cbrneworld.com/",
+     "content_sha256": "45532dc480ffdbfa19307918a0a13f59bedb95ae49f7850a1cab549de4f43e0a",
+     "checked_at": "2026-10-28T05:42:12.459Z",
+     "excerpt": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+     "kind": "registration",
+     "attribution": "organiser-reported"
+    }
    }
   ],
   "place": "Warsaw",
@@ -2294,9 +2611,9 @@
   "registration_evidence": {
    "source_id": "detail-calendar-458f4b09cd5d901d32a3",
    "url": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
-   "content_sha256": "5bab521b59a10f64d9b6b18e76d1c24e75866fa5b5c737102406b039d6a52ca7",
-   "checked_at": "2026-10-19T14:12:30.793Z",
-   "excerpt": "https://cbrneworld.com/events/high-intensity-cbrn-2027",
+   "content_sha256": "3dcfe94fe7a2fdd5b9a92ae95071ceb5b1cbb3ca170acd1cb3d60fd3d581e7f0",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "Structured event offer — https://cbrneworld.com/events/high-intensity-cbrn-2027",
    "kind": "registration",
    "attribution": "organiser-reported"
   }
@@ -2321,7 +2638,7 @@
   "status": "Not yet",
   "source": "public-calendar",
   "discovered_at": "2026-10-19T14:09:55.651Z",
-  "source_checked_at": "2026-10-19T14:18:07.113Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
   "date_evidence": {
    "source_id": "pia-symposium",
    "url": "https://www.pia.com/events/",
@@ -2372,10 +2689,43 @@
    "source_id": "pia-symposium",
    "url": "https://www.pia.com/events/info-pricing/",
    "content_sha256": "87b21d5e51eedb30734e09ad4a9275ad4a32b206e745c1ddf8091a6cb474ed53",
-   "checked_at": "2026-10-19T14:18:07.113Z",
+   "checked_at": "2026-10-28T05:42:12.459Z",
    "excerpt": "Click to Register as an Attendee — https://www.eventsquid.com/register/32988?profileName=Attendee",
    "kind": "registration",
    "attribution": "organiser-reported"
   }
+ },
+ {
+  "name": "Afera European Tape Week",
+  "start": "2027-09-20",
+  "end": "2027-09-24",
+  "dates": "2027-09-20 – 2027-09-24",
+  "event_status": "scheduled",
+  "edition_year": "2027",
+  "place": "Porto",
+  "country": "Portugal",
+  "website": "https://afera.com/agenda/afera-technical-seminar/",
+  "registration": null,
+  "id": "afera-tape-week",
+  "segment": "Industrial",
+  "market_ids": [
+   "technical-tapes"
+  ],
+  "relevance_reason": "Adhesive tape materials, manufacture and technical industry programme.",
+  "status": "Not yet",
+  "source": "public-calendar",
+  "discovered_at": "2026-10-28T05:42:12.459Z",
+  "source_checked_at": "2026-10-28T05:42:12.459Z",
+  "date_evidence": {
+   "source_id": "afera-tape-week",
+   "url": "https://afera.com/agenda/afera-technical-seminar/",
+   "content_sha256": "15a2b43bad47f17c39ce5ad2eb1b6d6e2aab46dd3fc85962fda2512e9e7b7254",
+   "checked_at": "2026-10-28T05:42:12.459Z",
+   "excerpt": "2027, which will run from 20-24 September",
+   "kind": "dates",
+   "attribution": "organiser-reported"
+  },
+  "registration_status": "not-published",
+  "previous_editions": []
  }
 ]
