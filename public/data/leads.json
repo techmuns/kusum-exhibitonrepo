@@ -10623,18 +10623,114 @@
       "detail": "basic",
       "source": "exhibition:enforce-tac",
       "type": "potential_customer"
+    },
+    {
+      "id": "sotech",
+      "company": "SOTech",
+      "segment": "Tool & Equipment Bags",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9321",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:military-tactical-bag-and-pack-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "london-bridge-trading-company",
+      "company": "London Bridge Trading Company",
+      "segment": "Tool & Equipment Bags",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9321",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:military-tactical-bag-and-pack-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "gregory",
+      "company": "Gregory",
+      "segment": "Tool & Equipment Bags",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9321",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:military-tactical-bag-and-pack-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "miguel-caballero",
+      "company": "Miguel Caballero",
+      "segment": "Medical & Emergency",
+      "country": "Colombia",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWPP9190E",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "aks-industries",
+      "company": "AKS Industries",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "PWNN4201",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "outdoor-venture-corporation",
+      "company": "Outdoor Venture Corporation",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "PWNN4201",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
     }
   ],
   "_meta": {
-    "scraped_at": "2026-10-27T13:06:10.988Z",
-    "targets": [
-      "dsa",
-      "dsei",
-      "enforce-tac"
+    "scraped_at": "2026-10-28T14:56:08.901Z",
+    "categories": [
+      "military tactical bag and pack manufacturers",
+      "ballistic vest and body armour plate carrier manufacturers",
+      "military tent and shelter system manufacturers",
+      "parachute and aerial delivery equipment manufacturers"
     ],
-    "pages_used": 6,
-    "classified": 19,
-    "added_leads": 2,
+    "classified": 8,
+    "added_leads": 6,
     "added_competitors": 0
   },
   "_debug": [
@@ -10642,37 +10738,73 @@
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsaexhibition.com/exhibitor-list\",\"title\":\"Exhibitor List - DSA Exhibition\",\"description\":\"## Exhibitor List\\n[![](https://www.dsaexhibition.com/data/editor/2026/exhibitor-list/cover-page-exhibito"
-    },
-    {
-      "path": "/v1/scrape",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Rectangle 131](https://www.expocaptive.com/wp-content/uploads/2025/09/Rectangle-131.png)\\n\\n- [Home](https://www.expocaptive.com/)\\n- [Security & Defense](https://www.expocaptive.com/security-defense-ev"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://condoroutdoor.com/collections/backpacks?srsltid=AYCX9vJtQA3_yLoF4Reb9h4_a74N8SkPwkddEJIv3eWq2aERiaRi4ylL\",\"title\":\"Tactical Backpacks & Sling Bags | Military & EDC Packs\",\"description\":\"Free delivery "
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsei.co.uk/visit/exhibiting-companies\",\"title\":\"2025 Exhibiting Companies - DSEI UK 2027\",\"description\":\"2025 Exhibiting Companies · \\\"NT Service\\\" UAB. Stand: N9-205 · 1MILLIKELVIN PTY LTD. Stand"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://armorguard.com/top-tactical-backpack-manufacturers/\",\"title\":\"Top 16 Tactical Backpack Manufacturers For Serious Buyers\",\"description\":\"This in-depth guide profiles 16 industry leaders. This article w"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[How We Work](https://exhibitorsdata.com/how-we-work/) [Add Event](https://exhibitorsdata.com/add-event/) [Partner with us](https://exhibitorsdata.com/partners/) [FAQs](https://exhibitorsdata.com/faqs/) ["
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Pre-loader](https://condoroutdoor.com/cdn/shop/t/79/assets/theme-preloader.svg?v=134562038640271236701784837122)\\n\\n# TACTICAL BACKPACKS\\n\\nDurable tactical backpacks, equipped with specialized features"
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.enforcetac.com/en/exhibitors-products/find-exhibitors\",\"title\":\"Find exhibitors | Enforce Tac\",\"description\":\"# Exhibitor Search 2027\\n- [Weapons (61)](https://www.enforcetac.com/en/exhibitors-pro"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.spartanarmorsystems.com/?srsltid=AYCX9vKdSwygshHYqlF9ZNaX4Xa2NTc87gLPKmwo0h60xtbIfH7G5AeV\",\"title\":\"Spartan Armor Systems: American-Made Body Armor ...\",\"description\":\"Protect yourself with Americ"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://usarmor.com/\",\"title\":\"Body Armor & Bulletproof Vests | NIJ Certified | U.S. Armor\",\"description\":\"# NIJ Certified Body Armor & Bulletproof Vests for Law Enforcement, Military, and Security\\n## OUR SU"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[How We Work](https://exhibitorsdata.com/how-we-work/) [Add Event](https://exhibitorsdata.com/add-event/) [Partner with us](https://exhibitorsdata.com/partners/) [FAQs](https://exhibitorsdata.com/faqs/) ["
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"Search\\n\\nResponsive Following\\n:\\n\\n\\n![30% Off Armor Package](https://cdn11.bigcommerce.com/s-4iwpyceis0/images/stencil/2560w/image-manager/homepage-banner-4.png)\\n\\n![Shop First Tactical Apparel](https"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://alaskadefense.com/\",\"title\":\"Military Shelter Systems | Alaska Defense®\",\"description\":\"Alaska Defense® manufactures the world's most popular military shelter systems, military camps, and turnkey base"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dla.mil/Troop-Support/Clothing-and-Textiles/Tents/\",\"title\":\"Tents, Shelters, Base Camp Components, JOCOTAS\",\"description\":\"Tent and Shelter Component Search. DLA Troop Support's Clothing and Text"
+    },
+    {
+      "path": "/v1/scrape",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Capability. Integration. Execution.\\n\\n## Vertically Integrated Manufacturer\\n\\n_In-house engineering, testing, and manufacturing under one roof._\\n\\n![Vertically integrated manufacturer prototyping](ht"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"Aerial Delivery Products · Parachutes and platforms to get military vehicles, search and rescue devices and other heavy equipment"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"# A Full Suite Of Aerial Delivery Solutions\\nBill Gorlach\\n\\n## Aerial Delivery Products\\n- Parachutes and platforms to get milit"
+    },
+    {
+      "path": "/v1/scrape",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://capewell.com/solutions/#content)\\n\\n# Get Your Gear to the Ground\\n\\n# A Full Suite Of Aerial Delivery Solutions\\n\\nThe mission is in the details, and the first solution is very "
     }
   ]
 }
