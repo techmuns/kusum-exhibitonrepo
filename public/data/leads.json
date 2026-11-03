@@ -10719,18 +10719,66 @@
       "detail": "basic",
       "source": "category:military-tent-and-shelter-system-manufacturers",
       "type": "potential_customer"
+    },
+    {
+      "id": "ams-industries-llc",
+      "company": "AMS Industries, LLC",
+      "segment": "Tool & Equipment Bags",
+      "country": "United States",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9496",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "exhibition:dsei",
+      "type": "potential_customer"
+    },
+    {
+      "id": "aljo-gmbh-co-kg",
+      "company": "Aljo GmbH & Co. KG",
+      "segment": "Tool & Equipment Bags",
+      "country": "Germany",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9496",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "exhibition:dsei",
+      "type": "potential_customer"
+    },
+    {
+      "id": "a-bl-chl-gro-handels-gmbh",
+      "company": "A. Blöchl Großhandels GmbH",
+      "segment": "Tool & Equipment Bags",
+      "country": "Germany",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9496",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "exhibition:enforce-tac",
+      "type": "potential_customer"
     }
   ],
   "_meta": {
-    "scraped_at": "2026-10-28T14:56:08.901Z",
-    "categories": [
-      "military tactical bag and pack manufacturers",
-      "ballistic vest and body armour plate carrier manufacturers",
-      "military tent and shelter system manufacturers",
-      "parachute and aerial delivery equipment manufacturers"
+    "scraped_at": "2026-11-03T14:58:20.738Z",
+    "targets": [
+      "dsa",
+      "dsei",
+      "enforce-tac"
     ],
-    "classified": 8,
-    "added_leads": 6,
+    "pages_used": 6,
+    "classified": 21,
+    "added_leads": 3,
     "added_competitors": 0
   },
   "_debug": [
@@ -10738,73 +10786,43 @@
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://condoroutdoor.com/collections/backpacks?srsltid=AYCX9vJtQA3_yLoF4Reb9h4_a74N8SkPwkddEJIv3eWq2aERiaRi4ylL\",\"title\":\"Tactical Backpacks & Sling Bags | Military & EDC Packs\",\"description\":\"Free delivery "
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://armorguard.com/top-tactical-backpack-manufacturers/\",\"title\":\"Top 16 Tactical Backpack Manufacturers For Serious Buyers\",\"description\":\"This in-depth guide profiles 16 industry leaders. This article w"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsaexhibition.com/exhibitor-list\",\"title\":\"Exhibitor List - DSA Exhibition\",\"description\":\"## Exhibitor List\\n[![](https://www.dsaexhibition.com/data/editor/2026/exhibitor-list/cover-page-exhibito"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Pre-loader](https://condoroutdoor.com/cdn/shop/t/79/assets/theme-preloader.svg?v=134562038640271236701784837122)\\n\\n# TACTICAL BACKPACKS\\n\\nDurable tactical backpacks, equipped with specialized features"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Rectangle 131](https://www.expocaptive.com/wp-content/uploads/2025/09/Rectangle-131.png)\\n\\n- [Home](https://www.expocaptive.com/)\\n- [Security & Defense](https://www.expocaptive.com/security-defense-ev"
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.spartanarmorsystems.com/?srsltid=AYCX9vKdSwygshHYqlF9ZNaX4Xa2NTc87gLPKmwo0h60xtbIfH7G5AeV\",\"title\":\"Spartan Armor Systems: American-Made Body Armor ...\",\"description\":\"Protect yourself with Americ"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://usarmor.com/\",\"title\":\"Body Armor & Bulletproof Vests | NIJ Certified | U.S. Armor\",\"description\":\"# NIJ Certified Body Armor & Bulletproof Vests for Law Enforcement, Military, and Security\\n## OUR SU"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsei.co.uk/visit/exhibiting-companies\",\"title\":\"2025 Exhibiting Companies - DSEI UK 2027\",\"description\":\"# 2025 Exhibiting Companies\\n## AMS Industries, LLC\\n- ![AMSL AERO PTY LTD](https://cdn.asp"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"Search\\n\\nResponsive Following\\n:\\n\\n\\n![30% Off Armor Package](https://cdn11.bigcommerce.com/s-4iwpyceis0/images/stencil/2560w/image-manager/homepage-banner-4.png)\\n\\n![Shop First Tactical Apparel](https"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[How We Work](https://exhibitorsdata.com/how-we-work/) [Add Event](https://exhibitorsdata.com/add-event/) [Partner with us](https://exhibitorsdata.com/partners/) [FAQs](https://exhibitorsdata.com/faqs/) ["
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://alaskadefense.com/\",\"title\":\"Military Shelter Systems | Alaska Defense®\",\"description\":\"Alaska Defense® manufactures the world's most popular military shelter systems, military camps, and turnkey base"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dla.mil/Troop-Support/Clothing-and-Textiles/Tents/\",\"title\":\"Tents, Shelters, Base Camp Components, JOCOTAS\",\"description\":\"Tent and Shelter Component Search. DLA Troop Support's Clothing and Text"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.enforcetac.com/en/exhibitors-products/find-exhibitors\",\"title\":\"Find exhibitors | Enforce Tac\",\"description\":\"# Exhibitor Search 2027\\n- [Weapons (61)](https://www.enforcetac.com/en/exhibitors-pro"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Capability. Integration. Execution.\\n\\n## Vertically Integrated Manufacturer\\n\\n_In-house engineering, testing, and manufacturing under one roof._\\n\\n![Vertically integrated manufacturer prototyping](ht"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"Aerial Delivery Products · Parachutes and platforms to get military vehicles, search and rescue devices and other heavy equipment"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"# A Full Suite Of Aerial Delivery Solutions\\nBill Gorlach\\n\\n## Aerial Delivery Products\\n- Parachutes and platforms to get milit"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Exhibitor Search 2027\\n\\nSearch\\n\\nOpen filterfilter\\\\_alt\\n\\nclose\\n\\nFilters\\n\\nSelect product category\\n\\n- [Weapons (61)](https://www.enforcetac.com/en/exhibitors-products/find-exhibitors?state%5Bhi"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://capewell.com/solutions/#content)\\n\\n# Get Your Gear to the Ground\\n\\n# A Full Suite Of Aerial Delivery Solutions\\n\\nThe mission is in the details, and the first solution is very "
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Portable rocket launcher for military applications and tactical scenarios](https://www.enforcetac.com/_next/image?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fnurnbergmes0e18-nmmultisite6e34-prod50da-6065%"
     }
   ]
 }
