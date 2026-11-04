@@ -10767,18 +10767,306 @@
       "detail": "basic",
       "source": "exhibition:enforce-tac",
       "type": "potential_customer"
+    },
+    {
+      "id": "military-luggage-company",
+      "company": "Military Luggage Company",
+      "segment": "Tool & Equipment Bags",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "9321",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:military-tactical-bag-and-pack-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "lupu-tactical",
+      "company": "Lupu Tactical",
+      "segment": "Tool & Equipment Bags",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "4063",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tactical-bag-and-pack-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "rapid-dominance",
+      "company": "Rapid Dominance",
+      "segment": "Tool & Equipment Bags",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9321",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tactical-bag-and-pack-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "rapdom-tactical",
+      "company": "RapDom Tactical",
+      "segment": "Tool & Equipment Bags",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9321",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tactical-bag-and-pack-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "slate-solutions",
+      "company": "Slate Solutions",
+      "segment": "Medical & Emergency",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "9179",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "safariland-armor",
+      "company": "Safariland Armor",
+      "segment": "Medical & Emergency",
+      "country": "United States",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN9666",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "armor-matrix-systems",
+      "company": "Armor Matrix Systems",
+      "segment": "Medical & Emergency",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "engarde",
+      "company": "EnGarde",
+      "segment": "Medical & Emergency",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "9682",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "avon-rubber",
+      "company": "Avon Rubber",
+      "segment": "Medical & Emergency",
+      "country": "United Kingdom",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN9179",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "pgd",
+      "company": "PGD",
+      "segment": "Medical & Emergency",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN9666",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:ballistic-vest-and-body-armour-plate-carrier-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "zeppelin-mobile-systeme-gmbh",
+      "company": "ZEPPELIN MOBILE SYSTEME GmbH",
+      "segment": "Protective Covers & Industrial",
+      "country": "Germany",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN3079",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "camss-shelters",
+      "company": "CAMSS Shelters",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN9179",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "gichner-systems-group",
+      "company": "Gichner Systems Group",
+      "segment": "Protective Covers & Industrial",
+      "country": "USA",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN9179",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "weatherhaven",
+      "company": "Weatherhaven",
+      "segment": "Protective Covers & Industrial",
+      "country": "Canada",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN3079",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "big-top-manufacturing",
+      "company": "Big Top Manufacturing",
+      "segment": "Protective Covers & Industrial",
+      "country": null,
+      "website": null,
+      "application": null,
+      "fabric_fit": "PWNN4201",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "gillard-shelters",
+      "company": "Gillard Shelters",
+      "segment": "Protective Covers & Industrial",
+      "country": "United Kingdom",
+      "website": null,
+      "application": null,
+      "fabric_fit": "CWNN3079",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "category:military-tent-and-shelter-system-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "simex-defence",
+      "company": "Simex Defence",
+      "segment": "Medical & Emergency",
+      "country": "Turkey",
+      "website": null,
+      "application": null,
+      "fabric_fit": "PWNN4033",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
+    },
+    {
+      "id": "irvingq",
+      "company": "IrvinGQ",
+      "segment": "Tool & Equipment Bags",
+      "country": "United Kingdom",
+      "website": null,
+      "application": null,
+      "fabric_fit": "4033",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "High",
+      "detail": "basic",
+      "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
+      "type": "potential_customer"
     }
   ],
   "_meta": {
-    "scraped_at": "2026-11-03T14:58:20.738Z",
-    "targets": [
-      "dsa",
-      "dsei",
-      "enforce-tac"
+    "scraped_at": "2026-11-04T16:00:13.512Z",
+    "categories": [
+      "military tactical bag and pack manufacturers",
+      "ballistic vest and body armour plate carrier manufacturers",
+      "military tent and shelter system manufacturers",
+      "parachute and aerial delivery equipment manufacturers"
     ],
-    "pages_used": 6,
-    "classified": 21,
-    "added_leads": 3,
+    "classified": 19,
+    "added_leads": 18,
     "added_competitors": 0
   },
   "_debug": [
@@ -10786,43 +11074,79 @@
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsaexhibition.com/exhibitor-list\",\"title\":\"Exhibitor List - DSA Exhibition\",\"description\":\"## Exhibitor List\\n[![](https://www.dsaexhibition.com/data/editor/2026/exhibitor-list/cover-page-exhibito"
-    },
-    {
-      "path": "/v1/scrape",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Rectangle 131](https://www.expocaptive.com/wp-content/uploads/2025/09/Rectangle-131.png)\\n\\n- [Home](https://www.expocaptive.com/)\\n- [Security & Defense](https://www.expocaptive.com/security-defense-ev"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.511tactical.com/bags-packs/backpacks.html\",\"title\":\"Tactical Backpacks: Military, Law Enforcement & Outdoor\",\"description\":\"# Backpacks\\n3. [![5.11 Tactical - RUSH® Outrider 37L](https://tactical5"
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsei.co.uk/visit/exhibiting-companies\",\"title\":\"2025 Exhibiting Companies - DSEI UK 2027\",\"description\":\"# 2025 Exhibiting Companies\\n## AMS Industries, LLC\\n- ![AMSL AERO PTY LTD](https://cdn.asp"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://armorguard.com/top-tactical-backpack-manufacturers/\",\"title\":\"Top 16 Tactical Backpack Manufacturers For Serious Buyers\",\"description\":\"This in-depth guide profiles 16 industry leaders. This article w"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[How We Work](https://exhibitorsdata.com/how-we-work/) [Add Event](https://exhibitorsdata.com/add-event/) [Partner with us](https://exhibitorsdata.com/partners/) [FAQs](https://exhibitorsdata.com/faqs/) ["
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"The store will not work correctly when cookies are disabled.\\n\\n![](https://www.511tactical.com/static/version1793342298/frontend/511/default/en_US/images/category-title-banner-desk-2x.png)\\n\\n# Backpacks"
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.enforcetac.com/en/exhibitors-products/find-exhibitors\",\"title\":\"Find exhibitors | Enforce Tac\",\"description\":\"# Exhibitor Search 2027\\n- [Weapons (61)](https://www.enforcetac.com/en/exhibitors-pro"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.spartanarmorsystems.com/?srsltid=AYCX9vLf6IwqfIm4jrOwDY9sObpMMzHJw3f8sA_O7xmrtl_MWpbTgCKc\",\"title\":\"Spartan Armor Systems: American-Made Body Armor ...\",\"description\":\"Protect yourself with Americ"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://usarmor.com/\",\"title\":\"Body Armor & Bulletproof Vests | NIJ Certified | U.S. Armor\",\"description\":\"# NIJ Certified Body Armor & Bulletproof Vests for Law Enforcement, Military, and Security\\n## OUR SU"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Exhibitor Search 2027\\n\\nSearch\\n\\nOpen filterfilter\\\\_alt\\n\\nclose\\n\\nFilters\\n\\nSelect product category\\n\\n- [Weapons (61)](https://www.enforcetac.com/en/exhibitors-products/find-exhibitors?state%5Bhi"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"Search\\n\\nResponsive Following\\n:\\n\\n\\n![Free Body Armor](https://cdn11.bigcommerce.com/s-4iwpyceis0/images/stencil/original/image-manager/free-steel-doorbuster-homepage-banner-desktop.png?t=1793535115)\\n"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://alaskadefense.com/\",\"title\":\"Military Shelter Systems | Alaska Defense®\",\"description\":\"Alaska Defense® manufactures the world's most popular military shelter systems, military camps, and turnkey base"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dla.mil/Troop-Support/Clothing-and-Textiles/Tents/\",\"title\":\"Tents, Shelters, Base Camp Components, JOCOTAS\",\"description\":\"Tent and Shelter Component Search. DLA Troop Support's Clothing and Text"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Portable rocket launcher for military applications and tactical scenarios](https://www.enforcetac.com/_next/image?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fnurnbergmes0e18-nmmultisite6e34-prod50da-6065%"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Capability. Integration. Execution.\\n\\n## Vertically Integrated Manufacturer\\n\\n_In-house engineering, testing, and manufacturing under one roof._\\n\\n![Vertically integrated manufacturer prototyping](ht"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"we design, engineer, and manufacture the most innovative, reliable, and effective aerial delivery equipment in the world. . Our p"
+    },
+    {
+      "path": "/v1/search",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"# A Full Suite Of Aerial Delivery Solutions\\nBill Gorlach\\n\\n## Aerial Delivery Products\\n- Parachutes and platforms to get milit"
+    },
+    {
+      "path": "/v1/scrape",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://capewell.com/solutions/#content)\\n\\n# Get Your Gear to the Ground\\n\\n# A Full Suite Of Aerial Delivery Solutions\\n\\nThe mission is in the details, and the first solution is very "
+    },
+    {
+      "path": "/v1/scrape",
+      "attempt": 1,
+      "status": 200,
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![](https://cdn-cookieyes.com/assets/images/close.svg)\\n\\nWe value your privacy\\n\\nWe use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicki"
     }
   ]
 }
