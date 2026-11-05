@@ -1500,9 +1500,11 @@
    "person_linkedin": "https://au.linkedin.com/in/ajrayner",
    "person_role_tier": "B",
    "person_match_reason": "Operations",
-   "person_email": "info@poolstore.com",
-   "person_email_status": "published",
-   "person_source": "serper+hunter"
+   "person_email": "aiden@dontmoveuntilyousee.it",
+   "person_email_status": "verified",
+   "person_source": "serper+prospeo",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-05"
   },
   {
    "id": "cover-pools",
@@ -1656,7 +1658,7 @@
    "verify_source_url": "https://mightycovers.com/product/pooltux-royal-mesh-safety-pool-cover-7/?srsltid=AU7gw4UgJKVyPMGTR7jBkBghVRomDeq4P0v0BpGtjoKSXSZ324ThvRy8",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "tara-manufacturing",
@@ -1703,7 +1705,8 @@
    "product_evidence": "",
    "verify_source_url": "https://www.thepoolfactory.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "bioguard-covers",
@@ -2182,7 +2185,7 @@
    "verify_source_url": "https://arlmontco.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "covers-all",
@@ -2496,7 +2499,8 @@
    "product_evidence": "",
    "verify_source_url": "https://www.lippert.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "ameri-brand-products",
@@ -2515,7 +2519,7 @@
    "verify_source_url": "https://websweeper.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "oceansouth",
@@ -2784,7 +2788,8 @@
    "product_evidence": "",
    "verify_source_url": "https://www.jsi-alliance.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "tumacs-covers",
@@ -3016,7 +3021,8 @@
    "product_evidence": "",
    "verify_source_url": "https://accessories.chevrolet.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "correct-craft-accessories",
@@ -3110,7 +3116,8 @@
    "product_evidence": "",
    "verify_source_url": "https://harrisboats.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "yamaha-marine-accessories",
@@ -3205,7 +3212,7 @@
    "verify_source_url": "https://crestliner.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "lund-boat-covers",
@@ -3223,7 +3230,8 @@
    "product_evidence": "",
    "verify_source_url": "https://www.nationalboatcovers.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "princecraft-accessories",
@@ -3287,7 +3295,7 @@
    "verify_source_url": "https://www.bainbridgeint.com/",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "marine-canvas-creations",
@@ -3418,7 +3426,7 @@
    "verify_source_url": "https://www.sailrite.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "harken-canvas-solutions",
@@ -3520,7 +3528,7 @@
    "verify_source_url": "https://www.greenlee.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "fluke",
@@ -3567,7 +3575,8 @@
    "product_evidence": "",
    "verify_source_url": "https://knipex.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "wiha",
@@ -3856,7 +3865,18 @@
    "product_evidence": "",
    "verify_source_url": "https://husky.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05",
+   "person_name": "mickey bloodbuckets",
+   "person_title": "scraper",
+   "person_linkedin": "https://linkedin.com/in/mickey-bloodbuckets-3b61701a2",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "sbaynham@husky.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-05",
+   "person_source": "pdl+hunter"
   },
   {
    "id": "occidental-leather",
@@ -4242,7 +4262,18 @@
    "product_evidence": "",
    "verify_source_url": "https://www.idealindustries.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05",
+   "person_name": "jason ludewig",
+   "person_title": "research and development engineer",
+   "person_linkedin": "https://linkedin.com/in/jason-ludewig-1b4ab768",
+   "person_role_tier": "A",
+   "person_match_reason": "R&D",
+   "person_email": "jason.ludewig@idealindustries.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-05",
+   "person_source": "pdl+hunter-finder"
   },
   {
    "id": "gardner-bender",
@@ -4325,7 +4356,8 @@
    "product_evidence": "",
    "verify_source_url": "https://leica-geosystems.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "trimble",
@@ -4361,7 +4393,8 @@
    "product_evidence": "",
    "verify_source_url": "https://keysight.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "yokogawa-test-equipment",
@@ -4572,7 +4605,8 @@
    "product_evidence": "",
    "verify_source_url": "https://gearbags.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "kemp-usa",
@@ -5320,9 +5354,11 @@
    "person_linkedin": "https://www.linkedin.com/in/benjaminmercke",
    "person_role_tier": "B",
    "person_match_reason": "Operations",
-   "person_email": "sales@junkinsafety.com",
-   "person_email_status": "published",
-   "person_source": "serper+hunter"
+   "person_email": "ben@junkinsafety.com",
+   "person_email_status": "verified",
+   "person_source": "serper+prospeo",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-05"
   },
   {
    "id": "life-assist",
@@ -5340,7 +5376,8 @@
    "product_evidence": "we have grown into one of the largest distributors of EMS products in the United States",
    "verify_source_url": "https://www.life-assist.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "emergency-medical-products",
@@ -5552,7 +5589,7 @@
    "verify_source_url": "https://www.rescuetech1.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "dynamic-rescue-systems",
@@ -5571,7 +5608,7 @@
    "verify_source_url": "https://www.dynamicrescue.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "tarps-plus",
@@ -5814,7 +5851,7 @@
    "verify_source_url": "https://durabiltusa.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "creative-covers",
@@ -6397,7 +6434,18 @@
    "product_evidence": "",
    "verify_source_url": "https://incord.com",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05",
+   "person_name": "Meredith Shay",
+   "person_title": "CEO",
+   "person_linkedin": null,
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "traymond@incord.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-05",
+   "person_source": "website+hunter"
   },
   {
    "id": "fabtex",
@@ -6462,7 +6510,8 @@
    "product_evidence": "",
    "verify_source_url": "https://www.jensenoutdoor.com/",
    "verified_at": "2026-09-22",
-   "product_id": "600d-pu-polyester"
+   "product_id": "600d-pu-polyester",
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "cover-it-inc",
@@ -6539,7 +6588,7 @@
    "verify_source_url": "https://www.coversunlimited.net/industrial-tarpaulin-fabricator",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "shade-systems-america",
@@ -6938,7 +6987,18 @@
    "product_evidence": "",
    "verify_source_url": "https://hexagonpurus.com/",
    "verified_at": "2026-09-22",
-   "product_id": "carbon-fibre"
+   "product_id": "carbon-fibre",
+   "person_checked_at": "2026-11-05",
+   "person_name": "gard antonsen",
+   "person_title": "director of innovation and technical business development",
+   "person_linkedin": "https://linkedin.com/in/gard-alexander-antonsen-59045b57",
+   "person_role_tier": "A",
+   "person_match_reason": "Innovation",
+   "person_email": "gard.antonsen@hexagonpurus.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-05",
+   "person_source": "pdl+hunter-finder"
   },
   {
    "id": "acp-composites",
@@ -7845,7 +7905,7 @@
    "verify_source_url": "https://uni-tarp.com/top-10-inflatable-tarp-manufacturers/",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "e-squared",
@@ -7922,7 +7982,7 @@
    "verify_source_url": "https://www.nanxiongtpu.net/news/industry-news/how-to-choose-a-good-tpu-coated-fabric-manufacturer/",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "primetex",
@@ -8115,7 +8175,7 @@
    "verify_source_url": "https://www.alltextilesupplier.com/a/Article/companynews/pvc-coated-fabric-vs-tpu-dry-bag.html",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-10-29"
+   "person_checked_at": "2026-11-05"
   },
   {
    "id": "epo",
