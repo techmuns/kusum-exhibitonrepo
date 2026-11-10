@@ -11055,18 +11055,34 @@
       "detail": "basic",
       "source": "category:parachute-and-aerial-delivery-equipment-manufacturers",
       "type": "potential_customer"
+    },
+    {
+      "id": "aerco",
+      "company": "Aerco",
+      "segment": "Tool & Equipment Bags",
+      "country": "United Kingdom",
+      "website": null,
+      "application": null,
+      "fabric_fit": "9496",
+      "est_consumption": null,
+      "sourcing_model": null,
+      "contact_role": null,
+      "priority": "Medium",
+      "detail": "basic",
+      "source": "exhibition:dsei",
+      "type": "potential_customer"
     }
   ],
   "_meta": {
-    "scraped_at": "2026-11-04T16:00:13.512Z",
-    "categories": [
-      "military tactical bag and pack manufacturers",
-      "ballistic vest and body armour plate carrier manufacturers",
-      "military tent and shelter system manufacturers",
-      "parachute and aerial delivery equipment manufacturers"
+    "scraped_at": "2026-11-10T15:30:30.931Z",
+    "targets": [
+      "dsa",
+      "dsei",
+      "enforce-tac"
     ],
-    "classified": 19,
-    "added_leads": 18,
+    "pages_used": 6,
+    "classified": 25,
+    "added_leads": 1,
     "added_competitors": 0
   },
   "_debug": [
@@ -11074,79 +11090,43 @@
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.511tactical.com/bags-packs/backpacks.html\",\"title\":\"Tactical Backpacks: Military, Law Enforcement & Outdoor\",\"description\":\"# Backpacks\\n3. [![5.11 Tactical - RUSH® Outrider 37L](https://tactical5"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://armorguard.com/top-tactical-backpack-manufacturers/\",\"title\":\"Top 16 Tactical Backpack Manufacturers For Serious Buyers\",\"description\":\"This in-depth guide profiles 16 industry leaders. This article w"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsaexhibition.com/exhibitor-list\",\"title\":\"Exhibitor List\",\"description\":\"## Exhibitor List\\n[![](https://www.dsaexhibition.com/data/editor/2026/exhibitor-list/cover-page-exhibitor-13-4-2026.jpeg?"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"The store will not work correctly when cookies are disabled.\\n\\n![](https://www.511tactical.com/static/version1793342298/frontend/511/default/en_US/images/category-title-banner-desk-2x.png)\\n\\n# Backpacks"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Rectangle 131](https://www.expocaptive.com/wp-content/uploads/2025/09/Rectangle-131.png)\\n\\n- [Home](https://www.expocaptive.com/)\\n- [Security & Defense](https://www.expocaptive.com/security-defense-ev"
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.spartanarmorsystems.com/?srsltid=AYCX9vLf6IwqfIm4jrOwDY9sObpMMzHJw3f8sA_O7xmrtl_MWpbTgCKc\",\"title\":\"Spartan Armor Systems: American-Made Body Armor ...\",\"description\":\"Protect yourself with Americ"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://usarmor.com/\",\"title\":\"Body Armor & Bulletproof Vests | NIJ Certified | U.S. Armor\",\"description\":\"# NIJ Certified Body Armor & Bulletproof Vests for Law Enforcement, Military, and Security\\n## OUR SU"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dsei.co.uk/visit/exhibiting-companies\",\"title\":\"2025 Exhibiting Companies\",\"description\":\"2025 Exhibiting Companies · \\\"NT Service\\\" UAB. Stand: N9-205 · 1MILLIKELVIN PTY LTD. Stand: S2-110 · 2Exc"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"Search\\n\\nResponsive Following\\n:\\n\\n\\n![Free Body Armor](https://cdn11.bigcommerce.com/s-4iwpyceis0/images/stencil/original/image-manager/free-steel-doorbuster-homepage-banner-desktop.png?t=1793535115)\\n"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[How We Work](https://exhibitorsdata.com/how-we-work/) [Add Event](https://exhibitorsdata.com/add-event/) [Partner with us](https://exhibitorsdata.com/partners/) [FAQs](https://exhibitorsdata.com/faqs/) ["
     },
     {
       "path": "/v1/search",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://alaskadefense.com/\",\"title\":\"Military Shelter Systems | Alaska Defense®\",\"description\":\"Alaska Defense® manufactures the world's most popular military shelter systems, military camps, and turnkey base"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.dla.mil/Troop-Support/Clothing-and-Textiles/Tents/\",\"title\":\"Tents, Shelters, Base Camp Components, JOCOTAS\",\"description\":\"Tent and Shelter Component Search. DLA Troop Support's Clothing and Text"
+      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://www.enforcetac.com/en/exhibitors-products/find-exhibitors\",\"title\":\"Find exhibitors\",\"description\":\"# Exhibitor Search 2027\\n- [Weapons (62)](https://www.enforcetac.com/en/exhibitors-products/find-exh"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Capability. Integration. Execution.\\n\\n## Vertically Integrated Manufacturer\\n\\n_In-house engineering, testing, and manufacturing under one roof._\\n\\n![Vertically integrated manufacturer prototyping](ht"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"we design, engineer, and manufacture the most innovative, reliable, and effective aerial delivery equipment in the world. . Our p"
-    },
-    {
-      "path": "/v1/search",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":[{\"url\":\"https://capewell.com/solutions/\",\"title\":\"Solutions - Capewell\",\"description\":\"# A Full Suite Of Aerial Delivery Solutions\\nBill Gorlach\\n\\n## Aerial Delivery Products\\n- Parachutes and platforms to get milit"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"# Exhibitor Search 2027\\n\\nSearch\\n\\nOpen filterfilter\\\\_alt\\n\\nclose\\n\\nFilters\\n\\nSelect product category\\n\\n- [Weapons (62)](https://www.enforcetac.com/en/exhibitors-products/find-exhibitors?state%5Bhi"
     },
     {
       "path": "/v1/scrape",
       "attempt": 1,
       "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"[Skip to content](https://capewell.com/solutions/#content)\\n\\n# Get Your Gear to the Ground\\n\\n# A Full Suite Of Aerial Delivery Solutions\\n\\nThe mission is in the details, and the first solution is very "
-    },
-    {
-      "path": "/v1/scrape",
-      "attempt": 1,
-      "status": 200,
-      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![](https://cdn-cookieyes.com/assets/images/close.svg)\\n\\nWe value your privacy\\n\\nWe use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicki"
+      "sample": "{\"success\":true,\"data\":{\"markdown\":\"![Portable rocket launcher for military applications and tactical scenarios](https://www.enforcetac.com/_next/image?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fnurnbergmes0e18-nmmultisite6e34-prod50da-6065%"
     }
   ]
 }
