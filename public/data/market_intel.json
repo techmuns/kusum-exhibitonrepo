@@ -4,7 +4,7 @@
   "year": 2025,
   "year_reason": "2025 — latest complete year; 2026 still partial (no data yet)",
   "latest_complete_year": 2025,
-  "updated_at": "2026-11-07T14:28:47.972Z",
+  "updated_at": "2026-11-14T14:36:18.927Z",
   "note": "All figures are real UN Comtrade import/export values — nothing modeled.",
   "monthly_through": "202608"
  },
@@ -14,10 +14,10 @@
    "imports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=5903&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025",
    "exports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=5903&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025"
   },
-  "world_import_value": 9289399797.045004,
-  "world_export_value": 14081440357.190996,
-  "world_import_netWgt": 916400247.3240004,
-  "world_export_netWgt": 2602335122.534999,
+  "world_import_value": 9289416174.045004,
+  "world_export_value": 14081161172.190996,
+  "world_import_netWgt": 916404370.3240004,
+  "world_export_netWgt": 2602301483.534999,
   "reporting_importers": 129,
   "reporting_exporters": 104,
   "top_importers": [
@@ -102,8 +102,8 @@
     "code": 792,
     "country": "Türkiye",
     "iso2": "TR",
-    "value": 246529864,
-    "netWgt": 42863738
+    "value": 246546241,
+    "netWgt": 42867861
    },
    {
     "code": 116,
@@ -237,7 +237,7 @@
   "region_split": [
    {
     "region": "Asia",
-    "value": 3185297560.615,
+    "value": 3185313937.615,
     "pct": 34.3
    },
    {
@@ -273,10 +273,10 @@
    "imports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=590320&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025",
    "exports": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?cmdCode=590320&flowCode=X&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&period=2025"
   },
-  "world_import_value": 3390530793.3500004,
-  "world_export_value": 5877235644.990998,
-  "world_import_netWgt": 252608165.42200017,
-  "world_export_netWgt": 740551753.4499999,
+  "world_import_value": 3390545175.3500004,
+  "world_export_value": 5877159796.990998,
+  "world_import_netWgt": 252612324.42200017,
+  "world_export_netWgt": 740549546.4499999,
   "reporting_importers": 120,
   "reporting_exporters": 80,
   "top_importers": [
@@ -333,8 +333,8 @@
     "code": 792,
     "country": "Türkiye",
     "iso2": "TR",
-    "value": 124758137,
-    "netWgt": 13498090
+    "value": 124772519,
+    "netWgt": 13502249
    },
    {
     "code": 616,
@@ -489,14 +489,14 @@
     "code": 792,
     "country": "Türkiye",
     "iso2": "TR",
-    "value": 60766989,
-    "netWgt": 7527923
+    "value": 60691141,
+    "netWgt": 7525716
    }
   ],
   "region_split": [
    {
     "region": "Asia",
-    "value": 1244944076.3189998,
+    "value": 1244958458.3189998,
     "pct": 36.7
    },
    {
@@ -537,15 +537,15 @@
   "series": [
    {
     "period": "202509",
-    "import_value": 725408662.219,
+    "import_value": 725408663.307,
     "export_value": 626138161.5629998,
-    "import_netWgt": 83129884.53800002
+    "import_netWgt": 83129886.53800002
    },
    {
     "period": "202510",
-    "import_value": 708896782.9639999,
+    "import_value": 708897723.2289999,
     "export_value": 621781704.728,
-    "import_netWgt": 81074696.03199999
+    "import_netWgt": 81076396.03199999
    },
    {
     "period": "202511",
@@ -561,15 +561,15 @@
    },
    {
     "period": "202601",
-    "import_value": 586554253.057,
-    "export_value": 490271607.90699995,
-    "import_netWgt": 60911315.680999994
+    "import_value": 602409290.057,
+    "export_value": 500935142.90699995,
+    "import_netWgt": 64153444.680999994
    },
    {
     "period": "202602",
-    "import_value": 582293061.9330001,
-    "export_value": 492043502.47699994,
-    "import_netWgt": 60890149.425
+    "import_value": 601082772.9330001,
+    "export_value": 504416559.47699994,
+    "import_netWgt": 64832770.425
    },
    {
     "period": "202603",
@@ -579,37 +579,37 @@
    },
    {
     "period": "202604",
-    "import_value": 601858472.051,
-    "export_value": 554381217.0309999,
-    "import_netWgt": 54757676.849999994
+    "import_value": 624493421.0509999,
+    "export_value": 569698316.0309999,
+    "import_netWgt": 58814394.849999994
    },
    {
     "period": "202605",
-    "import_value": 576861973.1229999,
-    "export_value": 534083917.83299994,
-    "import_netWgt": 51499205.19600002
+    "import_value": 591996522.1229999,
+    "export_value": 545951179.833,
+    "import_netWgt": 53463418.01400001
    },
    {
     "period": "202606",
-    "import_value": 585634924.852,
-    "export_value": 524918876.0239999,
-    "import_netWgt": 49894064.103
+    "import_value": 609151646.852,
+    "export_value": 537880950.0239999,
+    "import_netWgt": 54355864.103
    },
    {
     "period": "202607",
-    "import_value": 587672938.7240001,
-    "export_value": 527748096.83699995,
-    "import_netWgt": 52041647.736999996
+    "import_value": 614458346.8980001,
+    "export_value": 541410403.137,
+    "import_netWgt": 56319431.796
    },
    {
     "period": "202608",
-    "import_value": 311583567.137,
-    "export_value": 296878608.36899996,
-    "import_netWgt": 32699029.05799999
+    "import_value": 381999324.36500007,
+    "export_value": 327547015.014,
+    "import_netWgt": 42795414.294999994
    }
   ],
-  "last12_import_value": 7149393963.573,
-  "last12_export_value": 6345748183.788,
+  "last12_import_value": 7342527038.328,
+  "last12_export_value": 6453261923.733,
   "months_count": 12
  }
 }
