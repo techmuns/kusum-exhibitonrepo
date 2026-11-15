@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "total": 318,
+  "total": 319,
   "source": "Kusumgar curated target list (600D_FABRIC_TGT_COMPANIES.xlsx + NEW_KUSUMGAR_DOWNLAD.xlsx)",
   "note": "verified=false rows await the research-verify robot (visits each company website; nothing invented)"
  },
@@ -8209,6 +8209,24 @@
    "person_email_verified": true,
    "person_email_checked_at": "2026-10-29",
    "person_source": "firecrawl+prospeo"
+  },
+  {
+   "id": "haining-duletai-new-material-co-ltd",
+   "segment": "Inflatables",
+   "company": "HAINING DULETAI NEW MATERIAL CO.,LTD",
+   "country": "China",
+   "application": "",
+   "est_fabric_consumption": "",
+   "sourcing_model": "",
+   "buyer_role": "",
+   "source": "New-product research engine",
+   "verified": true,
+   "website": "https://duletai.com",
+   "product_confirmed": true,
+   "product_evidence": "TPU drop stitch fabric is widly used for inflatable sports equipments... Drop-stitch fabrics with TPU film are designed for inflatable structures... They are used for performant products as inflatable floors, rescue air tracks, SUPs etc.",
+   "verify_source_url": "https://www.duletai.com/product/tpu-drop-stitch-fabric/",
+   "verified_at": "2026-11-15",
+   "product_id": "tpu-coated"
   }
  ]
 }
