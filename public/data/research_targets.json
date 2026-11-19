@@ -402,11 +402,11 @@
    "person_linkedin": "https://www.linkedin.com/in/roshyfrancis",
    "person_role_tier": "A",
    "person_match_reason": "R&D",
-   "person_email": null,
-   "person_email_status": "none",
+   "person_email": "info@generalmedicaldevices.com",
+   "person_email_status": "published",
    "person_email_verified": false,
    "person_email_checked_at": null,
-   "person_source": "firecrawl"
+   "person_source": "firecrawl+website"
   },
   {
    "id": "philips-healthcare",
@@ -1658,7 +1658,7 @@
    "verify_source_url": "https://mightycovers.com/product/pooltux-royal-mesh-safety-pool-cover-7/?srsltid=AU7gw4UgJKVyPMGTR7jBkBghVRomDeq4P0v0BpGtjoKSXSZ324ThvRy8",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "tara-manufacturing",
@@ -1706,7 +1706,7 @@
    "verify_source_url": "https://www.thepoolfactory.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "bioguard-covers",
@@ -2185,7 +2185,7 @@
    "verify_source_url": "https://arlmontco.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "covers-all",
@@ -2500,7 +2500,17 @@
    "verify_source_url": "https://www.lippert.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "andrew wermer",
+   "person_title": "production control manager",
+   "person_linkedin": "https://linkedin.com/in/andrew-wermer-3b6a7239b",
+   "person_role_tier": "B",
+   "person_match_reason": "Production",
+   "person_email": "andrew.wermer@lippert.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+guess"
   },
   {
    "id": "ameri-brand-products",
@@ -2519,7 +2529,7 @@
    "verify_source_url": "https://websweeper.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "oceansouth",
@@ -2789,7 +2799,7 @@
    "verify_source_url": "https://www.jsi-alliance.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "tumacs-covers",
@@ -3004,7 +3014,7 @@
    "person_email_verified": false,
    "person_email_checked_at": null,
    "person_source": "web+website",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "malibu-accessories",
@@ -3023,7 +3033,7 @@
    "verify_source_url": "https://accessories.chevrolet.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "correct-craft-accessories",
@@ -3118,7 +3128,7 @@
    "verify_source_url": "https://harrisboats.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "yamaha-marine-accessories",
@@ -3213,7 +3223,7 @@
    "verify_source_url": "https://crestliner.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "lund-boat-covers",
@@ -3232,7 +3242,7 @@
    "verify_source_url": "https://www.nationalboatcovers.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "princecraft-accessories",
@@ -3296,7 +3306,7 @@
    "verify_source_url": "https://www.bainbridgeint.com/",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "marine-canvas-creations",
@@ -3427,7 +3437,7 @@
    "verify_source_url": "https://www.sailrite.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "harken-canvas-solutions",
@@ -3475,7 +3485,17 @@
    "verify_source_url": "https://dcmc-us.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "spencer traynom",
+   "person_title": "business unit director",
+   "person_linkedin": "https://linkedin.com/in/spencer-traynom-72771617",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "straynom@dcmc-us.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+prospeo"
   },
   {
    "id": "ocean-dynamics",
@@ -3530,7 +3550,7 @@
    "verify_source_url": "https://www.greenlee.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "fluke",
@@ -3578,7 +3598,17 @@
    "verify_source_url": "https://knipex.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "sören stodt",
+   "person_title": "head of strategic development for technical department (strategy manager)",
+   "person_linkedin": "https://linkedin.com/in/sören-stodt-6a02a4113",
+   "person_role_tier": "A",
+   "person_match_reason": "Technical",
+   "person_email": "soeren.stodt@knipex.de",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+prospeo"
   },
   {
    "id": "wiha",
@@ -3727,7 +3757,17 @@
    "verify_source_url": "https://www.matcotools.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "john schneider",
+   "person_title": "global sourcing manager",
+   "person_linkedin": "https://linkedin.com/in/john-schneider-640b878",
+   "person_role_tier": "C",
+   "person_match_reason": "Sourcing",
+   "person_email": "jschneider@vontier.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+prospeo"
   },
   {
    "id": "sk-tools",
@@ -4360,7 +4400,17 @@
    "verify_source_url": "https://leica-geosystems.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "jake hamel",
+   "person_title": "marketing operations manager",
+   "person_linkedin": "https://linkedin.com/in/jake-hamel",
+   "person_role_tier": "B",
+   "person_match_reason": "Operations",
+   "person_email": "jake.hamel@leica-geosystems.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+prospeo"
   },
   {
    "id": "trimble",
@@ -4397,7 +4447,17 @@
    "verify_source_url": "https://keysight.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "steve barreto",
+   "person_title": "senior solutions architect | design engineering software",
+   "person_linkedin": "https://linkedin.com/in/stevebarreto",
+   "person_role_tier": "A",
+   "person_match_reason": "Engineering",
+   "person_email": "steve.barreto@keysight.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+prospeo"
   },
   {
    "id": "yokogawa-test-equipment",
@@ -4610,7 +4670,17 @@
    "verify_source_url": "https://gearbags.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "april vaillancourt",
+   "person_title": "project manager",
+   "person_linkedin": "https://linkedin.com/in/april-vaillancourt-9a5a9011b",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "april@gearbags.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+tomba"
   },
   {
    "id": "kemp-usa",
@@ -5381,7 +5451,17 @@
    "verify_source_url": "https://www.life-assist.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19",
+   "person_name": "sheri steele",
+   "person_title": "regional manager",
+   "person_linkedin": "https://linkedin.com/in/sheristeele56",
+   "person_role_tier": null,
+   "person_match_reason": "",
+   "person_email": "sheri.steele@life-assist.com",
+   "person_email_status": "verified",
+   "person_email_verified": true,
+   "person_email_checked_at": "2026-11-19",
+   "person_source": "pdl+prospeo"
   },
   {
    "id": "emergency-medical-products",
@@ -5593,7 +5673,7 @@
    "verify_source_url": "https://www.rescuetech1.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "dynamic-rescue-systems",
@@ -5612,7 +5692,7 @@
    "verify_source_url": "https://www.dynamicrescue.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "tarps-plus",
@@ -5855,7 +5935,7 @@
    "verify_source_url": "https://durabiltusa.com",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "creative-covers",
@@ -6515,7 +6595,7 @@
    "verify_source_url": "https://www.jensenoutdoor.com/",
    "verified_at": "2026-09-22",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "cover-it-inc",
@@ -6592,7 +6672,7 @@
    "verify_source_url": "https://www.coversunlimited.net/industrial-tarpaulin-fabricator",
    "verified_at": "2026-10-02",
    "product_id": "600d-pu-polyester",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "shade-systems-america",
@@ -7909,7 +7989,7 @@
    "verify_source_url": "https://uni-tarp.com/top-10-inflatable-tarp-manufacturers/",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "e-squared",
@@ -7986,7 +8066,7 @@
    "verify_source_url": "https://www.nanxiongtpu.net/news/industry-news/how-to-choose-a-good-tpu-coated-fabric-manufacturer/",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "primetex",
@@ -8179,7 +8259,7 @@
    "verify_source_url": "https://www.alltextilesupplier.com/a/Article/companynews/pvc-coated-fabric-vs-tpu-dry-bag.html",
    "verified_at": "2026-10-04",
    "product_id": "tpu-coated",
-   "person_checked_at": "2026-11-12"
+   "person_checked_at": "2026-11-19"
   },
   {
    "id": "epo",
@@ -8226,7 +8306,8 @@
    "product_evidence": "TPU drop stitch fabric is widly used for inflatable sports equipments... Drop-stitch fabrics with TPU film are designed for inflatable structures... They are used for performant products as inflatable floors, rescue air tracks, SUPs etc.",
    "verify_source_url": "https://www.duletai.com/product/tpu-drop-stitch-fabric/",
    "verified_at": "2026-11-15",
-   "product_id": "tpu-coated"
+   "product_id": "tpu-coated",
+   "person_checked_at": "2026-11-19"
   }
  ]
 }
