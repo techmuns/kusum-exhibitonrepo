@@ -47,6 +47,8 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           BEDROCK_MODEL_IDS: ${{ secrets.BEDROCK_MODEL_IDS }}
           SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
+          # Cheaper real-Google search tried before Firecrawl search:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
           CATEGORIES: ${{ github.event.inputs.categories }}
           MAX_COMPANIES: ${{ github.event.inputs.max_companies || '40' }}
         run: node scripts/find-buyers-by-category.mjs

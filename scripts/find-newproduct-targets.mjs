@@ -16,7 +16,7 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { firecrawlSearch, firecrawlScrape, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
+import { webSearch, firecrawlScrape, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
 
 const p = (env, rel) => process.env[env] || fileURLToPath(new URL(rel, import.meta.url));
@@ -83,10 +83,9 @@ async function freeSearch(query) {
 }
 
 async function search(query, debug) {
-  if (firecrawlKey()) {
-    const r = await firecrawlSearch(query, debug);
-    if (Array.isArray(r) && r.length) return r.map((x) => ({ url: x.url || x.link, title: x.title || '' })).filter((x) => x.url);
-  }
+  // Cheapest-first web search (Serper → free DuckDuckGo → Firecrawl); see lib/firecrawl.mjs.
+  const r = await webSearch(query, debug);
+  if (Array.isArray(r) && r.length) return r.map((x) => ({ url: x.url || x.link, title: x.title || '' })).filter((x) => x.url);
   return freeSearch(query);
 }
 

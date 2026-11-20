@@ -43,6 +43,9 @@ jobs:
           # Optional (both default in code): AWS region + comma-separated model fallback chain.
           AWS_REGION: ${{ secrets.AWS_REGION }}
           BEDROCK_MODEL_IDS: ${{ secrets.BEDROCK_MODEL_IDS }}
+          # Cheaper helpers tried before Firecrawl (search via Serper, page reads via Scrape.do):
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
           TARGET: ${{ github.event.inputs.target || 'auto' }}
           MAX_COMPANIES: ${{ github.event.inputs.max_companies || '40' }}
         run: node scripts/scrape-exhibitors.mjs
