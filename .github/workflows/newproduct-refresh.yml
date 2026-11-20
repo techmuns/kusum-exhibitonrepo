@@ -37,7 +37,8 @@ jobs:
         env:
           # Required: the honesty classifier. Without it the engine writes nothing and exits 0.
           BEDROCK_API_KEY: ${{ secrets.BEDROCK_API_KEY }}
-          # Optional boosters (search falls back to a free DuckDuckGo query; reading starts free):
+          # Optional boosters (search Serper→DuckDuckGo→Firecrawl; reading free→Scrape.do→Firecrawl):
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
           SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}

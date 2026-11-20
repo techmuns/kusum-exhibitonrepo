@@ -8,6 +8,8 @@
 //
 // Later phases (Leads, Competitors) reuse firecrawlScrape / firecrawlMap.
 
+import { serperSearch, haveSerper } from './serper.mjs';
+
 const API_BASE = process.env.FIRECRAWL_API_BASE || 'https://api.firecrawl.dev';
 const TIMEOUT_MS = 45_000;
 const MAX_ATTEMPTS = 2; // initial + 1 retry
@@ -96,6 +98,35 @@ export async function firecrawlSearch(query, debug) {
   const data = await callFirecrawl('/v1/search', { query, limit: 8 }, debug);
   if (!data) return null;
   return data.data || data.results || null;
+}
+
+/**
+ * Unified web search — cheapest provider FIRST, Firecrawl LAST (this is the credit saver):
+ *   1. Serper.dev (real Google, cheap)  2. free DuckDuckGo (no cost)  3. Firecrawl search (paid).
+ * Only reaches the paid Firecrawl step when the cheaper providers returned nothing.
+ * Returns a normalized array carrying BOTH shapes callers read:
+ *   { url, link, title, description, snippet }. Never throws; returns [] if all providers fail.
+ */
+export async function webSearch(query, debug) {
+  const normalize = (r) => {
+    const url = r.url || r.link || '';
+    const description = r.description || r.snippet || '';
+    return { ...r, url, link: url, title: r.title || '', description, snippet: description };
+  };
+  // 1) Serper.dev — cheap real-Google results. [] = worked-but-empty, null = failed/no key.
+  if (haveSerper()) {
+    const s = await serperSearch(query, debug);
+    if (Array.isArray(s) && s.length) return s.map(normalize);
+  }
+  // 2) Free DuckDuckGo — no cost; often bot-walled on CI, so best-effort.
+  try {
+    const f = await freeSearch(query);
+    if (Array.isArray(f) && f.length) return f.map(normalize);
+  } catch { /* fall through to the paid booster */ }
+  // 3) Firecrawl search — paid; only reached when the cheaper providers came back empty.
+  const fc = await firecrawlSearch(query, debug);
+  if (Array.isArray(fc) && fc.length) return fc.map(normalize);
+  return [];
 }
 
 /**

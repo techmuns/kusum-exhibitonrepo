@@ -21,7 +21,7 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { firecrawlSearch, firecrawlScrape, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
+import { webSearch, firecrawlScrape, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
 
 const p = (envName, rel) => process.env[envName] || fileURLToPath(new URL(rel, import.meta.url));
@@ -66,7 +66,7 @@ async function categoryText(query, debug) {
   const seen = new Set();
   const candidates = [];
   for (const q of [query, `${query} directory`]) {
-    const results = await firecrawlSearch(q, debug);
+    const results = await webSearch(q, debug);
     if (Array.isArray(results)) {
       for (const r of results) {
         const url = r.url || r.link;
@@ -78,9 +78,9 @@ async function categoryText(query, debug) {
   text += candidates.map((c) => `${c.title} — ${c.description}`).join('\n');
   for (const c of candidates.slice(0, 4)) {
     let pageText = '';
-    const data = await firecrawlScrape(c.url, { formats: ['markdown'] }, debug);
-    if (data && data.markdown) pageText = data.markdown;
-    else if (haveScrapedo()) { const html = await scrapedoGet(c.url); if (html) pageText = html.slice(0, 6000); }
+    // Cheapest reader first: Scrape.do, then Firecrawl only if that found nothing (saves credits).
+    if (haveScrapedo()) { const html = await scrapedoGet(c.url); if (html) pageText = html.slice(0, 6000); }
+    if (!pageText) { const data = await firecrawlScrape(c.url, { formats: ['markdown'] }, debug); if (data && data.markdown) pageText = data.markdown; }
     if (pageText) text += '\n\n' + pageText;
     if (text.length > 12000) break;
   }

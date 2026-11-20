@@ -30,7 +30,8 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { firecrawlSearch, firecrawlScrape, apiKey as firecrawlKey, scrapedoGet, haveScrapedo } from './lib/firecrawl.mjs';
+import { webSearch, firecrawlScrape, apiKey as firecrawlKey, scrapedoGet, haveScrapedo } from './lib/firecrawl.mjs';
+import { haveSerper } from './lib/serper.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
 
 const ASSOCIATIONS_PATH = process.env.KGR_ASSOCIATIONS_PATH || fileURLToPath(new URL('../public/data/associations.json', import.meta.url));
@@ -149,7 +150,7 @@ async function refreshOne(a, stats) {
 // official site of a REAL industry association relevant to the segment.
 const ASSOC_HOST = /(association|institute|alliance|federation|society|council|\.org($|\.))/i;
 async function proposeNew(existing, stats, budget) {
-  if (!firecrawlKey() || budget <= 0) return [];
+  if ((!haveSerper() && !firecrawlKey()) || budget <= 0) return [];
   const haveHost = new Set(existing.map((a) => hostOf(a.website)).filter(Boolean));
   const queries = [
     'technical textiles industry association',
@@ -160,7 +161,7 @@ async function proposeNew(existing, stats, budget) {
   try {
     for (const q of queries) {
       if (added.length >= budget) break;
-      const results = await firecrawlSearch(q);
+      const results = await webSearch(q);
       if (!Array.isArray(results)) continue;
       for (const r of results) {
         if (added.length >= budget) break;

@@ -43,6 +43,8 @@ jobs:
           #   FIRECRAWL_API_KEY — last-resort reader; also enables the optional propose-new-associations step.
           SCRAPEDO_API_KEY: ${{ secrets.SCRAPEDO_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          # Cheaper real-Google search tried before Firecrawl for the propose-new step:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
           # Optional (both default in code): AWS region + comma-separated model fallback chain.
           AWS_REGION: ${{ secrets.AWS_REGION }}
           BEDROCK_MODEL_IDS: ${{ secrets.BEDROCK_MODEL_IDS }}

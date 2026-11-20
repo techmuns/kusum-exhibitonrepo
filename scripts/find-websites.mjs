@@ -13,7 +13,8 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { firecrawlSearch, apiKey as firecrawlKey } from './lib/firecrawl.mjs';
+import { webSearch, apiKey as firecrawlKey } from './lib/firecrawl.mjs';
+import { haveSerper } from './lib/serper.mjs';
 import { askClaude } from './lib/llm.mjs';
 
 const p = (env, rel) => process.env[env] || fileURLToPath(new URL(rel, import.meta.url));
@@ -75,7 +76,7 @@ async function loadOutreach() {
 
 // Web-search a company's official website; return a bare domain or ''.
 async function findWebsite(lead, debug) {
-  const results = await firecrawlSearch(`${lead.company} ${lead.country || ''} official website`.trim(), debug);
+  const results = await webSearch(`${lead.company} ${lead.country || ''} official website`.trim(), debug);
   if (!Array.isArray(results) || !results.length) return '';
   const candidates = [];
   for (const r of results) {
@@ -99,8 +100,8 @@ async function findWebsite(lead, debug) {
 }
 
 async function main() {
-  if (!firecrawlKey()) {
-    console.log('[find-websites] no FIRECRAWL_API_KEY — cannot search; writing nothing. Exiting 0.');
+  if (!haveSerper() && !firecrawlKey()) {
+    console.log('[find-websites] no search provider (SERPER_API_KEY / FIRECRAWL_API_KEY) — cannot search; writing nothing. Exiting 0.');
     return;
   }
   const { raw, leads } = await loadLeadsRaw();

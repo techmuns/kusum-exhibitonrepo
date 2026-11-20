@@ -17,7 +17,7 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { firecrawlScrape, firecrawlSearch, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
+import { firecrawlScrape, webSearch, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
 
 const p = (envName, rel) => process.env[envName] || fileURLToPath(new URL(rel, import.meta.url));
@@ -70,7 +70,7 @@ async function exhibitorText(show, debug) {
     `${show.name} exhibitors ${show.country || ''}`.trim(),
   ];
   for (const q of queries) {
-    const results = await firecrawlSearch(q, debug);
+    const results = await webSearch(q, debug);
     if (Array.isArray(results)) {
       for (const r of results) {
         const url = r.url || r.link;
@@ -88,9 +88,9 @@ async function exhibitorText(show, debug) {
   console.log(`[scrape-exhibitors] ${show.id}: ${candidates.length} candidate page(s); reading top ${ranked.length}: ${ranked.map((c) => c.url).join(' | ') || '(none)'}`);
   for (const c of ranked) {
     let pageText = '';
-    const data = await firecrawlScrape(c.url, { formats: ['markdown'] }, debug);
-    if (data && data.markdown) pageText = data.markdown;
-    else if (haveScrapedo()) { const html = await scrapedoGet(c.url); if (html) pageText = html.slice(0, 6000); }
+    // Cheapest reader first: Scrape.do, then Firecrawl only if that found nothing (saves credits).
+    if (haveScrapedo()) { const html = await scrapedoGet(c.url); if (html) pageText = html.slice(0, 6000); }
+    if (!pageText) { const data = await firecrawlScrape(c.url, { formats: ['markdown'] }, debug); if (data && data.markdown) pageText = data.markdown; }
     console.log(`[scrape-exhibitors]   read ${c.url} -> ${pageText.length} chars`);
     if (pageText) text += '\n\n' + pageText;
     if (text.length > 12000) break;
@@ -99,8 +99,10 @@ async function exhibitorText(show, debug) {
   // Fallback: the old direct directory search page if we still have almost nothing.
   if (text.trim().length < 400) {
     const url = `https://10times.com/search?kw=${encodeURIComponent(show.name)}`;
-    const data = await firecrawlScrape(url, { formats: ['markdown'] }, debug);
-    if (data && data.markdown) text += '\n' + data.markdown;
+    let extra = '';
+    if (haveScrapedo()) { const html = await scrapedoGet(url); if (html) extra = html.slice(0, 6000); }
+    if (!extra) { const data = await firecrawlScrape(url, { formats: ['markdown'] }, debug); if (data && data.markdown) extra = data.markdown; }
+    if (extra) text += '\n' + extra;
   }
   console.log(`[scrape-exhibitors] ${show.id}: total exhibitor text ${text.length} chars`);
   return text.slice(0, 12000);

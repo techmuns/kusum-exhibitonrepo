@@ -27,7 +27,8 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { firecrawlSearch, firecrawlScrape, apiKey as firecrawlKey, scrapedoGet, haveScrapedo } from './lib/firecrawl.mjs';
+import { webSearch, firecrawlScrape, apiKey as firecrawlKey, scrapedoGet, haveScrapedo } from './lib/firecrawl.mjs';
+import { haveSerper } from './lib/serper.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
 
 const RESEARCH_PATH = process.env.KGR_RESEARCH_PATH || fileURLToPath(new URL('../public/data/research_targets.json', import.meta.url));
@@ -110,8 +111,8 @@ function resolveSite(t, knownWeb) {
 }
 
 async function searchSite(t, debug) {
-  if (!firecrawlKey()) return '';
-  const results = await firecrawlSearch(`"${t.company}" ${SEG_PRODUCT[t.segment] || ''} official site`.trim(), debug);
+  if (!haveSerper() && !firecrawlKey()) return '';
+  const results = await webSearch(`"${t.company}" ${SEG_PRODUCT[t.segment] || ''} official site`.trim(), debug);
   if (!Array.isArray(results) || !results.length) return '';
   for (const r of results) { if (cleanHost(r.url || '')) return r.url; }
   return '';
