@@ -29,11 +29,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { webSearch, firecrawlScrape, apiKey as firecrawlKey, scrapedoGet, haveScrapedo } from './lib/firecrawl.mjs';
 import { haveSerper } from './lib/serper.mjs';
+import { loadLedger, saveLedger, isDue, markChecked } from './lib/ledger.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
 
 const RESEARCH_PATH = process.env.KGR_RESEARCH_PATH || fileURLToPath(new URL('../public/data/research_targets.json', import.meta.url));
 const LEADS_PATH = process.env.KGR_LEADS_PATH || path.join(path.dirname(RESEARCH_PATH), 'leads.json');
 const MAX = Math.max(1, parseInt(process.env.MAX || process.argv[2] || '40', 10) || 40);
+// Re-check ledger: don't re-attempt a target that was tried recently (saves Serper/Firecrawl/Scrape.do credits).
+const CHECKS_PATH = process.env.KGR_RESEARCH_CHECKS_PATH || fileURLToPath(new URL('../public/data/ck-research-verify.json', import.meta.url));
 
 // Hostnames that are never a company's OWN official website (directories, social, news, marketplaces).
 const JUNK = /(^|\.)(linkedin|facebook|twitter|x|instagram|youtube|wikipedia|wikimedia|bloomberg|reuters|forbes|zoominfo|crunchbase|dnb|rocketreach|apollo|lusha|glassdoor|indeed|amazon|alibaba|made-in-china|tradeindia|indiamart|exportersindia|europages|kompass|pitchbook|owler|justdial|yelp|mapquest|google|bing|medium|wordpress|blogspot|github|slideshare|scribd|issuu|pinterest|tiktok|threads|reddit|quora|marketscreener|stockanalysis)\./i;
@@ -181,7 +184,9 @@ async function main() {
   if (!targets.length) { console.log('[verify-research] no targets; nothing to do.'); return; }
 
   const knownWeb = await loadKnownWebsites();
-  const queue = targets.filter((t) => t && t.verified === false).slice(0, MAX);
+  const ledger = await loadLedger(CHECKS_PATH);
+  // Skip targets attempted recently so perennial "no site found" rows don't re-spend every week.
+  const queue = targets.filter((t) => t && t.verified === false && isDue(ledger, t.id)).slice(0, MAX);
   console.log(`[verify-research] verifying ${queue.length} of ${targets.length} target(s) · ${Object.keys(knownWeb).length} known websites on hand`);
 
   const debug = [];
@@ -190,6 +195,7 @@ async function main() {
   try {
     for (const t of queue) {
       const r = await verifyOne(t, knownWeb, stats, debug);
+      markChecked(ledger, t.id, { ok: !!r, successDays: 60, failDays: 21 });
       if (!r) { console.log(`[verify-research] ${t.company}: no site known and none found (leaving unverified)`); continue; }
       t.website = r.website || t.website || '';
       t.product_confirmed = r.product_confirmed;
@@ -205,7 +211,8 @@ async function main() {
   } catch (e) { console.error(`[verify-research] pipeline error (continuing): ${e.message}`); }
 
   console.log(`[verify-research] site source: row=${stats.row} leads=${stats.leads} search=${stats.search} · readers: ${JSON.stringify(stats.reader)}`);
-  if (!done) { console.log('[verify-research] nothing verified this run; file unchanged.'); return; }
+  if (queue.length) await saveLedger(CHECKS_PATH, ledger);
+  if (!done) { console.log('[verify-research] nothing verified this run; ledger updated, data unchanged.'); return; }
   await writeFile(RESEARCH_PATH, JSON.stringify(raw, null, 1) + '\n'); // match the seed's 1-space indent
   console.log(`[verify-research] verified ${done} target(s).`);
 }

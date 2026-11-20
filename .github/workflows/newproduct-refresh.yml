@@ -48,7 +48,7 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          if [ -z "$(git status --porcelain public/data/research_targets.json public/data/products.json)" ]; then
+          if [ -z "$(git status --porcelain public/data/research_targets.json public/data/products.json public/data/ck-newproduct.json)" ]; then
             echo "No changes — nothing to commit."
             exit 0
           fi
@@ -56,7 +56,7 @@ jobs:
           git config user.name "kgr-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           node scripts/update-meta.mjs
-          git add public/data/research_targets.json public/data/products.json public/data/meta.json
+          git add public/data/research_targets.json public/data/products.json public/data/ck-newproduct.json public/data/meta.json
           git commit -m "chore(data): grow new-product target companies"
 
           branch="${GITHUB_REF_NAME}"

@@ -18,6 +18,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { webSearch, firecrawlScrape, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
+import { loadLedger, saveLedger, isDue, markChecked } from './lib/ledger.mjs';
 
 const p = (env, rel) => process.env[env] || fileURLToPath(new URL(rel, import.meta.url));
 const RESEARCH_PATH = p('KGR_RESEARCH_PATH', '../public/data/research_targets.json');
@@ -25,6 +26,8 @@ const PRODUCTS_PATH = p('KGR_PRODUCTS_PATH', '../public/data/products.json');
 const MAX = Math.max(1, parseInt(process.env.MAX || process.argv[2] || '30', 10) || 30);
 const TARGET_MIN = Math.max(1, parseInt(process.env.TARGET_MIN || '20', 10) || 20); // stop growing a product once it has this many
 const PER_APP = 6; // candidate companies to try per application
+// Re-check ledger: don't re-grind the same product every week (saves Serper/Firecrawl/Scrape.do credits).
+const CHECKS_PATH = p('KGR_NEWPRODUCT_CHECKS_PATH', '../public/data/ck-newproduct.json');
 
 const JUNK = /(^|\.)(linkedin|facebook|twitter|x|instagram|youtube|wikipedia|wikimedia|bloomberg|reuters|forbes|zoominfo|crunchbase|dnb|rocketreach|apollo|lusha|glassdoor|indeed|amazon|alibaba|made-in-china|tradeindia|indiamart|exportersindia|europages|kompass|pitchbook|owler|justdial|yelp|mapquest|google|bing|duckduckgo|medium|wordpress|blogspot|github|slideshare|scribd|issuu|pinterest|tiktok|threads|reddit|quora|marketscreener|stockanalysis|thomasnet|globalspec|statista)\./i;
 const hostOf = (v) => { try { return v ? new URL(String(v).startsWith('http') ? v : 'https://' + v).hostname.replace(/^www\./, '').toLowerCase() : ''; } catch { return ''; } };
@@ -143,15 +146,19 @@ async function main() {
   const seenHosts = new Set(targets.map((t) => hostOf(t.website)).filter(Boolean));
   const debug = [];
   let added = 0;
+  const ledger = await loadLedger(CHECKS_PATH);
 
   try {
     for (const product of newProducts) {
       const have = targets.filter((t) => t.product_id === product.id).length;
       if (have >= TARGET_MIN) { console.log(`[newproduct] ${product.name}: already ${have} targets (>= ${TARGET_MIN}); skipping.`); continue; }
+      if (!isDue(ledger, product.id)) { console.log(`[newproduct] ${product.name}: checked recently — skipping this run.`); continue; }
       console.log(`[newproduct] ${product.name}: ${have} targets — searching ${product.applications.length} application(s)`);
+      let searched = false;
       for (const app of product.applications) {
         if (added >= MAX) break;
         const cands = await candidates(product, app, debug);
+        searched = true;
         for (const cand of cands) {
           if (added >= MAX) break;
           if (seenHosts.has(cand.host)) continue;
@@ -172,10 +179,12 @@ async function main() {
           console.log(`[newproduct] + ${r.company} (${product.id} / ${app}) confirmed=${r.product_confirmed} · ${r.verify_source_url}`);
         }
       }
+      if (searched) markChecked(ledger, product.id, { ok: true, successDays: 21, failDays: 21 });
     }
   } catch (e) { console.error(`[newproduct] pipeline error (continuing): ${e.message}`); }
 
-  if (!added) { console.log('[newproduct] nothing added this run; file unchanged.'); return; }
+  await saveLedger(CHECKS_PATH, ledger);
+  if (!added) { console.log('[newproduct] nothing added this run; ledger updated, data unchanged.'); return; }
   if (rawR._meta) rawR._meta.total = targets.length;
   await writeFile(RESEARCH_PATH, JSON.stringify(rawR, null, 1) + '\n');
   console.log(`[newproduct] added ${added} target(s) across new products.`);

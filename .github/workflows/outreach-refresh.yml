@@ -73,14 +73,14 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          if [ -z "$(git status --porcelain public/data/leads.json public/data/outreach.json public/data/research_targets.json)" ]; then
+          if [ -z "$(git status --porcelain public/data/leads.json public/data/outreach.json public/data/research_targets.json public/data/ck-websites.json)" ]; then
             echo "No changes to leads/outreach/research data — nothing to commit."
             exit 0
           fi
           git config user.name "kgr-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           node scripts/update-meta.mjs
-          git add public/data/leads.json public/data/outreach.json public/data/research_targets.json public/data/meta.json
+          git add public/data/leads.json public/data/outreach.json public/data/research_targets.json public/data/ck-websites.json public/data/meta.json
           git commit -m "chore(data): refresh websites, drafts & right-person contacts"
 
           branch="${GITHUB_REF_NAME}"

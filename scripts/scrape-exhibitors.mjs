@@ -19,6 +19,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { firecrawlScrape, webSearch, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
+import { loadLedger, saveLedger, isDue, markChecked } from './lib/ledger.mjs';
 
 const p = (envName, rel) => process.env[envName] || fileURLToPath(new URL(rel, import.meta.url));
 const LEADS_PATH = p('KGR_LEADS_PATH', '../public/data/leads.json');
@@ -29,6 +30,8 @@ const PRODUCTS_PATH = p('KGR_PRODUCTS_PATH', '../public/data/products.json');
 const TARGET = process.env.TARGET || 'auto';
 const MAX_COMPANIES = Math.max(1, parseInt(process.env.MAX_COMPANIES || '40', 10) || 40);
 const MAX_TARGETS = 3;              // a few exhibitions per run (cost control)
+// Re-check ledger: don't re-scrape the same show every week (saves Firecrawl/Serper/Scrape.do credits).
+const CHECKS_PATH = p('KGR_EXHIBITOR_CHECKS_PATH', '../public/data/ck-exhibitor-scrape.json');
 const ENGAGED = new Set(['Exhibited', 'Visited', 'Attended']);
 const LEAD_SEGMENTS = ['Tool & Equipment Bags', 'Medical & Emergency', 'Marine Covers', 'Pool & Outdoor Covers', 'Protective Covers & Industrial', 'Automotive Seating'];
 
@@ -122,12 +125,14 @@ async function main() {
   }
 
   // 1) Choose targets.
+  const ledger = await loadLedger(CHECKS_PATH);
   let targets;
   if (TARGET && TARGET !== 'auto') {
     const ids = TARGET.split(',').map((s) => s.trim()).filter(Boolean);
-    targets = exhibitions.filter((e) => ids.includes(e.id));
+    targets = exhibitions.filter((e) => ids.includes(e.id));            // manual run: ignore the re-check ledger
   } else {
-    targets = exhibitions.filter((e) => ENGAGED.has(e.status));
+    // Skip shows scraped recently; spend the budget on the stalest DUE shows (cycles coverage, saves credits).
+    targets = exhibitions.filter((e) => ENGAGED.has(e.status) && isDue(ledger, e.id));
   }
   targets = targets.slice(0, MAX_TARGETS);
   console.log(`[scrape-exhibitors] targets: ${targets.map((t) => t.id).join(', ') || '(none)'}`);
@@ -147,6 +152,7 @@ async function main() {
       if (classified >= MAX_COMPANIES) break;
       const text = await exhibitorText(show, debug);
       pagesUsed += 2;
+      markChecked(ledger, show.id, { ok: !!text.trim(), successDays: 21, failDays: 10 });
       if (!text.trim()) { console.log(`[scrape-exhibitors] no exhibitor text for ${show.id}`); continue; }
 
       const extracted = await askClaude({
@@ -200,6 +206,8 @@ async function main() {
   } catch (err) {
     console.error(`[scrape-exhibitors] pipeline error (continuing): ${err.message}`);
   }
+
+  if (targets.length) await saveLedger(CHECKS_PATH, ledger);
 
   const meta = { scraped_at: new Date().toISOString(), targets: targets.map((t) => t.id), pages_used: pagesUsed, classified, added_leads: addedLeads.length, added_competitors: addedComps.length };
   const trimmedDebug = debug.slice(-20);

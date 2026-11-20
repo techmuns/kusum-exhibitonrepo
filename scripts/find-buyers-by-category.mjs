@@ -23,11 +23,14 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { webSearch, firecrawlScrape, scrapedoGet, apiKey as firecrawlKey, haveScrapedo } from './lib/firecrawl.mjs';
 import { askClaude, haveBedrock } from './lib/llm.mjs';
+import { loadLedger, saveLedger, isDue, markChecked } from './lib/ledger.mjs';
 
 const p = (envName, rel) => process.env[envName] || fileURLToPath(new URL(rel, import.meta.url));
 const LEADS_PATH = p('KGR_LEADS_PATH', '../public/data/leads.json');
 const COMPETITORS_PATH = p('KGR_COMPETITORS_PATH', '../public/data/competitors.json');
 const PRODUCTS_PATH = p('KGR_PRODUCTS_PATH', '../public/data/products.json');
+// Re-check ledger: don't re-search the same category every week (saves Serper/Firecrawl/Scrape.do credits).
+const CHECKS_PATH = p('KGR_BUYER_CHECKS_PATH', '../public/data/ck-buyer-category.json');
 
 // Defence-textile buyer categories (editable via the CATEGORIES workflow input).
 const DEFAULT_CATEGORIES = [
@@ -99,8 +102,10 @@ async function main() {
     return;
   }
 
-  const targets = CATEGORIES.slice(0, MAX_CATEGORIES);
-  console.log(`[find-buyers] categories: ${targets.join(' | ')}`);
+  // Skip categories searched recently; cycle through the rest over subsequent weeks (saves credits).
+  const ledger = await loadLedger(CHECKS_PATH);
+  const targets = CATEGORIES.filter((q) => isDue(ledger, q)).slice(0, MAX_CATEGORIES);
+  console.log(`[find-buyers] categories: ${targets.join(' | ') || '(all fresh — nothing due this run)'}`);
 
   const debug = [];
   const seen = new Set([...seedLeads, ...seedComps].map((r) => norm(r.company)));
@@ -115,6 +120,7 @@ async function main() {
     for (const query of targets) {
       if (classified >= MAX_COMPANIES) break;
       const text = await categoryText(query, debug);
+      markChecked(ledger, query, { ok: !!text.trim(), successDays: 30, failDays: 14 });
       if (!text.trim()) { console.log(`[find-buyers] no text for "${query}"`); continue; }
 
       const extracted = await askClaude({
@@ -168,6 +174,8 @@ async function main() {
   } catch (err) {
     console.error(`[find-buyers] pipeline error (continuing): ${err.message}`);
   }
+
+  if (targets.length) await saveLedger(CHECKS_PATH, ledger);
 
   const meta = { scraped_at: new Date().toISOString(), categories: targets, classified, added_leads: addedLeads.length, added_competitors: addedComps.length };
 

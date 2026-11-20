@@ -16,10 +16,13 @@ import { fileURLToPath } from 'node:url';
 import { webSearch, apiKey as firecrawlKey } from './lib/firecrawl.mjs';
 import { haveSerper } from './lib/serper.mjs';
 import { askClaude } from './lib/llm.mjs';
+import { loadLedger, saveLedger, isDue, markChecked } from './lib/ledger.mjs';
 
 const p = (env, rel) => process.env[env] || fileURLToPath(new URL(rel, import.meta.url));
 const LEADS_PATH = p('KGR_LEADS_PATH', '../public/data/leads.json');
 const OUTREACH_PATH = p('KGR_OUTREACH_PATH', '../public/data/outreach.json');
+// Re-check ledger: don't re-search a lead whose website lookup was attempted recently (saves search credits).
+const CHECKS_PATH = p('KGR_WEBSITE_CHECKS_PATH', '../public/data/ck-websites.json');
 
 const MAX = Math.max(1, parseInt(process.env.MAX || '25', 10) || 25);
 const PRIORITY_ONLY = /^(1|true|yes)$/i.test(process.env.PRIORITY_ONLY || '');
@@ -110,7 +113,9 @@ async function main() {
 
   // Target exactly the leads find-contacts is about to process: missing a website, no contact yet.
   const outreach = await loadOutreach();
-  let queue = leads.filter((l) => !hasSite(l) && !outreach[l.id]?.contact);
+  const ledger = await loadLedger(CHECKS_PATH);
+  // Skip leads whose website lookup was attempted recently (saves repeat Serper/Firecrawl searches).
+  let queue = leads.filter((l) => !hasSite(l) && !outreach[l.id]?.contact && isDue(ledger, l.id));
   if (PRIORITY_ONLY) queue = queue.filter((l) => l.priority === 'High');
   queue.sort((a, b) => rank(a) - rank(b) || String(a.company).localeCompare(String(b.company)));
   queue = queue.slice(0, MAX);
@@ -121,11 +126,13 @@ async function main() {
   try {
     for (const l of queue) {
       const domain = await findWebsite(l, debug);
+      markChecked(ledger, l.id, { ok: !!domain, successDays: 60, failDays: 21 });
       if (domain) { l.website = 'https://' + domain; filled++; console.log(`[find-websites] ${l.company} -> ${l.website}`); }
     }
   } catch (e) { console.error(`[find-websites] pipeline error (continuing): ${e.message}`); }
 
-  if (!filled) { console.log('[find-websites] no new websites found; leads.json unchanged.'); return; }
+  if (queue.length) await saveLedger(CHECKS_PATH, ledger);
+  if (!filled) { console.log('[find-websites] no new websites found; ledger updated, leads.json unchanged.'); return; }
   await writeFile(LEADS_PATH, JSON.stringify(raw, null, 2) + '\n');
   console.log(`[find-websites] filled ${filled} website(s).`);
 }
