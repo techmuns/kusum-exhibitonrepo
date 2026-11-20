@@ -36,6 +36,8 @@ import { askClaude, haveBedrock } from './lib/llm.mjs';
 
 const ASSOCIATIONS_PATH = process.env.KGR_ASSOCIATIONS_PATH || fileURLToPath(new URL('../public/data/associations.json', import.meta.url));
 const MAX = Math.max(1, parseInt(process.env.MAX || process.argv[2] || '30', 10) || 30);
+// Skip associations refreshed within this many days (they rarely change week-to-week) — saves repeat page reads.
+const STALE_DAYS = Math.max(1, parseInt(process.env.STALE_DAYS || '21', 10) || 21);
 const TODAY = new Date().toISOString().slice(0, 10);
 
 // Strip raw HTML to readable text (keeps <title> + meta description inline, drops scripts/styles/tags).
@@ -208,7 +210,9 @@ async function main() {
 
   // Refresh the never-checked first, then the stalest (oldest last_checked), so the weekly cron keeps
   // every body current within a run or two.
+  const staleBefore = new Date(Date.now() - STALE_DAYS * 86400000).toISOString().slice(0, 10);
   const queue = list.slice()
+    .filter((a) => a.verified !== true || !a.last_checked || a.last_checked < staleBefore) // skip recently-checked (saves reads)
     .sort((a, b) => {
       const av = a.verified === true ? 1 : 0, bv = b.verified === true ? 1 : 0;
       if (av !== bv) return av - bv;                                  // unverified first

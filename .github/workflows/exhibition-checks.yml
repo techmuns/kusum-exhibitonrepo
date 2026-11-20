@@ -10,5 +10,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --test scripts/public-exhibitions.test.mjs scripts/publication-review.test.mjs
+      - run: node --test scripts/public-exhibitions.test.mjs scripts/publication-review.test.mjs scripts/lib/ledger.test.mjs
       - run: node --check scripts/publish-public-exhibitions.mjs
+      - run: for f in scripts/*.mjs scripts/lib/*.mjs; do node --check "$f" || exit 1; done
